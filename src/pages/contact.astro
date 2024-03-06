@@ -10,34 +10,55 @@ import { Icon } from "astro-icon";
   <Container>
     <Sectionhead>
       <Fragment slot="title">Contact</Fragment>
-      <Fragment slot="desc">We are a here to help.</Fragment>
+      <Fragment slot="desc"></Fragment>
     </Sectionhead>
 
-    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
-      <div>
-        <h2 class="font-medium text-2xl text-gray-800">Contact Astroship</h2>
-        <p class="text-lg leading-relaxed text-slate-500 mt-3">
-          Have something to say? We are here to help. Fill up the form or send
-          email or call phone.
-        </p>
-        <div class="mt-5">
-          <div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:map-marker" />
-            <span>1734 Sanfransico, CA 93063</span>
-          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a
-              href="mailto:hello@astroshipstarter.com"
-              >hello@astroshipstarter.com</a
-            >
-          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:phone" /><a
-              href="tel:+1 (987) 4587 899">+1 (987) 4587 899</a
-            >
+    <div class="flex flex-col">
+      <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16 ">
+        <div>
+          <h2 class="font-medium text-2xl text-gray-800">Contact tim.js organizers</h2>
+          <p class="text-lg leading-relaxed text-slate-500 mt-3">
+            Here's how you can get in touch or follow our activity:
+          </p>
+          <div class="mt-5">
+            <div class="flex items-center mt-2 space-x-2 text-gray-600">
+              <div class="w-16">
+                <Icon class="text-gray-400 h-16" name="simple-icons:meetup" />
+              </div>
+              <span>Join our <a class="underline text-blue-500" href="https://www.meetup.com/tim-js/">Meetup group</a> to get notified of our monthly meetings</span>
+            </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+              <div class="w-16">
+                <Icon class="text-gray-400 h-16" name="simple-icons:discord" />
+              </div>
+              <span>Join our <a class="underline text-blue-500" href="https://discord.gg/bFdMVarJ">Discord server</a> to get in touch directly or ask questions</span>
+            </div>
+            <div class="flex items-center mt-2 space-x-2 text-gray-600">
+              <div class="w-16">
+                <Icon class="text-gray-400 h-16" name="simple-icons:twitter" />
+              </div>
+              <span>Follow us on <a class="underline text-blue-500" href="https://twitter.com/timjscommunity">Twitter/X</a> for updates and announcements</span>
+            </div>
+            <div class="flex items-center mt-2 space-x-2 text-gray-600">
+              <div class="w-16">
+                <Icon class="text-gray-400 h-16" name="simple-icons:youtube" />
+              </div>
+              <span>Visit our <a class="underline text-blue-500" href="https://www.youtube.com/@timjs">YouTube channel</a> for video recordings</span>
+            </div>
           </div>
         </div>
+        <div class="flex flex-col justify-center">
+          <Contactform />
+        </div>
       </div>
-      <div>
-        <Contactform />
+      <div class="mt-16 flex flex-col items-center justify-center">
+        <h2 class="text-lg leading-relaxed text-slate-500 mt-3">
+          tim.js is also a registered NGO
+        </h2>
+        <pre class="mt-4">
+          **Asociația TIM.JS**
+          Str. Evliya Celebi, nr. 2, Timișoara 300226
+          CUI: 41511460 (or RO42126862 for EEA)
+        </pre>
       </div>
     </div>
   </Container>
