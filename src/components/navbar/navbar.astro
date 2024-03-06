@@ -21,6 +21,7 @@ const menuitems = [
     path: "/contact",
   },
 ];
+const { pathname } = Astro.url;
 ---
 
 <Container>
@@ -33,13 +34,16 @@ const menuitems = [
         </div>
       </div>
       <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
-        <ul class="flex flex-col lg:flex-row lg:gap-3">
+        <ul class="flex flex-col lg:flex-row gap-3">
           {
             menuitems.map((item) => (
               <li>
                 <a
                   href={item.path}
-                  class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900">
+                  class:list={[
+                    "block relative w-fit lg:mx-3 text-gray-600 after:block after:absolute after:h-[3px] after:bg-brand after:w-full after:scale-x-0 after:hover:scale-x-100 after:duration-300 after:origin-left",
+                    pathname === item.path && "after:scale-x-100 font-bold",
+                  ]}>
                   <span> {item.title}</span>
                 </a>
               </li>
