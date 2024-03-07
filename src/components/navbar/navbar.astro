@@ -6,7 +6,7 @@ import { TimJsLogo } from "@components/ui/icons";
 const menuitems = [
   {
     title: "Home page",
-    path: "/",
+    path: "/home",
   },
   {
     title: "About",
@@ -42,7 +42,8 @@ const { pathname } = Astro.url;
                   href={item.path}
                   class:list={[
                     "block relative w-fit lg:mx-3 text-gray-600 after:block after:absolute after:h-[3px] after:bg-brand after:w-full after:scale-x-0 after:hover:scale-x-100 after:duration-300 after:origin-left",
-                    pathname === item.path && "after:scale-x-100 font-bold",
+                    pathname.includes(item.path) &&
+                      "after:scale-x-100 font-bold",
                   ]}>
                   <span> {item.title}</span>
                 </a>
