@@ -8,4 +8,5 @@ export default defineConfig({
   site: "https://timjs.netlify.app",
   integrations: [tailwind(), mdx(), sitemap()],
   redirects: { "/": "/home" },
+  build: { redirects: false },
 });
