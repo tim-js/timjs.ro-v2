@@ -1,14 +1,26 @@
 ---
-import { TimJsLogo } from "./ui/icons";
+import Button from "./ui/button.astro";
+import Carousel from "./ui/carousel.svelte";
 ---
 
 <main
-  class="grid min-h-[calc(100svh-16rem)] grid-rows-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <h1
-    class="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter text-center">
-    Timisoara JavaScript community
-  </h1>
+  class="flex flex-col min-h-[calc(100svh-16rem)] gap-20 items-center justify-start pt-16 md:pt-12 text-center">
+  <header class="flex flex-col items-center gap-8">
+    <h1
+      class="text-3xl font-bold md:text-5xl lg:text-6xl xl:text-7xl lg:tracking-tight xl:tracking-tighter">
+      Timisoara JavaScript community
+    </h1>
+    <h3 class="text-md lg:text-lg">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+    </h3>
+    <Button class="bg-brand hover:bg-yellow-500"
+      ><span class="text-gray-800">CFP meetup</span></Button
+    >
+  </header>
   <div class="flex justify-center w-full">
-    <TimJsLogo className="w-full sm:w-2/3 lg:w-1/2 px-2" />
+    <Carousel client:load />
   </div>
 </main>
