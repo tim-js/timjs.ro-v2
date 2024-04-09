@@ -19,16 +19,17 @@ const blogCollection = defineCollection({
 });
 
 const teamCollection = defineCollection({
-  schema: z.object({
-    name: z.string(),
-    title: z.string(),
-    company: z.string(),
-    avatar: z.object({
-      src: z.string(),
-      alt: z.string(),
+  schema: ({ image }) =>
+    z.object({
+      name: z.string(),
+      title: z.string(),
+      company: z.string(),
+      avatar: z.object({
+        src: image(),
+        alt: z.string(),
+      }),
+      sort: z.number(),
     }),
-    sort: z.number(),
-  }),
 });
 
 // 3. Export a single `collections` object to register your collection(s)
