@@ -16,8 +16,8 @@ const organizers = await getCollection("team");
       <Fragment slot="desc">Meetup, Community, NGO</Fragment>
     </Sectionhead>
 
-    <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-16">
-      <h2 class="font-bold text-3xl text-gray-800">Overview</h2>
+    <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-5xl text-gray-800">Overview</h2>
       <p class="text-xl leading-relaxed text-slate-500">
         <strong>tim.js</strong> started in 2013 as a monthly meetup and grew into
         a <strong>full-fledged community</strong>. We are also a registered NGO
@@ -37,10 +37,14 @@ const organizers = await getCollection("team");
 
     <br />
 
-    <section class="mx-auto max-w-4xl mt-16">
-      <h2 class="font-bold text-3xl text-gray-800">Organizing team</h2>
+    <section>
+      <div class="mx-auto max-w-4xl mt-24">
+        <h2 class="font-bold text-5xl text-gray-800 text-center">
+          Organizing team
+        </h2>
+      </div>
 
-      <div class="grid md:grid-cols-4 gap-10 mx-auto max-w-4xl mt-8">
+      <div class="grid md:grid-cols-4 gap-10 mx-auto max-w-screen-xl mt-8">
         {
           organizers
             .sort((a, b) => a.data.sort - b.data.sort)
@@ -74,36 +78,36 @@ const organizers = await getCollection("team");
       </div>
     </section>
 
-    <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-16">
-      <h2 class="font-bold text-3xl text-gray-800">Core values</h2>
+    <section class="flex flex-col gap-6 mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-5xl text-gray-800">Core values</h2>
 
       <div>
-        <h3 class="font-semibold text-lg">Technology focused</h3>
-        <p class="text-slate-500 leading-relaxed">
+        <h3 class="font-bold text-xl">Technology focused</h3>
+        <p class="text-slate-500 leading-relaxed text-lg">
           We encourage the understanding of language, tools and patterns rather
           than products and services.
         </p>
       </div>
 
       <div>
-        <h3 class="font-semibold text-lg">Inclusive and diverse</h3>
-        <p class="text-slate-500 leading-relaxed">
+        <h3 class="font-bold text-xl">Inclusive and diverse</h3>
+        <p class="text-slate-500 leading-relaxed text-lg">
           We don't discriminate or encourage any specific technology or groups
           of members.
         </p>
       </div>
 
       <div>
-        <h3 class="font-semibold text-lg">Independently managed</h3>
-        <p class="text-slate-500 leading-relaxed">
+        <h3 class="font-bold text-xl">Independently managed</h3>
+        <p class="text-slate-500 leading-relaxed text-lg">
           We are supported and backed up by tech companies, however they do not
           influence our values.
         </p>
       </div>
     </section>
 
-    <section class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-      <h2 class="font-bold text-3xl text-gray-800">Technologies</h2>
+    <section class="flex flex-col gap-3 mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-5xl text-gray-800">Technologies</h2>
 
       <p class="text-slate-500 leading-relaxed">
         We address the <strong>entire JavaScript ecosystem</strong>, including
