@@ -20,14 +20,14 @@ const blogCollection = defineCollection({
 
 const teamCollection = defineCollection({
   schema: z.object({
-    draft: z.boolean(),
     name: z.string(),
     title: z.string(),
+    company: z.string(),
     avatar: z.object({
       src: z.string(),
       alt: z.string(),
     }),
-    publishDate: z.string().transform(str => new Date(str)),
+    sort: z.number(),
   }),
 });
 
