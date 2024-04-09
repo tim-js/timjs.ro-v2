@@ -1,10 +1,10 @@
 ---
-name: "Adrian Faciu"
+name: "Adrian Fâciu"
 title: "Principal Engineer"
 company: "WeVideo"
 avatar: {
-    src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?&fit=crop&w=280",
-    alt: "Adrian Faciu"
+    src: "/src/assets/v2_adrian_bw.jpg",
+    alt: "Adrian Fâciu"
 }
 sort: 3
 ---

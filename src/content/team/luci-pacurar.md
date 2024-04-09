@@ -1,10 +1,10 @@
 ---
-name: "Luci Pacurar"
+name: "Lucian Păcurar"
 title: "Senior Systems Developer"
 company: "Visma"
 avatar: {
-    src: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?&fit=crop&w=280",
-    alt: "Luci Pacurar"
+    src: "/src/assets/v2_lucian_bw.jpg",
+    alt: "Lucian Păcurar"
 }
 sort: 2
 ---
