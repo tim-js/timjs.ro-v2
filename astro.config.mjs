@@ -7,5 +7,5 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://timjs.netlify.app",
   integrations: [tailwind(), mdx(), sitemap()],
-  redirects: { "/": "/home" },
+  trailingSlash: "always",
 });
