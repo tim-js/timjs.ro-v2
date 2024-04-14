@@ -1,14 +1,35 @@
 ---
-import { TimJsLogo } from "./ui/icons";
+import Button from "./ui/button.astro";
+import { TimJsLogo, RevoJsLogo } from "./ui/icons";
 ---
 
 <main
-  class="grid min-h-[calc(100svh-16rem)] grid-rows-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <h1
-    class="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter text-center">
-    Timisoara JavaScript community
-  </h1>
-  <div class="flex justify-center w-full">
-    <TimJsLogo className="w-full sm:w-2/3 lg:w-1/2 px-2" />
+  class="min-h-[calc(100svh-16rem)] flex flex-col place-items-center xl:grid grid-rows-2 grid-cols-1 xl:grid-rows-1 xl:grid-cols-2 pt-16 xl:pt-12">
+  <div class="flex flex-col items-center xl:items-start">
+    <h1
+      class="text-3xl font-bold text-center xl:text-start xl:text-6xl xl:tracking-tight">
+      Timisoara JavaScript community
+    </h1>
+    <h2 class="mt-4 xl:mt-8 mb-2 xl:mb-4 text-xl text-slate-500 xl:text-3xl">
+      Organizer of revo.js
+    </h2>
+    <RevoJsLogo width={120} />
+
+    <p class="text-center xl:text-start">
+      <span class="font-bold text-gray-800">
+        Technology focused. <br />
+        Community driven.<br />
+        JavaScript conference.<br />
+      </span>
+      <span class="text-slate-500">
+        2-day, single-track, not-for-profit event.
+      </span>
+    </p>
+    <a href="https://yzunr6agkag.typeform.com/to/ehGtISsK">
+      <Button class="mt-16 w-60 bg-brand hover:bg-yellow-400">
+        <p class="text-gray-500">Submit your meetup talk</p>
+      </Button>
+    </a>
   </div>
+  <TimJsLogo className="w-2/3 md:w-1/3 xl:w-full mt-16 xl:mt-0" />
 </main>
