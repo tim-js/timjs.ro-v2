@@ -5,7 +5,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://timjs.netlify.app",
+  site: "https://www.timjs.ro",
   integrations: [tailwind(), mdx(), sitemap()],
   trailingSlash: "always",
 });
