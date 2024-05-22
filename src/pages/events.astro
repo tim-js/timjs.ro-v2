@@ -4,6 +4,13 @@ import Layout from "@layouts/Layout.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Submittalk from "@components/submittalk.astro";
 import Meetuplink from "@components/meetuplink.astro";
+import { Picture } from "astro:assets";
+
+import attending1 from "../assets/events/highres_519891629.jpeg";
+import attending2 from "../assets/events/highres_478125016.jpeg";
+
+import speaker1 from "../assets/events/highres_513791303.jpeg";
+import speaker2 from "../assets/events/highres_513791308.jpeg";
 ---
 
 <Layout title="Events">
@@ -63,6 +70,21 @@ import Meetuplink from "@components/meetuplink.astro";
         </ul>
       </div>
 
+      <div class="flex gap-6">
+        <Picture
+          src={attending1}
+          alt="People attending tim.js meetup"
+          class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+          width={400}
+        />
+        <Picture
+          src={attending2}
+          alt="People attending tim.js meetup"
+          class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+          width={400}
+        />
+      </div>
+
       <Meetuplink />
 
       <br />
@@ -98,6 +120,21 @@ import Meetuplink from "@components/meetuplink.astro";
           <li>special tim.js speaker t-shirt <i>(on your second talk)</i></li>
           <li>tim.js stickers</li>
         </ul>
+      </div>
+
+      <div class="flex gap-6">
+        <Picture
+          src={speaker1}
+          alt="Image of a speaker giving a talk at tim.js meetup"
+          width={400}
+          class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+        />
+        <Picture
+          src={speaker2}
+          alt="Image of a speaker giving a talk at tim.js meetup"
+          width={400}
+          class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+        />
       </div>
 
       <Submittalk />
