@@ -9,57 +9,85 @@ import { Icon } from "astro-icon";
 <Layout title="Contact">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Contact</Fragment>
+      <Fragment slot="title">Contact info</Fragment>
       <Fragment slot="desc"></Fragment>
     </Sectionhead>
 
     <div class="flex flex-col">
-      <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16 ">
-        <div>
-          <h2 class="font-medium text-2xl text-gray-800">Contact tim.js organizers</h2>
-          <p class="text-lg leading-relaxed text-slate-500 mt-3">
-            Here's how you can get in touch or follow our activity:
+      <div class="grid md:grid-cols-2 gap-24 mx-auto max-w-4xl mt-16">
+        <section>
+          <h2 class="font-bold text-2xl">Follow us</h2>
+          <p class="text-md leading-relaxed text-slate-500">
+            Get in touch or follow our activity:
           </p>
+          <br />
           <div class="mt-5">
-            <div class="flex items-center mt-2 space-x-2 text-gray-600">
-              <div class="w-16">
-                <Icon class="text-gray-400 h-16" name="simple-icons:meetup" />
-              </div>
-              <span>Join our <a class="underline text-blue-500" href="https://www.meetup.com/tim-js/">Meetup group</a> to get notified of our monthly meetings</span>
-            </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
-              <div class="w-16">
-                <Icon class="text-gray-400 h-16" name="simple-icons:discord" />
-              </div>
-              <span>Join our <a class="underline text-blue-500" href="https://discord.gg/bFdMVarJ">Discord server</a> to get in touch directly or ask questions</span>
-            </div>
-            <div class="flex items-center mt-2 space-x-2 text-gray-600">
-              <div class="w-16">
-                <Icon class="text-gray-400 h-16" name="simple-icons:twitter" />
-              </div>
-              <span>Follow us on <a class="underline text-blue-500" href="https://twitter.com/timjscommunity">Twitter/X</a> for updates and announcements</span>
-            </div>
-            <div class="flex items-center mt-2 space-x-2 text-gray-600">
-              <div class="w-16">
-                <Icon class="text-gray-400 h-16" name="simple-icons:youtube" />
-              </div>
-              <span>Visit our <a class="underline text-blue-500" href="https://www.youtube.com/@timjs">YouTube channel</a> for video recordings</span>
+            <div
+              class="grid gap-x-2 gap-y-4 space-x-2 items-center text-gray-600"
+              style="grid-template-columns: auto 1fr;">
+              <Icon
+                class="text-gray-400 w-12 justify-self-center"
+                name="simple-icons:meetup"
+                style="margin: 0"
+              />
+              <span
+                >Join our <a
+                  class="underline text-blue-500"
+                  href="https://www.meetup.com/tim-js/">Meetup group</a
+                > to get notified of our monthly meetings.</span
+              >
+              <Icon
+                class="text-gray-400 w-10 justify-self-center"
+                name="simple-icons:discord"
+                style="margin: 0"
+              />
+              <span
+                >Join our <a
+                  class="underline text-blue-500"
+                  href="https://discord.gg/bFdMVarJ">Discord server</a
+                > to get in touch directly or ask questions.</span
+              >
+              <Icon
+                class="text-gray-400 w-10 justify-self-center"
+                name="simple-icons:twitter"
+                style="margin: 0"
+              />
+              <span
+                >Follow us on <a
+                  class="underline text-blue-500"
+                  href="https://twitter.com/timjscommunity">Twitter/X</a
+                > for updates and announcements.</span
+              >
+              <Icon
+                class="text-gray-400 w-10 justify-self-center"
+                name="simple-icons:youtube"
+                style="margin: 0"
+              />
+              <span
+                >Visit our <a
+                  class="underline text-blue-500"
+                  href="https://www.youtube.com/@timjs">YouTube channel</a
+                > to watch the video recordings from our events.</span
+              >
             </div>
           </div>
-        </div>
-        <div class="flex flex-col justify-center">
+        </section>
+
+        <section class="flex flex-col justify-center">
+          <h2 class="font-bold text-2xl">Contact tim.js organizers</h2>
+          <br />
           <Contactform />
-        </div>
+        </section>
       </div>
-      <div class="mt-16 flex flex-col items-center justify-center">
-        <h2 id="ngo" class="text-lg leading-relaxed text-slate-500 mt-3">
-          tim.js is also a registered NGO
-        </h2>
-        <address class="mt-4 text-center">
+
+      <section class="mt-16 flex flex-col items-center justify-center">
+        <h2 id="ngo" class="font-bold text-2xl">tim.js is a registered NGO</h2>
+        <address class="mt-4 text-center text-slate-500">
           <strong>Asociația TIM.JS</strong><br />
           Str. Evliya Celebi, nr. 2, Timișoara 300226, Romania<br />
           CUI: 41511460 (or RO42126862 for EEA)
         </address>
-      </div>
+      </section>
     </div>
   </Container>
 </Layout>
