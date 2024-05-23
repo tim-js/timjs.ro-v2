@@ -31,9 +31,9 @@ const isHomePage = pathname === "/";
 <Container>
   {
     isHomePage ? (
-      <header class="flex flex-row flex-col items-center justify-center my-16">
+      <header class="flex flex-row items-center justify-center my-16">
         <Astronav>
-          <MenuItems class="flex w-auto w-full mt-0 mt-2">
+          <MenuItems class="flex justify-center w-auto w-full">
             <ul class="flex flex-row gap-3">
               {homeMenuItems.map((item) => (
                 <li>
