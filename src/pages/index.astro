@@ -5,13 +5,17 @@
 import Container from "@components/container.astro";
 import Hero from "@components/hero.astro";
 import Layout from "@layouts/Layout.astro";
+import Revojs from "@components/revojs.astro";
 ---
 
 <Layout title="">
   <Container>
-    <Hero />
-    <!-- <Features />
+    <main class="min-h-[calc(100svh-16rem)]flex flex-col">
+      <Hero />
+      <Revojs />
+      <!-- <Features />
     <Logos />
     <Cta /> -->
+    </main>
   </Container>
 </Layout>

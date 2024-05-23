@@ -1,0 +1,21 @@
+---
+import Button from "./ui/button.astro";
+import { RevoJsLogo } from "./ui/icons";
+---
+
+<section class="flex flex-col max-w-4xl mt-24">
+  <h2 class="mb-8 text-5xl font-bold text-gray-800">Organizer of revo.js</h2>
+  <RevoJsLogo width={120} />
+  <p class="mt-2">
+    <strong>
+      Technology focused. <br />
+      Community driven.<br />
+      JavaScript conference.<br />
+    </strong>
+    <span class="text-slate-500">
+      2-day, single-track, not-for-profit event.
+    </span>
+  </p>
+  <Button class="mt-8 w-60 bg-brand hover:bg-yellow-400"
+    ><span class="text-gray-800">Visit revo.js website</span></Button>
+</section>
