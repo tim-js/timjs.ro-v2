@@ -7,11 +7,13 @@ import { Picture } from "astro:assets";
 ---
 
 <section class="grid place-items-center">
-  <Picture
-    src={heroImage}
-    alt="Photo from our 10 years anniversary meetup"
-    class="w-full md:aspect-video h-auto object-cover rounded-lg filter-none md:filter grayscale-[50%] brightness-50"
-  />
+  <div class="w-full aspect-video">
+    <Picture
+      src={heroImage}
+      alt="tim.js meetup"
+      class="w-full md:aspect-video object-cover rounded-lg filter-none md:filter grayscale-[50%] brightness-50"
+    />
+  </div>
   <div class="relative flex flex-col items-center gap-2 md:absolute md:gap-4">
     <TimJsLogo className="hidden md:block w-3/5" variant="light" />
     <h1
