@@ -1,16 +1,18 @@
 ---
 import Button from "./ui/button.astro";
 import { TimJsLogo } from "./ui/icons";
+import heroImage from "../assets/home/highres_513791295.jpeg";
 import Submittalk from "./submittalk.astro";
+import { Picture } from "astro:assets";
 ---
 
 <section class="grid place-items-center">
   <div class="w-full rounded-lg bg-slate-700 aspect-auto md:aspect-video">
-    <!-- <Picture
+    <Picture
       src={heroImage}
       alt="tim.js meetup"
       class="w-full h-full object-cover rounded-lg filter-none md:filter grayscale-[50%] brightness-50"
-    /> -->
+    />
   </div>
   <div class="relative flex flex-col items-center gap-2 md:absolute md:gap-4">
     <TimJsLogo className="hidden md:block w-3/5" variant="light" />
