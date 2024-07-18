@@ -8,12 +8,12 @@ import heroImage from "../assets/home/highres_513791295.jpeg";
 import Skeleton from "./skeleton.astro";
 ---
 
-<section class="grid place-items-center">
+<section class="grid place-items-center md:relative">
   <Skeleton>
     <Picture
       src={heroImage}
       alt="tim.js meetup"
-      class="w-full h-full object-cover rounded-lg md:grayscale-[50%] md:brightness-50"
+      class="w-full h-full object-cover rounded-lg md:grayscale-[50%] md:brightness-50 relative"
     />
   </Skeleton>
 
