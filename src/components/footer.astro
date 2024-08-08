@@ -20,14 +20,18 @@ const socials = [
   <Container class="flex flex-row items-center justify-center gap-4">
     {
       socials.map((social) => (
-        <div class="flex-row items-center gap-8 p-2 transition translate-y-0 bg-gray-800 rounded-full cursor-pointer hover:-translate-y-1">
-          <a href={social.href} rel="noopener noreferrer" target="_blank">
+        <a
+          href={social.href}
+          class="rounded-full transition translate-y-0 hover:-translate-y-1"
+          rel="noopener noreferrer"
+          target="_blank">
+          <div class="p-2 bg-gray-800 rounded-full">
             <Icon
               class="h-6 text-white md:h-7"
               name={`simple-icons:${social.name}`}
             />
-          </a>
-        </div>
+          </div>
+        </a>
       ))
     }
   </Container>
