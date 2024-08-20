@@ -1,0 +1,47 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getPastEvents } from "@utils/meetup";
+import { marked } from "marked";
+
+const events = (await getPastEvents()).reverse();
+---
+
+<Layout title="Meetups">
+  <header class="bg-gray-100 py-8">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-bold text-center">Meetups</h1>
+      <ul class="mt-8 space-y-4">
+        {
+          events.map((event) => (
+            <li key={event.id} class="bg-white p-4 rounded-lg shadow">
+              <h2 class="text-xl font-semibold">{event.title}</h2>
+              <p class="text-gray-600">
+                {new Date(event.dateTime).toLocaleDateString()}
+              </p>
+              <p
+                class="text-gray-600"
+                set:html={marked.parse(event.description)}></p>
+              <a
+                href={event.eventUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-blue-500 hover:underline">
+                View Event on Meetup.com
+              </a>
+              <a
+                href={`/meetups/${event.id}/`}
+                class="text-blue-500 hover:underline ml-4">
+                View Event Details
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      {
+        events.length === 0 && (
+          <p class="text-center text-gray-600 mt-8">No meetups found.</p>
+        )
+      }
+    </div>
+  </header>
+</Layout>
