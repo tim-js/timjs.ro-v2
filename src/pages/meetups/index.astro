@@ -20,18 +20,19 @@ const events = (await getPastEvents()).reverse();
               </p>
               <p
                 class="text-gray-600"
-                set:html={marked.parse(event.description)}></p>
+                set:html={marked.parse(event.description)}
+              />
+              <a
+                href={`/meetups/${event.id}/`}
+                class="text-blue-500 hover:underline ml-4">
+                View Event Details
+              </a>
               <a
                 href={event.eventUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="text-blue-500 hover:underline">
                 View Event on Meetup.com
-              </a>
-              <a
-                href={`/meetups/${event.id}/`}
-                class="text-blue-500 hover:underline ml-4">
-                View Event Details
               </a>
             </li>
           ))
