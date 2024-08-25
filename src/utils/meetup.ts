@@ -12,6 +12,7 @@ const pastEventsQuery = `
             dateTime
             eventUrl
             description
+            imageUrl
           }
         }
       }
@@ -49,7 +50,7 @@ export async function getPastEvents() {
   } catch (error) {
     console.error(error);
   }
-  return events;
+  return events.filter((event) => event.title.toLowerCase().includes("meetup"));
 }
 
 export async function getEvent(id: string) {

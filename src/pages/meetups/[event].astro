@@ -3,6 +3,8 @@ import { getEvent, getPastEvents } from "@utils/meetup";
 import { getYouTubeVideos } from "@utils/youtube";
 import { marked } from "marked";
 import Layout from "../../layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
 
 export async function getStaticPaths() {
   const events = await getPastEvents();
@@ -21,38 +23,47 @@ const relatedVideos = videos.filter((video) =>
 );
 ---
 
-<Layout title={`Meetup ${event}`}>
-  <header class="bg-gray-100 py-8">
-    <div class="container mx-auto px-4">
-      <h1 class="text-4xl font-bold text-center">{meetup.title}</h1>
-      <p class="text-gray-600" set:html={marked.parse(meetup.description)} />
-      <p class="text-gray-600">{meetup.dateTime}</p>
-      <a href={meetup.eventUrl} target="_blank" class="text-blue-500">
-        {meetup.eventUrl}
-      </a>
+<Layout title="Meetup">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{meetup.title}</Fragment>
+      <Fragment slot="desc">
+        {new Date(meetup.dateTime).toLocaleDateString()}</Fragment
+      >
+    </Sectionhead>
 
-      <h2 class="text-2xl font-semibold mt-8 mb-4">Related Videos</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {
-          relatedVideos.map((video) => (
-            <div key={video.id} class="bg-white p-4 rounded-lg shadow">
-              <img
-                src={video.thumbnail}
-                alt={video.title}
-                class="w-full h-auto mb-2 rounded"
-              />
-              <h3 class="text-lg font-semibold">{video.title}</h3>
-              <a
-                href={video.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-blue-500 hover:underline">
-                Watch on YouTube
+    <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-5xl text-gray-800">Description</h2>
+      <div
+        class="text-xl leading-relaxed text-slate-500"
+        set:html={marked.parse(meetup.description)}
+      />
+      <br />
+      <a href={meetup.eventUrl} target="_blank" class="text-blue-500">
+        See the event on meetup.com
+      </a>
+    </section>
+
+    {
+      relatedVideos.length > 0 && (
+        <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+          <h2 class="font-bold text-5xl text-gray-800">Recordings</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {relatedVideos.map((video) => (
+              <a href={video.link} target="_blank" rel="noopener noreferrer">
+                <div key={video.id} class="bg-white p-4 rounded-lg shadow">
+                  <img
+                    src={video.thumbnail}
+                    alt={video.title}
+                    class="w-full h-auto mb-2 rounded"
+                  />
+                  <h3 class="text-lg font-semibold">{video.title}</h3>
+                </div>
               </a>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  </header>
-</Layout>; ---
+            ))}
+          </div>
+        </section>
+      )
+    }
+  </Container>;
+</Layout>
