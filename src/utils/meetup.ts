@@ -68,8 +68,8 @@ export async function getEvents(query: string) {
     return null;
   }
   try {
-    const json = await response.json();
-    return json.data;
+    const result = await response.json();
+    return result.data;
   } catch (e) {
     console.error(e);
     return null;
