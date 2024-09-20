@@ -15,6 +15,7 @@ const events = (await getUpcomingEvents()).reverse();
           <a href={`/meetups/upcoming/${event.id}/`}>
             <img
               src={event.imageUrl}
+              alt={event.title}
               class="rounded-lg shadow-none hover:shadow-xl  duration-300  transition"
             />
           </a>
