@@ -1,17 +1,24 @@
 ---
-import { getEvent, getPastEvents } from "@utils/meetup";
+import { getEvent, getPastEvents, getUpcomingEvents } from "@utils/meetup";
 import { getYouTubeVideos } from "@utils/youtube";
 import { marked } from "marked";
-import Layout from "../../layouts/Layout.astro";
+import Layout from "../../../layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 
 export async function getStaticPaths() {
-  const events = await getPastEvents();
+  const upcomingEvents = await getUpcomingEvents();
+  const pastEvents = await getPastEvents();
 
-  return events.map((event) => ({
-    params: { event: event.id },
+  const pastPaths = pastEvents.map((event) => ({
+    params: { type: "past", event: event.id },
   }));
+
+  const upcomingPaths = upcomingEvents.map((event) => ({
+    params: { type: "upcoming", event: event.id },
+  }));
+
+  return [...pastPaths, ...upcomingPaths];
 }
 
 const { event } = Astro.params;

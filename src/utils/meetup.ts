@@ -1,3 +1,5 @@
+import type { EventType } from "types/types";
+
 const MEETUP_ENDPOINT = "https://api.meetup.com/gql";
 const COMMUNITY_URLNAME = "tim-js";
 
@@ -20,6 +22,23 @@ const pastEventsQuery = `
   }
 `;
 
+const upcomingEventsQuery = `query($urlname: String!) {
+    groupByUrlname(urlname: $urlname) {
+       upcomingEvents(input: {first: 200 }) {
+        edges {
+          node {
+            id
+            title
+            dateTime
+            eventUrl
+            description
+            imageUrl
+          }
+        }
+      }
+    }
+  }`;
+
 const eventQuery = `
   query($id: ID!) {
     event(id: $id) {
@@ -31,26 +50,57 @@ const eventQuery = `
   }
 `;
 
-export async function getPastEvents() {
+const isMeetupEvent = (event) => event.title.toLowerCase().includes("meetup");
+
+export async function getEvents(query: string) {
   const response = await fetch(MEETUP_ENDPOINT, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      query: pastEventsQuery,
+      query,
       variables: { urlname: COMMUNITY_URLNAME },
     }),
   });
-
-  let events: any[] = [];
-  try {
-    const { data } = await response.json();
-    events = data.groupByUrlname.pastEvents.edges.map((edge) => edge.node);
-  } catch (error) {
-    console.error(error);
+  if (!response.ok) {
+    console.error(response.statusText);
+    return null;
   }
-  return events.filter((event) => event.title.toLowerCase().includes("meetup"));
+  try {
+    const json = await response.json();
+    return json.data;
+  } catch (e) {
+    console.error(e);
+    return null;
+  }
+}
+
+export async function getUpcomingEvents() {
+  const data = await getEvents(upcomingEventsQuery);
+
+  if (!data) {
+    return [];
+  }
+
+  const upcomingEvents: EventType[] =
+    data.groupByUrlname.upcomingEvents.edges.map((edge) => edge.node);
+
+  return upcomingEvents.filter(isMeetupEvent);
+}
+
+export async function getPastEvents() {
+  const data = await getEvents(pastEventsQuery);
+
+  if (!data) {
+    return [];
+  }
+
+  const pastEvents: EventType[] = data.groupByUrlname.pastEvents.edges.map(
+    (edge) => edge.node
+  );
+
+  return pastEvents.filter(isMeetupEvent);
 }
 
 export async function getEvent(id: string) {
