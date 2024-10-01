@@ -1,0 +1,26 @@
+---
+import { getUpcomingEvents } from "@utils/meetup";
+
+const events = (await getUpcomingEvents()).reverse();
+---
+
+{
+  !events.length ? null : (
+    <section class="flex flex-col mx-auto max-w-4xl mt-24 gap-4 text-center items-center">
+      <h2 class="text-4xl md:text-5xl mb-4 font-bold text-gray-800">
+        Upcoming Events
+      </h2>
+      <li class="flex flex-col gap-8">
+        {events.map((event) => (
+          <a href={`/meetups/upcoming/${event.id}/`}>
+            <img
+              src={event.imageUrl}
+              alt={event.title}
+              class="rounded-lg shadow-none hover:shadow-xl  duration-300  transition"
+            />
+          </a>
+        ))}
+      </li>
+    </section>
+  )
+}
