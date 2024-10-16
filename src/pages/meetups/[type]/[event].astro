@@ -1,20 +1,27 @@
 ---
-import { getEvent, getPastEvents } from "@utils/meetup";
+import { getEvent, getPastEvents, getUpcomingEvents } from "@utils/meetup";
 import { getYouTubeVideos } from "@utils/youtube";
 import { marked } from "marked";
-import Layout from "../../layouts/Layout.astro";
+import Layout from "../../../layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 
 export async function getStaticPaths() {
-  const events = await getPastEvents();
+  const upcomingEvents = await getUpcomingEvents();
+  const pastEvents = await getPastEvents();
 
-  return events.map((event) => ({
-    params: { event: event.id },
+  const pastPaths = pastEvents.map((event) => ({
+    params: { type: "past", event: event.id },
   }));
+
+  const upcomingPaths = upcomingEvents.map((event) => ({
+    params: { type: "upcoming", event: event.id },
+  }));
+
+  return [...pastPaths, ...upcomingPaths];
 }
 
-const { event } = Astro.params;
+const { event, type } = Astro.params;
 const meetup = await getEvent(event);
 
 const videos = await getYouTubeVideos();
@@ -40,7 +47,7 @@ const relatedVideos = videos.filter((video) =>
       />
       <br />
       <a href={meetup.eventUrl} target="_blank" class="text-blue-500">
-        See the event on meetup.com
+        {type === "upcoming" ? "Reserve your spot" : "See the event on meetup"}
       </a>
     </section>
 
@@ -51,7 +58,7 @@ const relatedVideos = videos.filter((video) =>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             {relatedVideos.map((video) => (
               <a href={video.link} target="_blank" rel="noopener noreferrer">
-                <div key={video.id} class="bg-white p-4 rounded-lg shadow">
+                <div class="bg-white p-4 rounded-lg shadow">
                   <img
                     src={video.thumbnail}
                     alt={video.title}
@@ -65,5 +72,5 @@ const relatedVideos = videos.filter((video) =>
         </section>
       )
     }
-  </Container>;
+  </Container>
 </Layout>
