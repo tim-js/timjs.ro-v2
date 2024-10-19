@@ -1,48 +1,165 @@
 ---
 import Container from "@components/container.astro";
-import Layout from "../../layouts/Layout.astro";
-import { getPastEvents } from "@utils/meetup";
-import { marked } from "marked";
+import Layout from "@layouts/Layout.astro";
 import Sectionhead from "@components/sectionhead.astro";
+import Submittalk from "@components/submittalk.astro";
+import Meetuplink from "@components/meetuplink.astro";
+import { Picture } from "astro:assets";
 
-const events = (await getPastEvents()).reverse();
+import attending1 from "../../assets/events/highres_519891629.jpeg";
+import attending2 from "../../assets/events/highres_478125016.jpeg";
+
+import speaker1 from "../../assets/events/highres_513791303.jpeg";
+import speaker2 from "../../assets/events/highres_513791308.jpeg";
 ---
 
 <Layout title="Meetups">
   <Container>
     <Sectionhead>
       <Fragment slot="title">Meetups</Fragment>
-      <Fragment slot="desc">All the past meetups</Fragment>
+      <Fragment slot="desc"
+        ><a href="past/" class="underline text-blue-500">Past events</a>
+      </Fragment>
     </Sectionhead>
+    <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+      <div>
+        <h2 class="font-bold text-5xl text-gray-800" id="meetups">Meetups</h2>
+        <br />
+        <p class="text-xl leading-relaxed text-slate-500">
+          We're organizing monthly meetups since 2013, free for everyone to
+          attend. They usually take place on Wednesdays at 18:30.
+        </p>
+        <br />
+        <div
+          class="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+          <Meetuplink />
+          <Submittalk />
+        </div>
+      </div>
 
-    <section class="container mx-auto px-4">
-      <ul class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {
-          events.map((event) => (
-            <li key={event.id} class="bg-gray-100 shadow-md rounded-lg p-4">
-              <a href={`/meetups/past/${event.id}/`} class="block">
-                <h2 class="font-bold text-2xl text-gray-800 truncate">
-                  {event.title}
-                </h2>
-                <p class="text-sm text-gray-500">
-                  {new Date(event.dateTime).toLocaleDateString()}
-                </p>
-                {event.imageUrl && (
-                  <img
-                    src={event.imageUrl}
-                    alt={event.title}
-                    class="w-full h-auto object-cover rounded-lg my-4"
-                  />
-                )}
-                <div
-                  class="text-lg leading-relaxed text-slate-500 h-64 overflow-hidden"
-                  set:html={marked.parse(event.description)}
-                />
-              </a>
-            </li>
-          ))
-        }
-      </ul>
+      <br />
+
+      <div>
+        <h3 class="font-bold text-xl">Attending tim.js</h3>
+        <p class="text-lg leading-relaxed text-slate-500">
+          The regular audience is quite diverse. There are core members that
+          attend the meetup every month, since the beginning. Others that attend
+          only now and then, when they see interesting topics on the agenda.
+        </p>
+        <p class="text-lg leading-relaxed text-slate-500 mt-2">
+          Since we touch upon all experience levels, we have a wide mix of
+          participants, from new comers to web development, to senior developers
+          with decades of experience, and everything in between.
+        </p>
+      </div>
+
+      <br />
+
+      <div>
+        <h3 class="font-bold text-xl">Why should you attend?</h3>
+        <ul class="list-disc px-8 text-lg leading-relaxed text-slate-500">
+          <li>
+            Gain insights about new technologies, concepts, and practices that
+            you don't encounter in your day to day job.
+          </li>
+          <li>Learn from others' experiences.</li>
+          <li>Exchange ideas, ask questions, debate your dilemmas.</li>
+        </ul>
+      </div>
+
+      <div class="flex gap-6">
+        <Picture
+          src={attending1}
+          alt="People attending tim.js meetup"
+          class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+          width={400}
+        />
+        <Picture
+          src={attending2}
+          alt="People attending tim.js meetup"
+          class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+          width={400}
+        />
+      </div>
+
+      <Meetuplink />
+
+      <br />
+
+      <div>
+        <h3 class="font-bold text-xl">Speaking at tim.js</h3>
+        <p class="text-lg leading-relaxed text-slate-500">
+          tim.js is the perfect place to share your knowledge with the local Web
+          and JavaScript community. Whether you're working on your first talk or
+          you've been on large stages before, we would love to hear you out.
+        </p>
+      </div>
+
+      <br />
+
+      <div>
+        <h3 class="font-bold text-xl">Why speak at tim.js?</h3>
+        <ul class="list-disc px-8 text-lg leading-relaxed text-slate-500">
+          <li>Pass your experience to others.</li>
+          <li>Challenge yourself to understand a topic by teaching it.</li>
+          <li>Get feedback on your speaking skills.</li>
+          <li>Practice your conference proposals.</li>
+        </ul>
+      </div>
+
+      <br />
+
+      <div>
+        <h3 class="font-bold text-xl">What you get as a speaker?</h3>
+        <ul class="list-disc px-8 text-lg leading-relaxed text-slate-500">
+          <li>video recording of your talk</li>
+          <li>get help from experienced speakers</li>
+          <li>special tim.js speaker t-shirt <i>(on your second talk)</i></li>
+          <li>tim.js stickers</li>
+        </ul>
+      </div>
+
+      <div class="flex gap-6">
+        <Picture
+          src={speaker1}
+          alt="Image of a speaker giving a talk at tim.js meetup"
+          width={400}
+          class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+        />
+        <Picture
+          src={speaker2}
+          alt="Image of a speaker giving a talk at tim.js meetup"
+          width={400}
+          class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+        />
+      </div>
+
+      <Submittalk />
+
+      <br />
+
+      <div>
+        <h3 class="font-bold text-xl">Covered topics</h3>
+        <p class="text-lg leading-relaxed text-slate-500">
+          We address the entire JavaScript ecosystem, including but not limited
+          to: User Interfaces/Frontend, Node.js/Backend,
+          web/mobile/desktop/hardware, standard APIs/ES/DOM,
+          libraries/frameworks, practices/patterns/paradigms/concepts etc.
+        </p>
+        <p class="text-lg leading-relaxed text-slate-500 mt-2">
+          We don't specifically focus on HTML or CSS, but since they are closely
+          related to UI/Frontend development, they are not out-of-scope.
+        </p>
+        <p class="text-lg leading-relaxed text-slate-500 mt-2">
+          We don't focus on other languages that compile to JavaScript, such as
+          ScalaJS, ClojureScript, Reason, Elm, etc. as it would widen our focus
+          too much. Exceptions are JS supersets and type checkers like
+          TypeScript or Flow.
+        </p>
+      </div>
+      <div>
+        <a href="past/" class="underline text-blue-500">See all meetups</a>
+      </div>
     </section>
   </Container>
 </Layout>

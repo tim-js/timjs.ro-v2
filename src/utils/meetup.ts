@@ -1,4 +1,5 @@
 import type { EventType } from "types/types";
+import pastMeetups from "../data/oldMeetups";
 
 const MEETUP_ENDPOINT = "https://api.meetup.com/gql";
 const COMMUNITY_URLNAME = "tim-js";
@@ -76,6 +77,15 @@ export async function getEvents(query: string) {
   }
 }
 
+function addShortDescription(event: EventType): EventType {
+  const pastEvent = pastMeetups.find((e) => e.id === event.id);
+
+  return {
+    ...event,
+    shortDescription: pastEvent?.shortDescription || event.description.split("***")?.[0] || "",
+  };
+}
+
 export async function getUpcomingEvents() {
   const data = await getEvents(upcomingEventsQuery);
 
@@ -100,7 +110,7 @@ export async function getPastEvents() {
     (edge) => edge.node
   );
 
-  return pastEvents.filter(isMeetupEvent);
+  return pastEvents.filter(isMeetupEvent).map(addShortDescription);
 }
 
 export async function getEvent(id: string) {
