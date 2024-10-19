@@ -27,12 +27,12 @@ const purify = DOMPurify(window);
           events.map((event) => (
             <li key={event.id} class="bg-gray-100 shadow-md rounded-lg p-4">
               <a href={`/meetups/past/${event.id}/`} class="flex flex-col">
-                <h2 class="text-xl font-bold text-gray-800 mb-2">
+                <h2 class="text-lg font-bold text-gray-800 mb-2 md:text-xl">
                   {event.title}
                 </h2>
-                <div class="flex items-start mt-2">
+                <div class="flex flex-col md:flex-row items-start mt-2">
                   {event.imageUrl && (
-                    <div class="flex-shrink-0">
+                    <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-4">
                       <img
                         src={event.imageUrl}
                         alt={event.title}
@@ -40,12 +40,12 @@ const purify = DOMPurify(window);
                       />
                     </div>
                   )}
-                  <div class="flex-1 ml-6">
+                  <div class="flex-1">
                     <p class="text-sm text-gray-500">
                       {new Date(event.dateTime).toLocaleDateString("en-GB")}
                     </p>
                     <div
-                      class="mt-4 text-lg leading-relaxed text-slate-500 h-64 overflow-hidden"
+                      class="mt-2 text-lg leading-relaxed text-slate-500"
                       set:html={purify.sanitize(
                         marked.parse(
                           event.shortDescription?.replaceAll("\n", "<br />")
