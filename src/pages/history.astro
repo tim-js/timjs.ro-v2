@@ -1,0 +1,634 @@
+---
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import { SUBMIT_TALK_URL } from "../constants";
+
+import img_firstMeetup from "@assets/history/tim-js-first-meetup.avif";
+import img_startupHub from "@assets/history/tim-js-startup-hub.avif";
+import img_3pg from "@assets/history/tim-js-3pg.avif";
+import img_esoh from "@assets/history/tim-js-esoh.avif";
+
+import img_visma from "@assets/history/tim-js-visma.avif";
+import img_irian from "@assets/history/tim-js-irian.avif";
+import img_wevideo from "@assets/history/tim-js-wevideo.jpg";
+import img_ness from "@assets/history/tim-js-ness.avif";
+
+import img_3pg_new from "@assets/history/tim-js-3pg-new.avif";
+import img_opswat from "@assets/history/tim-js-opswat.avif";
+import img_doctari from "@assets/history/tim-js-doctari.avif";
+import img_rankingcoach from "@assets/history/tim-js-rankingcoach.avif";
+import img_haufe from "@assets/history/tim-js-haufe.jpeg";
+
+import img_10_years from "@assets/history/tim-js-10-years.avif";
+import img_codecamp from "@assets/history/tim-js-codecamp.webp";
+import img_codecamp_meetup from "@assets/history/tim-js-codecamp-meetup.avif";
+import img_ngparty from "@assets/history/tim-js-ngparty.avif";
+import img_types_panel from "@assets/history/tim-js-types-panel.avif";
+import img_workshop_js1 from "@assets/history/tim-js-workshop-js1.avif";
+import img_workshop_js2 from "@assets/history/tim-js-workshop-js2.avif";
+import img_workshop_js3 from "@assets/history/tim-js-workshop-js3.avif";
+import img_workshop_ts from "@assets/history/tim-js-workshop-ts.jpeg";
+
+import img_poster_16 from "@assets/history/tim_js_16.webp";
+import img_poster_18 from "@assets/history/tim_js_18.webp";
+import img_poster_19 from "@assets/history/tim_js_19.webp";
+import img_poster_20 from "@assets/history/tim_js_20.webp";
+import img_poster_21 from "@assets/history/tim_js_21.webp";
+import img_poster_22 from "@assets/history/tim_js_22.webp";
+import img_poster_23 from "@assets/history/tim_js_23.webp";
+import img_poster_24 from "@assets/history/tim_js_24.webp";
+import img_poster_25 from "@assets/history/tim_js_25.webp";
+import img_poster_26 from "@assets/history/tim_js_26.webp";
+import img_poster_27 from "@assets/history/tim_js_27.webp";
+import img_poster_28 from "@assets/history/tim_js_28.webp";
+import img_poster_29 from "@assets/history/tim_js_29.webp";
+import img_poster_30 from "@assets/history/tim_js_30.webp";
+import img_poster_31 from "@assets/history/tim_js_31.webp";
+import img_poster_32 from "@assets/history/tim_js_32.webp";
+import img_poster_33 from "@assets/history/tim_js_33.webp";
+import img_poster_34 from "@assets/history/tim_js_34.webp";
+import img_poster_35 from "@assets/history/tim_js_35.webp";
+import img_poster_36 from "@assets/history/tim_js_36.webp";
+import img_poster_41 from "@assets/history/tim_js_41.webp";
+import img_poster_50 from "@assets/history/tim_js_50.webp";
+import img_poster_51 from "@assets/history/tim_js_51.webp";
+import img_poster_beer from "@assets/history/tim_js_beer.webp";
+
+const special_events = [
+  { image: img_workshop_js1, edition: "JavaScript Fundamentals Workshop" },
+  { image: img_workshop_js2, edition: "JavaScript Fundamentals Workshop" },
+  { image: img_workshop_js3, edition: "JavaScript Fundamentals Workshop" },
+  { image: img_ngparty, edition: "ngParty special meetup" },
+  { image: img_types_panel, edition: "Static vs Dynamic types panel" },
+  { image: img_codecamp_meetup, edition: "Codecamp pre-event meetup" },
+  { image: img_codecamp, edition: "Codecamp Timisoara 2017" },
+  { image: img_workshop_ts, edition: "TypeScript Workshop" },
+  { image: img_10_years, edition: "10 years celebration" },
+];
+
+const posters = [
+  { image: img_poster_16, edition: "edition 16" },
+  { image: img_poster_18, edition: "edition 18" },
+  { image: img_poster_19, edition: "edition 19" },
+  { image: img_poster_20, edition: "edition 20" },
+  { image: img_poster_21, edition: "edition 21" },
+  { image: img_poster_22, edition: "edition 22" },
+  { image: img_poster_23, edition: "edition 23" },
+  { image: img_poster_24, edition: "edition 24" },
+  { image: img_poster_25, edition: "edition 25" },
+  { image: img_poster_26, edition: "edition 26" },
+  { image: img_poster_27, edition: "edition 27" },
+  { image: img_poster_28, edition: "edition 28" },
+  { image: img_poster_29, edition: "edition 29" },
+  { image: img_poster_30, edition: "edition 30" },
+  { image: img_poster_31, edition: "edition 31" },
+  { image: img_poster_32, edition: "edition 32" },
+  { image: img_poster_33, edition: "edition 33" },
+  { image: img_poster_34, edition: "edition 34" },
+  { image: img_poster_35, edition: "edition 35" },
+  { image: img_poster_36, edition: "edition 36" },
+  { image: img_poster_41, edition: "edition 41" },
+  { image: img_poster_50, edition: "edition 50" },
+  { image: img_poster_51, edition: "edition 51" },
+  { image: img_poster_beer, edition: "networking gathering" },
+];
+
+const age = new Date().getFullYear() - 2013;
+---
+
+<Layout title="History">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">About tim.js</Fragment>
+      <Fragment slot="desc"
+        ><a href="/about/" class="underline text-blue-500">Overview</a> | <a
+          href="/history/"
+          class="underline text-blue-500"><strong>History</strong></a
+        ></Fragment
+      >
+    </Sectionhead>
+
+    <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-5xl text-gray-800">The beginnings</h2>
+
+      <p class="text-xl leading-relaxed text-slate-500">
+        tim.js started in 2013. The first event, simply called <a
+          class="underline text-blue-500"
+          href="https://www.meetup.com/tim-js/events/123239412/"
+          target="_blank">First Meetup</a
+        >, took place on <strong>June 19th 2013</strong>, with more than 30
+        attendees, on a Wednesday evening at 18:30. To this day, all the
+        following meetups, with very few exceptions, took place on Wednesdays at
+        18:30.
+      </p>
+
+      <br />
+
+      <div class="w-full">
+        <Picture
+          src={img_firstMeetup}
+          alt="Photo from the first tim.js meetup"
+          sizes="(max-width: 800px) 100vw, 800px"
+          width={1200}
+          height={500}
+          class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+        />
+      </div>
+
+      <br />
+
+      <p class="text-xl leading-relaxed text-slate-500">
+        The meetup was initially organized by <strong>Raul Ciotescu</strong> and
+        <strong>Cassian Lup</strong> from Netzinkubator, which had their office within
+        the <a
+          href="https://www.facebook.com/700StartupHub/"
+          class="underline text-blue-500"
+          target="_blank">Startup Hub</a
+        >, a coworking space in Timisoara City Business Centre.
+      </p>
+
+      <p class="text-xl leading-relaxed text-slate-500">
+        During the first few meetups, the group didn't even have an actual name.
+        However, the 8th event showcases the meetup has finally got it's name: <strong
+          >tim.js</strong
+        >, which is short for
+        <strong>Timisoara JavaScript Group</strong>. This name was chosen after
+        a vote of the community from a few other choices.
+      </p>
+
+      <br />
+
+      <p class="text-xl leading-relaxed text-slate-500">
+        For many years, the meetups took place within the offices of the
+        companies that supported the event: <strong>[e-spres-oh]</strong>, <strong
+          >3 Pillar Global</strong
+        >, and
+        <strong>Netzinkubator</strong> at Startup Hub.
+      </p>
+
+      <br />
+
+      <div class="grid md:grid-cols-3 gap-5 mx-auto max-w-screen-xl">
+        <div class="w-full">
+          <Picture
+            src={img_startupHub}
+            alt="Photo from one of the meetups at StartUp Hub"
+            sizes="(max-width: 800px) 100vw, 800px"
+            width={1200}
+            height={500}
+            class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+          />
+        </div>
+        <div class="w-full">
+          <Picture
+            src={img_3pg}
+            alt="Photo from one of the meetups at 3 Pillar Global"
+            sizes="(max-width: 800px) 100vw, 800px"
+            width={1200}
+            height={500}
+            class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+          />
+        </div>
+        <div class="w-full">
+          <Picture
+            src={img_esoh}
+            alt="Photo from one of the meetups at [e-spres-oh]"
+            sizes="(max-width: 800px) 100vw, 800px"
+            width={1200}
+            height={500}
+            class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-5xl text-gray-800">Past supporters</h2>
+
+      <p class="text-xl leading-relaxed text-slate-500">
+        Once we've reached a certain numbers of active users, the Start Hub
+        didn't support us anymore, considering that we're mature enough to get
+        support from elsewhere and leave the space for others meetups and events
+        to be born.
+      </p>
+
+      <p class="text-xl leading-relaxed text-slate-500">
+        Therefore, over the years we got support from many local companies which
+        sponsored one or more tim.js events: <strong>Irian</strong>, <strong
+          >WeVideo</strong
+        >, <strong>Visma</strong>, <strong>Victory Square Partners</strong>, <strong
+          >Ness</strong
+        >.
+      </p>
+
+      <br />
+
+      <div class="grid grid-cols-2 gap-5 md:gap-10 mx-auto max-w-screen-xl">
+        <div class="w-full">
+          <Picture
+            src={img_ness}
+            alt="Photo from one of the meetups at Ness"
+            sizes="(max-width: 800px) 100vw, 800px"
+            width={1200}
+            height={500}
+            class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+          />
+        </div>
+        <div class="w-full">
+          <Picture
+            src={img_irian}
+            alt="Photo from one of the meetups at Ambasada sponsored by Irian"
+            sizes="(max-width: 800px) 100vw, 800px"
+            width={1200}
+            height={500}
+            class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+          />
+        </div>
+        <div class="w-full">
+          <Picture
+            src={img_wevideo}
+            alt="Photo from one of the meetups at WeVideo"
+            sizes="(max-width: 800px) 100vw, 800px"
+            width={1200}
+            height={500}
+            class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+          />
+        </div>
+        <div class="w-full">
+          <Picture
+            src={img_visma}
+            alt="Photo from one of the meetups at Visma"
+            sizes="(max-width: 800px) 100vw, 800px"
+            width={1200}
+            height={500}
+            class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+          />
+        </div>
+      </div>
+
+      <br />
+
+      <p class="text-xl leading-relaxed text-slate-500">
+        Thank you all on the behalf of the JavaScript community.
+      </p>
+    </section>
+
+    <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-5xl text-gray-800">Special events</h2>
+
+      <p class="text-xl leading-relaxed text-slate-500">
+        Our standard meetup format include 2 talks of around 30 minutes each.
+        However, during the years we had a few outstanding events that are worth
+        highlighting:
+      </p>
+
+      <ul class="list-disc px-8 text-lg leading-relaxed text-slate-500">
+        <li class="mt-4">
+          <strong>JS Fundamentals workshops</strong>: in 2016 several workshops
+          called <a
+            href="https://www.meetup.com/tim-js/events/230179755"
+            class="underline text-blue-500"
+            target="_blank">JavaScript Citizens</a
+          > and <a
+            href="https://www.meetup.com/tim-js/events/233420244"
+            class="underline text-blue-500"
+            target="_blank">
+            JavaScript Mechanics</a
+          > were organized by Andrei Pfeiffer, with the goal of helping participants
+          better understand the fundamentals of the ECMAScript standard and the JavaScript
+          language.
+        </li>
+        <li class="mt-4">
+          <a
+            href="https://www.meetup.com/tim-js/events/233391521/"
+            class="underline text-blue-500"
+            target="_blank">
+            ngParty special meetup</a
+          >: in September 2016 the 3 organizers of <strong
+            >ngParty meetup</strong
+          >, Mario Vejlupek, Viliam Elischer, and Martin Hochel came to
+          Timisoara all the way from Prague/CZ to share their knowledge with the
+          local community. We have a close relationship, even today.
+        </li>
+        <li class="mt-4">
+          <a
+            href="https://www.meetup.com/tim-js/events/237547271/"
+            class="underline text-blue-500"
+            target="_blank">
+            Static vs Dynamic types panel</a
+          >: in February 2017 we had a special panel with 2 prolific local
+          figures: Radu Marinescu and Radu Fericean. It was fully recorded and
+          <a
+            href="https://www.youtube.com/watch?v=SikO_SC9tRg"
+            class="underline text-blue-500"
+            target="_blank">
+            published online</a
+          >.
+        </li>
+        <li class="mt-4">
+          <a
+            href="https://archive1.codecamp.ro/events/20171014-Timisoara/"
+            class="underline text-blue-500"
+            target="_blank">
+            Codecamp Timisoara 2017</a
+          >: in October 2017 tim.js organized one of the tracks of Codecamp
+          Timisoara. Before the event, we also had a <a
+            href="https://www.meetup.com/tim-js/events/243973802"
+            class="underline text-blue-500"
+            target="_blank">
+            special meetup</a
+          > in a panel format, with an open discussion with the invited speakers.
+        </li>
+        <li class="mt-4">
+          <strong>Lightning Talks</strong>: to spice things up, some editions
+          such as
+          <a
+            href="https://www.meetup.com/tim-js/events/241588629/"
+            class="underline text-blue-500"
+            target="_blank">
+            41</a
+          >,
+          <a
+            href="https://www.meetup.com/tim-js/events/252392633/"
+            class="underline text-blue-500"
+            target="_blank">
+            51</a
+          > and
+          <a
+            href="https://www.meetup.com/tim-js/events/289379558/"
+            class="underline text-blue-500"
+            target="_blank">
+            74</a
+          > included 6 short 10-minutes talks, having a more dynamic content than
+          our regular meetups.
+        </li>
+        <li class="mt-4">
+          <a
+            href="https://www.meetup.com/tim-js/events/259669357/"
+            class="underline text-blue-500"
+            target="_blank">
+            Technical Interviews open discussion</a
+          >: once in a while we also had open discussions. One notable meetup
+          was the collaboration with local recruiters and HR managers to debate
+          technical interviews.
+        </li>
+        <li class="mt-4">
+          <strong>TypeScript Workshop</strong>: the latest workshop we've
+          organized was in May 2023. It was a 2 day event, with Tițian-Cornel
+          Cernicova-Dragomir, teaching the code mechanics of TypeScript, but
+          also touching upon advanced concepts as well.
+        </li>
+        <li class="mt-4">
+          <a
+            href="https://www.meetup.com/tim-js/events/293904319/"
+            class="underline text-blue-500"
+            target="_blank">
+            10 years celebration</a
+          >: we've celebrated 10 years of activity with a unique event: 10
+          lightning talks, 10 minutes per talk. This meetup gathered more than
+          80 attendees.
+        </li>
+      </ul>
+
+      <br />
+
+      <div class="grid grid-cols-3 gap-5 mx-auto max-w-screen-xl">
+        {
+          special_events.map((event) => (
+            <div class="w-full">
+              <Picture
+                src={event.image}
+                alt={`Photo from ${event.edition}`}
+                sizes="(max-width: 800px) 100vw, 800px"
+                width={1200}
+                height={500}
+                class="w-full rounded object-cover object-center"
+              />
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-5xl text-gray-800">Networking events</h2>
+
+      <p class="text-xl leading-relaxed text-slate-500">
+        In August and December tim.js meetups don't include the regular
+        technical talks. Instead, we meet in various bars or pubs for casual
+        gatherings outside the scope of JavaScript.
+      </p>
+
+      <p class="text-xl leading-relaxed text-slate-500">
+        This is a great opportunity to connect deeper with community members,
+        get to know each other, and discuss anything (un)related to JavaScript.
+      </p>
+    </section>
+
+    <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-5xl text-gray-800">Collaborations</h2>
+
+      <p class="text-xl leading-relaxed text-slate-500">
+        To support diversity, we had various collaborations with communities
+        from and outside Timisoara. Some of these communities include:
+      </p>
+
+      <ul class="list-disc px-8 text-lg leading-relaxed text-slate-500">
+        <li class="mt-2">
+          <strong>ngParty</strong>, the largest JavaScript meetup in Prague/CZ,
+          which closed in 2021;
+        </li>
+        <li class="mt-2">
+          <strong>JSConfBP</strong>, a JavaScript conference from Budapest,
+          where we connected with the ngParty organizers;
+        </li>
+        <li class="mt-2">
+          <strong>JSHeroes</strong>, the sister community from Cluj, which
+          organize monthly meetups and an annual conference with the same name;
+        </li>
+        <li class="mt-2">
+          <strong>Tabara de Testare Timisoara</strong>, an older local meetup,
+          focused on testing practices, closed in 2022;
+        </li>
+        <li class="mt-2">
+          <strong>UI/UX Timisoara</strong> the local web design meetup.
+        </li>
+      </ul>
+    </section>
+
+    <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-5xl text-gray-800">Event Posters</h2>
+
+      <p class="text-xl leading-relaxed text-slate-500">
+        There was a time when we had time to create and print posters for each
+        meetup edition. Most posters included a custom graphic, to visually
+        describe the topics of the edition.
+      </p>
+
+      <br />
+
+      <div
+        class="grid grid-cols-4 md:grid-cols-8 gap-3 mx-auto max-w-screen-xl">
+        {
+          posters.map((poster) => (
+            <div class="w-full">
+              <Picture
+                src={poster.image}
+                alt={`Poster for ${poster.edition}`}
+                sizes="(max-width: 800px) 100vw, 800px"
+                width={1200}
+                height={500}
+                class="w-full rounded object-cover object-center"
+              />
+            </div>
+          ))
+        }
+      </div>
+
+      <br />
+
+      <p class="text-xl leading-relaxed text-slate-500">
+        Thank you Lia Pfeiffer for designing them.
+      </p>
+    </section>
+
+    <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-5xl text-gray-800">Organizing team</h2>
+
+      <p class="text-xl leading-relaxed text-slate-500">
+        The organizers behind tim.js shifted many times during these {age} years.
+        Below is the change log of the organizing team:
+      </p>
+
+      <ul class="list-disc px-8 text-lg leading-relaxed text-slate-500">
+        <li class="mt-2">
+          19 Jun 2013 - Raul Ciotescu and Cassian Lup start the meetup;
+        </li>
+        <li class="mt-2">Early 2014 - Andrei Pfeiffer joins as organizer;</li>
+        <li class="mt-2">
+          Late 2014 - Andrei Pfeiffer becomes the community lead;
+        </li>
+        <li class="mt-2">
+          Early 2015 - Lucian Pacurar joins as organizer and Raul Ciotescu
+          leaves the team;
+        </li>
+        <li class="mt-2">
+          Mid 2021 - Anca Spatariu joins as organizer and Cassian Lup steps
+          down;
+        </li>
+        <li class="mt-2">
+          Jan 2024 - Anca Spatariu becomes the community lead and Adrian Faciu
+          joins as organizer.
+        </li>
+      </ul>
+
+      <br />
+
+      <p class="text-xl leading-relaxed text-slate-500">
+        The current team of organizers consist of <strong>Anca Spatariu</strong
+        >, <strong>Lucian Pacurar</strong>,
+        <strong>Adrian Faciu</strong>, and <strong>Andrei Pfeiffer</strong>.
+      </p>
+    </section>
+
+    <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-5xl text-gray-800">The current state</h2>
+
+      <p class="text-xl leading-relaxed text-slate-500">
+        At the time of writing, we have several recurring supporters that cover
+        the expenses for the events: <strong>Haufe</strong>, <strong
+          >Doctari</strong
+        >, <strong>Opswat</strong>, <strong>rankingCoach</strong>, and <strong
+          >3 Pillar Global</strong
+        >. Our meetups usually take place in the offices of one of these
+        companies. It's needless to say that we appreciate all the support from
+        the local companies and we thank them their involvement in the local
+        JavaScript community.
+      </p>
+
+      <br />
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-3 gap-5 mx-auto max-w-screen-xl">
+        <div class="w-full">
+          <Picture
+            src={img_doctari}
+            alt="Photo from one of the meetups at Doctari"
+            sizes="(max-width: 800px) 100vw, 800px"
+            width={1200}
+            height={500}
+            class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+          />
+        </div>
+        <div class="w-full">
+          <Picture
+            src={img_haufe}
+            alt="Photo from one of the meetups at Haufe"
+            sizes="(max-width: 800px) 100vw, 800px"
+            width={1200}
+            height={500}
+            class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+          />
+        </div>
+        <div class="w-full">
+          <Picture
+            src={img_opswat}
+            alt="Photo from one of the meetups at Opswat"
+            sizes="(max-width: 800px) 100vw, 800px"
+            width={1200}
+            height={500}
+            class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+          />
+        </div>
+        <div class="w-full">
+          <Picture
+            src={img_3pg_new}
+            alt="Photo from one of the meetups at 3 Pillar Global"
+            sizes="(max-width: 800px) 100vw, 800px"
+            width={1200}
+            height={500}
+            class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+          />
+        </div>
+        <div class="w-full">
+          <Picture
+            src={img_rankingcoach}
+            alt="Photo from one of the meetups at rankingCoach"
+            sizes="(max-width: 800px) 100vw, 800px"
+            width={1200}
+            height={500}
+            class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+          />
+        </div>
+      </div>
+
+      <br />
+
+      <p class="text-xl leading-relaxed text-slate-500">
+        We're always looking for speakers. Therefore, if there's a topic that
+        excites you and it has something to do with JavaScript, please <a
+          href={SUBMIT_TALK_URL}
+          class="underline text-blue-500"
+          target="_blank">
+          submit your talk</a
+        > and share it at tim.js meetups.
+      </p>
+      <br />
+      <p class="text-xl leading-relaxed text-slate-500">
+        Last, but not least, we'd like to give a special shoutout to all our
+        members, old and new, beginners and experts. Thank you for joining us
+        for such a long time. Thank you for bringing your friends. Thank you for
+        sharing your knowledge as speakers. Thank you for supporting the
+        JavaScript community and for being a part of it. Don't forget that
+        you're the reason we've endured for so long.
+      </p>
+
+      <br />
+      <p class="text-sm text-slate-500">
+        <em>Written by Andrei Pfeiffer, last updated on Dec 2024.</em>
+      </p>
+    </section>
+  </Container>
+</Layout>
