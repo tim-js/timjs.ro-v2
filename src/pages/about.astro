@@ -12,7 +12,12 @@ const organizers = await getCollection("team");
   <Container>
     <Sectionhead>
       <Fragment slot="title">About tim.js</Fragment>
-      <Fragment slot="desc">Meetup, Community, NGO</Fragment>
+      <Fragment slot="desc"
+        ><a href="/about/" class="underline text-blue-500"
+          ><strong>Overview</strong></a
+        > | <a href="/history/" class="underline text-blue-500">History</a
+        ></Fragment
+      >
     </Sectionhead>
 
     <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">

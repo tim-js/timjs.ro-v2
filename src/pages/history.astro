@@ -16,13 +16,19 @@ const age = new Date().getFullYear() - 2013;
 <Layout title="History">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">History</Fragment>
+      <Fragment slot="title">About tim.js</Fragment>
       <Fragment slot="desc"
-        >A brief look into the past, last updated on Dec 2024</Fragment
+        ><a href="/about/" class="underline text-blue-500">Overview</a> | <a
+          href="/history/"
+          class="underline text-blue-500"><strong>History</strong></a
+        ></Fragment
       >
     </Sectionhead>
 
     <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+      <p class="text-sm text-slate-500"><em>Last update on Dec 2024</em></p>
+      <br />
+
       <h2 class="font-bold text-5xl text-gray-800">The beginnings</h2>
 
       <p class="text-xl leading-relaxed text-slate-500">
