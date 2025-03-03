@@ -118,3 +118,25 @@ export async function getEvent(id: string) {
   const { data } = await response.json();
   return data.event;
 }
+
+export async function getEventPhotos(eventId: string) {
+  const url = `https://api.meetup.com/${COMMUNITY_URLNAME}/events/${eventId}/photos`;
+  const response = await fetch(url, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+
+  if (!response.ok) {
+    console.error(response.statusText);
+    return [];
+  }
+
+  const photos = await response.json();
+  if (!photos.length) {
+    console.log("No gallery photos found");
+    return [];
+  }
+  return photos;
+}
