@@ -1,5 +1,10 @@
 ---
-import { getEvent, getPastEvents, getUpcomingEvents } from "@utils/meetup";
+import {
+  getEvent,
+  getEventPhotos,
+  getPastEvents,
+  getUpcomingEvents,
+} from "@utils/meetup";
 import { getYouTubeVideos } from "@utils/youtube";
 import { marked } from "marked";
 import Layout from "../../../layouts/Layout.astro";
@@ -26,6 +31,9 @@ const { event, type } = Astro.params;
 const meetup = await getEvent(event);
 
 const videos = await getYouTubeVideos();
+
+const photos = await getEventPhotos(event);
+
 const relatedVideos = videos.filter((video) =>
   video.title.includes(meetup.title.replace("#", ""))
 );
@@ -73,6 +81,6 @@ const relatedVideos = videos.filter((video) =>
         </section>
       )
     }
-    <EventPhotos {event} />
+    <EventPhotos {photos} />
   </Container>
 </Layout>

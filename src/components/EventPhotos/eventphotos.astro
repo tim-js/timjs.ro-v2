@@ -1,9 +1,7 @@
 ---
-import { getEventPhotos } from "@utils/meetup";
 import PreviewPhotosDialog from "./previewphotosdialog.astro";
 
-const { event } = Astro.props;
-const photos = await getEventPhotos(event);
+const { photos } = Astro.props;
 ---
 
 {
