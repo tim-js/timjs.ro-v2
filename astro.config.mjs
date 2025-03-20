@@ -8,4 +8,10 @@ export default defineConfig({
   site: "https://www.timjs.ro",
   integrations: [tailwind(), mdx(), sitemap()],
   trailingSlash: "always",
+  redirects: {
+    "/meetup-feedback/": {
+      status: 302,
+      destination: "https://yzunr6agkag.typeform.com/to/JIlbTi93",
+    },
+  },
 });
