@@ -3,6 +3,7 @@ export type EventType = {
   title: string;
   dateTime: string;
   eventUrl: string;
+  shortDescription?: string;
   description: string;
   imageUrl: string;
 };

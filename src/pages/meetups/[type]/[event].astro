@@ -10,6 +10,8 @@ import { marked } from "marked";
 import Layout from "../../../layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
+import DOMPurify from "dompurify";
+import { JSDOM } from "jsdom";
 import EventPhotos from "@components/EventPhotos/eventphotos.astro";
 
 export async function getStaticPaths() {
@@ -37,6 +39,9 @@ const photos = await getEventPhotos(event);
 const relatedVideos = videos.filter((video) =>
   video.title.includes(meetup.title.replace("#", ""))
 );
+
+const window = new JSDOM("").window;
+const purify = DOMPurify(window);
 ---
 
 <Layout title="Meetup">
@@ -44,7 +49,7 @@ const relatedVideos = videos.filter((video) =>
     <Sectionhead>
       <Fragment slot="title">{meetup.title}</Fragment>
       <Fragment slot="desc">
-        {new Date(meetup.dateTime).toLocaleDateString()}</Fragment
+        {new Date(meetup.dateTime).toLocaleDateString("en-GB")}</Fragment
       >
     </Sectionhead>
 
@@ -52,7 +57,9 @@ const relatedVideos = videos.filter((video) =>
       <h2 class="font-bold text-5xl text-gray-800">Description</h2>
       <div
         class="text-xl leading-relaxed text-slate-500"
-        set:html={marked.parse(meetup.description)}
+        set:html={purify.sanitize(
+          marked.parse(meetup.description.replaceAll("\n", "<br />"))
+        )}
       />
       <br />
       <a href={meetup.eventUrl} target="_blank" class="text-blue-500">

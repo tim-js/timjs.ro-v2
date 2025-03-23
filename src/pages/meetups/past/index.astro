@@ -1,0 +1,64 @@
+---
+import { marked } from "marked";
+import DOMPurify from "dompurify";
+import { JSDOM } from "jsdom";
+
+import Container from "@components/container.astro";
+import Layout from "../../../layouts/Layout.astro";
+import { getPastEvents } from "@utils/meetup";
+import Sectionhead from "@components/sectionhead.astro";
+
+const events = (await getPastEvents()).reverse();
+
+const window = new JSDOM("").window;
+const purify = DOMPurify(window);
+---
+
+<Layout title="Past meetups">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Meetups</Fragment>
+      <Fragment slot="desc">All the past meetups</Fragment>
+    </Sectionhead>
+
+    <section class="container mx-auto px-4">
+      <ul class="mt-8 grid grid-cols-1 gap-6">
+        {
+          events.map((event) => (
+            <li key={event.id} class="bg-gray-100 shadow-md rounded-lg p-4">
+              <a href={`/meetups/past/${event.id}/`} class="flex flex-col">
+                <h2 class="text-lg font-bold text-gray-800 mb-2 md:text-xl">
+                  {event.title}
+                </h2>
+                <div class="flex flex-col md:flex-row items-start mt-2">
+                  {event.imageUrl && (
+                    <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-4">
+                      <img
+                        src={event.imageUrl}
+                        alt={event.title}
+                        class="w-full h-auto object-cover rounded-lg"
+                      />
+                    </div>
+                  )}
+                  <div class="flex-1">
+                    <p class="text-sm text-gray-500">
+                      {new Date(event.dateTime).toLocaleDateString("en-GB")}
+                    </p>
+                    <div
+                      class="mt-2 text-lg leading-relaxed text-slate-500"
+                      set:html={purify.sanitize(
+                        marked.parse(
+                          event.shortDescription?.replaceAll("\n", "<br />")
+                        )
+                      )}
+                    />
+                  </div>
+                </div>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </Container>
+</Layout>
