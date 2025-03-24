@@ -1,18 +1,29 @@
 ---
 import PreviewPhotosDialog from "./previewphotosdialog.astro";
 
-const { photos } = Astro.props;
+type PhotoAlbum = {id: string, title: string, photoCount: number, photoSample: PhotoSample[]}
+type PhotoSample = {id: string, baseUrl: string};
+
+const { photoAlbum } = Astro.props as { photoAlbum?: PhotoAlbum };
+
+
+const photos = photoAlbum?.photoSample?.map((photo) => ({
+  lowres_link: `${photo.baseUrl}${photo.id}/676x380.webp`,
+  highres_link: `${photo.baseUrl}${photo.id}/highres`,
+  id: photo.id,
+}));
+
 ---
 
 {
-  photos.length && (
+  !!photos?.length && (
     <section
       class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
       <h2 class="font-bold text-5xl text-gray-800">Photos</h2>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        {photos.map(({ photo_link, highres_link, id }) => (
+        {photos.map(({ lowres_link, highres_link, id }) => (
           <img
-            src={photo_link}
+            src={lowres_link}
             alt="meetup photo"
             data-photo={highres_link}
             class="w-full h-auto rounded aspect-[4/3] object-cover cursor-pointer"

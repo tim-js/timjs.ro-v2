@@ -16,6 +16,15 @@ const pastEventsQuery = `
             eventUrl
             description
             imageUrl
+            photoAlbum {
+            id
+            title
+            photoCount
+            photoSample(amount: 10) { 
+              id
+              baseUrl
+              }
+          }
           }
         }
       }
@@ -33,7 +42,16 @@ const upcomingEventsQuery = `query($urlname: String!) {
             dateTime
             eventUrl
             description
-            imageUrl
+            imageUrl          
+            photoAlbum {
+            id
+            title
+            photoCount
+            photoSample(amount: 10) { 
+              id
+              baseUrl
+            }
+          }
           }
         }
       }
@@ -47,10 +65,18 @@ const eventQuery = `
       description
       dateTime
       eventUrl
+       photoAlbum {
+            id
+            title
+            photoCount
+            photoSample(amount: 50) { 
+              id
+              baseUrl
+            }
+          }
     }
   }
 `;
-
 const isMeetupEvent = (event) => event.title.toLowerCase().includes("meetup");
 
 export async function getEvents(query: string) {
@@ -70,6 +96,7 @@ export async function getEvents(query: string) {
   }
   try {
     const result = await response.json();
+
     return result.data;
   } catch (e) {
     console.error(e);
@@ -82,7 +109,8 @@ function addShortDescription(event: EventType): EventType {
 
   return {
     ...event,
-    shortDescription: pastEvent?.shortDescription || event.description.split("***")?.[0] || "",
+    shortDescription:
+      pastEvent?.shortDescription || event.description.split("***")?.[0] || "",
   };
 }
 
@@ -129,24 +157,42 @@ export async function getEvent(id: string) {
   return data.event;
 }
 
-export async function getEventPhotos(eventId: string) {
-  const url = `https://api.meetup.com/${COMMUNITY_URLNAME}/events/${eventId}/photos`;
-  const response = await fetch(url, {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
+// export async function getEventPhotos(eventId: string) {
+//   // const url = `https://api.meetup.com/${COMMUNITY_URLNAME}/events/${eventId}/photos`;
+//   // const response = await fetch(url, {
+//   //   method: "GET",
+//   //   headers: {
+//   //     "Content-Type": "application/json",
+//   //     Accept: "application/json",
+//   //   },
+//   // });
 
-  if (!response.ok) {
-    console.error(response.statusText);
-    return [];
-  }
+//   const response = await fetch(MEETUP_ENDPOINT, {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify({
+//       query: photosQuery,
+//       variables: { eventId },
+//     }),
+//   });
 
-  const photos = await response.json();
-  if (!photos.length) {
-    console.log("No gallery photos found");
-    return [];
-  }
-  return photos;
-}
+//   if (!response.ok) {
+//     const errorText = await response.text();
+//     console.error(
+//       "Error fetching event photos:",
+//       response.status,
+//       response.statusText,
+//       errorText
+//     );
+//     return [];
+//   }
+
+//   const photos = await response.json();
+//   if (!photos.length) {
+//     console.log("No gallery photos found");
+//     return [];
+//   }
+//   return photos;
+// }

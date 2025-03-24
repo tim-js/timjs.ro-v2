@@ -1,10 +1,6 @@
 ---
-import {
-  getEvent,
-  getEventPhotos,
-  getPastEvents,
-  getUpcomingEvents,
-} from "@utils/meetup";
+import { getEvent, getPastEvents, getUpcomingEvents } from "@utils/meetup";
+import Eventphotos from "@components/EventPhotos/eventphotos.astro";
 import { getYouTubeVideos } from "@utils/youtube";
 import { marked } from "marked";
 import Layout from "../../../layouts/Layout.astro";
@@ -12,7 +8,6 @@ import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import DOMPurify from "dompurify";
 import { JSDOM } from "jsdom";
-import EventPhotos from "@components/EventPhotos/eventphotos.astro";
 
 export async function getStaticPaths() {
   const upcomingEvents = await getUpcomingEvents();
@@ -30,11 +25,9 @@ export async function getStaticPaths() {
 }
 
 const { event, type } = Astro.params;
-const meetup = await getEvent(event);
+const { photoAlbum, ...meetup } = await getEvent(event);
 
 const videos = await getYouTubeVideos();
-
-const photos = await getEventPhotos(event);
 
 const relatedVideos = videos.filter((video) =>
   video.title.includes(meetup.title.replace("#", ""))
@@ -88,6 +81,6 @@ const purify = DOMPurify(window);
         </section>
       )
     }
-    <EventPhotos {photos} />
+    <Eventphotos {photoAlbum} />
   </Container>
 </Layout>

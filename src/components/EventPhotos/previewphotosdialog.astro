@@ -1,25 +1,35 @@
+<style>
+  body.dialog-open {
+    overflow: hidden;
+  }
+</style>
+
 <dialog
   id="photo-dialog"
-  class="bg-transparent backdrop:bg-black backdrop:bg-opacity-75 rounded-lg min-w-xl max-w-4xl w-full p-4">
-  <div class="relative">
+  class="transition-opacity w-screen h-screen max-w-full max-h-full">
+  <div class="relative flex justify-center h-full overflow-hidden">
     <img
       id="dialog-photo"
       alt="Large event photo"
-      class="w-full h-auto rounded-lg max-h-[80vh] object-cover"
+      class="w-auto h-full max-h-full z-10 object-contain"
+    />
+    <img
+      id="dialog-photo-blurred"
+      class="w-screen h-screen max-w-full max-h-full blur-2xl scale-125 absolute object-cover"
     />
     <button
       id="close-button"
-      class="absolute top-2 right-2 text-white bg-gray-800 rounded-full w-8 h-8 md:w-12 md:h-12 transition-all bg-opacity-50 hover:bg-opacity-100">
+      class="absolute z-20 top-2 right-4 text-white bg-gray-800 rounded-full w-8 h-8 md:w-12 md:h-12 transition-all bg-opacity-50 hover:bg-opacity-100">
       ✕
     </button>
     <button
       id="arrow-prev"
-      class="absolute top-1/2 left-2 text-white bg-gray-800 bg-opacity-50 hover:bg-opacity-100 transition-all -translate-y-1/2 rounded-full w-8 h-8 md:w-12 md:h-12 text-lg">
+      class="absolute z-20 top-1/2 left-4 text-white bg-gray-800 bg-opacity-50 hover:bg-opacity-100 transition-all -translate-y-1/2 rounded-full w-8 h-8 md:w-12 md:h-12 text-lg">
       {"<"}
     </button>
     <button
       id="arrow-next"
-      class="absolute right-2 top-1/2 text-white bg-gray-800 bg-opacity-50 hover:bg-opacity-100 transition-all -translate-y-1/2 rounded-full w-8 h-8 md:w-12 md:h-12 text-lg">
+      class="absolute z-20 right-4 top-1/2 text-white bg-gray-800 bg-opacity-50 hover:bg-opacity-100 transition-all -translate-y-1/2 rounded-full w-8 h-8 md:w-12 md:h-12 text-lg">
       {">"}
     </button>
   </div>
@@ -33,53 +43,57 @@
   const closeButton = document.getElementById(
     "close-button"
   ) as HTMLButtonElement;
+  const blurredBackgroundPhoto = document.getElementById(
+    "dialog-photo-blurred"
+  ) as HTMLImageElement;
   const rightArrow = document.getElementById("arrow-next") as HTMLButtonElement;
   const leftArrow = document.getElementById("arrow-prev") as HTMLButtonElement;
-
   const photoElements = document.querySelectorAll(
     "[data-photo]"
   ) as NodeListOf<HTMLImageElement>;
 
-  const photoUrls = Array.from(photoElements).map(
+  const highResUrls = Array.from(photoElements).map(
     (photoElement) => photoElement.getAttribute("data-photo") || ""
   );
-
-  if (photoUrls.length < 2) {
-    rightArrow.style.display = "none";
-    leftArrow.style.display = "none";
-  }
 
   let currentIndex = 0;
 
   function updatePhoto(index) {
-    currentIndex = (index + photoUrls.length) % photoUrls.length;
-    dialogPhoto.src = photoUrls[currentIndex];
+    currentIndex = (index + highResUrls.length) % highResUrls.length;
+
+    dialogPhoto.src = highResUrls[currentIndex];
   }
 
   photoElements.forEach((photoElement, index) => {
     photoElement.addEventListener("click", () => {
-      dialogPhoto.src = photoElement.getAttribute("data-photo") || "";
-      dialogPhoto.addEventListener(
-        "load",
-        () => {
-          dialog.showModal();
-          currentIndex = index;
-        },
-        { once: true }
-      );
+      dialog.showModal();
+      document.body.classList.add("dialog-open");
+      currentIndex = index;
+      updatePhoto(index);
     });
+  });
+
+  if (highResUrls.length < 2) {
+    rightArrow.style.display = "none";
+    leftArrow.style.display = "none";
+  }
+
+  dialogPhoto.addEventListener("load", () => {
+    blurredBackgroundPhoto.src = dialogPhoto.src;
   });
 
   closeButton.addEventListener("click", () => {
     dialog.close();
     dialogPhoto.src = "";
+    blurredBackgroundPhoto.src = "";
+    document.body.classList.remove("dialog-open");
   });
 
-  dialog.addEventListener("click", (e) => {
-    if (e.target === dialog) {
-      dialog.close();
-      dialogPhoto.src = "";
-    }
+  blurredBackgroundPhoto.addEventListener("click", (e) => {
+    dialog.close();
+    dialogPhoto.src = "";
+    blurredBackgroundPhoto.src = "";
+    document.body.classList.remove("dialog-open");
   });
 
   dialog.addEventListener("keydown", (e) => {
