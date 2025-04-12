@@ -3,7 +3,7 @@ import Contactform from "@components/contactform.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 ---
 
 <Layout title="Contact">
@@ -26,7 +26,7 @@ import { Icon } from "astro-icon";
               class="grid gap-x-2 gap-y-4 space-x-2 items-center text-gray-600"
               style="grid-template-columns: auto 1fr;">
               <Icon
-                class="text-gray-400 w-12 justify-self-center"
+                class="text-gray-400 w-12 h-12 justify-self-center"
                 name="simple-icons:meetup"
                 style="margin: 0"
               />
@@ -37,7 +37,7 @@ import { Icon } from "astro-icon";
                 > to get notified of our monthly meetings.</span
               >
               <Icon
-                class="text-gray-400 w-10 justify-self-center"
+                class="text-gray-400 w-10 h-10 justify-self-center"
                 name="simple-icons:discord"
                 style="margin: 0"
               />
@@ -48,18 +48,18 @@ import { Icon } from "astro-icon";
                 > to get in touch directly or ask questions.</span
               >
               <Icon
-                class="text-gray-400 w-10 justify-self-center"
-                name="simple-icons:twitter"
+                class="text-gray-400 w-10 h-10 justify-self-center"
+                name="simple-icons:bluesky"
                 style="margin: 0"
               />
               <span
                 >Follow us on <a
                   class="underline text-blue-500"
-                  href="https://twitter.com/timjscommunity">Twitter/X</a
+                  href="https://bsky.app/profile/timjs.ro">Bluesky</a
                 > for updates and announcements.</span
               >
               <Icon
-                class="text-gray-400 w-10 justify-self-center"
+                class="text-gray-400 w-10 h-10 justify-self-center"
                 name="simple-icons:youtube"
                 style="margin: 0"
               />
