@@ -12,7 +12,7 @@ export default defineConfig({
   redirects: {
     "/meetup-feedback/": {
       status: 302,
-      destination: "https://yzunr6agkag.typeform.com/to/rNrtUjMF",
+      destination: "https://tally.so/r/m69aJA",
     },
   },
 });
