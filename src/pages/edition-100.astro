@@ -1,0 +1,99 @@
+---
+import Container from "@components/container.astro";
+import Layout from "@layouts/Layout.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Speaker from "@components/ui/speaker.astro";
+
+const speakers = [
+  {
+    name: "Benedek Gagyi",
+    img: "https://placehold.co/400",
+    title: "Ninja dev",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.",
+  },
+  {
+    name: "Martin Hochel",
+    img: "https://placehold.co/400",
+    title: "Ninja dev",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.",
+  },
+  {
+    name: "Alex Moldovan",
+    img: "https://ca.slack-edge.com/TABTK64CR-UACE70A3U-90dbb4958621-512",
+    title: "Ninja dev",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.",
+  },
+  {
+    name: "Radu Marinescu",
+    img: "https://media.licdn.com/dms/image/v2/C4D03AQFMfTvWIP7Ngw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516306768854?e=1755734400&v=beta&t=B9_-2zKyyGgD2FkRAr3JDqJVqtkWjcVTmzVBTVaBPUE",
+    title: "Ninja dev",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.",
+  },
+];
+---
+
+<Layout title="Edition 100">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">100th Meetup Anniversary</Fragment>
+      <Fragment slot="desc">
+        <div>
+          <span>25 Sept. 2025</span> |
+          <span>Cowork Timișoara</span>
+        </div>
+      </Fragment>
+    </Sectionhead>
+    <nav
+      class="sticky top-0 mx-auto max-w-4xl bg-white z-50 flex flex-row justify-center">
+      <a href="#speakers" class="text-lg m-3">Speakers</a>
+      <a href="#agenda" class="text-lg m-3">Agenda</a>
+      <a href="#tickets" class="text-lg m-3">Tickets</a>
+      <a href="#organizers" class="text-lg m-3">Organizers</a>
+    </nav>
+    <section id="speakers" class="flex flex-col gap-4 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-4xl text-gray-800 mb-4">Speakers</h2>
+      {
+        speakers.map((speaker) => (
+          <Speaker
+            img={speaker.img}
+            name={speaker.name}
+            title={speaker.title}
+            description={speaker.description}
+          />
+        ))
+      }
+    </section>
+    <section id="agenda" class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-4xl text-gray-800 mb-4">Agenda</h2>
+      <ul>
+        <li>16:00 - Presentation 1</li>
+        <li>16:30 - Presentation 2</li>
+        <li>17:00 - Presentation 3</li>
+        <li>17:30 - Presentation 4</li>
+      </ul>
+    </section>
+    <section id="tickets" class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-4xl text-gray-800 mb-4">Tickets</h2>
+      <p>
+        There are 2 categories of tickets: Standard (with a t-shirt included)
+        and Premium (with a t-shirt and hoodie included)
+      </p>
+      <p>All tickets include snacks and drinks</p>
+      <p>
+        NOTE: Tickets with included swag must be purchased before 29 August
+        2025. Any tickets purchased after this date will not include the t-shirt
+        or the hoodie, and will only provide access to the event.
+      </p>
+    </section>
+    <section
+      id="organizers"
+      class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-4xl text-gray-800 mb-4">Organizers</h2>
+      <p>tim.js in partnership with BanatIT</p>
+    </section>
+  </Container>
+</Layout>
