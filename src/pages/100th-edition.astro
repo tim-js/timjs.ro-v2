@@ -1,0 +1,81 @@
+---
+import Container from "@components/container.astro";
+import Layout from "@layouts/Layout.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Speaker from "@components/ui/speaker.astro";
+import { getCollection } from "astro:content";
+
+const speakers = await getCollection("speakers");
+---
+
+<Layout title="Edition 100">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">100th Meetup Anniversary</Fragment>
+      <Fragment slot="desc">
+        <div>
+          <span>25 Sept. 2025</span> |
+          <span>Cowork Timișoara</span>
+        </div>
+      </Fragment>
+    </Sectionhead>
+    <nav
+      class="sticky top-0 mt-8 mx-auto max-w-4xl bg-white z-50 flex flex-row justify-center">
+      <a href="#speakers" class="text-lg font-medium m-3 text-brand-blue"
+        >Speakers</a
+      >
+      <a href="#agenda" class="text-lg font-medium m-3 text-brand-blue"
+        >Agenda</a
+      >
+      <a href="#tickets" class="text-lg font-medium m-3 text-brand-blue"
+        >Tickets</a
+      >
+      <a href="#organizers" class="text-lg font-medium m-3 text-brand-blue"
+        >Organizers</a
+      >
+    </nav>
+    <section id="speakers" class="flex flex-col gap-4 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-4xl text-gray-800 mb-4">Speakers</h2>
+      <div
+        class="grid grid-cols-1 grid-rows-1 sm:grid-cols-2 sm:grid-rows-2 gap-5">
+        {
+          speakers.map((speaker) => (
+            <Speaker
+              img={speaker.data.avatar.src}
+              name={speaker.data.name}
+              title={speaker.data.title}
+            />
+          ))
+        }
+      </div>
+    </section>
+    <section id="agenda" class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-4xl text-gray-800 mb-4">Agenda</h2>
+      <ul>
+        <li>16:00 - Presentation 1</li>
+        <li>16:30 - Presentation 2</li>
+        <li>17:00 - Presentation 3</li>
+        <li>17:30 - Presentation 4</li>
+      </ul>
+    </section>
+    <section id="tickets" class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-4xl text-gray-800 mb-4">Tickets</h2>
+      <p>
+        There are 2 categories of tickets: Standard (with a t-shirt included)
+        and Premium (with a t-shirt and hoodie included)
+      </p>
+      <p>All tickets include snacks and drinks</p>
+      <p>
+        NOTE: Tickets with included swag must be purchased before 29 August
+        2025. Any tickets purchased after this date will not include the t-shirt
+        or the hoodie, and will only provide access to the event.
+      </p>
+    </section>
+    <section
+      id="organizers"
+      class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-4xl text-gray-800 mb-4">Organizers</h2>
+      <p>tim.js in partnership with BanatIT</p>
+    </section>
+  </Container>
+</Layout>
