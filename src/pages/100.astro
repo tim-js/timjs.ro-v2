@@ -7,6 +7,7 @@ import { getCollection } from "astro:content";
 import Button from "@components/ui/button.astro";
 import { BitLogo, TimJsLogo } from "@components/ui/icons";
 import banner1 from "@assets/100/banner-1.svg";
+import AgendaItem from "@components/agenda-item.astro";
 const speakers = await getCollection("speakers");
 ---
 
@@ -86,10 +87,34 @@ const speakers = await getCollection("speakers");
     <section id="agenda" class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
       <h2 class="font-bold text-4xl text-gray-800 mb-4">Agenda</h2>
       <ul>
-        <li>16:00 - Presentation 1</li>
-        <li>16:30 - Presentation 2</li>
-        <li>17:00 - Presentation 3</li>
-        <li>17:30 - Presentation 4</li>
+        <AgendaItem time="15:00 – 15:30" title="Registration" />
+        <AgendaItem time="15:45 – 16:00" title="Welcome" />
+        <AgendaItem
+          time="16:00 – 16:30"
+          name="Benedek Gagyi"
+          title="Some presentation title"
+          description="test"
+        />
+        <AgendaItem
+          time="16:45 – 17:15"
+          name="Martin Hochel"
+          title="Presentation title"
+          description="test"
+        />
+        <AgendaItem title="Break" time="17:15 – 18:00" />
+        <AgendaItem
+          time="18:00 – 18:30"
+          name="Alex Moldovan"
+          title="Presentation title"
+          description="test"
+        />
+        <AgendaItem
+          time="18:45 – 19:15"
+          name="Radu Marinescu"
+          title="Presentation title"
+          description="test"
+        />
+        <AgendaItem title="Networking" time="19:15 – 21:00" />
       </ul>
     </section>
     <section id="tickets" class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
