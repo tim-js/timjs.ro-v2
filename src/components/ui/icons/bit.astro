@@ -1,14 +1,15 @@
 ---
 interface Props {
   width?: number | string;
-  classList?: string;
+  className?: string;
 }
-const { width, classList } = Astro.props;
+
+const { width, className } = Astro.props;
 ---
 
 <!--?xml version="1.0" encoding="utf-8"?--><!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg
-  class="inline-block"
+  class={className}
   width={width ?? 120}
   version="1.1"
   id="a"
