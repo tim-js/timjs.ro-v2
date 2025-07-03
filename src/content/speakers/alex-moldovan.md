@@ -1,6 +1,6 @@
 ---
 name: "Alex Moldovan"
-title: "Principal Engineer"
+title: "Product Engineer @ together.ai"
 avatar: {
     src: "@assets/100/alex.jpeg",
     alt: "Alex Moldovan"

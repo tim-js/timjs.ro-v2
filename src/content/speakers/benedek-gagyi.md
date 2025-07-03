@@ -1,6 +1,6 @@
 ---
 name: "Benedek Gagyi"
-title: "Principal Engineer"
+title: "Staff Software Engineer at Shopify"
 avatar: {
     src: "@assets/100/ben.jpeg",
     alt: "Benedek Gagyi"

@@ -1,6 +1,6 @@
 ---
 name: "Radu Marinescu"
-title: "Principal Engineer"
+title: "Head of Software Analytics @ Endava"
 avatar: {
     src: "@assets/100/radu.jpeg",
     alt: "Radu Marinescu"

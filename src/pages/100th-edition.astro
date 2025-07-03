@@ -4,6 +4,7 @@ import Layout from "@layouts/Layout.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Speaker from "@components/ui/speaker.astro";
 import { getCollection } from "astro:content";
+import Button from "@components/ui/button.astro";
 
 const speakers = await getCollection("speakers");
 ---
@@ -34,6 +35,23 @@ const speakers = await getCollection("speakers");
         >Organizers</a
       >
     </nav>
+    <section class="mx-auto max-w-4xl mt-16">
+      <p class="text-gray-800">
+        This September of 2025, we're celebrating our 100th meetup with a truly
+        special event! We'll have 4 speakers that will analize the evolution of
+        web development during all these years, while looking forward to the
+        next years to come. It's worth mentioning that all the speakers have a
+        deep connection with our community, so its a great honour to have them
+        during this anniversary meetup.
+      </p>
+    </section>
+    <section class="mx-auto max-w-4xl mt-16 text-center">
+      <a href="#">
+        <Button size="sm" class="bg-brand hover:bg-yellow-400">
+          <span class="text-gray-800 text-lg">Get your ticket!</span>
+        </Button>
+      </a>
+    </section>
     <section id="speakers" class="flex flex-col gap-4 mx-auto max-w-4xl mt-16">
       <h2 class="font-bold text-4xl text-gray-800 mb-4">Speakers</h2>
       <div
@@ -69,6 +87,13 @@ const speakers = await getCollection("speakers");
         NOTE: Tickets with included swag must be purchased before 29 August
         2025. Any tickets purchased after this date will not include the t-shirt
         or the hoodie, and will only provide access to the event.
+      </p>
+      <p class="text-center mt-2">
+        <a href="#">
+          <Button size="sm" class="bg-brand hover:bg-yellow-400">
+            <span class="text-gray-800 text-lg">Get your ticket!</span>
+          </Button>
+        </a>
       </p>
     </section>
     <section
