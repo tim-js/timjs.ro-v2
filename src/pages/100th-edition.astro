@@ -23,19 +23,22 @@ const speakers = await getCollection("speakers");
     </Sectionhead>
     <nav
       class="sticky top-0 mt-8 mx-auto max-w-4xl bg-white z-50 flex flex-row justify-center">
-      <a href="#speakers" class="text-lg font-medium m-3 text-brand-blue"
-        >Speakers</a
-      >
-      <a href="#agenda" class="text-lg font-medium m-3 text-brand-blue"
-        >Agenda</a
-      >
-      <a href="#tickets" class="text-lg font-medium m-3 text-brand-blue"
-        >Tickets</a
+      <a
+        href="#speakers"
+        class="text-sm sm:text-lg font-medium m-3 text-brand-blue">Speakers</a
       >
       <a
+        href="#agenda"
+        class="text-sm sm:text-lg font-medium m-3 text-brand-blue">Agenda</a
+      >
+      <a
+        href="#tickets"
+        class="text-sm sm:text-lg font-medium m-3 text-brand-blue">Tickets</a
+      >
+      <!-- hidden sm:block -->
+      <a
         href="#organizers"
-        class="text-lg font-medium m-3 text-brand-blue hidden sm:block"
-        >Organizers</a
+        class="text-sm sm:text-lg font-medium m-3 text-brand-blue">Organizers</a
       >
     </nav>
     <section class="mx-auto max-w-4xl mt-16">
