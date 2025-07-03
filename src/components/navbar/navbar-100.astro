@@ -34,7 +34,7 @@ const { pathname } = Astro.url;
 const isHomePage = pathname === "/";
 ---
 
-<Container class="relative z-10">
+<Container class="absolute w-full left-1/2 -translate-x-1/2 top-0 z-10">
   {
     isHomePage ? (
       <header class="flex flex-row items-center justify-center my-16">
