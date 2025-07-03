@@ -5,6 +5,7 @@ import Sectionhead from "@components/sectionhead.astro";
 import Speaker from "@components/ui/speaker.astro";
 import { getCollection } from "astro:content";
 import Button from "@components/ui/button.astro";
+import { BitLogo } from "@components/ui/icons";
 
 const speakers = await getCollection("speakers");
 ---
@@ -100,7 +101,13 @@ const speakers = await getCollection("speakers");
       id="organizers"
       class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
       <h2 class="font-bold text-4xl text-gray-800 mb-4">Organizers</h2>
-      <p>tim.js in partnership with BanatIT</p>
+      <p>
+        tim.js in partnership with <a
+          href="https://banatit.ro/"
+          target="_blank"
+          rel="noopener noreferrer"><BitLogo /></a
+        >
+      </p>
     </section>
   </Container>
 </Layout>

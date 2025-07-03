@@ -4,6 +4,7 @@
     "baseUrl": "src",
     "strictNullChecks": true,
     "types": ["astro/client"],
+    "jsx": "preserve",
     "paths": {
       "@lib/*": ["lib/*"],
       "@utils/*": ["utils/*"],
