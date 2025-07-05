@@ -4,12 +4,17 @@ interface Props {
   name?: string;
   title?: string;
   description?: string;
+  last?: boolean;
 }
 
-const { time, name, title, description } = Astro.props;
+const { time, name, title, description, last } = Astro.props;
 ---
 
-<li class="sm:flex sm:flex-row mb-6 border-b-brand border-b-2 pb-6">
+<li
+  class:list={[
+    "sm:flex sm:flex-row mb-6",
+    last ? "" : "border-b-brand border-b-2 pb-6",
+  ]}>
   {
     time && (
       <p class="mb-2 sm:mb-0 sm:flex-shrink-0 sm:whitespace-nowrap sm:mr-4 w-40 text-gray-800 text-xl font-mono">

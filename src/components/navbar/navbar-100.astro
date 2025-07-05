@@ -1,8 +1,7 @@
 ---
-import Container from "@components/container.astro";
+import Container from "@components/container-100.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 import { TimJsLogo } from "@components/ui/icons";
-import Button from "./../ui/button.astro";
 
 const menuItems = [
   {
@@ -28,74 +27,40 @@ const menuItems = [
   },
 ];
 
-const homeMenuItems = menuItems.filter((item) => item.title !== "Home");
-
 const { pathname } = Astro.url;
-const isHomePage = pathname === "/";
 ---
 
 <Container class="absolute w-full left-1/2 -translate-x-1/2 top-0 z-10">
-  {
-    isHomePage ? (
-      <header class="flex flex-row items-center justify-center my-16">
-        <Astronav>
-          <MenuItems class="flex justify-center w-full">
-            <ul class="flex flex-row gap-2">
-              {homeMenuItems.map((item) => (
-                <li class="flex flex-row items-center">
-                  {item.isSpecial ? (
-                    <a href={item.path}>
-                      <Button size="sm" class="bg-brand hover:bg-yellow-400">
-                        <span class="text-gray-800 text-md sm:text-lg">
-                          {item.title}
-                        </span>
-                      </Button>
-                    </a>
-                  ) : (
-                    <a
-                      href={item.path}
-                      class:list={[
-                        "block relative w-fit mx-3 md:mx-6 text-gray-800 text-md sm:text-lg after:block after:absolute after:h-[3px] after:bg-brand after:w-full after:scale-x-0 after:hover:scale-x-100 after:duration-300 after:origin-left",
-                        pathname === item.path && "after:scale-x-100 font-bold",
-                      ]}>
-                      <span>{item.title}</span>
-                    </a>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </MenuItems>
-        </Astronav>
-      </header>
-    ) : (
-      <header class="flex flex-col items-center justify-between my-5 lg:flex-row">
-        <Astronav>
-          <div class="flex items-center justify-between w-full lg:w-auto">
-            <a href="/">
-              <TimJsLogo width={90} />
-            </a>
-            <div class="block lg:hidden">
-              <MenuIcon class="w-4 h-4 text-gray-800" />
-            </div>
-          </div>
-          <MenuItems class="hidden w-full mt-3 lg:w-auto lg:flex lg:mt-0">
-            <ul class="flex flex-col gap-3 lg:flex-row">
-              {menuItems.map((item) => (
-                <li>
-                  <a
-                    href={item.path}
-                    class:list={[
-                      "block relative w-fit lg:mx-3 text-gray-600 after:block after:absolute after:h-[3px] after:bg-brand after:w-full after:scale-x-0 after:hover:scale-x-100 after:duration-300 after:origin-left",
-                      pathname === item.path && "after:scale-x-100 font-bold",
-                    ]}>
-                    <span>{item.title}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </MenuItems>
-        </Astronav>
-      </header>
-    )
-  }
+  <header
+    class="flex flex-col items-center justify-between mb-5 pt-5 lg:flex-row">
+    <Astronav>
+      <div class="flex items-center justify-between w-full lg:w-auto px-5">
+        <a href="/">
+          <TimJsLogo width={90} />
+        </a>
+        <div class="block lg:hidden">
+          <MenuIcon class="w-4 h-4 text-gray-800" />
+        </div>
+      </div>
+      <MenuItems
+        class="hidden w-full h-screen md:h-auto bottom-0 mt-3 px-6 py-3 lg:w-auto lg:flex lg:mt-0 bg-white sm:bg-transparent">
+        <ul class="flex flex-col gap-3 lg:flex-row">
+          {
+            menuItems.map((item) => (
+              <li>
+                <a
+                  href={item.path}
+                  class:list={[
+                    "block relative w-fit lg:mx-3 text-gray-600 after:block after:absolute after:h-[3px] after:bg-brand after:w-full after:scale-x-0 after:hover:scale-x-100 after:duration-300 after:origin-left",
+                    pathname === item.path && "after:scale-x-100 font-bold",
+                  ]}>
+                  <span>{item.title}</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </MenuItems>
+    </Astronav>
+  </header>
 </Container>
