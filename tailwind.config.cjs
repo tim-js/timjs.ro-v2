@@ -15,6 +15,7 @@ module.exports = {
       },
       colors: {
         brand: "#EFC418",
+        "brand-blue": "#1962B4",
       },
     },
   },

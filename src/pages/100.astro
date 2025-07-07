@@ -1,0 +1,177 @@
+---
+import Container from "@components/container.astro";
+import Layout from "@layouts/Layout-100.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Speaker from "@components/ui/speaker.astro";
+import { getCollection } from "astro:content";
+import Button from "@components/ui/button.astro";
+import { BitLogo, TimJsLogo } from "@components/ui/icons";
+import banner1 from "@assets/100/banner-1.svg";
+import coworkLogo from "@assets/100/cowork.svg";
+import AgendaItem from "@components/agenda-item.astro";
+import { Image } from "astro:assets";
+const speakers = await getCollection("speakers");
+---
+
+<Layout title="Edition 100">
+  <div
+    class="sm:h-screen w-full bg-slate-200 sm:flex sm:items-center bg-cover bg-center bg-no-repeat"
+    style={`background-image: url(${banner1.src});`}>
+    <Container class="h-full w-full flex flex-col justify-center">
+      <div class="flex flex-col mt-8 justify-center h-full">
+        <Sectionhead align="left">
+          <Fragment slot="title">100th Meetup Anniversary</Fragment>
+          <Fragment slot="desc">
+            <div class="flex flex-col sm:flex-row gap-2">
+              <div class="block sm:inline">25 Sept. 2025</div>
+              <div class="hidden sm:inline">|</div>
+              <div class="block sm:inline">
+                <a
+                  href="https://maps.app.goo.gl/SWpW4PHdL5dofNGw7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-brand-blue">Cowork Timișoara - The Office</a
+                >
+              </div>
+            </div>
+          </Fragment>
+        </Sectionhead>
+
+        <!-- <section class="max-w-4xl mt-16">
+          <a href="#">
+            <Button size="sm" class="bg-brand hover:bg-yellow-400">
+              <span class="text-gray-800 text-lg">Get your ticket!</span>
+            </Button>
+          </a>
+        </section> -->
+      </div>
+
+      <nav class="mx-auto max-w-4xl flex flex-row mb-8 mt-8 sm:mt-0">
+        <a
+          href="#speakers"
+          class="text-sm sm:text-lg font-medium m-3 text-brand-blue">Speakers</a
+        >
+        <a
+          href="#agenda"
+          class="text-sm sm:text-lg font-medium m-3 text-brand-blue">Agenda</a
+        >
+        <a
+          href="#tickets"
+          class="text-sm sm:text-lg font-medium m-3 text-brand-blue">Tickets</a
+        >
+        <!-- hidden sm:block -->
+        <a
+          href="#organizers"
+          class="text-sm sm:text-lg font-medium m-3 text-brand-blue"
+          >Organizers</a
+        >
+      </nav>
+    </Container>
+  </div>
+  <Container>
+    <section class="mx-auto max-w-4xl mt-16">
+      <p class="text-gray-800 mb-4">
+        <strong
+          >This September we're celebrating our 100th meetup with a truly
+          special event!</strong
+        > We'll have 4 speakers that will analyze how web development has evolved
+        over the years, while also looking forward at what lies ahead.
+      </p>
+      <p class="text-gray-800">
+        It's worth noting that all of our speakers have a deep connection with
+        our community, making it a great honour to have them speak at this
+        event.
+      </p>
+    </section>
+    <section id="speakers" class="flex flex-col gap-4 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-4xl text-gray-800 mb-4">Speakers</h2>
+      <div
+        class="grid grid-cols-1 grid-rows-1 sm:grid-cols-2 sm:grid-rows-2 gap-6">
+        {
+          speakers.map((speaker) => (
+            <Speaker
+              img={speaker.data.avatar.src}
+              name={speaker.data.name}
+              title={speaker.data.title}
+            />
+          ))
+        }
+      </div>
+    </section>
+    <section id="agenda" class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-4xl text-gray-800 mb-4">Agenda</h2>
+      <ul>
+        <AgendaItem time="15:00 – 15:30" title="Registration" />
+        <AgendaItem time="15:45 – 16:00" title="Welcome" />
+        <AgendaItem
+          time="16:00 – 16:30"
+          name="Benedek Gagyi"
+          title="Talk title TBA"
+        />
+        <AgendaItem
+          time="16:45 – 17:15"
+          name="Martin Hochel"
+          title="Talk title TBA"
+        />
+        <AgendaItem title="Break" time="17:15 – 18:00" />
+        <AgendaItem
+          time="18:00 – 18:30"
+          name="Alex Moldovan"
+          title="Talk title TBA"
+        />
+        <AgendaItem
+          time="18:45 – 19:15"
+          name="Radu Marinescu"
+          title="Talk title TBA"
+        />
+        <AgendaItem title="Networking" time="19:15 – 21:00" last />
+      </ul>
+    </section>
+    <section id="tickets" class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-4xl text-gray-800 mb-4">Tickets</h2>
+      <p>
+        There are two ticket categories: <strong>Standard</strong> (includes a t-shirt)
+        and <strong>Premium</strong> (includes a t-shirt and hoodie)
+      </p>
+      <p>All tickets include snacks and drinks.</p>
+      <p>
+        *Tickets that include swag must be purchased <strong
+          >before August 27, 2025</strong
+        >. Tickets purchased after this date will not include the t-shirt or the
+        hoodie, and will only provide access to the event.
+      </p>
+      <!-- <p class="text-center mt-2">
+        <a href="#">
+          <Button size="sm" class="bg-brand hover:bg-yellow-400">
+            <span class="text-gray-800 text-lg">Get your ticket!</span>
+          </Button>
+        </a>
+      </p> -->
+    </section>
+    <section id="organizers" class="mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-4xl text-gray-800 mb-8">Organizers</h2>
+      <div class="flex flex-col md:flex-row">
+        <p class="mb-6 md:mb-0">
+          <TimJsLogo width={80} className="inline-block mr-2" /> in partnership with
+          <a
+            href="https://banatit.ro/"
+            target="_blank"
+            rel="noopener noreferrer"><BitLogo className="inline-block" /></a
+          >
+        </p>
+        <p class="md:text-right flex-1">
+          Hosted by <a
+            href="https://coworktimisoara.com/ro/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><Image
+              class="inline-block ml-2"
+              src={coworkLogo}
+              alt="Co - work Logo"
+            /></a
+          >
+        </p>
+      </div>
+    </section>
+  </Container>
+</Layout>
