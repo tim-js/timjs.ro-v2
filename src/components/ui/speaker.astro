@@ -16,7 +16,7 @@ const { name, img, title } = Astro.props;
     <Image
       src={img}
       alt={name}
-      class="object-fill rounded-lg w-full min-w-[200px] min-h-[200px] transition-transform duration-300 ease-in-out filter-effect"
+      class="object-fill rounded-lg w-full min-w-[200px] min-h-[200px]"
       width={400}
       height={400}
     />
@@ -30,11 +30,6 @@ const { name, img, title } = Astro.props;
 <style>
   .image-container {
     clip-path: url(#squircle-clip);
-  }
-
-  .filter-effect {
-    filter: contrast(180%) saturate(250%) brightness(90%) grayscale(1);
-    mix-blend-mode: multiply;
   }
 </style>
 
