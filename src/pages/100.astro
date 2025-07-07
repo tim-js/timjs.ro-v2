@@ -7,7 +7,9 @@ import { getCollection } from "astro:content";
 import Button from "@components/ui/button.astro";
 import { BitLogo, TimJsLogo } from "@components/ui/icons";
 import banner1 from "@assets/100/banner-1.svg";
+import coworkLogo from "@assets/100/cowork.svg";
 import AgendaItem from "@components/agenda-item.astro";
+import { Image } from "astro:assets";
 const speakers = await getCollection("speakers");
 ---
 
@@ -146,16 +148,30 @@ const speakers = await getCollection("speakers");
         </a>
       </p>
     </section>
-    <section
-      id="organizers"
-      class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
-      <h2 class="font-bold text-4xl text-gray-800 mb-4">Organizers</h2>
-      <p>
-        <TimJsLogo width={80} className="inline-block mr-2" /> in partnership with
-        <a href="https://banatit.ro/" target="_blank" rel="noopener noreferrer"
-          ><BitLogo className="inline-block" /></a
-        >
-      </p>
+    <section id="organizers" class="mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-4xl text-gray-800 mb-8">Organizers</h2>
+      <div class="flex flex-col md:flex-row">
+        <p class="mb-6 md:mb-0">
+          <TimJsLogo width={80} className="inline-block mr-2" /> in partnership with
+          <a
+            href="https://banatit.ro/"
+            target="_blank"
+            rel="noopener noreferrer"><BitLogo className="inline-block" /></a
+          >
+        </p>
+        <p class="md:text-right flex-1">
+          Hosted by <a
+            href="https://coworktimisoara.com/ro/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><Image
+              class="inline-block ml-2"
+              src={coworkLogo}
+              alt="Co - work Logo"
+            /></a
+          >
+        </p>
+      </div>
     </section>
   </Container>
 </Layout>
