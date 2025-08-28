@@ -139,10 +139,20 @@ const speakers = await getCollection("speakers");
     </section>
     <section id="tickets" class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
       <h2 class="font-bold text-4xl text-gray-800 mb-4">Tickets</h2>
-      <p>
-        There are two ticket categories: <strong>Standard</strong> (includes a t-shirt)
-        and <strong>Premium</strong> (includes a t-shirt and hoodie)
-      </p>
+      <p>There are two ticket categories:</p>
+      <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
+        <li>
+          <strong>Standard</strong> - includes a t-shirt <span
+            id="standard-countdown"
+            class="text-green-600 font-medium"></span>
+        </li>
+        <li>
+          <span class="line-through text-gray-400"
+            ><strong>Premium</strong> - includes a t-shirt and hoodie</span
+          >
+          <span class="text-red-600 font-semibold">- SOLD OUT</span>
+        </li>
+      </ul>
       <p>All tickets include snacks and drinks.</p>
       <p>
         *Tickets that include swag must be purchased <strong
@@ -188,3 +198,27 @@ const speakers = await getCollection("speakers");
     </section>
   </Container>
 </Layout>
+
+<script>
+  function updateStandardCountdown() {
+    const today = new Date();
+    let targetDate = new Date(2025, 8, 1);
+
+    const timeDiff = targetDate.getTime() - today.getTime();
+    const daysRemaining = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
+    const countdownElement = document.getElementById("standard-countdown");
+    if (countdownElement) {
+      if (daysRemaining > 0) {
+        countdownElement.textContent = `- ${daysRemaining} day${daysRemaining === 1 ? "" : "s"} left to order`;
+      } else if (daysRemaining === 0) {
+        countdownElement.textContent = "- Last day to order!";
+        countdownElement.className = "text-red-600 font-semibold";
+      } else {
+        countdownElement.textContent = "- SOLD OUT";
+        countdownElement.className = "text-red-600 font-semibold";
+      }
+    }
+  }
+  document.addEventListener("DOMContentLoaded", updateStandardCountdown);
+</script>
