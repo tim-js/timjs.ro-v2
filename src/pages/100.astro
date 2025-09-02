@@ -142,9 +142,18 @@ const speakers = await getCollection("speakers");
       <p>There are two ticket categories:</p>
       <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
         <li>
-          <strong>Standard</strong> - includes a t-shirt <span
-            id="standard-countdown"
-            class="text-green-600 font-medium"></span>
+          <span class="font-medium"
+            ><strong>Standard</strong><span class="text-green-600 font-medium">
+              - Available until the event
+            </span></span
+          >
+        </li>
+        <li>
+          <span class="line-through text-gray-400"
+            ><strong>Standard</strong> - includes a t-shirt</span
+          >
+          <span id="standard-countdown" class="text-green-600 font-medium"
+          ></span>
         </li>
         <li>
           <span class="line-through text-gray-400"
