@@ -8,7 +8,6 @@ import icon from "astro-icon";
 export default defineConfig({
   site: "https://www.timjs.ro",
   integrations: [tailwind(), mdx(), sitemap(), icon()],
-  trailingSlash: "always",
   redirects: {
     "/meetup-feedback/": {
       status: 302,
