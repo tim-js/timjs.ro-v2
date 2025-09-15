@@ -14,5 +14,9 @@ export default defineConfig({
       status: 302,
       destination: "https://tally.so/r/mOqlE8",
     },
+    "/discord/": {
+      status: 302,
+      destination: "https://discord.com/invite/fTYxvBeBHr",
+    },
   },
 });
