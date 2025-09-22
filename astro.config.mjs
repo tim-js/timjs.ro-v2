@@ -8,11 +8,14 @@ import icon from "astro-icon";
 export default defineConfig({
   site: "https://www.timjs.ro",
   integrations: [tailwind(), mdx(), sitemap(), icon()],
-  trailingSlash: "always",
   redirects: {
     "/meetup-feedback/": {
       status: 302,
       destination: "https://tally.so/r/mOqlE8",
+    },
+    "/discord/": {
+      status: 302,
+      destination: "https://discord.com/invite/fTYxvBeBHr",
     },
   },
 });
