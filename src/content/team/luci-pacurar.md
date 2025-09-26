@@ -1,7 +1,7 @@
 ---
 name: "Lucian Păcurar"
-title: "Senior Systems Developer"
-company: "Visma"
+title: "Senior Software Engineer"
+company: "Ralph"
 avatar: {
     src: "@assets/v2_lucian_bw.jpg",
     alt: "Lucian Păcurar"
