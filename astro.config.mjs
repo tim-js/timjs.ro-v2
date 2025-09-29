@@ -17,5 +17,9 @@ export default defineConfig({
       status: 302,
       destination: "https://discord.com/invite/fTYxvBeBHr",
     },
+    "/screen-share/": {
+      status: 302,
+      destination: "https://vdo.ninja/?push=pGVyxYW&quality=0&label=TimJsMeetupSharing",
+    },
   },
 });
