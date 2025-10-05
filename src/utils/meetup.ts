@@ -42,7 +42,7 @@ query ($urlname: String!) {
     id
     name
     urlname
-    events(status: PENDING, first: 1) {
+    events(status: PENDING, sort: DESC, first: 2) {
          edges {
           node {
             id
