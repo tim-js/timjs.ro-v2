@@ -1,0 +1,56 @@
+---
+import { Picture } from "astro:assets";
+import Container from "@components/container.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getPastEvents } from "@utils/meetup";
+import { marked } from "marked";
+import Sectionhead from "@components/sectionhead.astro";
+import default_poster from "@assets/Poster.png";
+
+const events = (await getPastEvents()).reverse();
+---
+
+<Layout title="Meetups">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Meetups</Fragment>
+      <Fragment slot="desc">All the past meetups</Fragment>
+    </Sectionhead>
+
+    <section class="container mx-auto px-4">
+      <ul class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {
+          events.map((event) => (
+            <li key={event.id} class="bg-gray-100 shadow-md rounded-lg p-4">
+              <a href={`/meetups/past/${event.id}/`} class="block">
+                <h2 class="font-bold text-2xl text-gray-800 truncate">
+                  {event.title}
+                </h2>
+                <p class="text-sm text-gray-500">
+                  {new Date(event.dateTime).toLocaleDateString()}
+                </p>
+                {event.imageUrl ? (
+                  <img
+                    src={event.imageUrl}
+                    alt={event.title}
+                    class="w-full h-auto object-cover rounded-lg my-4"
+                  />
+                ) : <Picture
+                    src={default_poster}
+                    alt="Default Poster"
+                    width={1920}
+                    height={1080}
+                    class="w-full h-auto object-cover rounded-lg my-4"
+                  />}
+                <div
+                  class="text-lg leading-relaxed text-slate-500 h-64 overflow-hidden"
+                  set:html={marked.parse(event.description)}
+                />
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </Container>
+</Layout>
