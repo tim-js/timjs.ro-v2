@@ -43,7 +43,7 @@ const events = (await getPastEvents()).reverse();
                     class="w-full h-auto object-cover rounded-lg my-4"
                   />}
                 <div
-                  class="text-lg leading-relaxed text-slate-500 h-64 overflow-hidden"
+                  class="text-sm leading-snug text-slate-500 h-64 overflow-hidden relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-12 after:bg-gradient-to-t after:from-gray-100 after:to-transparent"
                   set:html={marked.parse(event.description)}
                 />
               </a>
