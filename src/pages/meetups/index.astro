@@ -7,7 +7,12 @@ import { marked } from "marked";
 import Sectionhead from "@components/sectionhead.astro";
 import default_poster from "@assets/Poster.png";
 
-const events = (await getPastEvents()).reverse();
+const events = getPastEvents()
+  .reverse()
+  .map((event) => ({
+    ...event,
+    imageUrl: event.imageUrl ? `/src/assets/meetups/${event.imageUrl}` : null,
+  }));
 ---
 
 <Layout title="Meetups">
@@ -29,19 +34,13 @@ const events = (await getPastEvents()).reverse();
                 <p class="text-sm text-gray-500">
                   {new Date(event.dateTime).toLocaleDateString()}
                 </p>
-                {event.imageUrl ? (
-                  <img
-                    src={event.imageUrl}
-                    alt={event.title}
-                    class="w-full h-auto object-cover rounded-lg my-4"
-                  />
-                ) : <Picture
-                    src={default_poster}
-                    alt="Default Poster"
-                    width={1920}
-                    height={1080}
-                    class="w-full h-auto object-cover rounded-lg my-4"
-                  />}
+                <Picture
+                  src={event.imageUrl || default_poster}
+                  alt={event.title}
+                  width={600}
+                  height={400}
+                  class="w-full h-auto object-cover rounded-lg my-4"
+                />
                 <div
                   class="text-sm leading-snug text-slate-500 h-64 overflow-hidden relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-12 after:bg-gradient-to-t after:from-gray-100 after:to-transparent"
                   set:html={marked.parse(event.description)}

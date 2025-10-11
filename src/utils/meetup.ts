@@ -1,3 +1,5 @@
+import pastEventsData from "../data/pastEvents.json";
+
 type EventType = {
   id: string;
   title: string;
@@ -143,18 +145,15 @@ export async function getUpcomingEvents() {
   return upcomingEvents.filter(isMeetupEvent);
 }
 
-export async function getPastEvents() {
-  const data = await getEvents(pastEventsQuery);
-
-  if (!data) {
-    return [];
-  }
-
-  const pastEvents: EventType[] = data.groupByUrlname.events.edges.map(
-    (edge) => ({
-      ...edge.node,
-      description: extractBetweenSeparators(edge.node.description),
-      imageUrl: edge.node.featuredEventPhoto?.standardUrl,
+export function getPastEvents() {
+  const pastEvents: EventType[] = pastEventsData.map(
+    (event) => ({
+      id: event.id,
+      title: event.title,
+      dateTime: event.dateTime,
+      eventUrl: event.eventUrl,
+      description: extractBetweenSeparators(event.description),
+      imageUrl: event.featuredEventPhoto?.standardUrl || "",
     })
   );
 
