@@ -1,0 +1,1843 @@
+{
+  "data": {
+    "groupByUrlname": {
+      "id": "8737652",
+      "name": "tim.js",
+      "urlname": "tim-js",
+      "events": {
+        "edges": [
+          {
+            "node": {
+              "id": "123239412",
+              "title": "First Meetup",
+              "dateTime": "2013-06-19T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/123239412/",
+              "description": "Hi,\n\nWe will have our first meeting on the 19.06 starting at 18:30 at Startup Hub.\n\nthe agenda for the first meetup:\n\n* introductions\n* why js - Raul\n* Understanding and measuring web performance - Bogdan Gaza\n* Closures and js module pattern based on a refactoring example - Raul\n* themes for next meetups\n\nfor the refactoring i will take a small piece of code and try to refactor it, also covering closures and the module pattern (that i use a lot :) )\n\nthis will lead into a open-dialog part, where we can discuss different approaches.\n\nif you have any samples that we can use, please let me know, we can also consider them for future meetings. maybe it becomes a permanent slot :)\n\nThanks,\n\nRaul.",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "127207242",
+              "title": "2nd meetup",
+              "dateTime": "2013-07-31T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/127207242/",
+              "description": "our 2nd meeting.\n\nThe agenda\n\nAbout SpainJS conference - Andrei Pfeiffer\n\nJavascript Debugging with Chrome DevTools -- Part 1 - Cassian Lup",
+              "photoAlbum": {
+                "photoCount": 12,
+                "id": "16440292",
+                "title": "2nd meetup"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "137482172",
+              "title": "Tasks Automation",
+              "dateTime": "2013-10-08T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/137482172/",
+              "description": "I can make a presentation about what I have played with lately:\n- code Linting, with JSHint\n- unit-testing, with QUnit and/or Jasmine\n- generate code documentation, with JSDoc\n- automate all these tasks, with Grunt\n\nUnfortunately, I will not be available in September, so we can do this in October.",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "139603062",
+              "title": "3rd meetup",
+              "dateTime": "2013-10-08T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/139603062/",
+              "description": "Andrei will present about task automation: code Linting, with JSHint - unit-testing, with QUnit and/or Jasmine - generate code documentation, ...\n\nCassian will present continue his series about the debugging tools in chrome - part 2.",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "149260512",
+              "title": "Meetup 4",
+              "dateTime": "2013-11-27T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/149260512/",
+              "description": "Agenda:\n\n• Dejan Mihai Gitin - introduction to AngularJS\n\n• Andrei Pfeiffer - about Source Maps",
+              "photoAlbum": {
+                "photoCount": 1,
+                "id": "18791822",
+                "title": "Meetup 4"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "160310642",
+              "title": "Meetup 5",
+              "dateTime": "2014-01-29T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/160310642/",
+              "description": "Agenda:\n\n• AngularJS (live coding) - Petru Isfan\n\n• Chrome Dev Tools (part 4) - Cassian Lup",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "165534942",
+              "title": "Meetup 6",
+              "dateTime": "2014-02-19T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/165534942/",
+              "description": "i would like to invite you to our next meet up.\n\nhere the agenda for next week:\n\n• Andrei Pfeiffer - Source Maps\n\n• Lucian Pacurar - AngularJS Services",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "172152842",
+              "title": "Meetup 7",
+              "dateTime": "2014-03-26T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/172152842/",
+              "description": "Hi all,\n\nplease join us on our next meet up.\n\nAgenda:\n\n1. Getting started with Knockout.js — Flavius Demian\n\n2. Introduction to Node.js — Petru Isfan.",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "176811972",
+              "title": "JSTM Meetup 8",
+              "dateTime": "2014-04-23T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/176811972/",
+              "description": "AGENDA FOR THIS MEETUP:\n\n- \"Yeoman workflows\", Petru Isfan\n- \"End to End testing in AngularJS\", Lucian Pacurar\n- \"Javascript, going Vanilla\" - part 1, Andrei Pfeiffer",
+              "photoAlbum": {
+                "photoCount": 8,
+                "id": "21463312",
+                "title": "JSTM Meetup 8"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "182093542",
+              "title": "tim.js meetup 9",
+              "dateTime": "2014-05-28T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/182093542/",
+              "description": "AGENDA FOR THIS MEETUP:\n\n- \"JavaScript, going Vanilla\" - part 2, Andrei Pfeiffer\n- \"PhoneGap\", Cassian Lup",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "191149532",
+              "title": "tim.js meetup 10",
+              "dateTime": "2014-07-02T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/191149532/",
+              "description": "AGENDA FOR THIS MEETUP:\n\n- \"JavaScript, going Vanilla\" - part 3, Andrei Pfeiffer\n- \"IonicFramework - hybrid mobile apps with JavaScript & HTML5\", Radu Cugut",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "202497142",
+              "title": "tim.js meetup 11",
+              "dateTime": "2014-09-24T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/202497142/",
+              "description": "Agenda:\n\n3D Footprint, Immersing data centers into virtual reality\n\nMarius Turica\n\nIntro to ES6 Generators\n\nLucian Pacurar",
+              "photoAlbum": {
+                "photoCount": 14,
+                "id": "24732832",
+                "title": "tim.js meetup 11"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "214030842",
+              "title": "tim.js meetup 12",
+              "dateTime": "2014-10-29T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/214030842/",
+              "description": "AGENDA FOR THIS MEETUP:\n\n\"Appium: Mobile App Automation Made Awesome\" Cassian Lup\n\n\"JavaScript, going Vanilla: part 4 - Scope & Context\" Andrei Pfeiffer",
+              "photoAlbum": {
+                "photoCount": 8,
+                "id": "25511672",
+                "title": "tim.js meetup 12"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "218820824",
+              "title": "tim.js meetup 13",
+              "dateTime": "2014-11-26T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/218820824/",
+              "description": "AGENDA FOR THIS MEETUP:\n\n\"Require.js\"\nPetru Isfan\n\n\"Decoupling async requests\"\nAndrei Pfeiffer",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "218931539",
+              "title": "tim.js gathering",
+              "dateTime": "2014-12-09T19:00:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/218931539/",
+              "description": "Cum spuneam la ultimul meetup, ma gandeam sa facem o iesire \"hidratanta\" sa ne cunoastem mai bine.\n\nVa rog sa folositi link-ul urmator sa votati zilele in care ati putea ajunge:\nhttp://doodle.com/fxftpre5hurhm8bh\n\nAm ajuns la concluzia ca nu sunt in stare sa fac legatura intre imaginea care o aveti la profil, si figura fizica. Probabil ca nu sunt singurul care are aceasta problema, asadar ma gandesc ca ar fi timpul sa facem ceva in privinta asta.\n\nLocatia va fi un club privat, pe nume \"Alt Club\", in Piata Libertatii (fosta Alchimia sau BeerTime).\n\nCa si ora de inceput as propune ora 19:00, dupa lucru.\n\nPrimul rand de bautura este din partea casei.",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "219801830",
+              "title": "tim.js meetup 14",
+              "dateTime": "2015-01-28T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/219801830/",
+              "description": "AGENDA FOR THIS MEETUP:\n\n\"Introduction\"\nAndrei Pfeiffer\n\n\"Appium: Mobile App Automation Made Awesome (part II)\"\nCassian Lup",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "220296044",
+              "title": "tim.js meetup 15",
+              "dateTime": "2015-02-18T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/220296044/",
+              "description": "Calling out to all you JavaScripters & tim.js-ers out there!\nWhat's up?\n\nSo far, the agenda for the next meetup is:\n\n• \"Intro\" - Andrei Pfeiffer\n• \"Fonts, FOUT & localStorage\" - Codrin Pavel\n• \"How to CoffeeScript\" - Ovidiu Ispas\n\nSend us your presentation draft using the Contact link in the side bar and get your own seat in the speakers' booth!",
+              "photoAlbum": {
+                "photoCount": 30,
+                "id": "25930685",
+                "title": "tim.js meetup 15"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "221083507",
+              "title": "tim.js meetup 16",
+              "dateTime": "2015-03-25T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/221083507/",
+              "description": "Goooood morning/day/evening everybody,\n\nWe've reached full traction, 4x4, with this meetup:\n\n• \"Intro\" - Andrei Pfeiffer\n• \"How to Hack an Environment\" - Cassian Lup\n• \"Advanced Grunt\" - Andrei Pfeiffer\n\nSend us your presentation draft using the Contact link in the side bar and get your own seat in the speakers' booth!",
+              "photoAlbum": {
+                "photoCount": 20,
+                "id": "26005497",
+                "title": "tim.js meetup 16"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "221437215",
+              "title": "tim.js gathering",
+              "dateTime": "2015-04-01T19:00:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/221437215/",
+              "description": "Va invit la o noua iesire \"hidratanta\". Aceeasi locatie ca si data trecuta.\n\nNumarul de locuri este limitat, asadar RSVP din timp (:",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "221593394",
+              "title": "tim.js meetup 17",
+              "dateTime": "2015-04-22T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/221593394/",
+              "description": "Spring is coming\nFlowers bloom\nConsole is logging\nAnd we'll meet soon\n\n• \"JavaScript Books\" - Andrei Pfeiffer\n• \"Isomorphic JavaScript with React.js\" - Ovidiu Ispas\n\nSend us your presentation draft using the Contact link in the side bar and get your own seat in the speakers' booth!",
+              "photoAlbum": {
+                "photoCount": 2,
+                "id": "26068557",
+                "title": "tim.js meetup 17"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "222346007",
+              "title": "tim.js meetup 18",
+              "dateTime": "2015-05-27T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/222346007/",
+              "description": "Yo yo scripters, coders, developers, programmers, backends & frontends, pimps & chicks, lovers & haters,\n\nPut your tim.js t-shirts on, & let's gather for another meetup.\n\n• \"ShellJS vs. Bash\" - Ciprian Zaharie\n• \"Handling LARGE rasters & vectors\" - Andrei Pfeiffer\n\nSend us your presentation draft using the Contact link in the side bar and get your own seat in the speakers' booth!",
+              "photoAlbum": {
+                "photoCount": 13,
+                "id": "26190690",
+                "title": "tim.js meetup 18"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "223100824",
+              "title": "tim.js meetup 19",
+              "dateTime": "2015-06-17T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/223100824/",
+              "description": "Yo yo scripters, coders, developers, programmers, backends & frontends, pimps & chicks, lovers & haters,\n\nPut your tim.js t-shirts on, & let's gather for another meetup.\n\n• \"AngularJS best practice survey\" - Madincea Vasile\n• \"Working With the DOM & Living to Tell\" - Cassian Lup\n\nSend us your presentation draft using the Contact link in the side bar and get your own seat in the speakers' booth!",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "223648287",
+              "title": "tim.js meetup 20",
+              "dateTime": "2015-07-15T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/223648287/",
+              "description": "Ready for a hot summer?\nThan you're ready for some cold Vanilla Ice Cream flavored awesome hardcore JavaScript meetup.\n\n• \"Looping Events\" - Andrei Pfeiffer\n• \"Memory Leaks\" - Ilie Ciotir\n\nSend us your presentation draft using the Contact link in the side bar and get your own seat in the speakers' booth!",
+              "photoAlbum": {
+                "photoCount": 25,
+                "id": "26283521",
+                "title": "tim.js meetup 20"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "225257430",
+              "title": "tim.js meetup 21",
+              "dateTime": "2015-09-30T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/225257430/",
+              "description": "Missing summer? Join us for a new edition of tim.js and see things getting hot again:\n\n• \"Using ES6 with Angular 1.x\" - Alin Chiuaru\n• \"Crawling with Prerender.io\" - Andrei Demian",
+              "photoAlbum": {
+                "photoCount": 23,
+                "id": "26446937",
+                "title": "tim.js meetup 21"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "225774836",
+              "title": "tim.js meetup 22",
+              "dateTime": "2015-10-28T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/225774836/",
+              "description": "Simple, robust code (functional programming techniques) - Dan Bunea",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "226749001",
+              "title": "tim.js Special Event: Angular2",
+              "dateTime": "2015-11-19T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/226749001/",
+              "description": "JavaScript is everywhere. And some people argue that Angular is, also, all over the place. We think it's not. Yet. But will it?\n\nAngularConnect, the biggest and meanest Angular conference to date just happened in London. Two of our organisers, Lucian Păcurar and Cassian Lup, were there to witness it all. They're eager to share the awesome new stuff that's ahead in the Angular world, and why not, in the JS universe.\n\nSome hot stuff on the plate:\n• Angular2 (syntax, timeline & migration path)\n• A new Routing Library (we promise it's awesome),\n• Performance (not a myth anymore),\n• ES6 & TypeScript (oh yes we did)\nand many more.\n\nLimited seats. Get them while you can!",
+              "photoAlbum": {
+                "photoCount": 31,
+                "id": "26561984",
+                "title": "tim.js Special Event: Angular2"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "227266848",
+              "title": "tim.js gathering",
+              "dateTime": "2015-12-16T19:00:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/227266848/",
+              "description": "Va invit la un nou beer.js, Alt Club, la etaj.\nNumarul de locuri este limitat, asadar RSVP din timp.",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "227884153",
+              "title": "tim.js meetup 24",
+              "dateTime": "2016-01-27T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/227884153/",
+              "description": "Cold, isn't it? Let's warm up with this first meetup of 2016.\nActually, it's gonna be super hot, because we will talk about ES6 & TypeScript.\n\n• Intro\n• ES6 under the microscope - Andrei Pfeiffer\n• Introduction to TypeScript - Ilie Ciotir",
+              "photoAlbum": {
+                "photoCount": 1,
+                "id": "26699863",
+                "title": "tim.js meetup 24"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "228410964",
+              "title": "tim.js meetup 25",
+              "dateTime": "2016-02-17T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/228410964/",
+              "description": "You asked – we heard. This is going to be a React-only meetup.\n\nWe will warm up with an introduction into React held by Ovidiu Ispas and Cassian Lup, followed by a dive into advanced topics such as Flux and Redux, presented by Vlad Zelinschi, our React Expert guest from Cluj.\n\nNote that you can attend even if you're on the waiting list, but we can't guarantee seats for everybody.\n\nSee you there!",
+              "photoAlbum": {
+                "photoCount": 5,
+                "id": "26751273",
+                "title": "tim.js meetup 25"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "229250602",
+              "title": "tim.js meetup 26",
+              "dateTime": "2016-03-16T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/229250602/",
+              "description": "Clear your calendar and hit that RSVP button. \"tim.js\" is happening again:\n\n• Switching to JS - Horia Radu• ClojureScript & React - Dan Bunea",
+              "photoAlbum": {
+                "photoCount": 15,
+                "id": "26822175",
+                "title": "tim.js meetup 26"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "229835890",
+              "title": "tim.js meetup 27",
+              "dateTime": "2016-04-13T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/229835890/",
+              "description": "Clear your calendar and hit that RSVP button.\n\"tim.js\" is happening again.\nThis meetup is gonna be all about ES6 Promises.\n\n• Promises: past, present & future - Andrei Pfeiffer",
+              "photoAlbum": {
+                "photoCount": 5,
+                "id": "26903402",
+                "title": "tim.js meetup 27"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "229574146",
+              "title": "tim.js workshop: JavaScript Citizens",
+              "dateTime": "2016-04-23T11:00:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/229574146/",
+              "description": "This first workshop dives into the building blocks of the ECMAScript language, explaining in detail each of its 1st class citizens, how they work & why is it so important to understand them.\n\nWe will dive into the building blocks of the ECMAScript language, explaining in detail how they work & why is it so important to understand them.\n\nIn the last part of the workshop, we will implement a small design pattern that every developer uses daily.\n\nCONTENT\n\n- Intro: short history, JS vs ES;\n- Primitives: types, typeof, type casting, falsey values;\n- Arrays: literals, stack, queue, filtering, iterating;\n- Objects: literals, enhanced literals, property descriptors, json;\n- Functions: types, returns, 1st class functions.\n\nWHO IS IT FOR?\n\n• Beginner & Intermediate JavaScript developers who want to discover the language at a deeper level.\n\n• Advanced developers, who switched to JavaScript recently and want to understand its mechanics.\n\nWHAT YOU NEED?\n\n- laptop with power-plug\n- code editor (optional)- Node.JS 4.0 or greater installed (optional)\n\nHOW TO ATTEND?\n\nTo attend this workshop, please RSVP this event.\nThere are only 18 seats available that will be filled on a first-come, first-served basis.\n\nA deposit of 40 RON (9 EUR) is required, which will cover all expenses, including lunch (vegetarian is also available) & beverages (coffee, juice, water).",
+              "photoAlbum": {
+                "photoCount": 45,
+                "id": "26916982",
+                "title": "tim.js workshop: JavaScript Citizens"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "230864424",
+              "title": "tim.js meetup 28",
+              "dateTime": "2016-05-18T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/230864424/",
+              "description": "Clear your calendar and hit that RSVP button.\n\"tim.js\" is happening again.\n\n• Buletin de stiri - Andrei Pfeiffer\n• ES6 Modules - Ilie Ciotir\n• Using Redux in React apps - Ovidiu Ispas",
+              "photoAlbum": {
+                "photoCount": 18,
+                "id": "26982018",
+                "title": "tim.js meetup 28"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "230179755",
+              "title": "tim.js workshop: JavaScript Citizens",
+              "dateTime": "2016-05-21T11:00:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/230179755/",
+              "description": "For all of you who didn't get a seat in the first workshop, there's a second chance in this second edition.\n\nThis first workshop dives into the building blocks of the ECMAScript language, explaining in detail each of its 1st class citizens, how they work & why is it so important to understand them.\n\nIn the last part of the workshop, we will implement a small design pattern that every developer uses daily.\n\nCONTENT\n\n- Intro: short history, JS vs ES;\n- Primitives: types, typeof, type casting, falsey values;\n- Arrays: literals, stack, queue, filtering, iterating;\n- Objects: literals, enhanced literals, property descriptors, json;\n- Functions: types, returns, 1st class functions.\n\nWHO IS IT FOR?\n\n• Beginner & Intermediate JavaScript developers who want to discover the language at a deeper level.\n\n• Advanced developers, who switched to JavaScript recently and want to understand its mechanics.\n\nWHAT YOU NEED?\n\n- laptop with power-plug\n- code editor (optional)- Node.JS 4.0 or greater installed (optional)\n\nHOW TO ATTEND?\n\nTo attend this workshop, please RSVP this event.\nThere are only 18 seats available that will be filled on a first-come, first-served basis.\n\nA deposit of 40 RON (9 EUR) is required, which will cover all expenses, including lunch (vegetarian is also available) & beverages (coffee, juice, water).",
+              "photoAlbum": {
+                "photoCount": 31,
+                "id": "26990721",
+                "title": "tim.js workshop: JavaScript Citizens"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "231592257",
+              "title": "tim.js meetup 29",
+              "dateTime": "2016-06-16T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/231592257/",
+              "description": "Clear your calendar and hit that RSVP button.\n\"tim.js\" is happening again.\n\n• Overview of London NodeConf 2016 - Cassian Lup\n• Progressive Web Apps - Victor Ionescu",
+              "photoAlbum": {
+                "photoCount": 11,
+                "id": "27085563",
+                "title": "tim.js meetup 29"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "232196409",
+              "title": "tim.js meetup 30",
+              "dateTime": "2016-07-20T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/232196409/",
+              "description": "Not a big fan of hot weather? Join tim.js, we have air conditioning.\n\nIt's gonna be LEGEN, wait for it... DARY. LEGENDARY !!!\n\n• JavaScript in Wonderland - Petru Isfan\n• WAT iz dat code? - Andrei Pfeiffer",
+              "photoAlbum": {
+                "photoCount": 23,
+                "id": "27135946",
+                "title": "tim.js meetup 30"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "232971096",
+              "title": "tim.js meetup 31",
+              "dateTime": "2016-08-10T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/232971096/",
+              "description": "The heat goes on! Not only outside, but in JS-land as well.\n\nJoin us for some hot topics. We even have Vlad travelling from CJ specially to present at our event!\n\nAgenda:\n\n• Dependency Injection in Angular 2 -- Marius Cristea\n• TDD in React with Enzyme -- Vlad Zelinschi\n\nSee you there! :D",
+              "photoAlbum": {
+                "photoCount": 11,
+                "id": "27185790",
+                "title": "tim.js meetup 31"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "233391521",
+              "title": "tim.js meetup 32: ngParty Special Event",
+              "dateTime": "2016-09-10T16:00:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/233391521/",
+              "description": "Join us on another special tim.js edition.\nThe organizers of ngParty from Prague will join us this September on an exclusive & extended meetup.\n\nHere is the agenda:\n\n• Docker Driven Development: UI development using docker containers - Mario Vejlupek\n• RxJS everywhere: browser, node and beyond - Viliam Elischer\n• Leaving Angular (from Ng advocate perspective) - Martin Hochel\n\nNOTE: please keep in mind that this meetup will take place on Saturday.",
+              "photoAlbum": {
+                "photoCount": 17,
+                "id": "27260449",
+                "title": "tim.js meetup 32: ngParty Special Event"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "234650066",
+              "title": "tim.js meetup 33: AngularConnect Special Event",
+              "dateTime": "2016-10-19T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/234650066/",
+              "description": "Curious about what's new in the Angular ecosystem? Join us in this special meetup to discover the latest news about Angular 2.\n\nHere is the agenda:\n\n• AngularConnect Overview - Lucian Pacurar\n• Router 2.0 - Marius Cristea\n\nNOTE: please keep in mind that this meetup will take place at Ambasada.",
+              "photoAlbum": {
+                "photoCount": 12,
+                "id": "27368112",
+                "title": "tim.js meetup 33: AngularConnect Special Event"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "233420244",
+              "title": "tim.js workshop: JavaScript Mechanics",
+              "dateTime": "2016-10-22T11:00:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/233420244/",
+              "description": "Welcome to the second JavaScript workshop, organized by tim.js (http://timjs.ro/).\n\nIn this workshop we will address the politics that govern the citizens of ECMAScript. We will cover some fundamental concepts of ES5, while also touching new features introduced since ES6.\n\nCONTENT\n\n- Scope: globals, hoisting, TDZ, blocks;\n- Strict Mode: usage, present & future;\n- Values vs References: deep equality, cloning;\n- Context: this binding, changing context;\n- Function arguments: defaults, signatures;\n\nWHO IS IT FOR?\n\n• Intermediate JavaScript developers who want to discover the language at a deeper level.\n\n• Advanced developers, who switched to JavaScript recently and want to understand its mechanics.\n\nWHAT YOU NEED?\n\n- laptop with power-plug\n- code editor (optional)- Node.JS 4.0 or greater installed (optional)\n\nHOW TO ATTEND?\n\nTo attend this workshop, please RSVP this event.\nThere are only 18 seats available that will be filled on a first-come, first-served basis.\n\nA deposit of 40 EUR is required, which will cover all expenses, including a breakfast croissant, lunch (vegetarian is also available) & beverages (coffee, juice, water).",
+              "photoAlbum": {
+                "photoCount": 22,
+                "id": "27368113",
+                "title": "tim.js workshop: JavaScript Mechanics"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "235391497",
+              "title": "tim.js workshop: JavaScript Neighborhoods",
+              "dateTime": "2016-11-12T11:00:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/235391497/",
+              "description": "Welcome to the third JavaScript workshop, organized by tim.js (http://timjs.ro/).\n\nThis workshop focuses on various ways to organize your code, each with it's own pros & cons. We will cover fundamental ES5 concepts, while also touching some new features added since ES6.\n\nCONTENT\n\n- Spaghetti Code\n- Object Literals\n- Module Pattern\n- Revealing Module Pattern\n- Module systems & loaders\n- ES6 Modules\n\nWHO IS IT FOR?\n\n• Intermediate & Advanced JavaScript developers familiar with functions, arrays, objects, scope & context\n\nWHAT YOU NEED?\n\n- laptop with power-plug\n- code editor- Node.JS 6.0+\n\nHOW TO ATTEND?\n\nTo attend this workshop, please RSVP this event.\nThere are only 18 seats available that will be filled on a first-come, first-served basis.\n\nA deposit of 40 EUR is required, which will cover all expenses, including a breakfast croissant, lunch (vegetarian is also available) & beverages (coffee, juice, water).\n\nDISCOUNT\nIf you have attended both previous workshops (Citizens & Mechanics), you have a 25% discount, meaning that you should deposit 30 EUR instead.",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "235124721",
+              "title": "tim.js workshop: JavaScript Neighborhoods",
+              "dateTime": "2016-11-19T11:00:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/235124721/",
+              "description": "Welcome to the third JavaScript workshop, organized by tim.js (http://timjs.ro/).\n\nThis workshop focuses on various ways to organize your code, each with it's own pros & cons. We will cover fundamental ES5 concepts, while also touching some new features added since ES6.\n\nCONTENT\n\n- Spaghetti Code\n- Object Literals\n- Module Pattern\n- Revealing Module Pattern\n- Module systems & loaders\n- ES6 Modules\n\nWHO IS IT FOR?\n\n• Intermediate & Advanced JavaScript developers familiar with functions, arrays, objects, scope & context\n\nWHAT YOU NEED?\n\n- laptop with power-plug\n- code editor- Node.JS 6.0+\n\nHOW TO ATTEND?\n\nTo attend this workshop, please RSVP this event.\nThere are only 18 seats available that will be filled on a first-come, first-served basis.\n\nA deposit of 40 EUR is required, which will cover all expenses, including a breakfast croissant, lunch (vegetarian is also available) & beverages (coffee, juice, water).\n\nDISCOUNT\nIf you have attended both previous workshops (Citizens & Mechanics), you have a 25% discount, meaning that you should deposit 30 EUR instead.",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "235594572",
+              "title": "tim.js meetup 34",
+              "dateTime": "2016-11-23T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/235594572/",
+              "description": "Choosing the technology stack\n\nOn this last meetup of the year, we were thinking to try an open discussion about HOW, WHEN & WHAT to choose when it comes to technology stack.\n\nThere will be no presentations.\nEverybody is welcome to talk about their opinions & experiences.\n\nModerator: Andrei Pfeiffer\n\nSee you all on Wednesday!",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "237014463",
+              "title": "tim.js meetup 35",
+              "dateTime": "2017-01-25T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/237014463/",
+              "description": "Hello all fellows JavaScripters,\n\nWe've got a new year awaiting us with lots of new things to learn & old things to improve. Join us on the first meetup of 2017:\n\n• Intro - Andrei Pfeiffer\n• A Vue over React (introducing Vue.js in comparison to React) - Andrei Pfeiffer",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "237547271",
+              "title": "tim.js meetup 36: How do you \"type\" JavaScript?",
+              "dateTime": "2017-02-22T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/237547271/",
+              "description": "How do you \"type\" JavaScript?\n\nIn the context of having various JavaScript flavors & languages that compile to JS, which offer static typing, the aim of this meetup is to answer a few questions:\n\n• will static types make us write better code?• will static types reduce the number of bugs?\n• are dynamic languages suited for \"small\" projects only?\n• can I mix static & dynamic types?\n• should I switch to a statically typed JavaScript flavor?\n\nTo help us answer these questions, we have invited 2 special guests:\n\n• Radu Marinescu\n• Radu Fericean\n\nModerator: Andrei Pfeiffer\n\nThis meetup will take place in a panel-like format, no presentations. The audience is welcome to contribute to the discussion.",
+              "photoAlbum": {
+                "photoCount": 12,
+                "id": "27643324",
+                "title": "tim.js meetup 36: How do you \"type\" JavaScript?"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "238675677",
+              "title": "tim.js meetup 37",
+              "dateTime": "2017-03-29T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/238675677/",
+              "description": "Hey there tim.js-ers!\n\nWe're planning another exciting get-together this Wednesday.\n\nAgenda:\n• \"Clean Code\" by Ioana Verebi and\n• \"TypeScript: The Good Cop\" by Cassian Lup\n\nMake sure you don't miss this session, as it continues on the trend of best practices combined with new trends in the JS world.\n\nSee you all on Wednesday!",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "239321296",
+              "title": "tim.js meetup 38",
+              "dateTime": "2017-04-26T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/239321296/",
+              "description": "Hey there scripters!\nRainy day? Here's something to cheer you up a bit.\n\nWe're baking some cool presentations for next week:\n• \"NG-NL Summary\" by Anca Spătariu\n• \"Serverless architecture with JS\" by Petru Isfan\n\nWe also have a new & shiny location with a great view.\n3PG's offices at the 5th floor in Cladirea B of City Business Center.\n\nSee you there!",
+              "photoAlbum": {
+                "photoCount": 16,
+                "id": "27806171",
+                "title": "tim.js meetup 38"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "239844405",
+              "title": "tim.js meetup 39",
+              "dateTime": "2017-05-24T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/239844405/",
+              "description": "New month, new tim.js edition!\n\nHave you written code that caused regressions that took some time to identify and eventually fix? It happens to the best of us. Let's get together and find out how we can avoid these situations once and for all, with almost no effort.\n\nAgenda:\n• \"End-to-End Testing with Nightwatch and Cucumber\" by Gabriel Lazar• \"REST — A Guide to (Kind of) Getting It\"by Mihai Agape\n\nYou might not want to miss this one. :)",
+              "photoAlbum": {
+                "photoCount": 16,
+                "id": "27886750",
+                "title": "tim.js meetup 39"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "240726544",
+              "title": "tim.js meetup 40",
+              "dateTime": "2017-06-28T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/240726544/",
+              "description": "We've finally reached edition number ten-ten-ten-ten,\n\nThank you all for being with us all these years and join us on another tim.js meetup.\n\nAgenda:• Warping Time with Async/Await - Cassian Lup\n• From React to Native - Andrei Pfeiffer",
+              "photoAlbum": {
+                "photoCount": 10,
+                "id": "28044825",
+                "title": "tim.js meetup 40"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "241588629",
+              "title": "tim.js meetup 41",
+              "dateTime": "2017-07-26T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/241588629/",
+              "description": "We're on a Special Edition streak & this one is gonna be LEGEN ...\n... DARY also.\n\nThis edition will host Lightning Talks, max 10 minutes + 5 minutes Q&A.\n\nTalks:\n\nBypassing iframe security - Darius Costolas\nMy journey from PHP to Node - Valentin Lup\nAngular + Redux = 🚀 - Călin Georgescu\nExtJS in 2k17 - Samuel Alexandroni\nTyped UIs - Horia Radu\nTo ASI or not to ASI - Andrei Pfeiffer",
+              "photoAlbum": {
+                "photoCount": 9,
+                "id": "28044760",
+                "title": "tim.js meetup 41"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "242707330",
+              "title": "tim.js gathering",
+              "dateTime": "2017-08-23T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/242707330/",
+              "description": "Let's have a drink, chat and discuss about everything related (and not) to JS.",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "243106970",
+              "title": "tim.js meetup 42",
+              "dateTime": "2017-09-20T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/243106970/",
+              "description": "We're back from vacation with a new autumn meetup!\n\nAgenda:\n\n- Packaging Angular Components for Distribution - Lucian Păcurar\n- Styling React components using styled-components - Alexandru Ghiura\n\nSee you all at StartupHub! 🚀",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "243973802",
+              "title": "tim.js meetup 43",
+              "dateTime": "2017-10-13T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/243973802/",
+              "description": "Well, Friday 13th is coming! What should we do about it?!\n\nHow about a meetup?\n\nJoin us on Friday 13th at Alt Club (not our typical day of the week, nor the usual location).\n\nWe will have a more relaxed open discussion, 1 day before the CodeCamp conference, with some of the speakers from our track.\n\nWe will discuss about Being a JS Dev in 2017.\n\nSo, bring you opinions, questions and your asses to Alt Club!\n\nPS: being an informal meetup, the number of seats is very limited, but you could always stand if you wanna join. Thank you for understanding.",
+              "photoAlbum": {
+                "photoCount": 42,
+                "id": "28242491",
+                "title": "tim.js meetup 43"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "245059281",
+              "title": "tim.js meetup 44",
+              "dateTime": "2017-11-22T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/245059281/",
+              "description": "Winter is coming,\nThe year is ending,\nPull requests are merged,\n... meetups are joined, AGENDA:\n\n• A gentle introduction to Reactive Programming using RxJs\nAdrian Fâciu, Software Developer at Visma\n\n• How full is your stack?\nAndrei Pfeiffer, Code Designer at [e-spres-oh]\n\nNOTE:\nWe are always looking for speakers, so please send us your proposals.",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "245923092",
+              "title": "tim.js gathering",
+              "dateTime": "2017-12-20T19:00:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/245923092/",
+              "description": "Intalnire \"hidratanta\" cu diverse lichide in diverse concentratii.\nVom barfi despre ultimele framework-uri aparute luna aceasta si despre cei ce nu vor fi prezenti.",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "247079866",
+              "title": "tim.js meetup 45",
+              "dateTime": "2018-01-31T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/247079866/",
+              "description": "New year,\nNew frameworks,\nNew meetup:\n\n• Dealing with State\nAndrei Pfeiffer, Code Designer at [e-spres-oh]\n\n• From Angular to NativeScript\nRobert Todea, Software Developer at [e-spres-oh]\n\nNOTE:\nWe are always looking for speakers, so please send us your proposals.",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "247735298",
+              "title": "tim.js meetup 46",
+              "dateTime": "2018-02-21T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/247735298/",
+              "description": "The following equation is valid for our next meetup:\n#46 = #2 / 2018\n\n• Event sourcing: the good, the bad and the ugly\nMihai Agape, Front-End Architect at Intelligent Software Systems\n\nWe will have only 1 presentation this meetup, split into 2 parts.\n\nNOTE: We are always looking for speakers, so please send us your proposals.",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "248497512",
+              "title": "tim.js meetup 47",
+              "dateTime": "2018-03-21T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/248497512/",
+              "description": "Tired on learning new languages?\n.then()\nLearn how to write one.\n--------------------------------------------------------------------------\n\n• Writing a programming language for fun and profit (but not actually for profit)\nBogdan Bugarschi, Developer at Visual Retailing\n\n• A different take on redux actions\nHoria Radu, Software Developer at [e-spres-oh]\n\n--------------------------------------------------------------------------\nNOTE: We are always looking for speakers, so please send us your proposals.",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "249628083",
+              "title": "tim.js meetup 48",
+              "dateTime": "2018-04-25T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/249628083/",
+              "description": "Ohhhhh the weather outside is NOT frightful, but join us inside [e-spres-oh]'s attic for this April meetup.\n----------------------------\n\n• Realtime 3D in the Browser:\nRadu Milici, UI Developer @ 3PG\n\n• Chrome Extensions:\nBogdan Dînga, Front-End Developer @ [e-spres-oh]\n\n----------------------------\nNOTE: We are always looking for speakers, so please send us your proposals.",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "250172898",
+              "title": "tim.js meetup 49",
+              "dateTime": "2018-05-23T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/250172898/",
+              "description": "We are one step closer to the middle... of 100.\n\n---\n\n• ngrx: tips & tricks\n⬂ ⬌ ⬀ - mid level ... ➀ ➋ ➂ - intermediate\nAdrian Fâciu, Software Developer at Visma\n\n• Transducers in JS\n⬊ ⬄ ⬀ - low level ... ➀ ➋ ➂ - intermediate\nBogdan Bugarschi, Developer at Visual Retailing\n\n---\n\nNOTE: We are always looking for speakers, so please send us your proposals.",
+              "photoAlbum": {
+                "photoCount": 36,
+                "id": "28907823",
+                "title": "tim.js meetup 49"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "251104048",
+              "title": "tim.js meetup 50",
+              "dateTime": "2018-06-20T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/251104048/",
+              "description": "Finally. We're here. We have reached the middle.\nThank you all for being with us all these 50 meetups.\nAnd please, do stick along for 50 more.\n\n---\n\n• Fun with Conditional Types\nTitian Dragomir, FullStack Developer\n\n• MobX & friends\nAndrei Pfeiffer, Code Designer\n\n---\n\nNOTE: We are always looking for speakers, so please send us your proposals.",
+              "photoAlbum": {
+                "photoCount": 29,
+                "id": "28994224",
+                "title": "tim.js meetup 50"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "252392633",
+              "title": "tim.js meetup 51",
+              "dateTime": "2018-07-18T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/252392633/",
+              "description": "Another electrifying Lightning Talks edition.\n\n---\n\n• JS solutions for non-devs - Daniel Markovitz\n• Self-hosted Web Deployments in an Oneliner - Cassi Lup\n• Ionic build tools in Docker - Petru Isfan\n• Barrel files - Adi Faciu\n• Tips & Tricks - Andrei Pfeiffer\n• [the last talk is yours]\n\n---\n\nNOTE: We are always looking for speakers, so please send us your proposals.",
+              "photoAlbum": null,
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/4/b/4/4/thumb_472579268.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/4/b/4/4/600_472579268.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/4/b/4/4/highres_472579268.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "253870501",
+              "title": "tim.js gathering",
+              "dateTime": "2018-08-22T18:00:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/253870501/",
+              "description": "As usual, our August meeting is a casual one without presentations.\nWe'll hydrate ourselves with refreshing drinks at \"Capite\".\nWe'll talk about everything from Java to Script, but also about JavaScript.\nWe'll also cover important subjects such as: new frameworks, fp vs oop and tabs vs spaces.\nSo, don't miss any of these and join us on Wednesday.",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "254782522",
+              "title": "tim.js meetup 52",
+              "dateTime": "2018-09-26T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/254782522/",
+              "description": "Welcome back from vacation. We've back in business with a new meetup:\n\n---\n\n• Parsers for fun and profit\nBogdan Bugarschi, Developer at Visual Retailing\n\n• Self-hosted Web Deployments in an Oneliner\nCassi Lup, Technical Manager at 3PG\n\n---\n\nNOTE: We are always looking for speakers, so please send us your proposals.",
+              "photoAlbum": {
+                "photoCount": 21,
+                "id": "29491206",
+                "title": "tim.js meetup 52"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "255585189",
+              "title": "tim.js meetup 53",
+              "dateTime": "2018-10-24T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/255585189/",
+              "description": "This is another meetup with only one, more thorough presentation.\n\n---\n\n• 18:30 - Welcome & Intro\n\n• 19:00 - JavaSwift: Bridging Swift and React Native\nAndrei Pfeiffer, Code Designer @ [e-spres-oh]\n\nThe presentation will walk you through the process of creating a usable Swift native module, that has access to native resources, and expose it to React Native so you can communicate with it from JavaScript.\n\n---\n\nNOTE: We are always looking for speakers, so please send us your proposals.",
+              "photoAlbum": null,
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/b/a/3/9/thumb_475667673.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/b/a/3/9/600_475667673.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/b/a/3/9/highres_475667673.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "256493591",
+              "title": "tim.js meetup 54",
+              "dateTime": "2018-11-28T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/256493591/",
+              "description": "This is the last technical meetup of this year.\n\n---\n\n• From UI to CLI\nHoria Radu, Software Developer at [e-spres-oh]\n\n• Going against best practices to make things work\nIlie Ciotir, Development Consultant at SAP Romania\n\n---\n\nNOTE: We are always looking for speakers, so please send us your proposals.",
+              "photoAlbum": {
+                "photoCount": 28,
+                "id": "29491221",
+                "title": "tim.js meetup 54"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/e/4/c/9/thumb_476518569.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/e/4/c/9/600_476518569.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/e/4/c/9/highres_476518569.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "256938286",
+              "title": "tim.js gathering",
+              "dateTime": "2018-12-12T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/256938286/",
+              "description": "... tralalalalaaaaaa la laaaaa la laaaaaaaaaaaaaaa\n\nNo presentations this December meetup.\nOnly Christmas spirit, drinks, old friends, new friends and chit-chat.\n\nLet's meet at CoWork Timisoara's new location.\nFree drinks until 19:30, so don't be late.\n\nSee you all on Wednesday!",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "257956171",
+              "title": "tim.js meetup 55",
+              "dateTime": "2019-01-23T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/257956171/",
+              "description": "We're kicking off this year with a special event. This edition will feature members from the TdT (Tabara de Testare) meetup from Timisoara, a meetup focused on Testing and Automation.\n\n---\n\n• Welcome + BIG announcement\n\n• Introduction to Kubernetes\nAlina Ionescu, Tester & DevOps Engineer @ Haufe Group\n\n• Cloud Testing Solutions Battle Royale\nPadineanu Cosmin, Technical Test Enginner @ Visma\n\n---\n\nAlina will share her experience using Docker & Kubernetes. She will demo how simple it is to automate the deployment process, scaling and rollback of an application, using Kubernetes.\n\nCosmin will talk about his research regarding cloud testing solutions, with a focus on 3 platforms that made it to the final battle: BrowserStack, CrossBrowserTesting and SauceLabs.\n\n---\n\nNOTE: We are always looking for speakers, so please send us your proposals.",
+              "photoAlbum": {
+                "photoCount": 11,
+                "id": "29636516",
+                "title": "tim.js meetup 55"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "259016723",
+              "title": "tim.js meetup 56",
+              "dateTime": "2019-02-27T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/259016723/",
+              "description": "We're celebrating the coming of spring with a new meetup and 2 presentations about ditching the need for an internet connection, both for publishing and developing web apps.\n\n---\n\n• Taking Angular Offline\nAdrian Fâciu, Software Developer at Visma\n\n• Isolated Components Driven Development\nAndrei Pfeiffer, Code Designer at [e-spres-oh]\n\n---\n\nNOTE: We are always looking for speakers, so please send us your proposals.",
+              "photoAlbum": {
+                "photoCount": 15,
+                "id": "29747626",
+                "title": "tim.js meetup 56"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/5/7/2/1/thumb_478882305.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/5/7/2/1/600_478882305.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/5/7/2/1/highres_478882305.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "259669357",
+              "title": "tim.js meetup 57: Technical Interviews",
+              "dateTime": "2019-03-20T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/259669357/",
+              "description": "Open Discussion: Technical Interviews\n\nWe invite everybody to join this open discussion regarding Technical Interviews, with a focus on Front-End / JavaScript technologies.\n\nWho should join?\n- anybody who usually attends technical interviews\n- all developers interested in what interviewers are looking for\n\n---\n\nLet's discuss about:\n- what do you expect candidates to know?\n- what do you appreciate the most?\n- how do you evaluate candidates?\n- how does a typical interview usually go?\n\n---\n\nNOTE: We are always looking for speakers, so please send us your proposals.",
+              "photoAlbum": null,
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/c/9/4/e/thumb_479391534.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/c/9/4/e/600_479391534.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/c/9/4/e/highres_479391534.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "260366963",
+              "title": "tim.js meetup 58",
+              "dateTime": "2019-04-17T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/260366963/",
+              "description": "During this April meetup we'll take a look at the APIs offered by HERE maps, dedicated to geospatial apps development.\n\n---\n\n• Meet HERE: #LocationForDevelopers\n\nOctavian Borcan, Community Lead at HERE Technologies\nOlaru Razvan, Software Developer at 3Pillar Global\n\n---\n\nNOTE: We are always looking for speakers, so please send us your proposals.",
+              "photoAlbum": {
+                "photoCount": 8,
+                "id": "29906966",
+                "title": "tim.js meetup 58"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "261294536",
+              "title": "tim.js meetup 59",
+              "dateTime": "2019-05-22T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/261294536/",
+              "description": "This meetup, our friends from WeVideo will walk us through the browsers' native APIs for Webcam and Screen Video Recording.\n\n---\n\nRecording in the browser\nCristian Diaconescu, Senior Front-End Dev & Architect @WeVideo\n\n---\n\nNOTE: We are always looking for speakers, so please send us your proposals.",
+              "photoAlbum": {
+                "photoCount": 20,
+                "id": "30011411",
+                "title": "tim.js meetup 59"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/8/d/d/thumb_481262269.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/8/d/d/600_481262269.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/8/d/d/highres_481262269.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "262199969",
+              "title": "tim.js Meetup #60",
+              "dateTime": "2019-06-19T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/262199969/",
+              "description": "Hey hey!\nRegardless of what the weather will be like next week (it's one week autumn, the other hot summer), we're inviting you to a new (round) edition of tim.js.\n\nTeaser: State of AI in JS [2019 Edition].\nType: Presentation + Open Discussion.\n\nVictor Adăscăliței and Radu Milici are going to walk US through the current state of AI and explore what’s possible with this technology in the world of JS.\n\nSee you there!",
+              "photoAlbum": {
+                "photoCount": 22,
+                "id": "30094218",
+                "title": "tim.js Meetup #60"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/4/4/7/b/thumb_482177531.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/4/4/7/b/600_482177531.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/4/4/7/b/highres_482177531.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "262841673",
+              "title": "tim.js meetup 61",
+              "dateTime": "2019-07-24T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/262841673/",
+              "description": "We have full girl powah this edition, which will be fully focused on design.\n\n---\nAgenda:\n\n➡️ Building your first Design System\nAnca Spatariu - Senior Frontend Developer Steadforce\n\n➡️ The flavors of design\nMilena Vlad, Meetup Organizer at Design Club Timisoara & UX/UI designer at 123FormBuilder\n\n---\n\nTalks description:\n\n➡️ Building your first Design System\n\nDesign systems make everyone's life better, whether we're talking about programmers, designers or maketers. Building one, however, might be scary, when in fact you just need to start somewhere and go from there. This presentation aims to give you the basics and a kick in the right direction.\n\n---\n\n➡️ The flavors of design - why should anyone care about them?\n\nConsidering the ever changing job titles, continuous confusion, search for design unicorns that fail to appear, and constant belief that we are all artists at heart, I would like to discuss how different & not necessarily good at everything we all are and why that is a good thing.\n\nWhat is the presentation about?\nRaising awareness about the different design roles, goals, capabilities & processes. Highlighting the value we can bring to the teams & projects. Describing what motivates us, drives our decisions and all the aspects that we need to balance.\n\nWhy is this relevant?\nIt’s an opportunity to discuss things that can improve the designer-developer collaboration, by removing assumptions & aligning expectations; as well as facilitate communication by speaking in terms that we all understand & care about.\n\n---\n\nNOTE: We are always looking for speakers, so please send us your proposals.",
+              "photoAlbum": null,
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/c/6/5/3/thumb_483410771.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/c/6/5/3/600_483410771.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/c/6/5/3/highres_483410771.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "263940128",
+              "title": "tim.js meetup 62: AMA (Ask Me Anything)",
+              "dateTime": "2019-08-21T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/263940128/",
+              "description": "This August edition is ALL ABOUT YOU. Whatever you want to find out about JavaScript, this is the PERFECT place and time.\n\nThe idea is shamelessly stolen from JSHeroes, who tried it the past month.\n\nSo, instead of the informal August networking meetup, we'll have an informal AMA (Ask Me Anything) meetup.\n\nWe'll have wine & beer this meetup, so don't bring your car.\n\n---\nAgenda will be decided by you.\n\nPlease fill in the form below to choose what you want us to discuss:\nhttps://forms.gle/JPso4Yw86aauoaJx8\n---\n\nWhat is AMA?\n\nThe AMA (Ask Me Anything) is a format where anyone can ask ANYTHING they want to know, to find out, to learn more, or to better understand something.\n\nWe have prepared a list of examples that we found useful for everybody, but please fill in, or bring your own questions.\n\n---\n\nNOTE: We are always looking for speakers, so please send us your proposals.",
+              "photoAlbum": null,
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/b/d/c/2/thumb_483948578.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/b/d/c/2/600_483948578.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/b/d/c/2/highres_483948578.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "265560990",
+              "title": "tim.js meetup #63",
+              "dateTime": "2019-10-23T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/265560990/",
+              "description": "Hello JS friends,\n\nAs the good vibes of revo.js are still bouncing around, let's meet and keep the momentum going.\n\nWe have 2 interesting topics on the agenda:\n\n❶\n\"Functional vs Reactive Programming for JS People\"\nby Rares Portan\n\n❷\n\"Making Nelu Kernelul, a Jupyter Node.js Kernel\"\nby Victor Adascalitei and Radu Milici\n\nSee you at the 6th floor of the B Building in the Piata 700 Office. 🚀",
+              "photoAlbum": {
+                "photoCount": 21,
+                "id": "30470282",
+                "title": "tim.js meetup #63"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "266430983",
+              "title": "tim.js meetup #64",
+              "dateTime": "2019-11-27T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/266430983/",
+              "description": "Hello JS people,\n\nWe're inviting you to the autumn edition of tim.js meetup with 2 interesting topics:\n\n1. My point of Vue - Alex Grozav, Front End Developer @ Visma\n2. The Trichotomy of UI Development - Andrei Pfeiffer, Code Designer @ [e-spres-oh]\n\nSee you there!\n\nNOTE: We are always looking for speakers, so please send us your proposals.",
+              "photoAlbum": {
+                "photoCount": 17,
+                "id": "30561093",
+                "title": "tim.js meetup #64"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/5/d/3/5/thumb_486983861.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/5/d/3/5/600_486983861.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/5/d/3/5/highres_486983861.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "267132787",
+              "title": "tim.js gathering",
+              "dateTime": "2019-12-18T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/267132787/",
+              "description": "2019 is almost over, so let's look back together and share our learnings during this past year, but also your future plans for 2020.\n\nThink about one thing that you've learned and recommend to everybody.\nThink about what you would like to learn next.\n\nWe'll meet at 18:30 at Taproom by Bereta.\n\nSee you all on Wednesday!",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "267986618",
+              "title": "tim.js meetup #65",
+              "dateTime": "2020-01-29T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/267986618/",
+              "description": "New year, new things to learn.\n\n---\n\n• Web components with LitElement\nAdrian Fâciu, Software Developer at Visma\n\n• Memoization in React\nAndrei Pfeiffer, Code Designer at [e-spres-oh]\n\n---\n\nNOTE: We are always looking for speakers, so please send us your proposals.",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "268682004",
+              "title": "tim.js meetup #66",
+              "dateTime": "2020-02-26T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/268682004/",
+              "description": "This February meetup will take place at Ness Digital Engineering.\nWe'll take a look at 2 new topics that haven't been discussed before at tim.js.\n\nHere's the agenda:\n\n---\n\n➡️ A boomers intro to Svelte\nRăzvan Plăcintar - UI Tech Lead, at Ness Digital Engineering\n\n➡️ Controlling Hardware with JavaScript\nAnca Spătariu - Senior Frontend Developer, at Steadforce\n\n---\n\nℹ️A boomers intro to Svelte\nThis is an introductory talk and we'll answer questions like what Svelte is and how it fits in todays front-end world, how it compares to React / Vue / Angular and finally we'll showcase its syntax and features using an example app.\n\nℹ️Controlling Hardware with JavaScript\nIn this live demo session we'll take a look at how we can use JavaScript to communicate with an Arduino board, by sending commands to it and also receiving input from other hardware components.\n\n---\n\nNOTE: We are always looking for speakers, so please send us your proposals at **contact@timjs.ro**.",
+              "photoAlbum": {
+                "photoCount": 35,
+                "id": "30791152",
+                "title": "tim.js meetup #66"
+              },
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "278376410",
+              "title": "tim.js gathering",
+              "dateTime": "2021-06-02T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/278376410/",
+              "description": "We're back in business!\n\nIt's been a while since we've met in person, but we believe the time has come to regroup.\n\nLet's get together for an informal meetup without any talks, but with a lot of talking. We would like to hear your thoughts regarding upcoming regular meetups and workshops that we're planning.\n\nFirst drink is on us. See you all soon!\n\nPS: keep in mind that we will stay outdoors :)",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "279213386",
+              "title": "tim.js meetup #67",
+              "dateTime": "2021-07-14T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/279213386/",
+              "description": "We're so happy we got the chance to meet up in person at our last gathering. We hope you'll join us again this month, for the first presentations in what seems like forever.\n\nWe'll meet at Visma Software this time. To ensure that everyone stays healthy, we've taken all the precautions and we limited the number of attendees to just 30. Hurry up and grab your spot. 🙋‍♀️🙋‍♂️🙋\n\nHere's the agenda:\n\n---\n\n➡️ Sharing code at runtime using module federation\nAdrian Fâciu - Frontend Developer @wevideo\n\n➡️ Simple vs. Easy\nAndrei Pfeiffer - Freelance Code Designer\n\n---\n\nℹ️ Sharing code at runtime using module federation\n\nWe usually share code by publishing NPM modules, using micro frontend frameworks or other similar options. In this talk, we are going to look at module federation and how multiple builds can form a single application. A short practical demo will be included along with discussions about use cases to better understand when and where we might want to use it.\n\nℹ️ Simple vs. Easy\n\nSimple solutions usually require a lot of effort during their usage, but they also provide a high level of control. Complex solutions are usually easy to use, but retain the control for themselves. This theory applies both at high-level architecture and also at low-level, day-to-day code design.\n\nWe'll explore different methods for tackling software complexity, by deeply understanding our users and deciding where to place the control: in the implementation, or in the consumer.\n\n---\n\nNOTE: We are always looking for speakers, so please send us your proposals at **contact@timjs.ro**.",
+              "photoAlbum": {
+                "photoCount": 16,
+                "id": "31529222",
+                "title": "tim.js meetup #67"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/b/7/0/3/thumb_497266851.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/b/7/0/3/600_497266851.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/b/7/0/3/highres_497266851.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "279925502",
+              "title": "tim.js gathering",
+              "dateTime": "2021-08-11T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/279925502/",
+              "description": "This august we'll gather for a casual meetup in Victory Square Partners' backyard. Barbecue & drinks are included so make sure to come with an empty stomach and an appetite for networking.\n\nIMPORTANT:\nA vaccination certificate is required for this meetup, preferably in electronic format. If you don't have a vaccination certificate and want to attend this meetup, please send us a message.",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "285054976",
+              "title": "tim.js meetup #68",
+              "dateTime": "2022-04-20T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/285054976/",
+              "description": "Hello JavaScript-ers,\nLong time no meetup. Since spring is just around the corner, we're also ready to regroup with our monthly in-person meetups.\n\nHope that you're as excited as we are ☺️ We’ll meet at Visma Software again, UBC3 building, 10th floor.\n\nHere's the agenda:\n\\-\\-\\-\n1️⃣ **re-frame architecture** (a.k.a what redux should have been)\nBoogie Bugarschi - Technical Lead @ VSP\n\n2️⃣ **i18n & l10n** (Internationalization & Localization)\nAndrei Pfeiffer - Code Designer @ Smilecloud\n\\-\\-\\-\n\n1️⃣ re-frame architecture\nA simple, functional, easy to test and easy to \"get right\" ui architecture that pushes i.o. to the edges of your system.\n\n2️⃣ i18n & l10n\nThis talk explains the difference between Internationalisation and Localisation, and how to implement translations and pluralisations using i18next. We'll also take a look at the ECMAScript Intl standard and how to use its APIs to apply localised formatting to numbers, currencies, dates and times.\n\n\\-\\-\\-\nNOTE: We are always looking for speakers, so please send us your proposals at **contact@timjs.ro**.",
+              "photoAlbum": {
+                "photoCount": 1,
+                "id": "32303772",
+                "title": "tim.js meetup #68"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/7/5/7/6/thumb_503370070.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/7/5/7/6/600_503370070.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/7/5/7/6/highres_503370070.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "285690477",
+              "title": "tim.js meetup #69",
+              "dateTime": "2022-05-18T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/285690477/",
+              "description": "Hello JavaScript-ers,\n\nWe hope to see you in May for our new meetup!\n\nThis time we'll meet up in a new location, at our friends from WeVideo. The address is *12 Popa Sapca Street*.\n\nHere's the agenda:\n\\-\\-\\-\n1️⃣ **Game of Life and Performance**\nAndrei Pfeiffer - Code Designer @ SmileCloud\n\n2️⃣ **I can read your mind using JavaScript**\nAnca Spatariu - Frontend Developer @ WeVideo\n\\-\\-\\-\n\n👾 Game of Life and Performance\n\nThis is a 2-part talk. The first part is an introduction to John Conway's Game of Life and some of it's practical applications today. The second part walks through an implementation of Game of Life in React. We'll measure rendering performance and code execution performance, identify bottlenecks and optimize our solution to run at 60fps.\n\n🧠 I can read your mind using JavaScript\n\nAn almost entirely live coded session centered around Web Bluetooth. We'll use a wearable EEG sensor to read the electrical activity of the brain an do something interesting with the readings.\n\n\\-\\-\\-\nNOTE: We are always looking for speakers, so please send us your proposals at **contact@timjs.ro**.",
+              "photoAlbum": {
+                "photoCount": 4,
+                "id": "32406601",
+                "title": "tim.js meetup #69"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/c/4/5/d/thumb_503870269.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/c/4/5/d/600_503870269.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/c/4/5/d/highres_503870269.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "286112800",
+              "title": "tim.js meetup #70",
+              "dateTime": "2022-06-07T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/286112800/",
+              "description": "Hello JavaScript-ers,\n\nIt's time we see each other again! This time we're meeting at Faber and the hosts will be our friends from NearForm. We'll have our usual two talks and after them you're invited to stay for drinks at Ambasada. 😁\n\nHere's the agenda:\n\\-\\-\\-\n\n1️⃣ **The tale of avoiding a time-based DDOS attack in Node.js**\nPaolo Insogna - Node.js Member & Senior Developer @ NearForm\n\n2️⃣ **DIY monorepos in 2022**\nOvidiu Ispas - Senior Frontend Developer @ Cognizant Softvision\n\n\\-\\-\\-\nNOTE: We are always looking for speakers, so please send us your proposals at **contact@timjs.ro**.",
+              "photoAlbum": {
+                "photoCount": 1,
+                "id": "32422879",
+                "title": "tim.js meetup #70"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/a/4/7/3/thumb_504342099.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/a/4/7/3/600_504342099.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/a/4/7/3/highres_504342099.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "286811842",
+              "title": "tim.js meetup #71",
+              "dateTime": "2022-07-06T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/286811842/",
+              "description": "Hey everyone,\n\nSummer is here and we have one more regular meetup before the summer vacation. Our friends from **WeVideo** will host this event 🤘\n\nHere's the agenda:\n\\-\\-\\-\n1️⃣ **SPA, SSR, SSG: How Remix gets the best of all worlds**\nAdrian Fâciu, Technical Lead @ WeVideo\n\n2️⃣ **The Evolution of Scalable CSS**\nAndrei Pfeiffer - Code Designer @ Smilecloud\n\\-\\-\\-\n\n🎛 **SPA, SSR, SSG: How Remix gets the best of all worlds**\nThere are several popular (JavaScript) frameworks for building web applications. They mostly come as single-page apps, server-side rendered or static site generated. We will briefly look at how these patterns work and how Remix gets some of the best ideas from them.\n\n🔮 **The Evolution of Scalable CSS**\nThis talk is a well-researched chronicle describing how CSS tools and techniques have evolved during the past 20 years. The goal is to present an objective view of the current and future state of writing maintainable CSS at scale, dissecting the weapons and tactics at our disposal in fighting against CSS entropy.\n\\-\\-\\-\n\nNOTE: We are always looking for speakers, so please send us your proposals at **contact@timjs.ro**.",
+              "photoAlbum": null,
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/c/1/9/f/thumb_505129567.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/c/1/9/f/600_505129567.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/c/1/9/f/highres_505129567.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "287879859",
+              "title": "tim.js gathering",
+              "dateTime": "2022-08-31T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/287879859/",
+              "description": "This august we'll gather for a casual meetup in Victory Square Partners' backyard. Barbecue & drinks are included so make sure to come with an empty stomach and an appetite for networking.\n\nSee you all soon!",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "288473116",
+              "title": "tim.js meetup #72",
+              "dateTime": "2022-09-21T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/288473116/",
+              "description": "Hello Timisoara JavaScript-ers,\nWe're slowly getting back to work after a long and hot summer, therefore we'll have only one talk this month.\n\nFor this September meetup, we'll regroup at Visma office again, UBC3 building, 10th floor. Looking forward to seeing you!\n\n\\-\\-\\-\n🎙 Short intro, by Andrei Pfeiffer\n\n**🎙 AB Testing Single Page Apps**\n**👨‍💻 Robert Todea** \\- Software Engineer @ Ladders\n\nExperimenting with different versions of a web page is a tool for increasing your business metrics. Unfortunately, classical solutions like Google Optimize are not trivial to integrate with Single-Page Applications (SPAs).\n\nWe will explore alternative frameworks that provide out-of-the-box solutions for integrating A/B testing with SPAs, debating their limitations at the same time.\n\\-\\-\\-\n\nNOTE: We are always looking for speakers, so please send us your proposals at **contact@timjs.ro**.",
+              "photoAlbum": {
+                "photoCount": 1,
+                "id": "32778149",
+                "title": "tim.js meetup #72"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/9/5/d/2/thumb_507038354.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/9/5/d/2/600_507038354.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/9/5/d/2/highres_507038354.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "289001050",
+              "title": "tim.js meetup #73",
+              "dateTime": "2022-10-19T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/289001050/",
+              "description": "Hello Timisoara JavaScript-ers,\nThis edition will be hosted in a new spot, at the highest altitude we've had a tim.js meetup so far: 14th floor 🦒.\n\n📍 Therefore, see you all at **Doctari Group Technologies**, in Iulius Town, UBC0 building, at 14th floor.\n\nHere's the agenda for this meetup:\n\n\\-\\-\\-\n**📱 Build fast mobile apps with Capacitor**\n**👤** ANDREAS MOELLER - Tech Lead at Doctari\n\n**⛔️ React error handling**\n**👤** HORIA RADU - Engineering Manager at [e-spres-oh]\n\\-\\-\\-\n\n**📱 Build fast mobile apps with Capacitor**\nYou will learn what a hybrid app is and about its advantages. I will set up a hybrid app with the Capacitor framework in a live coding session and demonstrate the push notification feature.\n\n**⛔️ React error handling**\nLet’s take a journey and look at a couple of different ways to handle errors in React (and React Native). We will look at pros and cons for each and of course, there will be no clear cut answer at the end :))\n\n\\-\\-\\-\nNOTE: We are always looking for speakers, so please send us your proposals at **contact@timjs.ro**.",
+              "photoAlbum": {
+                "photoCount": 1,
+                "id": "32873140",
+                "title": "tim.js meetup #73"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/4/e/0/8/thumb_507919976.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/4/e/0/8/600_507919976.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/4/e/0/8/highres_507919976.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "289379558",
+              "title": "tim.js meetup #74: Lightning Talks",
+              "dateTime": "2022-11-23T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/289379558/",
+              "description": "Hello again Timisoara JavaScript-ers,\n\nThis is the last regular meetup of the year, so we're kicking it hard with a diverse and engaging ⚡️**Lightning Talks**⚡️ session, max. 10 minutes / talk:\n\n\\-\\-\\-\n\n**📋 Agenda**\n\n**React Server Components - The Next Step**\nCiprian Caba -- VP of Engineering @ 7879\n\n**Staying safe from Authorization Managers**\nLucian Pacurar -- Tech Lead @ Visma\n\n**Storybook x Figma**\nVictor Vranceanu -- Software Engineer @ WeVideo\n\n**Internal vs. external interface names**\nAndrei Pfeiffer -- Code Designer @ Smilecloud\n\n**Live editing subtitles with WebVTT**\nAnca Spatariu -- Software Engineer @ WeVideo\n\n**Intro to Intersection Observer API**\nFlavius Badescu -- Frontend Developer @ ExWeVideo\n\n\\-\\-\\-\n\nSend us your proposals at **contact@timjs.ro**.",
+              "photoAlbum": {
+                "photoCount": 51,
+                "id": "32992018",
+                "title": "tim.js meetup #74: Lightning Talks"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/6/e/3/1/thumb_508648209.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/6/e/3/1/600_508648209.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/6/e/3/1/highres_508648209.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "290283318",
+              "title": "tim.js gathering",
+              "dateTime": "2022-12-21T18:00:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/290283318/",
+              "description": "Tis the season to be social! 🎄\n\nThis December, like every\\* year, we're gathering in a non-formal setting to have a chat, share some thoughts and wrap up 2022.\n\nOur host this year will be **WeVideo**, so we're waiting for you **Wednesday, Dec 21** on **12 Popa Sapca street** (the CBS building at the end of the alley) starting with **18:00**.\n\n___\n\\*except those when we have global pandemics, of course",
+              "photoAlbum": null,
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/6/a/a/8/thumb_483387304.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/6/a/a/8/600_483387304.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/6/a/a/8/highres_483387304.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "291000339",
+              "title": "tim.js meetup #75",
+              "dateTime": "2023-01-25T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/291000339/",
+              "description": "Hello Timisoara JavaScript-ers,\nWe're kicking off 2023 with a ***\"safety first\"*** mindset, focusing on type-safety with TypeScript.\n\nOur host for January is once again Visma, therefore let's thank them and see you all on the 10th floor, at UBC 3 building inside Iulius Town!\n\nAgenda:\n\\-\\-\\-\n1️⃣ **Type-safety for skeptics**\nAndrei Pfeiffer, Code Designer at Smilecloud\n\n2️⃣ **Build easy, type-safe APIs with tRPC**\nVictor Ionescu, Freelancer\n\\-\\-\\-\n\n1️⃣ **Type-safety for skeptics**\nIf you have doubts, dislike, or question type-safety, this talk is for you. If you don't understand how type-safety can help you, this talk is for you. If you don't know how to convince someone to use type-safe languages, this talk is for you.\n\n2️⃣ **Build easy, type-safe APIs with tRPC**\nLet's take a quick look at how easy it is becoming to write end-to-end type-safe APIs thanks to tRPC: no more code gen or build steps, just Typescript's great type inference. We'll check out some code examples and see tRPC's great developer experience in action.\n\n\\-\\-\\-\nNOTE: We are always looking for speakers, so please send us your proposals at **contact@timjs.ro**.",
+              "photoAlbum": {
+                "photoCount": 1,
+                "id": "33158969",
+                "title": "tim.js meetup #75"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/5/2/a/9/thumb_509961161.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/5/2/a/9/600_509961161.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/5/2/a/9/highres_509961161.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "291513659",
+              "title": "tim.js meetup #76",
+              "dateTime": "2023-02-15T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/291513659/",
+              "description": "Hello Timisoara JavaScript-ers,\n\nFor the February meetup, we'll regroup again at **Doctari Group Technologies**, in Iulius Town, UBC0 building, on the 14th floor.\n\nHere's the agenda for this meetup:\n\n\\-\\-\\-\n**1️⃣ Component Driven Development with Storybook**\nROBERT TODEA - Software Engineer @ Ladders\n\n**2️⃣ FullStack: The Way of GraphQL**\nCIPRIAN CABA - VP of Engineering @ 7879\n\\-\\-\\-\n\n**1️⃣ Component Driven Development with Storybook**\nWriting simple and maintainable UI components in React can be tricky, when everything is for grabs. There is nothing preventing us from calling backend APIs, browser APIs and third party APIs and thus adding extra layers of complexity to our UI components. Creating our components as if they are part of a component library can help us.\n\nStorybook is one tool to achieve component driven development.\nWe will explore Storybook installation & configuration, common and advanced use cases, and third-party integrations (e.g. visual regression testing).\n\n**2️⃣ FullStack: The Way of GraphQL**\nLet's see how we can leverage the power of GraphQL to provide seamless and performant access to the data layer.\n\nWe will explore a tech stack that promises to offer a robust and scalable solution that combines the best of both TypeScript and GraphQL, delivering a truly modern and efficient fullstack experience.\n\n\\-\\-\\-\nNOTE: We are always looking for speakers, so please send us your proposals at **contact@timjs.ro**.",
+              "photoAlbum": {
+                "photoCount": 1,
+                "id": "33247155",
+                "title": "tim.js meetup #76"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/2/7/9/3/thumb_510610131.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/2/7/9/3/600_510610131.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/2/7/9/3/highres_510610131.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "291979947",
+              "title": "tim.js meetup #77",
+              "dateTime": "2023-03-15T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/291979947/",
+              "description": "Hello Timisoara JavaScript-ers,\n\nThis March meetup will be hosted by Haufe.Group, probably having the office at the highest altitude in Timisoara: the 15th floor.\n\nAgenda:\n\n\\-\\-\\-\n**SolidJS for React Developers**\n*Victor Ionescu, Freelancer*\n\nDid you notice that SolidJS had the highest retention for the last 2 years in the State of JS? Would you like to give it a try, but don't have the energy required to learn another framework?\n\nIn this talk I'll show you that getting started with SolidJS is really easy if you already know React.\n\\-\\-\\-\n\nNOTE: We are always looking for speakers, so please send us your proposals at **contact@timjs.ro**.",
+              "photoAlbum": {
+                "photoCount": 1,
+                "id": "33304817",
+                "title": "tim.js meetup #77"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/4/6/e/a/thumb_511038154.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/4/6/e/a/600_511038154.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/4/6/e/a/highres_511038154.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "293320789",
+              "title": "tim.js meetup #78",
+              "dateTime": "2023-05-24T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/293320789/",
+              "description": "Hello Timisoara JavaScript-ers,\n\nHappy Spring! We skipped the last edition but once again we'll meet at Visma, therefore let's thank them and see you all on the 10th floor, at UBC 3 building inside Iulius Town!\n\nAgenda:\n\n\\-\\-\\-\n**Understanding Content Security Policy**\n*Lucian Pacurar, Tech lead @ Visma*\n\nThe software we use today has never been more secure but every year we experience a few large security breaches. Join me to find out how can we use CSP to mitigate some types of attacks and how can you monitor CSP violations.\n\\-\\-\\-\n\nNOTE: We are always looking for speakers, so please send us your proposals at **contact@timjs.ro**.",
+              "photoAlbum": {
+                "photoCount": 1,
+                "id": "33506219",
+                "title": "tim.js meetup #78"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/3/1/6/4/thumb_512592644.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/3/1/6/4/600_512592644.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/3/1/6/4/highres_512592644.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "293904319",
+              "title": "tim.js meetup #79 - Celebrating 10 years",
+              "dateTime": "2023-06-14T18:00:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/293904319/",
+              "description": "We've been console logging for **10 years**!!! 🙌\n\nTherefore, let's celebrate this event accordingly: 10 speakers, 10 lightning talks, 10 minutes / talk.\n\nWe're starting a bit earlier, at 18:00, and expect to be a longer meetup than usual. Also, don't bring your car 😉\n\nAGENDA:\n\\-\\-\\-\n**0️⃣ Andrei Pfeiffer** \\- Expecting TS compile errors\n**1️⃣ Anca Spatariu** \\- CSS cascade layers\n**2️⃣ Ciprian Caba** \\- APIs \\- An Obituary: The Evolution of Web Development\n**3️⃣ Adrian Faciu** \\- How to be a senior developer\n**4️⃣ Alex Berlovan** \\- Astro \\- The all in one web framework built for speed\n**5️⃣ Victor Ionescu** \\- Improve type safety with one line\n**6️⃣ Ovi Ispas** \\- 10 Rendering Patterns for Web Apps\n**7️⃣ Arpad Gabor** \\- Using Typescript for your Serverless Infrastructure\n**8️⃣ Robert Todea** \\- FE testing in Storybook\n**9️⃣ Calin Marian** \\- Boosting Development Efficiency with oclif\n\\-\\-\\-\n\nSee you all soon!",
+              "photoAlbum": {
+                "photoCount": 24,
+                "id": "33658218",
+                "title": "tim.js meetup #79 - Celebrating 10 years"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/2/b/9/d/thumb_513311165.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/2/b/9/d/600_513311165.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/2/b/9/d/highres_513311165.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "294681499",
+              "title": "tim.js meetup #80",
+              "dateTime": "2023-07-19T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/294681499/",
+              "description": "Hey Timisoara JavaScript-ers,\n\nWe're starting our 11th year with a meetup at **Doctari Group Technologies** in Iulius Town.\n\nHere's the agenda for this meetup:\n\n\\-\\-\\-\n**1️⃣ Stop ignoring TypeScript errors**\nANDREI PFEIFFER - Code Designer @ Smilecloud\n\n**2️⃣ Lessons from 200 Million Lines of Code**\nCASSIAN LUP - tim.js co-founder\n\\-\\-\\-\n\n**1️⃣ Stop ignoring TypeScript errors**\nAlthough TypeScript brings type-safety to the JavaScript ecosystem, it is not a \"sound\" language. In this talk we'll see some practical examples where we might have to temporarily skip type-checking, debating the lesser known \\`ts-expect-error\\` directive against the popular \\`ts-ignore\\`.\n\n**2️⃣ Lessons from 200 Million Lines of Code**\nCome and join me on a journey of tackling an atypical business requirement: reading 200 million lines of code. We’ll dig deeper into the why and the how. We’ll look behind the curtains of GitHub’s UI, we’ll talk about code complexity and we’ll implement a tool that can analyze any repository. We’ll use a little bit of scripting, containerisation and Node.js.\n\nWe’ll talk about what good product development looks like and we’ll hopefully leave this session more motivated to grow in our joined passion for developing great digital products. See you Wednesday!\n\n\\-\\-\\-\nNOTE: We are always looking for speakers, so please send us your proposals at **contact@timjs.ro**.",
+              "photoAlbum": {
+                "photoCount": 1,
+                "id": "33739007",
+                "title": "tim.js meetup #80"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/7/5/4/c/thumb_514410028.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/7/5/4/c/600_514410028.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/7/5/4/c/highres_514410028.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "295189211",
+              "title": "tim.js gathering",
+              "dateTime": "2023-08-23T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/295189211/",
+              "description": "This month we're taking a break from our regular technical talks to enjoy a casual social gathering at Reciproc Café. Besides the heated JavaScript discussions cooled by your favourite drink we're going to have a **Ask-Me-Anything** session with the organizers of **revo.js** **conference**. This is a rare opportunity you don't want to miss! See you all soon!",
+              "photoAlbum": {
+                "photoCount": 2,
+                "id": "33794089",
+                "title": "tim.js gathering"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/7/0/d/thumb_514861805.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/7/0/d/600_514861805.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/7/0/d/highres_514861805.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "296041373",
+              "title": "tim.js meetup #81",
+              "dateTime": "2023-09-27T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/296041373/",
+              "description": "Hey Timisoara JavaScript-ers,\nOne week before revo.js, we're gathering at Doctari Group Technologies with 2 talks from their own JavaScripters crew. Checkout the agenda below:\n\n\\-\\-\\-\n**1️⃣ Migrating from JavaScript to TypeScript**\nRobert Szalkai & Narcis Gherasim - Fullstack Engineer @ doctari group technologies\n\n**2️⃣ Descoperă React-Query: Gestionarea Ușoară a Datelor**\nRobert Szalkai & Narcis Gherasim - Fullstack Engineers @ doctari group technologies\n\\-\\-\\-\n\n**1️⃣ Migrating from JavaScript to TypeScript**\nA few tips to make your work easier when migrating a project from javascript to typescript. Showing the steps needed to easily get to a running typescript project.\n\n**2️⃣ Descoperă React-Query: Gestionarea Ușoară a Datelor**\nDescoperă React-Query și cum te ajută să gestionezi datele mai ușor. Vom explora funcționalitățile sale esențiale și modul în care simplifică gestionarea stării în aplicațiile React. O prezentare care îți va aduce claritate asupra acestui instrument puternic.\n\n\\-\\-\\-\nNOTE: We are always looking for speakers, so please send us your proposals at **contact@timjs.ro**.",
+              "photoAlbum": {
+                "photoCount": 1,
+                "id": "33931533",
+                "title": "tim.js meetup #81"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/d/2/c/thumb_515883372.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/d/2/c/600_515883372.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/d/2/c/highres_515883372.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "297478430",
+              "title": "tim.js meetup #82",
+              "dateTime": "2023-11-29T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/297478430/",
+              "description": "Hello fellow JavaScript-ers,\n\nThis month we'll gather at **Visma** for the autumn edition of **tim.js meetup**! Here's the agenda:\n\n**The State of jQuery**\nVictor Ionescu\n\nWait, what year is it? Yup, while everyone is talking about RSCs we're going to take a look at the OG \\`use client\\`, jQuery. What has changed in the last 10 years, do people still use it and was moving off of jQuery a good thing?\n\n**Hash Maps in TypeScript**\nAndrei Pfeiffer - Code Designer @ SmileCloud\n\nWe'll explore two different methods to implement Hash Maps with optional items in TypeScript and analyze the member access type-safety.\n\n\\-\\-\\-\nNOTE: We are always looking for speakers, so please send us your proposals at **contact@timjs.ro**.",
+              "photoAlbum": {
+                "photoCount": 1,
+                "id": "34122331",
+                "title": "tim.js meetup #82"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/9/b/7/6/thumb_517479798.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/9/b/7/6/600_517479798.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/9/b/7/6/highres_517479798.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "297788545",
+              "title": "tim.js gathering",
+              "dateTime": "2023-12-13T18:00:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/297788545/",
+              "description": "🎄 Tis the season to be social!\n\nThis December we are gathering again to network, and share some drinks and closing thoughts for 2023.\n\nWe'll be hanging out at **The Charlatan's Pub**. See you there!",
+              "photoAlbum": null,
+              "featuredEventPhoto": null
+            }
+          },
+          {
+            "node": {
+              "id": "298561050",
+              "title": "tim.js meetup #83",
+              "dateTime": "2024-01-31T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/298561050/",
+              "description": "🚀 Hello JavaScripters,\n\nIt's time to kick off 2024 with our first tim.js meetup, and this time we have a new awesome host: OPSWAT. Here's our agenda:\n\n**1\\. Building enterprise\\-level apps with NestJS**\n— Razvan Tamsa, Software Engineer @ OPSWAT\n\n⁠Exploring the power of NestJS, delving into its modular structure, dependency injection, and various tools for crafting APIs\n\n**2\\. WebXR: A Hands\\-on Introduction to VR Development**\n— Robert Todea, Full Stack Engineer @ Medical Augmented Intelligence\n\nJoin us for a fun and interactive session on WebXR, the new standard for immersive web experiences.\n\nWe will learn how to use A-Frame, a powerful framework that lets you create VR scenes and interactions with just HTML.\n\nWe will explore the entity-component-system (ECS) architecture and see how it makes VR development easy and flexible.\n\nAnd we will witness the magic of WebXR with an Oculus Quest 2 headset, one of the most popular VR devices on the market.\n\n**🗓️ Mark your calendars for Jan 31st and see you there!**",
+              "photoAlbum": {
+                "photoCount": 12,
+                "id": "34254010",
+                "title": "tim.js meetup #83"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/4/2/7/6/thumb_518537014.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/4/2/7/6/600_518537014.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/4/2/7/6/highres_518537014.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "299288452",
+              "title": "tim.js meetup #84",
+              "dateTime": "2024-02-28T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/299288452/",
+              "description": "Hello JavaScripters,\n\nLet's meet again for a new tim.js edition. This time we'll gather at Haufe Group for two awesome presentations:\n\n**1\\. Powering UI with Utilities**\nZoltán Szőgyényi - Co-founder and CEO at Bergside\n\nIn this talk you will learn the advantages and disadvantages of working with a utility-first CSS framework called Tailwind CSS and how this can improve communication between developers and even across companies. You'll also learn how you can use open-source UI component libraries to your advantage similar to Bootstrap but with the utility-first approach in your HTML and components.\n\n**2\\. SRP in depth**\nAndrei Pfeiffer - Code Designer @ Smilecloud\n\nThe Single Responsibility Principle, the first of the SOLID principles, is most likely the most subtle and difficult to detect. We'll experience an evolving piece of code and debate at which exact moment the SRP violation occurred and refactor our code accordingly. Lastly, we'll take a look at two real-life case studies and exemplify how we can detect potential SRP issues, before writing the actual code.\n\n✉️ We are always looking for speakers. Send your proposal at contact@timjs.ro\n💬 [Join our Discord](https://discord.com/invite/fTYxvBeBHr)",
+              "photoAlbum": {
+                "photoCount": 28,
+                "id": "34350584",
+                "title": "tim.js meetup #84"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/d/7/2/f/thumb_519235087.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/d/7/2/f/600_519235087.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/d/7/2/f/highres_519235087.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "299675459",
+              "title": "tim.js meetup #85",
+              "dateTime": "2024-03-20T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/299675459/",
+              "description": "Hi there JavaScripters, time for a new meetup. We'll be waiting for you at doctari on March 20th for another two awesome presentations:\n\n**1️⃣ Uniting Frontend and Backend: Sharing Code with NPM Packages**\nNarcis Gherasim - Senior Fullstack Developer with React Focus @ doctari group technologies\n\nHey there, fellow devs! Let’s dive into the world of NPM packages and how they can help us share code between frontend and backend development. We promise, no boring lectures, just practical tips and tricks!\n\n**2️⃣ Technical leadership for individual contributors**\nAdrian Fâciu - Principal Engineer @ WeVideo\n\nTechnical leadership is something expected from all engineers, especially from senior and above levels. And, most of the activities associated with technical leadership do not involve writing any code. So how do we handle this? Especially since our main job for the past decade was to write code… How do we increase our impact? How can we create a technical backlog and a technical strategy to guide us? In this talk, I will try to expand a bit on these topics and give some other practical examples of technical leadership initiatives. You should leave this talk better equipped to handle positions that require technical leadership, or at least, with a better understanding of what technical leadership is.\n\nWe are always looking for speakers, so please send us your proposals at **contact@timjs.ro**.\n\n*Please note that you will be asked to fill in a form at the front desk, to gain access into the building, so you might want to come a few minutes earlier.*",
+              "photoAlbum": {
+                "photoCount": 29,
+                "id": "34402320",
+                "title": "tim.js meetup #85"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/1/e/2/9/thumb_519607721.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/1/e/2/9/600_519607721.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/1/e/2/9/highres_519607721.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "300286332",
+              "title": "tim.js meetup #86",
+              "dateTime": "2024-04-17T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/300286332/",
+              "description": "Hi there JavaScripters, time for a new meetup and a new location. This month our host will be rankingCoach.\n\nWe'll have one awesome talk:\n\n**Getting started with SolidStart**\n\\-\\- Victor Ionescu\n\nSolidStart v1.0 is (almost) here. Will it give you a head start with your application? Is SolidJS \"production ready\" now? Let's take a quick look at all the cool stuff SolidStart brings.\n\nSee you there!",
+              "photoAlbum": {
+                "photoCount": 15,
+                "id": "34485581",
+                "title": "tim.js meetup #86"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/1/4/d/a/thumb_520265338.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/1/4/d/a/600_520265338.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/1/4/d/a/highres_520265338.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "300652660",
+              "title": "tim.js meetup #87",
+              "dateTime": "2024-05-15T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/300652660/",
+              "description": "Hello scripters,\n\nTime to meet again! This time we're gathering at our friends at Haufe Group for two presentations:\n\n1️⃣ **SRP vs OCP vs ISP**\n\\-\\- Andrei Pfeiffer\n\nIn this talk, we'll focus on 3 of the SOLID principles: SRP (the Single Responsibility Principle), OCP (the Open-Closed Principle), and ISP (the Interface Segregation Principle). While there are clear differences between the 3, they all share the same solution, which is the reason why we explore them together.\n\nWe'll see when each of the 3 principles are usually violated, what are the potential problems, how to identify them, and last but not least, how to solve them. No slides, just code and practical examples.\n\n2️⃣ **Introduction to WebRTC**\n\\-\\- Robert Todea\n\nIn this tech talk, we'll explore the fundamentals of WebRTC, a powerful protocol that enables seamless audio, video, and data exchange directly between browsers. Discover how WebRTC revolutionizes online interactions, making way for innovative applications.\n\nKey Points:\n(1) Understanding WebRTC: What it is, its core components, and how it establishes peer-to-peer connections.\n(2) The Power of Real-Time: Explore exciting use cases ranging from video conferencing and live streaming to online gaming and collaboration tools.\n(3) Scaling with MediaSoup: Learn how MediaSoup, a flexible server-side framework, allows you to build complex, large-scale WebRTC applications with advanced features.\n\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK) to speak at one of our future meetups.*\n\n*We're also on Discord. [Join our community.](https://discord.com/invite/fTYxvBeBHr)*",
+              "photoAlbum": null,
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/a/f/3/e/thumb_520664862.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/a/f/3/e/600_520664862.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/a/f/3/e/highres_520664862.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "301851097",
+              "title": "tim.js meetup #88",
+              "dateTime": "2024-07-03T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/301851097/",
+              "description": "Hi there JavaScripters, are you ready too meet again? This time we'll see you at rankingCoach, for two awesome presentations:\n\n**1\\. Design patterns in TypeScript \\#1: Mixin & Factory**\n🎙 Dan-Lucian Stefancu - Lead Engineer @ rankingCoach\n🎙 Teolin Codreanu - Senior Fullstack Developer @ Doctari Group\n\nWe're starting a series focused on design patterns in Typescript. In this first edition we'll be focusing on a structural design pattern (Mixin) and a creational pattern (Factory), both used with the purpose of loose coupling and code reusability.\n\nMixin - how to add functionality without using inheritance.\nFactory - how to create classes without having to specify their exact class.\n\nThe presentations will include a bit of theory, use cases, examples, best practices, and suboptimal solutions.\n\n**2\\. How WebGL works**\n🎙️ Cosmin Munteanu - Core Developer @ WeVideo\n\nLooking under the hood on how we talk to the GPU to draw stuff on the screen\n\n___\n\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK?typeform-source=www.meetup.com) to speak at one of our future meetups.*\n*We're also on Discord. [Join our community](https://discord.com/invite/fTYxvBeBHr)[.](https://discord.com/invite/fTYxvBeBHr)*",
+              "photoAlbum": {
+                "photoCount": 23,
+                "id": "34695040",
+                "title": "tim.js meetup #88"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/2/6/5/5/thumb_521949813.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/2/6/5/5/600_521949813.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/2/6/5/5/highres_521949813.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "302266394",
+              "title": "tim.js meetup #89",
+              "dateTime": "2024-07-31T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/302266394/",
+              "description": "Hello javascripters, it's time to meet up again. This time, our host will be Haufe Group. Here's the agenda:\n\n**1️⃣ Schema Driven Development**\nCiprian Caba\n\nDo you ever grow tired of managing types, data models, database migrations, runtime validations, api endpoints, openapi schemas? What if there was a better way to manage them so you can actually focus on functionality rather than chores?\n\nLet’s build a simple app and explore how using one single source of truth can make everything better\n\n**2️⃣ Modern HTTP Streaming using Web Standards**\nAndrei Pfeiffer\n\nFew things are more annoying than waiting for a heavy webpage to load and not seeing any visual progress. Using async requests, we can lazy load the heavy content, displaying the rest of the page to the user sooner and introducing visual indicators to suggest loading progress. However, since serving the initial page is the server’s job, we’ll analize various methods to place the control back in the server regarding initial page rendering. We’ll examine how popular frameworks perform SSR Streaming, but also showcase a novel proof of concept using Declarative Shadow DOM to load webpages progressively, out of order, and without JavaScript.\n\nThis talk is a fully hands-on demo, exploring multiple approaches to loading heavy content on Server-Side Rendered webpages. The demo includes minimal complexity, using only Express.js and native APIs. No frameworks, no libraries, just vanilla code for everyone to understand. However, this talk is not limited to Node.js. Everything we’ll cover equally applies to any server-side programming language.\n\n***\n\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK?typeform-source=www.meetup.com) to speak at one of our future meetups.*\n*We're also on Discord. [Join our community.](https://discord.com/invite/fTYxvBeBHr)*",
+              "photoAlbum": {
+                "photoCount": 44,
+                "id": "34774342",
+                "title": "tim.js meetup #89"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/b/f/8/2/thumb_522409026.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/b/f/8/2/600_522409026.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/b/f/8/2/highres_522409026.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "302786647",
+              "title": "tim.js summer gathering",
+              "dateTime": "2024-08-21T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/302786647/",
+              "description": "Hey there javascripters, it's time for our annual summer event! ☀️\n\nYou know what that means! We'll have no talks, no agenda, but a big appetite for networking.\n\nSee you on August 21st at Reciproc. The drinks ordered in the first hour are on us!",
+              "photoAlbum": null,
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/9/b/2/b/thumb_522879723.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/9/b/2/b/600_522879723.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/9/b/2/b/highres_522879723.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "303468570",
+              "title": "tim.js meetup #90",
+              "dateTime": "2024-09-25T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/303468570/",
+              "description": "Hello javascripters, after the summer break, we're back in business. This time we'll see you at rankingCoach where we're kicking it off with an awesome presentation:\n\n**Automated testing: from isolation to full integration**\n*Andrei Pfeiffer*\n\nI started writing automated tests a decade ago, around 2013. At that time, QUnit was the popular testing framework for JavaScript. Soon after that, Jasmine and Karma took over the front-end scene, while Mocha, Chai, and Sinon were the preferred choices for Node.js. On the other hand, regarding end-to-end full system tests, Selenium was reigning supreme.\n\nNowadays, I'm using a totally different toolkit. In this talk, I'll go over the tools, practices, and philosophies I currently use to write automated functional tests, covering unit, integration, and end-to-end tests as well.\n\n\\*\\*\\*\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK?typeform-source=www.meetup.com) to speak at one of our future meetups.*\n*We're also on Discord. [Join our community.](https://discord.com/invite/fTYxvBeBHr)*",
+              "photoAlbum": {
+                "photoCount": 7,
+                "id": "34897423",
+                "title": "tim.js meetup #90"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/b/7/c/a/thumb_523547050.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/b/7/c/a/600_523547050.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/b/7/c/a/highres_523547050.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "304002716",
+              "title": "tim.js meetup #91",
+              "dateTime": "2024-10-23T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/304002716/",
+              "description": "Hello JavaScripters, we're happy to see you again! This time we are meeting at Opswat. Here's the agenda:\n\n**Flying drones with JavaScript**\nAnca Spatariu\n\nAs a JavaScript developer, I love it when my code interacts with the physical world. In this presentation we are going to use vanilla JavaScript, NodeJS and a sprinkle of magic to control a real life drone.\n\nIf all goes well, by the end of the presentation we'll have coded a dashboard for controlling it from the browser, including a video stream coming straight from the camera.\n\n\\*\\*\\*\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK?typeform-source=www.meetup.com) to speak at one of our future meetups.*\n*We're also on Discord. [Join our community.](https://discord.com/invite/fTYxvBeBHr)*",
+              "photoAlbum": {
+                "photoCount": 16,
+                "id": "34925445",
+                "title": "tim.js #91"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/7/4/8/b/thumb_524069835.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/7/4/8/b/600_524069835.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/7/4/8/b/highres_524069835.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "304397662",
+              "title": "tim.js meetup #92",
+              "dateTime": "2024-11-20T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/304397662/",
+              "description": "Hello JavaScripters,\n\nIt's time for us to meet again. This time, our host will be 3Pillar Global. Here's the agenda:\n\n\\*\\*\\*\n\n**Github Copilot in React Development**\nRares Portan, Tech Lead @ 3Pillar Global\nMihnea Lungu, Senior Software Engineer @ 3Pillar Global\n\nAI.\nThe world has changed. We programmers feel it more than anyone else.\nTo survive, we don't compete with AI to do our job. We learn to use the AI to do our job better.\n\nGithub Copilot AI is less intrusive than most. It can suggest code snippets, take care of boilerplate code, can even explain pieces of code. Pair programming at its finest.\n\nThere is a dark side too. From clearly flawed, wrong or ineficient code to subtle bugs, it can do more harm than good in naive hands. Can we do something about it?\n\n**htmx: More than a meme?**\nVictor Ionescu, htmx CEO\n\nWithout a doubt htmx's irreverent meme-ing made it one of the most hyped new frameworks out there; everybody has heard of it, but is anyone really using it? Is the simple life proposed by htmx actually a step in the right direction for the front-end or is htmx just out of touch with the reality of the JS world?\n\nIn this talk we'll get hands-on with some **real** htmx code and see if it's something worth considering. If not, at least there will be memes\n\n\\*\\*\\*\n\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK?typeform-source=www.meetup.com) to speak at one of our future meetups.*\n\n*We're also on Discord. [Join our community.](https://discord.com/invite/fTYxvBeBHr)*",
+              "photoAlbum": {
+                "photoCount": 6,
+                "id": "35003404",
+                "title": "tim.js meetup #92"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/9/6/d/5/thumb_524558613.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/9/6/d/5/600_524558613.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/9/6/d/5/highres_524558613.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "304900323",
+              "title": "tim.js gathering",
+              "dateTime": "2024-12-11T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/304900323/",
+              "description": "**Hello JavaScripters!**\n\n'Tis the season to be social! 🎄 As the year winds down, we’re bringing the tim.js community together in true festive fashion. This time, we’re teaming up with our friends at Banat IT for an evening of good company, drinks, snacks, and conversations to wrap up 2024 in style.\n\n📅 **When:** December 11th, 18:30\n📍 **Where:** Reciproc Café (Bastion)\n\nCome join us as we toast to another fantastic year. We can’t wait to see you there!",
+              "photoAlbum": null,
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/7/7/d/0/thumb_525030672.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/7/7/d/0/600_525030672.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/7/7/d/0/highres_525030672.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "305625277",
+              "title": "tim.js meetup #93",
+              "dateTime": "2025-01-29T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/305625277/",
+              "description": "Hello JavaScripters! It's time to kick off the 2025 season! I hope you had a wonderful holiday and are feeling excited for an awesome new presentation. Take a look at the agenda below:\n\n\\*\\*\\*\n\n**Dependencies, Inversions, and more.**\n\\-\\- Andrei Pfeiffer\\, Code designer @ Smilecloud\n\nThis talk is a deep dive into the Dependency Inversion Principle. We'll analyse in detail what dependencies are and how to categorize them. We'll see what \"inversion\" actually means, why and when should we do it. We'll see how we can visualise the dependency graph of our application and introduce architectural boundaries. Besides theory, we'll also take a look at a simple example to exemplify how easy is it to break the DIP and what the consequences are.\n\n\\*\\*\\*\n\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK?typeform-source=www.meetup.com) to speak at one of our future meetups.*\n*We're also on Discord. [Join our community.](https://discord.com/invite/fTYxvBeBHr)*",
+              "photoAlbum": {
+                "photoCount": 15,
+                "id": "35128181",
+                "title": "tim.js meetup #93"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/7/8/e/c/thumb_525750956.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/7/8/e/c/600_525750956.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/7/8/e/c/highres_525750956.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "306150876",
+              "title": "tim.js meetup #94",
+              "dateTime": "2025-02-26T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/306150876/",
+              "description": "Hello JavaScripters, time to meet again! This time we're tackling two interesting topics which we're sure you'll want to hear more about. Here's the agenda:\n\n\\*\\*\\*\n**How to support our community (opening word)**\nAnca Spatariu, tim.js co-organizer\n\n**Migrating to React 18 (⚡️ lightning talk)**\nAndrei Pfeiffer, Code Designer @ Smilecloud\n\n**One AI to rule them all \\~/ npm i ai**\nCiprian Caba, CTO @ Ralph\n\nIf you need to install one package to interact with your LLM foundation models, make sure to try the AI SDK from Vercel. Easy to use, easy to change, fun to work with, always up to date.\n\nDon't miss the hype, we'll explore some common use cases for LLMs and how they can help you get things done in a very typesafe way.\n\n\\*\\*\\*\n\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK?typeform-source=www.meetup.com) to speak at one of our future meetups.*\n*We're also on Discord. [Join our community.](https://discord.com/invite/fTYxvBeBHr)*",
+              "photoAlbum": {
+                "photoCount": 16,
+                "id": "35180430",
+                "title": "tim.js meetup #94"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/8/d/2/c/thumb_526236140.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/8/d/2/c/600_526236140.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/8/d/2/c/highres_526236140.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "306591517",
+              "title": "tim.js meetup #95",
+              "dateTime": "2025-03-20T18:30:00+02:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/306591517/",
+              "description": "Hello javascripters,\n\nTime to meet again an expand our knowledge with two awesome presentations.\n\nWe know you're used to our Wednesday meetups but this time ❗ **we are meeting on a Thursday ❗**.\n\nHere's the agenda:\n\n\\*\\*\\*\n\n**Enhancing Your Code with Advanced TypeScript**\nTitian Cernicova-Dragomir, Software Engineer @ Bloomberg LP\n\nThis talk will introduce you to some advanced TypeScript techniques that can make your React components more expressive and predictable. We’ll cover union types, discriminated unions, and conditional types, providing practical examples that demonstrate how these tools can help model complex component behaviors. You'll gain valuable insights into how TypeScript can improve your React components and when to apply these more complicated techniques as well as when not to.\n\n**Declutter your codebase with Knip**\nRares Ionescu, Frontend Developer @ WeVideo\n\nLearn how Knip can help you clean up your codebase by finding unused files, dependencies, and exports. In this presentation, we’ll go over practical ways to remove clutter, cut out dead code, and make your project easier to manage.\n\n\\*\\*\\*\n\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK?typeform-source=www.meetup.com) to speak at one of our future meetups.*\n*We're also on Discord. [Join our community.](https://discord.com/invite/fTYxvBeBHr)*",
+              "photoAlbum": {
+                "photoCount": 28,
+                "id": "35231672",
+                "title": "tim.js meetup #95"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/3/a/c/9/thumb_526635049.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/3/a/c/9/600_526635049.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/3/a/c/9/highres_526635049.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "307221232",
+              "title": "tim.js meetup #96",
+              "dateTime": "2025-04-23T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/307221232/",
+              "description": "Hello javascripters,\n\nAfter the short Easter break it's time to meet up again. This time our host will be **doctari group**. Check out the agenda:\n\n\\*\\*\\*\n**1.** **ESLint9:** **Keep code quality in check**\nRoland Paiusan, Senior Software Engineer @ WeVideo\n\nWe’ll talk about why ESLint 9 is worth the upgrade, what’s new, and how to set up rules that actually help instead of getting in your way. We’ll also cover how to manage large projects, clean up dead code, and deal with too many linting errors. And for those curious about what’s next, we’ll touch on some faster, newer tools.\n\n**2\\. Anti\\-patterns: how to annoy your team\\-mates in style**\nTeolin Codreanu, Senior Fullstack Developer @ doctari group\n\nIf you accidentally made too many friends at work and don't know how to get rid of them, this workshop will be a lifesaver. True believers and legendary antipatternists can even get the ultimate achievement: get fired in a blaze of glory!\n\n\\*\\*\\*\n\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK?typeform-source=www.meetup.com) to speak at one of our future meetups.*\n*We're also on Discord. [Join our community.](https://discord.com/invite/fTYxvBeBHr)*",
+              "photoAlbum": {
+                "photoCount": 25,
+                "id": "35300380",
+                "title": "tim.js meetup #96"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/2/4/c/b/thumb_527289419.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/2/4/c/b/600_527289419.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/2/4/c/b/highres_527289419.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "307715546",
+              "title": "tim.js meetup #97",
+              "dateTime": "2025-05-21T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/307715546/",
+              "description": "Hello JavaScripters,\n\nAre you ready for a new and engaging tim.js edition? This time we're meeting at Haufe Group. Here's the agenda:\n\n\\*\\*\\*\n\n**1\\. Micro Frontends \\- with Module Federation**\n\\-\\- Paul Comanici\\, Principal Engineer @ 8x8\n\nA presentation on micro frontends, covering available options, their pros and cons, and the benefits of using this architecture, with a focus on Module Federation as a specific implementation approach.\n\n**2\\. Developer Friendly Code: Practical Tips for Readability**\n\\-\\- Adrian Faciu\\, Principal Engineer @ WeVideo\n\nCode is written once, but read by others countless times. We should optimize for the read scenario and help others, or even future us, read the code. From using white space to managing complexity, let’s take a look at some basic principles for writing code that’s more readable and easier to understand. There will be programming language agnostic principles, but examples will be from TypeScript/JavaScript.\n\n\\*\\*\\*\n\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK?typeform-source=www.meetup.com) to speak at one of our future meetups.*\n*We're also on Discord. [Join our community.](https://discord.com/invite/fTYxvBeBHr)*",
+              "photoAlbum": {
+                "photoCount": 25,
+                "id": "35363152",
+                "title": "tim.js meetup #97"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/2/b/1/5/thumb_527831029.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/2/b/1/5/600_527831029.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/2/b/1/5/highres_527831029.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "308506228",
+              "title": "tim.js meetup #98",
+              "dateTime": "2025-06-25T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/308506228/",
+              "description": "Hello JavaScripters,\n\nWe hope to see you for a new tim.js edition, this time at rankingCoach. Here's the agenda:\n\n\\*\\*\\*\n\n**1\\. Dependency Management in Modern Web Projects**\n\\-\\- Adrian Faciu\\, Principal Engineer @ WeVideo\n\nWhen you kick off a new project, dependency management is often the last thing on your mind. But as your codebase grows, you’ll start bumping into issues like conflicting versions, missing dependencies, and security concerns. If you decide to move into a workspace or monorepo setup, dependency management becomes even more complex.\n\nLet’s explore some practical solutions and strategies for tackling these challenges, along with some popular tools that can improve your workflow.\n\n**2\\. The code etymologist**\n\\-\\- Andrei Pfeiffer\\, Platform Engineer @ Smilecloud\n\nIn ancient times, knowledge was passed down through word of mouth, like an endless game of telephone where details changed with each retelling. Without a written record, information was often distorted or lost. This talk draws a parallel to software teams that work without documentation. Just like etymology traces the origins of words, documentation preserves history, accuracy, and meaning in code, ensuring that everyone shares a common understanding.\n\n\\*\\*\\*\n\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK?typeform-source=www.meetup.com) to speak at one of our future meetups.*\n\n*We're also on Discord. [Join our community.](https://discord.com/invite/fTYxvBeBHr)*",
+              "photoAlbum": null,
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/d/8/e/0/thumb_528535520.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/d/8/e/0/600_528535520.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/d/8/e/0/highres_528535520.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "308747726",
+              "title": "tim.js meetup #99",
+              "dateTime": "2025-07-09T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/308747726/",
+              "description": "Hello JavaScripters, ready for the last meetup before our ☀️ summer social? We're meeting in a new venue this month. Our friends at Cowork Timisoara will host us at their [office](https://coworktimisoara.com/en/locations/the-office/) near Iulius Town. We'll also be officially launching our **100th Anniversary Edition**, we can't wait to share it with you.\n\nHere's the agenda:\n\n\\*\\*\\*\n\n**1\\. Structuring Frontend Code with the help of DDD**\n\\-\\- Marius Cristea\\, Software Engineer @ Irian\n\nEver had a project with utils․ts, utils2․ts, and super-utils․ts — but no clue where the business logic lives? Does your codebase have folders like /components, /services, /models, /utils… but there’s nothing about Orders, Trades, or Users?\n\nIn this talk, we’ll explore how Domain-Driven Design helps us stop thinking in terms of components and services, and start structuring our frontend code around real business domains.You’ll learn how to organize your code not by what it is, but by what it does — and discover tools that can help check if your codebase truly reflects your business model.\n\n**2\\. Git gud: Secrets for Confident Version Control**\n\\-\\- Anca Spatariu\\, Core Engineer @ WeVideo\n\nMerge conflicts, messy commits, and force-push disasters don’t have to derail your workflow. This presentation will help you keep your projects – and your sanity – safe. We’ll kick off with practical, instantly usable tips to boost your everyday Git skills, making version control feel less stressful.\n\nThen, we’ll dive deeper into advanced yet approachable strategies and hidden gems to level up your Git workflow. From confident disaster recovery to tackling debugging challenges that once seemed impossible, you’ll walk away ready to handle Git with confidence.\n\n\\*\\*\\*\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK?typeform-source=www.meetup.com) to speak at one of our future meetups.*\n*We're also on Discord. [Join our community.](https://discord.com/invite/fTYxvBeBHr)*",
+              "photoAlbum": {
+                "photoCount": 8,
+                "id": "35461942",
+                "title": "tim.js meetup #99"
+              },
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/d/3/4/7/thumb_528834087.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/d/3/4/7/600_528834087.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/d/3/4/7/highres_528834087.jpeg"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "310370612",
+              "title": "🍻 tim.js Summer Social",
+              "dateTime": "2025-08-20T18:30:00+03:00",
+              "eventUrl": "https://www.meetup.com/tim-js/events/310370612/",
+              "description": "Hi there JavaScripters!\n\nIt's that time of the year again – no slides, no tech talks, no agenda. Just hanging out and catching up.\n\nLet’s take a break from the code and just enjoy a summer evening together, with friendly faces and good conversation.\n\nPS: Our **100th anniversary meetup** is coming on **September 25**! A special edition with awesome speakers, old friends and some really cool swag.\n\n👉 Details & tickets: [https://timjs.ro/100](https://timjs.ro/100)",
+              "photoAlbum": null,
+              "featuredEventPhoto": {
+                "thumbUrl": "https://secure.meetupstatic.com/photos/event/8/2/8/7/thumb_529473415.jpeg",
+                "standardUrl": "https://secure.meetupstatic.com/photos/event/8/2/8/7/600_529473415.jpeg",
+                "highResUrl": "https://secure.meetupstatic.com/photos/event/8/2/8/7/highres_529473415.jpeg"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
