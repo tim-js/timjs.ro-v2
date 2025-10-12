@@ -2086,5 +2086,24 @@
     "talks": [
       "Summer social - casual meetup without talks"
     ]
+  },
+  {
+    "id": "100",
+    "title": "tim.js meetup #100",
+    "dateTime": "2025-08-25T18:30:00+03:00",
+    "eventUrl": "https://timjs.ro/100/",
+    "description": "This September we're celebrating our 100th meetup with a truly special event! We'll have 4 speakers that will analyze how web development has evolved over the years, while also looking forward at what lies ahead.\n\nIt's worth noting that all of our speakers have a deep connection with our community, making it a great honour to have them speak at this event.\n\nSee the [event page here](https://timjs.ro/100).",
+    "photoAlbum": null,
+    "featuredEventPhoto": {
+      "thumbUrl": "100.png",
+      "standardUrl": "100.png",
+      "highResUrl": "100.png"
+    },
+    "talks": [
+      "We Solved Everything. That’s Why It’s So Darn Complicated. (Benedek Gagyi)",
+      "Web Components: are we there yet? (Martin Hochel)",
+      "Colocation is king (Alex Moldovan)",
+      "Confessions of a Software Detective: why software understanding is the new super-power (Radu Marinescu)"
+    ]
   }
 ]

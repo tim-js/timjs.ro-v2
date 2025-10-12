@@ -8,7 +8,7 @@ import Sectionhead from "@components/sectionhead.astro";
 
 export async function getStaticPaths() {
   const upcomingEvents = await getUpcomingEvents();
-  const pastEvents = await getPastEvents();
+  const pastEvents = getPastEvents();
   const pastPaths = pastEvents.map((event) => ({
     params: { type: "past", event: event.id },
   }));
@@ -19,7 +19,11 @@ export async function getStaticPaths() {
 }
 
 const { event, type } = Astro.params;
-const meetup = await getEvent(event);
+const meetup =
+  type === "upcoming"
+    ? await getEvent(event)
+    : getPastEvents().find((e) => e.id === event);
+
 const videos = await getYouTubeVideos();
 const relatedVideos = videos.filter((video) =>
   video.title.includes(meetup.title.replace("#", ""))
@@ -38,7 +42,7 @@ const relatedVideos = videos.filter((video) =>
     <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
       <h2 class="font-bold text-5xl text-gray-800">Description</h2>
       <div
-        class="text-xl leading-relaxed text-slate-500"
+        class="text-xl leading-relaxed text-slate-500 prose-links"
         set:html={marked.parse(meetup.description)}
       />
       <br />
@@ -77,3 +81,15 @@ const relatedVideos = videos.filter((video) =>
     }
   </Container>
 </Layout>
+
+<style>
+  .prose-links :global(a) {
+    color: #3b82f6; /* blue-500 */
+    text-decoration: underline;
+    transition: color 0.2s;
+  }
+
+  .prose-links :global(a:hover) {
+    color: #1d4ed8; /* blue-700 */
+  }
+</style>
