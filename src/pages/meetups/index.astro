@@ -7,12 +7,20 @@ import { marked } from "marked";
 import Sectionhead from "@components/sectionhead.astro";
 import default_poster from "@assets/Poster.png";
 
+// Import all images from the meetups directory
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/meetups/*.{jpeg,jpg,png,gif}', { eager: true });
+
 const events = getPastEvents()
   .reverse()
-  .map((event) => ({
-    ...event,
-    imageUrl: event.imageUrl ? `/src/assets/meetups/${event.imageUrl}` : null,
-  }));
+  .map((event) => {
+    const imagePath = event.imageUrl ? `/src/assets/meetups/${event.imageUrl}` : null;
+    const imageModule = imagePath && images[imagePath];
+
+    return {
+      ...event,
+      imageUrl: imageModule?.default || null,
+    };
+  });
 ---
 
 <Layout title="Meetups">
