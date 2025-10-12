@@ -42,9 +42,13 @@ const relatedVideos = videos.filter((video) =>
         set:html={marked.parse(meetup.description)}
       />
       <br />
-      <a href={meetup.eventUrl} target="_blank" class="text-blue-500">
-        {type === "upcoming" ? "Reserve your spot" : "See the event on meetup"}
-      </a>
+      {
+        type === "upcoming" && (
+          <a href={meetup.eventUrl} target="_blank" class="text-blue-500">
+            Reserve your spot
+          </a>
+        )
+      }
     </section>
 
     {

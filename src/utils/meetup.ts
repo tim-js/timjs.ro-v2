@@ -6,6 +6,7 @@ type EventType = {
   dateTime: string;
   eventUrl: string;
   description: string;
+  talks: string[];
   imageUrl: string;
 };
 
@@ -76,35 +77,6 @@ const eventQuery = `
 
 const isMeetupEvent = (event) => event.title.toLowerCase().includes("meetup");
 
-export function extractBetweenSeparators(text: string, maxLength: number = 200): string {
-  // Match *** with optional escaping and newlines
-  const matches = text.match(/\\?\*\\?\*\\?\*\n?/g);
-
-  if (!matches || matches.length !== 2) {
-    return text;
-  }
-
-  // Find the positions of the two separators
-  const firstSeparator = text.indexOf(matches[0]);
-  const lastSeparator = text.lastIndexOf(matches[1]);
-
-  // Extract content between them
-  const startPos = firstSeparator + matches[0].length;
-  const extracted = text.substring(startPos, lastSeparator).trim();
-
-  // Split into paragraphs and truncate long ones
-  const paragraphs = extracted.split(/\n\n+/);
-  const truncatedParagraphs = paragraphs.map(paragraph => {
-    const trimmed = paragraph.trim();
-    if (trimmed.length > maxLength) {
-      return trimmed.substring(0, maxLength) + '...';
-    }
-    return trimmed;
-  });
-
-  return truncatedParagraphs.join('\n\n');
-}
-
 export async function getEvents(query: string) {
   const response = await fetch(MEETUP_ENDPOINT, {
     method: "POST",
@@ -148,11 +120,7 @@ export async function getUpcomingEvents() {
 export function getPastEvents() {
   const pastEvents: EventType[] = pastEventsData.map(
     (event) => ({
-      id: event.id,
-      title: event.title,
-      dateTime: event.dateTime,
-      eventUrl: event.eventUrl,
-      description: extractBetweenSeparators(event.description),
+      ...event,
       imageUrl: event.featuredEventPhoto?.standardUrl || "",
     })
   );

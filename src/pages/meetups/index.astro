@@ -8,12 +8,17 @@ import Sectionhead from "@components/sectionhead.astro";
 import default_poster from "@assets/Poster.png";
 
 // Import all images from the meetups directory
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/meetups/*.{jpeg,jpg,png,gif}', { eager: true });
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/meetups/*.{jpeg,jpg,png,gif}",
+  { eager: true }
+);
 
 const events = getPastEvents()
   .reverse()
   .map((event) => {
-    const imagePath = event.imageUrl ? `/src/assets/meetups/${event.imageUrl}` : null;
+    const imagePath = event.imageUrl
+      ? `/src/assets/meetups/${event.imageUrl}`
+      : null;
     const imageModule = imagePath && images[imagePath];
 
     return {
@@ -49,10 +54,16 @@ const events = getPastEvents()
                   height={400}
                   class="w-full h-auto object-cover rounded-lg my-4"
                 />
-                <div
-                  class="text-sm leading-snug text-slate-500 h-64 overflow-hidden relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-12 after:bg-gradient-to-t after:from-gray-100 after:to-transparent"
-                  set:html={marked.parse(event.description)}
-                />
+                <div>
+                  <h3 class="font-bold text-gray-800">Agenda</h3>
+                  <ul class="list-disc list-inside">
+                    {event.talks.map((talk, index) => (
+                      <li key={index} class="mb-1">
+                        {talk}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </a>
             </li>
           ))

@@ -6,7 +6,14 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/123239412/",
     "description": "Hi,\n\nWe will have our first meeting on the 19.06 starting at 18:30 at Startup Hub.\n\nthe agenda for the first meetup:\n\n* introductions\n* why js - Raul\n* Understanding and measuring web performance - Bogdan Gaza\n* Closures and js module pattern based on a refactoring example - Raul\n* themes for next meetups\n\nfor the refactoring i will take a small piece of code and try to refactor it, also covering closures and the module pattern (that i use a lot :) )\n\nthis will lead into a open-dialog part, where we can discuss different approaches.\n\nif you have any samples that we can use, please let me know, we can also consider them for future meetings. maybe it becomes a permanent slot :)\n\nThanks,\n\nRaul.",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Introductions",
+      "Why JS (Raul)",
+      "Understanding and measuring web performance (Bogdan Gaza)",
+      "Closures and JS module pattern based on a refactoring example (Raul)",
+      "Themes for next meetups"
+    ]
   },
   {
     "id": "127207242",
@@ -19,7 +26,11 @@
       "id": "16440292",
       "title": "2nd meetup"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "About SpainJS conference (Andrei Pfeiffer)",
+      "Javascript Debugging with Chrome DevTools - Part 1 (Cassian Lup)"
+    ]
   },
   {
     "id": "137482172",
@@ -28,7 +39,13 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/137482172/",
     "description": "I can make a presentation about what I have played with lately:\n- code Linting, with JSHint\n- unit-testing, with QUnit and/or Jasmine\n- generate code documentation, with JSDoc\n- automate all these tasks, with Grunt\n\nUnfortunately, I will not be available in September, so we can do this in October.",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Code Linting with JSHint",
+      "Unit-testing with QUnit and/or Jasmine",
+      "Generate code documentation with JSDoc",
+      "Automate tasks with Grunt"
+    ]
   },
   {
     "id": "139603062",
@@ -37,7 +54,11 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/139603062/",
     "description": "Andrei will present about task automation: code Linting, with JSHint - unit-testing, with QUnit and/or Jasmine - generate code documentation, ...\n\nCassian will present continue his series about the debugging tools in chrome - part 2.",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Task automation: code Linting, unit-testing, code documentation (Andrei)",
+      "Chrome debugging tools part 2 (Cassian)"
+    ]
   },
   {
     "id": "149260512",
@@ -50,7 +71,11 @@
       "id": "18791822",
       "title": "Meetup 4"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Introduction to AngularJS (Dejan Mihai Gitin)",
+      "Source Maps (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "160310642",
@@ -59,7 +84,11 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/160310642/",
     "description": "Agenda:\n\n• AngularJS (live coding) - Petru Isfan\n\n• Chrome Dev Tools (part 4) - Cassian Lup",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "AngularJS live coding (Petru Isfan)",
+      "Chrome Dev Tools part 4 (Cassian Lup)"
+    ]
   },
   {
     "id": "165534942",
@@ -68,7 +97,11 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/165534942/",
     "description": "i would like to invite you to our next meet up.\n\nhere the agenda for next week:\n\n• Andrei Pfeiffer - Source Maps\n\n• Lucian Pacurar - AngularJS Services",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Source Maps (Andrei Pfeiffer)",
+      "AngularJS Services (Lucian Pacurar)"
+    ]
   },
   {
     "id": "172152842",
@@ -77,7 +110,11 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/172152842/",
     "description": "Hi all,\n\nplease join us on our next meet up.\n\nAgenda:\n\n1. Getting started with Knockout.js — Flavius Demian\n\n2. Introduction to Node.js — Petru Isfan.",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Getting started with Knockout.js (Flavius Demian)",
+      "Introduction to Node.js (Petru Isfan)"
+    ]
   },
   {
     "id": "176811972",
@@ -90,7 +127,12 @@
       "id": "21463312",
       "title": "JSTM Meetup 8"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Yeoman workflows (Petru Isfan)",
+      "End to End testing in AngularJS (Lucian Pacurar)",
+      "JavaScript, going Vanilla part 1 (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "182093542",
@@ -99,7 +141,11 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/182093542/",
     "description": "AGENDA FOR THIS MEETUP:\n\n- \"JavaScript, going Vanilla\" - part 2, Andrei Pfeiffer\n- \"PhoneGap\", Cassian Lup",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "JavaScript, going Vanilla part 2 (Andrei Pfeiffer)",
+      "PhoneGap (Cassian Lup)"
+    ]
   },
   {
     "id": "191149532",
@@ -108,7 +154,11 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/191149532/",
     "description": "AGENDA FOR THIS MEETUP:\n\n- \"JavaScript, going Vanilla\" - part 3, Andrei Pfeiffer\n- \"IonicFramework - hybrid mobile apps with JavaScript & HTML5\", Radu Cugut",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "JavaScript, going Vanilla part 3 (Andrei Pfeiffer)",
+      "IonicFramework - hybrid mobile apps with JavaScript & HTML5 (Radu Cugut)"
+    ]
   },
   {
     "id": "202497142",
@@ -121,7 +171,11 @@
       "id": "24732832",
       "title": "tim.js meetup 11"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "3D Footprint - Immersing data centers into virtual reality (Marius Turica)",
+      "Intro to ES6 Generators (Lucian Pacurar)"
+    ]
   },
   {
     "id": "214030842",
@@ -134,7 +188,11 @@
       "id": "25511672",
       "title": "tim.js meetup 12"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Appium: Mobile App Automation Made Awesome (Cassian Lup)",
+      "JavaScript, going Vanilla part 4 - Scope & Context (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "218820824",
@@ -143,7 +201,11 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/218820824/",
     "description": "AGENDA FOR THIS MEETUP:\n\n\"Require.js\"\nPetru Isfan\n\n\"Decoupling async requests\"\nAndrei Pfeiffer",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Require.js (Petru Isfan)",
+      "Decoupling async requests (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "218931539",
@@ -152,7 +214,10 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/218931539/",
     "description": "Cum spuneam la ultimul meetup, ma gandeam sa facem o iesire \"hidratanta\" sa ne cunoastem mai bine.\n\nVa rog sa folositi link-ul urmator sa votati zilele in care ati putea ajunge:\nhttp://doodle.com/fxftpre5hurhm8bh\n\nAm ajuns la concluzia ca nu sunt in stare sa fac legatura intre imaginea care o aveti la profil, si figura fizica. Probabil ca nu sunt singurul care are aceasta problema, asadar ma gandesc ca ar fi timpul sa facem ceva in privinta asta.\n\nLocatia va fi un club privat, pe nume \"Alt Club\", in Piata Libertatii (fosta Alchimia sau BeerTime).\n\nCa si ora de inceput as propune ora 19:00, dupa lucru.\n\nPrimul rand de bautura este din partea casei.",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Cum spuneam la ultimul meetup, ma gandeam sa facem o iesire \"hidratanta\" sa ne cunoastem mai bine.\n\nVa rog sa folositi link-ul urmator sa votati zilele in care ati putea ajunge:\nhttp://doodle.com/fxftpre5hurhm8bh\n\nAm ajuns la concluzia ca nu sunt in stare sa fac legatura intre imaginea care o aveti la profil, si figura fizica. Probabil ca nu sunt singurul care are aceasta problema, asadar ma gandesc ca ar fi timpul sa facem ceva in privinta asta.\n\nLocatia va fi un club privat, pe nume \"Alt Club\", in Piata Libertatii (fosta Alchimia sau BeerTime).\n\nCa si ora de inceput as propune ora 19:00, dupa lucru.\n\nPrimul rand de bautura este din partea casei."
+    ]
   },
   {
     "id": "219801830",
@@ -161,7 +226,11 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/219801830/",
     "description": "AGENDA FOR THIS MEETUP:\n\n\"Introduction\"\nAndrei Pfeiffer\n\n\"Appium: Mobile App Automation Made Awesome (part II)\"\nCassian Lup",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Introduction (Andrei Pfeiffer)",
+      "Appium: Mobile App Automation Made Awesome part II (Cassian Lup)"
+    ]
   },
   {
     "id": "220296044",
@@ -174,7 +243,12 @@
       "id": "25930685",
       "title": "tim.js meetup 15"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Intro (Andrei Pfeiffer)",
+      "Fonts, FOUT & localStorage (Codrin Pavel)",
+      "How to CoffeeScript (Ovidiu Ispas)"
+    ]
   },
   {
     "id": "221083507",
@@ -187,7 +261,12 @@
       "id": "26005497",
       "title": "tim.js meetup 16"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Intro (Andrei Pfeiffer)",
+      "How to Hack an Environment (Cassian Lup)",
+      "Advanced Grunt (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "221437215",
@@ -196,7 +275,10 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/221437215/",
     "description": "Va invit la o noua iesire \"hidratanta\". Aceeasi locatie ca si data trecuta.\n\nNumarul de locuri este limitat, asadar RSVP din timp (:",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Va invit la o noua iesire \"hidratanta\". Aceeasi locatie ca si data trecuta.\n\nNumarul de locuri este limitat, asadar RSVP din timp (:"
+    ]
   },
   {
     "id": "221593394",
@@ -209,7 +291,11 @@
       "id": "26068557",
       "title": "tim.js meetup 17"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "JavaScript Books (Andrei Pfeiffer)",
+      "Isomorphic JavaScript with React.js (Ovidiu Ispas)"
+    ]
   },
   {
     "id": "222346007",
@@ -222,7 +308,11 @@
       "id": "26190690",
       "title": "tim.js meetup 18"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "ShellJS vs. Bash (Ciprian Zaharie)",
+      "Handling LARGE rasters & vectors (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "223100824",
@@ -231,7 +321,11 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/223100824/",
     "description": "Yo yo scripters, coders, developers, programmers, backends & frontends, pimps & chicks, lovers & haters,\n\nPut your tim.js t-shirts on, & let's gather for another meetup.\n\n• \"AngularJS best practice survey\" - Madincea Vasile\n• \"Working With the DOM & Living to Tell\" - Cassian Lup\n\nSend us your presentation draft using the Contact link in the side bar and get your own seat in the speakers' booth!",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "AngularJS best practice survey (Madincea Vasile)",
+      "Working With the DOM & Living to Tell (Cassian Lup)"
+    ]
   },
   {
     "id": "223648287",
@@ -244,7 +338,11 @@
       "id": "26283521",
       "title": "tim.js meetup 20"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Looping Events (Andrei Pfeiffer)",
+      "Memory Leaks (Ilie Ciotir)"
+    ]
   },
   {
     "id": "225257430",
@@ -257,7 +355,11 @@
       "id": "26446937",
       "title": "tim.js meetup 21"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Using ES6 with Angular 1.x (Alin Chiuaru)",
+      "Crawling with Prerender.io (Andrei Demian)"
+    ]
   },
   {
     "id": "225774836",
@@ -266,7 +368,10 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/225774836/",
     "description": "Simple, robust code (functional programming techniques) - Dan Bunea",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Simple, robust code (functional programming techniques) - Dan Bunea"
+    ]
   },
   {
     "id": "226749001",
@@ -279,7 +384,13 @@
       "id": "26561984",
       "title": "tim.js Special Event: Angular2"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Angular2 (syntax, timeline & migration path)",
+      "A new Routing Library",
+      "Performance",
+      "ES6 & TypeScript"
+    ]
   },
   {
     "id": "227266848",
@@ -288,7 +399,10 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/227266848/",
     "description": "Va invit la un nou beer.js, Alt Club, la etaj.\nNumarul de locuri este limitat, asadar RSVP din timp.",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Va invit la un nou beer.js, Alt Club, la etaj.\nNumarul de locuri este limitat, asadar RSVP din timp."
+    ]
   },
   {
     "id": "227884153",
@@ -301,7 +415,12 @@
       "id": "26699863",
       "title": "tim.js meetup 24"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Intro",
+      "ES6 under the microscope (Andrei Pfeiffer)",
+      "Introduction to TypeScript (Ilie Ciotir)"
+    ]
   },
   {
     "id": "228410964",
@@ -314,7 +433,11 @@
       "id": "26751273",
       "title": "tim.js meetup 25"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Introduction to React (Ovidiu Ispas and Cassian Lup)",
+      "Flux and Redux (Vlad Zelinschi)"
+    ]
   },
   {
     "id": "229250602",
@@ -327,7 +450,11 @@
       "id": "26822175",
       "title": "tim.js meetup 26"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Switching to JS (Horia Radu)",
+      "ClojureScript & React (Dan Bunea)"
+    ]
   },
   {
     "id": "229835890",
@@ -340,7 +467,10 @@
       "id": "26903402",
       "title": "tim.js meetup 27"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Promises: past, present & future (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "229574146",
@@ -353,7 +483,14 @@
       "id": "26916982",
       "title": "tim.js workshop: JavaScript Citizens"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Intro: short history, JS vs ES",
+      "Primitives: types, typeof, type casting, falsey values",
+      "Arrays: literals, stack, queue, filtering, iterating",
+      "Objects: literals, enhanced literals, property descriptors, json",
+      "Functions: types, returns, 1st class functions"
+    ]
   },
   {
     "id": "230864424",
@@ -366,7 +503,12 @@
       "id": "26982018",
       "title": "tim.js meetup 28"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Buletin de stiri (Andrei Pfeiffer)",
+      "ES6 Modules (Ilie Ciotir)",
+      "Using Redux in React apps (Ovidiu Ispas)"
+    ]
   },
   {
     "id": "230179755",
@@ -379,7 +521,14 @@
       "id": "26990721",
       "title": "tim.js workshop: JavaScript Citizens"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Intro: short history, JS vs ES",
+      "Primitives: types, typeof, type casting, falsey values",
+      "Arrays: literals, stack, queue, filtering, iterating",
+      "Objects: literals, enhanced literals, property descriptors, json",
+      "Functions: types, returns, 1st class functions"
+    ]
   },
   {
     "id": "231592257",
@@ -392,7 +541,11 @@
       "id": "27085563",
       "title": "tim.js meetup 29"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Overview of London NodeConf 2016 (Cassian Lup)",
+      "Progressive Web Apps (Victor Ionescu)"
+    ]
   },
   {
     "id": "232196409",
@@ -405,7 +558,11 @@
       "id": "27135946",
       "title": "tim.js meetup 30"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "JavaScript in Wonderland (Petru Isfan)",
+      "WAT iz dat code? (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "232971096",
@@ -418,7 +575,11 @@
       "id": "27185790",
       "title": "tim.js meetup 31"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Dependency Injection in Angular 2 (Marius Cristea)",
+      "TDD in React with Enzyme (Vlad Zelinschi)"
+    ]
   },
   {
     "id": "233391521",
@@ -431,7 +592,12 @@
       "id": "27260449",
       "title": "tim.js meetup 32: ngParty Special Event"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Docker Driven Development: UI development using docker containers (Mario Vejlupek)",
+      "RxJS everywhere: browser, node and beyond (Viliam Elischer)",
+      "Leaving Angular from Ng advocate perspective (Martin Hochel)"
+    ]
   },
   {
     "id": "234650066",
@@ -444,7 +610,11 @@
       "id": "27368112",
       "title": "tim.js meetup 33: AngularConnect Special Event"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "AngularConnect Overview (Lucian Pacurar)",
+      "Router 2.0 (Marius Cristea)"
+    ]
   },
   {
     "id": "233420244",
@@ -457,7 +627,14 @@
       "id": "27368113",
       "title": "tim.js workshop: JavaScript Mechanics"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Scope: globals, hoisting, TDZ, blocks",
+      "Strict Mode: usage, present & future",
+      "Values vs References: deep equality, cloning",
+      "Context: this binding, changing context",
+      "Function arguments: defaults, signatures"
+    ]
   },
   {
     "id": "235391497",
@@ -466,7 +643,15 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/235391497/",
     "description": "Welcome to the third JavaScript workshop, organized by tim.js (http://timjs.ro/).\n\nThis workshop focuses on various ways to organize your code, each with it's own pros & cons. We will cover fundamental ES5 concepts, while also touching some new features added since ES6.\n\nCONTENT\n\n- Spaghetti Code\n- Object Literals\n- Module Pattern\n- Revealing Module Pattern\n- Module systems & loaders\n- ES6 Modules\n\nWHO IS IT FOR?\n\n• Intermediate & Advanced JavaScript developers familiar with functions, arrays, objects, scope & context\n\nWHAT YOU NEED?\n\n- laptop with power-plug\n- code editor- Node.JS 6.0+\n\nHOW TO ATTEND?\n\nTo attend this workshop, please RSVP this event.\nThere are only 18 seats available that will be filled on a first-come, first-served basis.\n\nA deposit of 40 EUR is required, which will cover all expenses, including a breakfast croissant, lunch (vegetarian is also available) & beverages (coffee, juice, water).\n\nDISCOUNT\nIf you have attended both previous workshops (Citizens & Mechanics), you have a 25% discount, meaning that you should deposit 30 EUR instead.",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Spaghetti Code",
+      "Object Literals",
+      "Module Pattern",
+      "Revealing Module Pattern",
+      "Module systems & loaders",
+      "ES6 Modules"
+    ]
   },
   {
     "id": "235124721",
@@ -475,7 +660,15 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/235124721/",
     "description": "Welcome to the third JavaScript workshop, organized by tim.js (http://timjs.ro/).\n\nThis workshop focuses on various ways to organize your code, each with it's own pros & cons. We will cover fundamental ES5 concepts, while also touching some new features added since ES6.\n\nCONTENT\n\n- Spaghetti Code\n- Object Literals\n- Module Pattern\n- Revealing Module Pattern\n- Module systems & loaders\n- ES6 Modules\n\nWHO IS IT FOR?\n\n• Intermediate & Advanced JavaScript developers familiar with functions, arrays, objects, scope & context\n\nWHAT YOU NEED?\n\n- laptop with power-plug\n- code editor- Node.JS 6.0+\n\nHOW TO ATTEND?\n\nTo attend this workshop, please RSVP this event.\nThere are only 18 seats available that will be filled on a first-come, first-served basis.\n\nA deposit of 40 EUR is required, which will cover all expenses, including a breakfast croissant, lunch (vegetarian is also available) & beverages (coffee, juice, water).\n\nDISCOUNT\nIf you have attended both previous workshops (Citizens & Mechanics), you have a 25% discount, meaning that you should deposit 30 EUR instead.",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Spaghetti Code",
+      "Object Literals",
+      "Module Pattern",
+      "Revealing Module Pattern",
+      "Module systems & loaders",
+      "ES6 Modules"
+    ]
   },
   {
     "id": "235594572",
@@ -484,7 +677,10 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/235594572/",
     "description": "Choosing the technology stack\n\nOn this last meetup of the year, we were thinking to try an open discussion about HOW, WHEN & WHAT to choose when it comes to technology stack.\n\nThere will be no presentations.\nEverybody is welcome to talk about their opinions & experiences.\n\nModerator: Andrei Pfeiffer\n\nSee you all on Wednesday!",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Choosing the technology stack - open discussion (Moderator: Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "237014463",
@@ -493,7 +689,11 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/237014463/",
     "description": "Hello all fellows JavaScripters,\n\nWe've got a new year awaiting us with lots of new things to learn & old things to improve. Join us on the first meetup of 2017:\n\n• Intro - Andrei Pfeiffer\n• A Vue over React (introducing Vue.js in comparison to React) - Andrei Pfeiffer",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Intro (Andrei Pfeiffer)",
+      "A Vue over React - introducing Vue.js in comparison to React (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "237547271",
@@ -506,7 +706,10 @@
       "id": "27643324",
       "title": "tim.js meetup 36: How do you \"type\" JavaScript?"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Panel discussion about static typing in JavaScript with Radu Marinescu and Radu Fericean (Moderator: Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "238675677",
@@ -515,7 +718,11 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/238675677/",
     "description": "Hey there tim.js-ers!\n\nWe're planning another exciting get-together this Wednesday.\n\nAgenda:\n• \"Clean Code\" by Ioana Verebi and\n• \"TypeScript: The Good Cop\" by Cassian Lup\n\nMake sure you don't miss this session, as it continues on the trend of best practices combined with new trends in the JS world.\n\nSee you all on Wednesday!",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Clean Code (Ioana Verebi)",
+      "TypeScript: The Good Cop (Cassian Lup)"
+    ]
   },
   {
     "id": "239321296",
@@ -528,7 +735,11 @@
       "id": "27806171",
       "title": "tim.js meetup 38"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "NG-NL Summary (Anca Spătariu)",
+      "Serverless architecture with JS (Petru Isfan)"
+    ]
   },
   {
     "id": "239844405",
@@ -541,7 +752,11 @@
       "id": "27886750",
       "title": "tim.js meetup 39"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "End-to-End Testing with Nightwatch and Cucumber (Gabriel Lazar)",
+      "REST — A Guide to (Kind of) Getting It (Mihai Agape)"
+    ]
   },
   {
     "id": "240726544",
@@ -554,7 +769,11 @@
       "id": "28044825",
       "title": "tim.js meetup 40"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Warping Time with Async/Await (Cassian Lup)",
+      "From React to Native (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "241588629",
@@ -567,7 +786,15 @@
       "id": "28044760",
       "title": "tim.js meetup 41"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Lightning Talks: Bypassing iframe security (Darius Costolas)",
+      "My journey from PHP to Node (Valentin Lup)",
+      "Angular + Redux (Călin Georgescu)",
+      "ExtJS in 2k17 (Samuel Alexandroni)",
+      "Typed UIs (Horia Radu)",
+      "To ASI or not to ASI (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "242707330",
@@ -576,7 +803,10 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/242707330/",
     "description": "Let's have a drink, chat and discuss about everything related (and not) to JS.",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Let's have a drink, chat and discuss about everything related (and not) to JS."
+    ]
   },
   {
     "id": "243106970",
@@ -585,7 +815,11 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/243106970/",
     "description": "We're back from vacation with a new autumn meetup!\n\nAgenda:\n\n- Packaging Angular Components for Distribution - Lucian Păcurar\n- Styling React components using styled-components - Alexandru Ghiura\n\nSee you all at StartupHub! 🚀",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Packaging Angular Components for Distribution (Lucian Păcurar)",
+      "Styling React components using styled-components (Alexandru Ghiura)"
+    ]
   },
   {
     "id": "243973802",
@@ -598,7 +832,10 @@
       "id": "28242491",
       "title": "tim.js meetup 43"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Being a JS Dev in 2017 - open discussion with CodeCamp speakers"
+    ]
   },
   {
     "id": "245059281",
@@ -607,7 +844,11 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/245059281/",
     "description": "Winter is coming,\nThe year is ending,\nPull requests are merged,\n... meetups are joined, AGENDA:\n\n• A gentle introduction to Reactive Programming using RxJs\nAdrian Fâciu, Software Developer at Visma\n\n• How full is your stack?\nAndrei Pfeiffer, Code Designer at [e-spres-oh]\n\nNOTE:\nWe are always looking for speakers, so please send us your proposals.",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "A gentle introduction to Reactive Programming using RxJs (Adrian Fâciu)",
+      "How full is your stack? (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "245923092",
@@ -616,7 +857,10 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/245923092/",
     "description": "Intalnire \"hidratanta\" cu diverse lichide in diverse concentratii.\nVom barfi despre ultimele framework-uri aparute luna aceasta si despre cei ce nu vor fi prezenti.",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Intalnire \"hidratanta\" cu diverse lichide in diverse concentratii.\nVom barfi despre ultimele framework-uri aparute luna aceasta si despre cei ce nu vor fi prezenti."
+    ]
   },
   {
     "id": "247079866",
@@ -625,7 +869,11 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/247079866/",
     "description": "New year,\nNew frameworks,\nNew meetup:\n\n• Dealing with State\nAndrei Pfeiffer, Code Designer at [e-spres-oh]\n\n• From Angular to NativeScript\nRobert Todea, Software Developer at [e-spres-oh]\n\nNOTE:\nWe are always looking for speakers, so please send us your proposals.",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Dealing with State (Andrei Pfeiffer)",
+      "From Angular to NativeScript (Robert Todea)"
+    ]
   },
   {
     "id": "247735298",
@@ -634,7 +882,10 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/247735298/",
     "description": "The following equation is valid for our next meetup:\n#46 = #2 / 2018\n\n• Event sourcing: the good, the bad and the ugly\nMihai Agape, Front-End Architect at Intelligent Software Systems\n\nWe will have only 1 presentation this meetup, split into 2 parts.\n\nNOTE: We are always looking for speakers, so please send us your proposals.",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Event sourcing: the good, the bad and the ugly (Mihai Agape)"
+    ]
   },
   {
     "id": "248497512",
@@ -643,7 +894,11 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/248497512/",
     "description": "Tired on learning new languages?\n.then()\nLearn how to write one.\n--------------------------------------------------------------------------\n\n• Writing a programming language for fun and profit (but not actually for profit)\nBogdan Bugarschi, Developer at Visual Retailing\n\n• A different take on redux actions\nHoria Radu, Software Developer at [e-spres-oh]\n\n--------------------------------------------------------------------------\nNOTE: We are always looking for speakers, so please send us your proposals.",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Writing a programming language for fun and profit (Bogdan Bugarschi)",
+      "A different take on redux actions (Horia Radu)"
+    ]
   },
   {
     "id": "249628083",
@@ -652,7 +907,11 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/249628083/",
     "description": "Ohhhhh the weather outside is NOT frightful, but join us inside [e-spres-oh]'s attic for this April meetup.\n----------------------------\n\n• Realtime 3D in the Browser:\nRadu Milici, UI Developer @ 3PG\n\n• Chrome Extensions:\nBogdan Dînga, Front-End Developer @ [e-spres-oh]\n\n----------------------------\nNOTE: We are always looking for speakers, so please send us your proposals.",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Realtime 3D in the Browser (Radu Milici)",
+      "Chrome Extensions (Bogdan Dînga)"
+    ]
   },
   {
     "id": "250172898",
@@ -665,7 +924,11 @@
       "id": "28907823",
       "title": "tim.js meetup 49"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "ngrx: tips & tricks (Adrian Fâciu)",
+      "Transducers in JS (Bogdan Bugarschi)"
+    ]
   },
   {
     "id": "251104048",
@@ -678,7 +941,11 @@
       "id": "28994224",
       "title": "tim.js meetup 50"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Fun with Conditional Types (Titian Dragomir)",
+      "MobX & friends (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "252392633",
@@ -691,7 +958,14 @@
       "thumbUrl": "thumb_472579268.jpeg",
       "standardUrl": "600_472579268.jpeg",
       "highResUrl": "highres_472579268.jpeg"
-    }
+    },
+    "talks": [
+      "Lightning Talks: JS solutions for non-devs (Daniel Markovitz)",
+      "Self-hosted Web Deployments in an Oneliner (Cassi Lup)",
+      "Ionic build tools in Docker (Petru Isfan)",
+      "Barrel files (Adi Faciu)",
+      "Tips & Tricks (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "253870501",
@@ -700,7 +974,10 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/253870501/",
     "description": "As usual, our August meeting is a casual one without presentations.\nWe'll hydrate ourselves with refreshing drinks at \"Capite\".\nWe'll talk about everything from Java to Script, but also about JavaScript.\nWe'll also cover important subjects such as: new frameworks, fp vs oop and tabs vs spaces.\nSo, don't miss any of these and join us on Wednesday.",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "As usual, our August meeting is a casual one without presentations.\nWe'll hydrate ourselves with refreshing drinks at \"Capite\".\nWe'll talk about everything from Java to Script, but also about JavaScript.\nWe'll also cover important subjects such as: new frameworks, fp vs oop and tabs vs spaces.\nSo, don't miss any of these and join us on Wednesday."
+    ]
   },
   {
     "id": "254782522",
@@ -713,7 +990,11 @@
       "id": "29491206",
       "title": "tim.js meetup 52"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Parsers for fun and profit (Bogdan Bugarschi)",
+      "Self-hosted Web Deployments in an Oneliner (Cassi Lup)"
+    ]
   },
   {
     "id": "255585189",
@@ -726,7 +1007,10 @@
       "thumbUrl": "thumb_475667673.jpeg",
       "standardUrl": "600_475667673.jpeg",
       "highResUrl": "highres_475667673.jpeg"
-    }
+    },
+    "talks": [
+      "JavaSwift: Bridging Swift and React Native (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "256493591",
@@ -743,7 +1027,11 @@
       "thumbUrl": "thumb_476518569.jpeg",
       "standardUrl": "600_476518569.jpeg",
       "highResUrl": "highres_476518569.jpeg"
-    }
+    },
+    "talks": [
+      "From UI to CLI (Horia Radu)",
+      "Going against best practices to make things work (Ilie Ciotir)"
+    ]
   },
   {
     "id": "256938286",
@@ -752,7 +1040,10 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/256938286/",
     "description": "... tralalalalaaaaaa la laaaaa la laaaaaaaaaaaaaaa\n\nNo presentations this December meetup.\nOnly Christmas spirit, drinks, old friends, new friends and chit-chat.\n\nLet's meet at CoWork Timisoara's new location.\nFree drinks until 19:30, so don't be late.\n\nSee you all on Wednesday!",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Christmas spirit, drinks and networking at CoWork Timisoara"
+    ]
   },
   {
     "id": "257956171",
@@ -765,7 +1056,11 @@
       "id": "29636516",
       "title": "tim.js meetup 55"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Introduction to Kubernetes (Alina Ionescu)",
+      "Cloud Testing Solutions Battle Royale (Padineanu Cosmin)"
+    ]
   },
   {
     "id": "259016723",
@@ -782,7 +1077,11 @@
       "thumbUrl": "thumb_478882305.jpeg",
       "standardUrl": "600_478882305.jpeg",
       "highResUrl": "highres_478882305.jpeg"
-    }
+    },
+    "talks": [
+      "Taking Angular Offline (Adrian Fâciu)",
+      "Isolated Components Driven Development (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "259669357",
@@ -795,7 +1094,10 @@
       "thumbUrl": "thumb_479391534.jpeg",
       "standardUrl": "600_479391534.jpeg",
       "highResUrl": "highres_479391534.jpeg"
-    }
+    },
+    "talks": [
+      "Open Discussion: Technical Interviews - what interviewers look for in Front-End / JavaScript candidates"
+    ]
   },
   {
     "id": "260366963",
@@ -808,7 +1110,10 @@
       "id": "29906966",
       "title": "tim.js meetup 58"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Meet HERE: #LocationForDevelopers (Octavian Borcan and Olaru Razvan)"
+    ]
   },
   {
     "id": "261294536",
@@ -825,7 +1130,10 @@
       "thumbUrl": "thumb_481262269.jpeg",
       "standardUrl": "600_481262269.jpeg",
       "highResUrl": "highres_481262269.jpeg"
-    }
+    },
+    "talks": [
+      "Recording in the browser (Cristian Diaconescu)"
+    ]
   },
   {
     "id": "262199969",
@@ -842,7 +1150,10 @@
       "thumbUrl": "thumb_482177531.jpeg",
       "standardUrl": "600_482177531.jpeg",
       "highResUrl": "highres_482177531.jpeg"
-    }
+    },
+    "talks": [
+      "State of AI in JS [2019 Edition] - Presentation and Open Discussion (Victor Adăscăliței and Radu Milici)"
+    ]
   },
   {
     "id": "262841673",
@@ -855,7 +1166,11 @@
       "thumbUrl": "thumb_483410771.jpeg",
       "standardUrl": "600_483410771.jpeg",
       "highResUrl": "highres_483410771.jpeg"
-    }
+    },
+    "talks": [
+      "Building your first Design System (Anca Spatariu)",
+      "The flavors of design (Milena Vlad)"
+    ]
   },
   {
     "id": "263940128",
@@ -868,7 +1183,10 @@
       "thumbUrl": "thumb_483948578.jpeg",
       "standardUrl": "600_483948578.jpeg",
       "highResUrl": "highres_483948578.jpeg"
-    }
+    },
+    "talks": [
+      "AMA (Ask Me Anything) - informal meetup where attendees ask JavaScript questions"
+    ]
   },
   {
     "id": "265560990",
@@ -881,7 +1199,11 @@
       "id": "30470282",
       "title": "tim.js meetup #63"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Functional vs Reactive Programming for JS People (Rares Portan)",
+      "Making Nelu Kernelul, a Jupyter Node.js Kernel (Victor Adascalitei and Radu Milici)"
+    ]
   },
   {
     "id": "266430983",
@@ -898,7 +1220,11 @@
       "thumbUrl": "thumb_486983861.jpeg",
       "standardUrl": "600_486983861.jpeg",
       "highResUrl": "highres_486983861.jpeg"
-    }
+    },
+    "talks": [
+      "My point of Vue (Alex Grozav)",
+      "The Trichotomy of UI Development (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "267132787",
@@ -907,7 +1233,10 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/267132787/",
     "description": "2019 is almost over, so let's look back together and share our learnings during this past year, but also your future plans for 2020.\n\nThink about one thing that you've learned and recommend to everybody.\nThink about what you would like to learn next.\n\nWe'll meet at 18:30 at Taproom by Bereta.\n\nSee you all on Wednesday!",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "2019 year-end gathering - share learnings from the past year and future plans for 2020"
+    ]
   },
   {
     "id": "267986618",
@@ -916,7 +1245,11 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/267986618/",
     "description": "New year, new things to learn.\n\n---\n\n• Web components with LitElement\nAdrian Fâciu, Software Developer at Visma\n\n• Memoization in React\nAndrei Pfeiffer, Code Designer at [e-spres-oh]\n\n---\n\nNOTE: We are always looking for speakers, so please send us your proposals.",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Web components with LitElement (Adrian Fâciu)",
+      "Memoization in React (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "268682004",
@@ -929,7 +1262,11 @@
       "id": "30791152",
       "title": "tim.js meetup #66"
     },
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "A boomers intro to Svelte (Răzvan Plăcintar)",
+      "Controlling Hardware with JavaScript (Anca Spătariu)"
+    ]
   },
   {
     "id": "278376410",
@@ -938,7 +1275,10 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/278376410/",
     "description": "We're back in business!\n\nIt's been a while since we've met in person, but we believe the time has come to regroup.\n\nLet's get together for an informal meetup without any talks, but with a lot of talking. We would like to hear your thoughts regarding upcoming regular meetups and workshops that we're planning.\n\nFirst drink is on us. See you all soon!\n\nPS: keep in mind that we will stay outdoors :)",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Informal meetup without talks - discuss thoughts about upcoming regular meetups and workshops"
+    ]
   },
   {
     "id": "279213386",
@@ -955,7 +1295,11 @@
       "thumbUrl": "thumb_497266851.jpeg",
       "standardUrl": "600_497266851.jpeg",
       "highResUrl": "highres_497266851.jpeg"
-    }
+    },
+    "talks": [
+      "Sharing code at runtime using module federation (Adrian Fâciu)",
+      "Simple vs. Easy (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "279925502",
@@ -964,7 +1308,10 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/279925502/",
     "description": "This august we'll gather for a casual meetup in Victory Square Partners' backyard. Barbecue & drinks are included so make sure to come with an empty stomach and an appetite for networking.\n\nIMPORTANT:\nA vaccination certificate is required for this meetup, preferably in electronic format. If you don't have a vaccination certificate and want to attend this meetup, please send us a message.",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Casual meetup at Victory Square Partners' backyard with barbecue & drinks"
+    ]
   },
   {
     "id": "285054976",
@@ -981,7 +1328,11 @@
       "thumbUrl": "thumb_503370070.jpeg",
       "standardUrl": "600_503370070.jpeg",
       "highResUrl": "highres_503370070.jpeg"
-    }
+    },
+    "talks": [
+      "re-frame architecture (Boogie Bugarschi)",
+      "i18n & l10n - Internationalization & Localization (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "285690477",
@@ -998,7 +1349,11 @@
       "thumbUrl": "thumb_503870269.jpeg",
       "standardUrl": "600_503870269.jpeg",
       "highResUrl": "highres_503870269.jpeg"
-    }
+    },
+    "talks": [
+      "Game of Life and Performance (Andrei Pfeiffer)",
+      "I can read your mind using JavaScript (Anca Spatariu)"
+    ]
   },
   {
     "id": "286112800",
@@ -1015,7 +1370,11 @@
       "thumbUrl": "thumb_504342099.jpeg",
       "standardUrl": "600_504342099.jpeg",
       "highResUrl": "highres_504342099.jpeg"
-    }
+    },
+    "talks": [
+      "The tale of avoiding a time-based DDOS attack in Node.js (Paolo Insogna)",
+      "DIY monorepos in 2022 (Ovidiu Ispas)"
+    ]
   },
   {
     "id": "286811842",
@@ -1028,7 +1387,11 @@
       "thumbUrl": "thumb_505129567.jpeg",
       "standardUrl": "600_505129567.jpeg",
       "highResUrl": "highres_505129567.jpeg"
-    }
+    },
+    "talks": [
+      "SPA, SSR, SSG: How Remix gets the best of all worlds (Adrian Fâciu)",
+      "The Evolution of Scalable CSS (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "287879859",
@@ -1037,7 +1400,10 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/287879859/",
     "description": "This august we'll gather for a casual meetup in Victory Square Partners' backyard. Barbecue & drinks are included so make sure to come with an empty stomach and an appetite for networking.\n\nSee you all soon!",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "Casual meetup at Victory Square Partners' backyard with barbecue & drinks"
+    ]
   },
   {
     "id": "288473116",
@@ -1054,7 +1420,10 @@
       "thumbUrl": "thumb_507038354.jpeg",
       "standardUrl": "600_507038354.jpeg",
       "highResUrl": "highres_507038354.jpeg"
-    }
+    },
+    "talks": [
+      "AB Testing Single Page Apps (Robert Todea)"
+    ]
   },
   {
     "id": "289001050",
@@ -1071,7 +1440,11 @@
       "thumbUrl": "thumb_507919976.jpeg",
       "standardUrl": "600_507919976.jpeg",
       "highResUrl": "highres_507919976.jpeg"
-    }
+    },
+    "talks": [
+      "Build fast mobile apps with Capacitor (Andreas Moeller)",
+      "React error handling (Horia Radu)"
+    ]
   },
   {
     "id": "289379558",
@@ -1088,7 +1461,15 @@
       "thumbUrl": "thumb_508648209.jpeg",
       "standardUrl": "600_508648209.jpeg",
       "highResUrl": "highres_508648209.jpeg"
-    }
+    },
+    "talks": [
+      "Lightning Talks: React Server Components (Ciprian Caba)",
+      "Staying safe from Authorization Managers (Lucian Pacurar)",
+      "Storybook x Figma (Victor Vranceanu)",
+      "Internal vs. external interface names (Andrei Pfeiffer)",
+      "Live editing subtitles with WebVTT (Anca Spatariu)",
+      "Intro to Intersection Observer API (Flavius Badescu)"
+    ]
   },
   {
     "id": "290283318",
@@ -1101,7 +1482,10 @@
       "thumbUrl": "thumb_483387304.jpeg",
       "standardUrl": "600_483387304.jpeg",
       "highResUrl": "highres_483387304.jpeg"
-    }
+    },
+    "talks": [
+      "End-of-year gathering to chat, share thoughts and wrap up 2022"
+    ]
   },
   {
     "id": "291000339",
@@ -1118,7 +1502,11 @@
       "thumbUrl": "thumb_509961161.jpeg",
       "standardUrl": "600_509961161.jpeg",
       "highResUrl": "highres_509961161.jpeg"
-    }
+    },
+    "talks": [
+      "Type-safety for skeptics (Andrei Pfeiffer)",
+      "Build easy, type-safe APIs with tRPC (Victor Ionescu)"
+    ]
   },
   {
     "id": "291513659",
@@ -1135,7 +1523,11 @@
       "thumbUrl": "thumb_510610131.jpeg",
       "standardUrl": "600_510610131.jpeg",
       "highResUrl": "highres_510610131.jpeg"
-    }
+    },
+    "talks": [
+      "Component Driven Development with Storybook (Robert Todea)",
+      "FullStack: The Way of GraphQL (Ciprian Caba)"
+    ]
   },
   {
     "id": "291979947",
@@ -1152,7 +1544,10 @@
       "thumbUrl": "thumb_511038154.jpeg",
       "standardUrl": "600_511038154.jpeg",
       "highResUrl": "highres_511038154.jpeg"
-    }
+    },
+    "talks": [
+      "SolidJS for React Developers (Victor Ionescu)"
+    ]
   },
   {
     "id": "293320789",
@@ -1169,7 +1564,10 @@
       "thumbUrl": "thumb_512592644.jpeg",
       "standardUrl": "600_512592644.jpeg",
       "highResUrl": "highres_512592644.jpeg"
-    }
+    },
+    "talks": [
+      "Understanding Content Security Policy (Lucian Pacurar)"
+    ]
   },
   {
     "id": "293904319",
@@ -1186,7 +1584,19 @@
       "thumbUrl": "thumb_513311165.jpeg",
       "standardUrl": "600_513311165.jpeg",
       "highResUrl": "highres_513311165.jpeg"
-    }
+    },
+    "talks": [
+      "10 years celebration with 10 Lightning Talks: Expecting TS compile errors (Andrei Pfeiffer)",
+      "CSS cascade layers (Anca Spatariu)",
+      "APIs - An Obituary (Ciprian Caba)",
+      "How to be a senior developer (Adrian Faciu)",
+      "Astro (Alex Berlovan)",
+      "Improve type safety with one line (Victor Ionescu)",
+      "10 Rendering Patterns for Web Apps (Ovi Ispas)",
+      "Using Typescript for your Serverless Infrastructure (Arpad Gabor)",
+      "FE testing in Storybook (Robert Todea)",
+      "Boosting Development Efficiency with oclif (Calin Marian)"
+    ]
   },
   {
     "id": "294681499",
@@ -1203,7 +1613,11 @@
       "thumbUrl": "thumb_514410028.jpeg",
       "standardUrl": "600_514410028.jpeg",
       "highResUrl": "highres_514410028.jpeg"
-    }
+    },
+    "talks": [
+      "Stop ignoring TypeScript errors (Andrei Pfeiffer)",
+      "Lessons from 200 Million Lines of Code (Cassian Lup)"
+    ]
   },
   {
     "id": "295189211",
@@ -1220,7 +1634,10 @@
       "thumbUrl": "thumb_514861805.jpeg",
       "standardUrl": "600_514861805.jpeg",
       "highResUrl": "highres_514861805.jpeg"
-    }
+    },
+    "talks": [
+      "Casual social gathering with Ask-Me-Anything session with revo.js conference organizers"
+    ]
   },
   {
     "id": "296041373",
@@ -1237,7 +1654,11 @@
       "thumbUrl": "thumb_515883372.jpeg",
       "standardUrl": "600_515883372.jpeg",
       "highResUrl": "highres_515883372.jpeg"
-    }
+    },
+    "talks": [
+      "Migrating from JavaScript to TypeScript (Robert Szalkai & Narcis Gherasim)",
+      "Descoperă React-Query: Gestionarea Ușoară a Datelor (Robert Szalkai & Narcis Gherasim)"
+    ]
   },
   {
     "id": "297478430",
@@ -1254,7 +1675,11 @@
       "thumbUrl": "thumb_517479798.jpeg",
       "standardUrl": "600_517479798.jpeg",
       "highResUrl": "highres_517479798.jpeg"
-    }
+    },
+    "talks": [
+      "The State of jQuery (Victor Ionescu)",
+      "Hash Maps in TypeScript (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "297788545",
@@ -1263,7 +1688,10 @@
     "eventUrl": "https://www.meetup.com/tim-js/events/297788545/",
     "description": "🎄 Tis the season to be social!\n\nThis December we are gathering again to network, and share some drinks and closing thoughts for 2023.\n\nWe'll be hanging out at **The Charlatan's Pub**. See you there!",
     "photoAlbum": null,
-    "featuredEventPhoto": null
+    "featuredEventPhoto": null,
+    "talks": [
+      "End-of-year gathering to network, share drinks and closing thoughts for 2023"
+    ]
   },
   {
     "id": "298561050",
@@ -1280,7 +1708,11 @@
       "thumbUrl": "thumb_518537014.jpeg",
       "standardUrl": "600_518537014.jpeg",
       "highResUrl": "highres_518537014.jpeg"
-    }
+    },
+    "talks": [
+      "Building enterprise-level apps with NestJS (Razvan Tamsa)",
+      "WebXR: A Hands-on Introduction to VR Development (Robert Todea)"
+    ]
   },
   {
     "id": "299288452",
@@ -1297,7 +1729,11 @@
       "thumbUrl": "thumb_519235087.jpeg",
       "standardUrl": "600_519235087.jpeg",
       "highResUrl": "highres_519235087.jpeg"
-    }
+    },
+    "talks": [
+      "Powering UI with Utilities (Zoltán Szőgyényi)",
+      "SRP in depth (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "299675459",
@@ -1314,7 +1750,11 @@
       "thumbUrl": "thumb_519607721.jpeg",
       "standardUrl": "600_519607721.jpeg",
       "highResUrl": "highres_519607721.jpeg"
-    }
+    },
+    "talks": [
+      "Uniting Frontend and Backend: Sharing Code with NPM Packages (Narcis Gherasim)",
+      "Technical leadership for individual contributors (Adrian Fâciu)"
+    ]
   },
   {
     "id": "300286332",
@@ -1331,7 +1771,10 @@
       "thumbUrl": "thumb_520265338.jpeg",
       "standardUrl": "600_520265338.jpeg",
       "highResUrl": "highres_520265338.jpeg"
-    }
+    },
+    "talks": [
+      "Getting started with SolidStart (Victor Ionescu)"
+    ]
   },
   {
     "id": "300652660",
@@ -1344,7 +1787,11 @@
       "thumbUrl": "thumb_520664862.jpeg",
       "standardUrl": "600_520664862.jpeg",
       "highResUrl": "highres_520664862.jpeg"
-    }
+    },
+    "talks": [
+      "SRP vs OCP vs ISP (Andrei Pfeiffer)",
+      "Introduction to WebRTC (Robert Todea)"
+    ]
   },
   {
     "id": "301851097",
@@ -1361,7 +1808,11 @@
       "thumbUrl": "thumb_521949813.jpeg",
       "standardUrl": "600_521949813.jpeg",
       "highResUrl": "highres_521949813.jpeg"
-    }
+    },
+    "talks": [
+      "Design patterns in TypeScript #1: Mixin & Factory (Dan-Lucian Stefancu & Teolin Codreanu)",
+      "How WebGL works (Cosmin Munteanu)"
+    ]
   },
   {
     "id": "302266394",
@@ -1378,7 +1829,11 @@
       "thumbUrl": "thumb_522409026.jpeg",
       "standardUrl": "600_522409026.jpeg",
       "highResUrl": "highres_522409026.jpeg"
-    }
+    },
+    "talks": [
+      "Schema Driven Development (Ciprian Caba)",
+      "Modern HTTP Streaming using Web Standards (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "302786647",
@@ -1391,7 +1846,10 @@
       "thumbUrl": "thumb_522879723.jpeg",
       "standardUrl": "600_522879723.jpeg",
       "highResUrl": "highres_522879723.jpeg"
-    }
+    },
+    "talks": [
+      "Summer gathering for networking without talks"
+    ]
   },
   {
     "id": "303468570",
@@ -1408,7 +1866,10 @@
       "thumbUrl": "thumb_523547050.jpeg",
       "standardUrl": "600_523547050.jpeg",
       "highResUrl": "highres_523547050.jpeg"
-    }
+    },
+    "talks": [
+      "Automated testing: from isolation to full integration (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "304002716",
@@ -1425,7 +1886,10 @@
       "thumbUrl": "thumb_524069835.jpeg",
       "standardUrl": "600_524069835.jpeg",
       "highResUrl": "highres_524069835.jpeg"
-    }
+    },
+    "talks": [
+      "Flying drones with JavaScript (Anca Spatariu)"
+    ]
   },
   {
     "id": "304397662",
@@ -1442,7 +1906,11 @@
       "thumbUrl": "thumb_524558613.jpeg",
       "standardUrl": "600_524558613.jpeg",
       "highResUrl": "highres_524558613.jpeg"
-    }
+    },
+    "talks": [
+      "Github Copilot in React Development (Rares Portan & Mihnea Lungu)",
+      "htmx: More than a meme? (Victor Ionescu)"
+    ]
   },
   {
     "id": "304900323",
@@ -1455,7 +1923,10 @@
       "thumbUrl": "thumb_525030672.jpeg",
       "standardUrl": "600_525030672.jpeg",
       "highResUrl": "highres_525030672.jpeg"
-    }
+    },
+    "talks": [
+      "End-of-year gathering with Banat IT at Reciproc Café"
+    ]
   },
   {
     "id": "305625277",
@@ -1472,7 +1943,10 @@
       "thumbUrl": "thumb_525750956.jpeg",
       "standardUrl": "600_525750956.jpeg",
       "highResUrl": "highres_525750956.jpeg"
-    }
+    },
+    "talks": [
+      "Dependencies, Inversions, and more (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "306150876",
@@ -1489,7 +1963,12 @@
       "thumbUrl": "thumb_526236140.jpeg",
       "standardUrl": "600_526236140.jpeg",
       "highResUrl": "highres_526236140.jpeg"
-    }
+    },
+    "talks": [
+      "How to support our community (Anca Spatariu)",
+      "Migrating to React 18 - lightning talk (Andrei Pfeiffer)",
+      "One AI to rule them all ~/ npm i ai (Ciprian Caba)"
+    ]
   },
   {
     "id": "306591517",
@@ -1506,7 +1985,11 @@
       "thumbUrl": "thumb_526635049.jpeg",
       "standardUrl": "600_526635049.jpeg",
       "highResUrl": "highres_526635049.jpeg"
-    }
+    },
+    "talks": [
+      "Enhancing Your Code with Advanced TypeScript (Titian Cernicova-Dragomir)",
+      "Declutter your codebase with Knip (Rares Ionescu)"
+    ]
   },
   {
     "id": "307221232",
@@ -1523,7 +2006,11 @@
       "thumbUrl": "thumb_527289419.jpeg",
       "standardUrl": "600_527289419.jpeg",
       "highResUrl": "highres_527289419.jpeg"
-    }
+    },
+    "talks": [
+      "ESLint9: Keep code quality in check (Roland Paiusan)",
+      "Anti-patterns: how to annoy your team-mates in style (Teolin Codreanu)"
+    ]
   },
   {
     "id": "307715546",
@@ -1540,7 +2027,11 @@
       "thumbUrl": "thumb_527831029.jpeg",
       "standardUrl": "600_527831029.jpeg",
       "highResUrl": "highres_527831029.jpeg"
-    }
+    },
+    "talks": [
+      "Micro Frontends - with Module Federation (Paul Comanici)",
+      "Developer Friendly Code: Practical Tips for Readability (Adrian Faciu)"
+    ]
   },
   {
     "id": "308506228",
@@ -1553,7 +2044,11 @@
       "thumbUrl": "thumb_528535520.jpeg",
       "standardUrl": "600_528535520.jpeg",
       "highResUrl": "highres_528535520.jpeg"
-    }
+    },
+    "talks": [
+      "Dependency Management in Modern Web Projects (Adrian Faciu)",
+      "The code etymologist (Andrei Pfeiffer)"
+    ]
   },
   {
     "id": "308747726",
@@ -1570,7 +2065,11 @@
       "thumbUrl": "thumb_528834087.jpeg",
       "standardUrl": "600_528834087.jpeg",
       "highResUrl": "highres_528834087.jpeg"
-    }
+    },
+    "talks": [
+      "Structuring Frontend Code with the help of DDD (Marius Cristea)",
+      "Git gud: Secrets for Confident Version Control (Anca Spatariu)"
+    ]
   },
   {
     "id": "310370612",
@@ -1583,6 +2082,9 @@
       "thumbUrl": "thumb_529473415.jpeg",
       "standardUrl": "600_529473415.jpeg",
       "highResUrl": "highres_529473415.jpeg"
-    }
+    },
+    "talks": [
+      "Summer social - casual meetup without talks"
+    ]
   }
 ]
