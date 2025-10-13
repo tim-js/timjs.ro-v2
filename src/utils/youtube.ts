@@ -42,7 +42,8 @@ export async function getYouTubeVideos(): Promise<Video[]> {
   console.log('Fetching YouTube videos from API...');
 
   if (!API_KEY) {
-    throw new Error('YOUTUBE_API_KEY is not set in environment variables');
+    console.error('YOUTUBE_API_KEY is not set in environment variables');
+    return [];
   }
 
   // Convert channel ID (UC...) to uploads playlist ID (UU...)
@@ -66,7 +67,8 @@ export async function getYouTubeVideos(): Promise<Video[]> {
     const response = await fetch(url.toString());
 
     if (!response.ok) {
-      throw new Error(`YouTube API error: ${response.status} ${response.statusText}`);
+      console.error(`YouTube API error: ${response.status} ${response.statusText}`);
+      return [];
     }
 
     const data: YouTubePlaylistResponse = await response.json();
