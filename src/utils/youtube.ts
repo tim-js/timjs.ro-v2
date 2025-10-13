@@ -1,27 +1,92 @@
-import { parseString } from 'xml2js';
-import { promisify } from 'util';
-
 const TIMJS_CHANNEL_ID = 'UCdbyO-PwK-5UVOSQuoWZ9vQ';
+const API_KEY = import.meta.env.YOUTUBE_API_KEY;
 
-const parseXml = promisify(parseString);
+interface Video {
+  id: string;
+  title: string;
+  link: string;
+  thumbnail: string;
+  publishedAt: string;
+}
 
-export async function getYouTubeVideos() {
-  // We use the RSS feed because it works without any auth
-  const response = await fetch(
-    `https://www.youtube.com/feeds/videos.xml?channel_id=${TIMJS_CHANNEL_ID}`
-  );
-  const text = await response.text();
+interface YouTubePlaylistItem {
+  snippet: {
+    resourceId: {
+      videoId: string;
+    };
+    title: string;
+    publishedAt: string;
+    thumbnails: {
+      high: {
+        url: string;
+      };
+    };
+  };
+}
 
-  const result = await parseXml(text);
+interface YouTubePlaylistResponse {
+  items: YouTubePlaylistItem[];
+  nextPageToken?: string;
+}
 
-  const entries = result.feed.entry;
-  const videos = entries.map(entry => ({
-    id: entry['yt:videoId'][0],
-    title: entry.title[0],
-    link: entry.link[0].$.href,
-    thumbnail: `https://i.ytimg.com/vi/${entry['yt:videoId'][0]}/hqdefault.jpg`,
-    publishedAt: entry.published[0]
-  }));
+// In-memory cache
+let cachedVideos: Video[] | null = null;
 
-  return videos;
+export async function getYouTubeVideos(): Promise<Video[]> {
+  // Return cached videos if available
+  if (cachedVideos) {
+    console.log('Returning cached YouTube videos');
+    return cachedVideos;
+  }
+
+  console.log('Fetching YouTube videos from API...');
+
+  if (!API_KEY) {
+    throw new Error('YOUTUBE_API_KEY is not set in environment variables');
+  }
+
+  // Convert channel ID (UC...) to uploads playlist ID (UU...)
+  const uploadsPlaylistId = TIMJS_CHANNEL_ID.replace('UC', 'UU');
+
+  const allVideos: Video[] = [];
+  let nextPageToken: string | undefined = undefined;
+
+  // Fetch all videos using pagination
+  do {
+    const url = new URL('https://www.googleapis.com/youtube/v3/playlistItems');
+    url.searchParams.set('part', 'snippet');
+    url.searchParams.set('playlistId', uploadsPlaylistId);
+    url.searchParams.set('maxResults', '50');
+    url.searchParams.set('key', API_KEY);
+
+    if (nextPageToken) {
+      url.searchParams.set('pageToken', nextPageToken);
+    }
+
+    const response = await fetch(url.toString());
+
+    if (!response.ok) {
+      throw new Error(`YouTube API error: ${response.status} ${response.statusText}`);
+    }
+
+    const data: YouTubePlaylistResponse = await response.json();
+
+    const videos = data.items.map(item => ({
+      id: item.snippet.resourceId.videoId,
+      title: item.snippet.title,
+      link: `https://www.youtube.com/watch?v=${item.snippet.resourceId.videoId}`,
+      thumbnail: item.snippet.thumbnails.high.url,
+      publishedAt: item.snippet.publishedAt
+    }));
+
+    allVideos.push(...videos);
+    nextPageToken = data.nextPageToken;
+  } while (nextPageToken);
+
+  console.log(`Fetched ${allVideos.length} videos from YouTube API`);
+
+  // Cache the results
+  cachedVideos = allVideos;
+
+  return allVideos;
 }
