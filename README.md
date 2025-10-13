@@ -60,3 +60,7 @@ Any static assets, like images, can be placed in the `public/` directory.
 ## TailwindCSS
 
 TailwindCSS is already configured in this repo, so you can start using it without any installation.
+
+## Env variables
+
+See `.env.example` for the required environment variables. You can create a `.env` file in the root of the project and add your own values.
