@@ -13,39 +13,13 @@ type EventType = {
 const MEETUP_ENDPOINT = "https://api.meetup.com/gql-ext";
 const COMMUNITY_URLNAME = "tim-js";
 
-const pastEventsQuery = `
-query ($urlname: String!) {
-  groupByUrlname(urlname: $urlname) {
-    id
-    name
-    urlname
-    events(status: PAST, first: 200) {
-         edges {
-          node {
-            id
-            title
-            dateTime
-            eventUrl
-            description
-            featuredEventPhoto {
-              thumbUrl
-              standardUrl
-            }
-          }
-        }
-    }
-  }
-}
-`;
-
-// It should be PENDING OR PROPOSED
 const upcomingEventsQuery = `
 query ($urlname: String!) {
   groupByUrlname(urlname: $urlname) {
     id
     name
     urlname
-    events(status: PENDING, sort: DESC, first: 2) {
+    events(status: ACTIVE, sort: DESC, first: 2) {
          edges {
           node {
             id
