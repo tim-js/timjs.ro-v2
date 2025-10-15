@@ -5,6 +5,7 @@ import { marked } from "marked";
 import Layout from "../../../layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
+import ReserveSpotButton from "@components/ReserveSpotButton.astro";
 
 export async function getStaticPaths() {
   const upcomingEvents = await getUpcomingEvents();
@@ -46,13 +47,7 @@ const relatedVideos = videos.filter((video) =>
         set:html={marked.parse(meetup.description)}
       />
       <br />
-      {
-        type === "upcoming" && (
-          <a href={meetup.eventUrl} target="_blank" class="text-blue-500">
-            Reserve your spot
-          </a>
-        )
-      }
+      {type === "upcoming" && <ReserveSpotButton href={meetup.eventUrl} />}
     </section>
 
     {
