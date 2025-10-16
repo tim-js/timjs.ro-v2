@@ -1,0 +1,90 @@
+---
+import { getEvent, getPastEvents, getUpcomingEvents } from "@utils/meetup";
+import { getYouTubeVideos } from "@utils/youtube";
+import { marked } from "marked";
+import Layout from "../../../layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import ReserveSpotButton from "@components/ReserveSpotButton.astro";
+
+export async function getStaticPaths() {
+  const upcomingEvents = await getUpcomingEvents();
+  const pastEvents = getPastEvents();
+  const pastPaths = pastEvents.map((event) => ({
+    params: { type: "past", event: event.id },
+  }));
+  const upcomingPaths = upcomingEvents.map((event) => ({
+    params: { type: "upcoming", event: event.id },
+  }));
+  return [...pastPaths, ...upcomingPaths];
+}
+
+const { event, type } = Astro.params;
+const meetup =
+  type === "upcoming"
+    ? await getEvent(event)
+    : getPastEvents().find((e) => e.id === event);
+
+const videos = await getYouTubeVideos();
+const relatedVideos = videos.filter((video) =>
+  video.title.includes(meetup.title.replace("#", ""))
+);
+---
+
+<Layout title="Meetup">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{meetup.title}</Fragment>
+      <Fragment slot="desc">
+        {new Date(meetup.dateTime).toLocaleDateString()}</Fragment
+      >
+    </Sectionhead>
+
+    <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+      <h2 class="font-bold text-5xl text-gray-800">Description</h2>
+      <div
+        class="text-xl leading-relaxed text-slate-500 prose-links"
+        set:html={marked.parse(meetup.description)}
+      />
+      <br />
+      {type === "upcoming" && <ReserveSpotButton href={meetup.eventUrl} />}
+    </section>
+
+    {
+      relatedVideos.length > 0 && (
+        <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+          <h2 class="font-bold text-5xl text-gray-800">Recordings</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {relatedVideos.map((video) => (
+              <div>
+                <div class="relative w-full" style="padding-bottom: 56.25%;">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${video.id}`}
+                    title={video.title}
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    class="absolute top-0 left-0 w-full h-full rounded"
+                  />
+                </div>
+                <h3 class="text-lg font-semibold mt-2">{video.title}</h3>
+              </div>
+            ))}
+          </div>
+        </section>
+      )
+    }
+  </Container>
+</Layout>
+
+<style>
+  .prose-links :global(a) {
+    color: #3b82f6; /* blue-500 */
+    text-decoration: underline;
+    transition: color 0.2s;
+  }
+
+  .prose-links :global(a:hover) {
+    color: #1d4ed8; /* blue-700 */
+  }
+</style>

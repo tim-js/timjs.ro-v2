@@ -1,0 +1,24 @@
+---
+import Button from "./ui/button.astro";
+
+interface Props {
+  href: string;
+  target?: string;
+  rel?: string;
+  anchorClass?: string;
+}
+
+const {
+  href,
+  target = "_blank",
+  rel = "noopener noreferrer",
+  anchorClass,
+  ...rest
+} = Astro.props as Props;
+---
+
+<a href={href} target={target} rel={rel} class={anchorClass} {...rest}>
+  <Button class="w-60 bg-brand hover:bg-yellow-400">
+    <p class="text-black">Reserve your spot</p>
+  </Button>
+</a>

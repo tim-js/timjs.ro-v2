@@ -1,21 +1,26 @@
 ---
-// import Cta from "@components/cta.astro";
-// import Features from "@components/features.astro";
-// import Logos from "@components/logos.astro";
 import Container from "@components/container.astro";
 import Hero from "@components/hero.astro";
 import Layout from "@layouts/Layout.astro";
 import Revojs from "@components/revojs.astro";
+import UpcomingEvents from "@components/UpcomingEvents/upcomingevents.astro";
+import ReserveSpotButton from "@components/ReserveSpotButton.astro";
+import { getUpcomingEvents } from "@utils/meetup";
+
+const [nextEvent] = await getUpcomingEvents();
 ---
 
 <Layout title="">
   <Container>
-    <main class="min-h-[calc(100svh-16rem)]flex flex-col">
+    <main class="min-h-[calc(100svh-16rem)] flex flex-col">
       <Hero />
+      <UpcomingEvents />
+      {nextEvent?.eventUrl && (
+        <div class="flex justify-center mt-8">
+          <ReserveSpotButton href={nextEvent.eventUrl} />
+        </div>
+      )}
       <Revojs />
-      <!-- <Features />
-    <Logos />
-    <Cta /> -->
     </main>
   </Container>
 </Layout>
