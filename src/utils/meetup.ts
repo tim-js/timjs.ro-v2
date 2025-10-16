@@ -30,6 +30,7 @@ query ($urlname: String!) {
             featuredEventPhoto {
               thumbUrl
               standardUrl
+              highResUrl
             }
           }
         }
@@ -85,7 +86,7 @@ export async function getUpcomingEvents() {
   const upcomingEvents: EventType[] =
     data.groupByUrlname.events.edges.map((edge) => ({
       ...edge.node,
-      imageUrl: edge.node.featuredEventPhoto?.standardUrl,
+      imageUrl: edge.node.featuredEventPhoto?.highResUrl,
     }));
 
   return upcomingEvents.filter(isMeetupEvent);
