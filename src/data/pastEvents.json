@@ -775,7 +775,7 @@
   },
   {
     "id": "237547271",
-    "title": "tim.js meetup 36: How do you \"type\" JavaScript?",
+    "title": "tim.js meetup 36: How do you 'type' JavaScript?",
     "dateTime": "2017-02-22T18:30:00+02:00",
     "eventUrl": "https://www.meetup.com/tim-js/events/237547271/",
     "description": "How do you \"type\" JavaScript?\n\nIn the context of having various JavaScript flavors & languages that compile to JS, which offer static typing, the aim of this meetup is to answer a few questions:\n\n• will static types make us write better code?• will static types reduce the number of bugs?\n• are dynamic languages suited for \"small\" projects only?\n• can I mix static & dynamic types?\n• should I switch to a statically typed JavaScript flavor?\n\nTo help us answer these questions, we have invited 2 special guests:\n\n• Radu Marinescu\n• Radu Fericean\n\nModerator: Andrei Pfeiffer\n\nThis meetup will take place in a panel-like format, no presentations. The audience is welcome to contribute to the discussion.",

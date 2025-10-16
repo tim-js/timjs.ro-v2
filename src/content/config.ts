@@ -1,5 +1,38 @@
 // 1. Import utilities from `astro:content`
 import { z, defineCollection } from "astro:content";
+import pastEventsData from "../data/pastEvents.json";
+import { getFormattedMeetupName } from "@utils/all";
+import fs from "fs";
+import path from "path";
+
+// Handle loading Cloudinary data
+import { fetchAllGalleries } from "../scripts/cloudinaryLoader.js";
+try {
+  await fetchAllGalleries();
+} catch (error) {
+  console.error("Fatal error:", error);
+  process.exit(1);
+}
+
+// Load cloudinary cache if it exists
+const cachePath = path.join(process.cwd(), "node_modules/.cache/cloudinary-cache.json");
+let cloudinaryCache = { galleries: {} };
+
+if (fs.existsSync(cachePath)) {
+  cloudinaryCache = JSON.parse(fs.readFileSync(cachePath, "utf-8"));
+}
+
+// Load image galleries from cache instead of making API calls
+const imageGalleries = {};
+for (const event of pastEventsData) {
+  const galleryName = getFormattedMeetupName(event.title);
+  imageGalleries[galleryName] = defineCollection({
+    loader: () => {
+      // Return cached data for this gallery
+      return cloudinaryCache.galleries[galleryName] || [];
+    }
+  });
+}
 
 // 2. Define your collection(s)
 const blogCollection = defineCollection({
@@ -50,4 +83,5 @@ export const collections = {
   blog: blogCollection,
   team: teamCollection,
   speakers: speakersCollection,
+  ...imageGalleries,
 };

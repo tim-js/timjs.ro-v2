@@ -1,0 +1,108 @@
+---
+import { getEvent, getPastEvents, getUpcomingEvents } from "@utils/meetup";
+import { getCollection } from "astro:content";
+import { getFormattedMeetupName } from "@utils/all";
+import Layout from "../../../../layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import { CldImage } from "astro-cloudinary";
+import type { EventPhoto } from "@components/EventGallery.astro";
+import "photoswipe/style.css";
+
+export async function getStaticPaths() {
+  const pastEvents = getPastEvents();
+  const pastPaths = pastEvents.map((event) => ({
+    params: { type: "past", event: event.id },
+  }));
+  return [...pastPaths];
+}
+
+const { event, type } = Astro.params;
+const meetup =
+  type === "upcoming"
+    ? await getEvent(event)
+    : getPastEvents().find((e) => e.id === event);
+
+const photos: EventPhoto[] = await getCollection(
+  getFormattedMeetupName(meetup.title)
+);
+
+const backUrl = `/meetups/${type}/${event}`;
+---
+
+<Layout title={`Photos - ${meetup.title}`}>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{meetup.title} - Photos</Fragment>
+      <Fragment slot="desc">
+        {new Date(meetup.dateTime).toLocaleDateString()}
+      </Fragment>
+    </Sectionhead>
+
+    <section class="flex flex-col gap-6 mx-auto max-w-6xl mt-24">
+      <div class="flex justify-between items-center">
+        <h2 class="font-bold text-5xl text-gray-800">
+          All Photos <span class="text-3xl text-gray-500 font-normal"
+            >{photos.length}</span
+          >
+        </h2>
+        <a
+          href={backUrl}
+          class="text-lg font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200">
+          ← Back to event
+        </a>
+      </div>
+
+      {
+        photos && photos.length > 0 ? (
+          <div
+            id="gallery"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            {photos.map((photo, index) => (
+              <a
+                href={`https://res.cloudinary.com/${import.meta.env.PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/${photo.data.data.public_id}`}
+                data-pswp-width={photo.data.data.width}
+                data-pswp-height={photo.data.data.height}
+                target="_blank"
+                rel="noreferrer"
+                class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 aspect-video block">
+                <CldImage
+                  src={photo.data.data.public_id}
+                  width={400}
+                  height={300}
+                  alt={`Event photo ${index + 1}`}
+                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 cursor-pointer"
+                  crop="fill"
+                  gravity="auto"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </a>
+            ))}
+          </div>
+        ) : (
+          <div class="text-center py-12">
+            <p class="text-xl text-gray-500">
+              No photos available for this event yet
+            </p>
+          </div>
+        )
+      }
+    </section>
+  </Container>
+</Layout>
+
+<script>
+  import PhotoSwipeLightbox from "photoswipe/lightbox";
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: "#gallery",
+    children: "a",
+    pswpModule: () => import("photoswipe"),
+    // Optional: customize PhotoSwipe behavior
+    padding: { top: 20, bottom: 40, left: 100, right: 100 },
+    zoom: true,
+    wheelToZoom: true,
+  });
+
+  lightbox.init();
+</script>
