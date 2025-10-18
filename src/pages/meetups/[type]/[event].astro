@@ -74,6 +74,31 @@ const relatedVideos = videos.filter((video) =>
         </section>
       )
     }
+
+    {
+      meetup.slides?.some((slide) => slide !== null) && (
+        <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
+          <h2 class="font-bold text-5xl text-gray-800">Slides</h2>
+          <ul class="list-disc list-inside space-y-2">
+            {meetup.slides.map(
+              (slide, index) =>
+                slide && (
+                  <li>
+                    <a
+                      href={slide}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-blue-500 hover:text-blue-700 underline transition-colors"
+                    >
+                      {meetup.talks[index]}
+                    </a>
+                  </li>
+                )
+            )}
+          </ul>
+        </section>
+      )
+    }
   </Container>
 </Layout>
 
