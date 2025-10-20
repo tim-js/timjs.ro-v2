@@ -687,8 +687,7 @@
       "Router 2.0 (Marius Cristea)"
     ],
     "slides": [
-      "http://bit.ly/aconnect16",
-      "http://bit.ly/arouter2"
+      "http://bit.ly/aconnect16"
     ]
   },
   {
@@ -1348,7 +1347,7 @@
       "The Trichotomy of UI Development (Andrei Pfeiffer)"
     ],
     "slides":[
-      "https://docs.google.com/presentation/d/e/2PACX-1vQDFJrVbsk4sbQHv8Xkjb4irxhT9DuiietE_hJPoii8NEfjt6yJGnzMqS-1v1OoK9Unyp_xmXt1ahEA/pub?start=false&loop=false&delayms=3000",
+      null,
       "https://speakerdeck.com/andreipfeiffer/the-tricothomy-of-ui-development"
     ]
   },
@@ -1749,7 +1748,7 @@
       null,
       null,
       null,
-      "https://slides.com/adrianfaciu/how-to-be-a-senior-developer-801f23"
+      "https://slides.com/adrianfaciu/timjs10-senior-developer"
     ]
   },
   {
@@ -2244,7 +2243,7 @@
       "Git gud: Secrets for Confident Version Control (Anca Spatariu)"
     ],
     "slides": [
-      "https://github.com/nhack/trade-ddd",
+      null,
       "https://slides.com/ancaspatariu/git-good"
     ]
   },
