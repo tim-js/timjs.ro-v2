@@ -6,6 +6,7 @@ import Layout from "../../../layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import ReserveSpotButton from "@components/ReserveSpotButton.astro";
+import { Icon } from "astro-icon/components";
 
 export async function getStaticPaths() {
   const upcomingEvents = await getUpcomingEvents();
@@ -79,7 +80,7 @@ const relatedVideos = videos.filter((video) =>
       meetup.slides?.some((slide) => slide !== null) && (
         <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
           <h2 class="font-bold text-5xl text-gray-800">Slides</h2>
-          <ul class="list-disc list-inside space-y-2">
+          <ul class="space-y-2">
             {meetup.slides.map(
               (slide, index) =>
                 slide && (
@@ -88,8 +89,11 @@ const relatedVideos = videos.filter((video) =>
                       href={slide}
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="text-blue-500 hover:text-blue-700 underline transition-colors"
-                    >
+                      class="flex items-center gap-2 text-blue-500 hover:text-blue-700 underline transition-colors">
+                      <Icon
+                        name="mdi:animation-outline"
+                        class="w-5 h-5 flex-shrink-0"
+                      />
                       {meetup.talks[index]}
                     </a>
                   </li>
