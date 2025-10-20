@@ -7,6 +7,7 @@ type EventType = {
   eventUrl: string;
   description: string;
   talks: string[];
+  slides: string[];
   imageUrl: string;
 };
 

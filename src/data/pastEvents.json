@@ -30,21 +30,10 @@
     "talks": [
       "About SpainJS conference (Andrei Pfeiffer)",
       "Javascript Debugging with Chrome DevTools - Part 1 (Cassian Lup)"
-    ]
-  },
-  {
-    "id": "137482172",
-    "title": "Tasks Automation",
-    "dateTime": "2013-10-08T18:30:00+03:00",
-    "eventUrl": "https://www.meetup.com/tim-js/events/137482172/",
-    "description": "I can make a presentation about what I have played with lately:\n- code Linting, with JSHint\n- unit-testing, with QUnit and/or Jasmine\n- generate code documentation, with JSDoc\n- automate all these tasks, with Grunt\n\nUnfortunately, I will not be available in September, so we can do this in October.",
-    "photoAlbum": null,
-    "featuredEventPhoto": null,
-    "talks": [
-      "Code Linting with JSHint",
-      "Unit-testing with QUnit and/or Jasmine",
-      "Generate code documentation with JSDoc",
-      "Automate tasks with Grunt"
+    ],
+    "slides":[
+      null,
+      "https://speakerdeck.com/cassilup/javascript-debugging-with-chrome-devtools-part-1"
     ]
   },
   {
@@ -58,6 +47,9 @@
     "talks": [
       "Task automation: code Linting, unit-testing, code documentation (Andrei)",
       "Chrome debugging tools part 2 (Cassian)"
+    ],
+    "slides": [
+      "https://speakerdeck.com/andreipfeiffer/automatizarea-proceselor-cu-grunt"
     ]
   },
   {
@@ -88,6 +80,10 @@
     "talks": [
       "AngularJS live coding (Petru Isfan)",
       "Chrome Dev Tools part 4 (Cassian Lup)"
+    ],
+    "slides": [
+      null,
+      "https://speakerdeck.com/cassilup/javascript-debugging-with-chrome-devtools-part-3"
     ]
   },
   {
@@ -132,6 +128,11 @@
       "Yeoman workflows (Petru Isfan)",
       "End to End testing in AngularJS (Lucian Pacurar)",
       "JavaScript, going Vanilla part 1 (Andrei Pfeiffer)"
+    ],
+    "slides": [
+      null,
+      null,
+      "https://slides.com/pfeifferandrei/javascript-going-vanilla-part-1"
     ]
   },
   {
@@ -158,6 +159,10 @@
     "talks": [
       "JavaScript, going Vanilla part 3 (Andrei Pfeiffer)",
       "IonicFramework - hybrid mobile apps with JavaScript & HTML5 (Radu Cugut)"
+    ],
+    "slides": [
+      null,
+      "http://bit.ly/timjs10ionic"
     ]
   },
   {
@@ -175,6 +180,10 @@
     "talks": [
       "3D Footprint - Immersing data centers into virtual reality (Marius Turica)",
       "Intro to ES6 Generators (Lucian Pacurar)"
+    ],
+    "slides": [
+      "https://www.dropbox.com/scl/fi/dewkq2jims0w2rc2ifhcn/3D-Footprint-Immersing-data-centers-into-virtual-reality-v0.3.ppsx?rlkey=34yz2ppmkdbwbyfyls7d90wsv&e=1&dl=0",
+      null
     ]
   },
   {
@@ -192,6 +201,10 @@
     "talks": [
       "Appium: Mobile App Automation Made Awesome (Cassian Lup)",
       "JavaScript, going Vanilla part 4 - Scope & Context (Andrei Pfeiffer)"
+    ],
+    "slides": [
+      null,
+      "http://slides.com/pfeifferandrei/javascript-going-vanilla-part-4"
     ]
   },
   {
@@ -205,6 +218,10 @@
     "talks": [
       "Require.js (Petru Isfan)",
       "Decoupling async requests (Andrei Pfeiffer)"
+    ],
+    "slides": [
+      "https://docs.google.com/presentation/d/1IWS9uuEdXI729pZOBdhrU4D_j9tjbKYRXC9TcUSkh8M/edit?usp=sharing",
+      null
     ]
   },
   {
@@ -230,6 +247,10 @@
     "talks": [
       "Introduction (Andrei Pfeiffer)",
       "Appium: Mobile App Automation Made Awesome part II (Cassian Lup)"
+    ],
+    "slides": [
+      null,
+      "https://speakerdeck.com/cassilup/appium-mobile-automation-made-awesome-part-ii"
     ]
   },
   {
@@ -248,6 +269,11 @@
       "Intro (Andrei Pfeiffer)",
       "Fonts, FOUT & localStorage (Codrin Pavel)",
       "How to CoffeeScript (Ovidiu Ispas)"
+    ],
+    "slides": [
+      null,
+      "https://slides.com/zerospree/localstorage-webfonts-fout",
+      null
     ]
   },
   {
@@ -266,6 +292,11 @@
       "Intro (Andrei Pfeiffer)",
       "How to Hack an Environment (Cassian Lup)",
       "Advanced Grunt (Andrei Pfeiffer)"
+    ],
+    "slides": [
+      null,
+      "https://speakerdeck.com/cassilup/how-to-hack-together-an-environment",
+      "http://slides.com/pfeifferandrei/advanced-grunt"
     ]
   },
   {
@@ -295,6 +326,10 @@
     "talks": [
       "JavaScript Books (Andrei Pfeiffer)",
       "Isomorphic JavaScript with React.js (Ovidiu Ispas)"
+    ],
+    "slides": [
+      "https://slides.com/pfeifferandrei/javascript-books",
+      null
     ]
   },
   {
@@ -312,6 +347,10 @@
     "talks": [
       "ShellJS vs. Bash (Ciprian Zaharie)",
       "Handling LARGE rasters & vectors (Andrei Pfeiffer)"
+    ],
+    "slides": [
+      "http://slides.com/cz/shelljs-1#/",
+      "https://slides.com/pfeifferandrei/handling-large-vectors-and-rasters"
     ]
   },
   {
@@ -325,6 +364,10 @@
     "talks": [
       "AngularJS best practice survey (Madincea Vasile)",
       "Working With the DOM & Living to Tell (Cassian Lup)"
+    ],
+    "slides": [
+      "http://slides.com/vmadincea/angular-best-practive-survey",
+      "https://speakerdeck.com/cassilup/working-with-the-dom-and-living-to-tell"
     ]
   },
   {
@@ -342,6 +385,10 @@
     "talks": [
       "Looping Events (Andrei Pfeiffer)",
       "Memory Leaks (Ilie Ciotir)"
+    ],
+    "slides":[
+      "https://slides.com/pfeifferandrei/javascript-vanilla-event-loop",
+      "http://slides.com/ilievasilicaciotir/memoryleaks/"
     ]
   },
   {
@@ -359,6 +406,10 @@
     "talks": [
       "Using ES6 with Angular 1.x (Alin Chiuaru)",
       "Crawling with Prerender.io (Andrei Demian)"
+    ],
+    "slides": [
+      "http://slides.com/alinchiuaru/using-es6-with-angular-1-x",
+      "http://slides.com/andreidemian/prerender"
     ]
   },
   {
@@ -375,7 +426,7 @@
   },
   {
     "id": "226749001",
-    "title": "tim.js Special Event: Angular2",
+    "title": "tim.js meetup Special Event: Angular2",
     "dateTime": "2015-11-19T18:30:00+02:00",
     "eventUrl": "https://www.meetup.com/tim-js/events/226749001/",
     "description": "JavaScript is everywhere. And some people argue that Angular is, also, all over the place. We think it's not. Yet. But will it?\n\nAngularConnect, the biggest and meanest Angular conference to date just happened in London. Two of our organisers, Lucian Păcurar and Cassian Lup, were there to witness it all. They're eager to share the awesome new stuff that's ahead in the Angular world, and why not, in the JS universe.\n\nSome hot stuff on the plate:\n• Angular2 (syntax, timeline & migration path)\n• A new Routing Library (we promise it's awesome),\n• Performance (not a myth anymore),\n• ES6 & TypeScript (oh yes we did)\nand many more.\n\nLimited seats. Get them while you can!",
@@ -420,6 +471,11 @@
       "Intro",
       "ES6 under the microscope (Andrei Pfeiffer)",
       "Introduction to TypeScript (Ilie Ciotir)"
+    ],
+    "slides":[
+      null,
+      "http://slides.com/pfeifferandrei/es6-under-the-microscope",
+      "https://github.com/Toskv/talk.timjs.typescript"
     ]
   },
   {
@@ -437,6 +493,10 @@
     "talks": [
       "Introduction to React (Ovidiu Ispas and Cassian Lup)",
       "Flux and Redux (Vlad Zelinschi)"
+    ],
+    "slides": [
+      "http://bit.ly/1TrZlES",
+      null
     ]
   },
   {
@@ -454,6 +514,9 @@
     "talks": [
       "Switching to JS (Horia Radu)",
       "ClojureScript & React (Dan Bunea)"
+    ],
+    "slides": [
+      "https://slides.com/horiaradu/a-n00b-s-journey-to-js"
     ]
   },
   {
@@ -508,6 +571,11 @@
       "Buletin de stiri (Andrei Pfeiffer)",
       "ES6 Modules (Ilie Ciotir)",
       "Using Redux in React apps (Ovidiu Ispas)"
+    ],
+    "slides": [
+      null,
+      "http://slides.com/ilievasilicaciotir/es6modules",
+      null
     ]
   },
   {
@@ -545,6 +613,9 @@
     "talks": [
       "Overview of London NodeConf 2016 (Cassian Lup)",
       "Progressive Web Apps (Victor Ionescu)"
+    ],
+    "slides":[
+      "https://docs.google.com/presentation/d/1eRAcvubxLbEWvvuHM7yKVJsI5qY-Fk31TB6JnmSjQck/present"
     ]
   },
   {
@@ -614,6 +685,9 @@
     "talks": [
       "AngularConnect Overview (Lucian Pacurar)",
       "Router 2.0 (Marius Cristea)"
+    ],
+    "slides": [
+      "http://bit.ly/aconnect16"
     ]
   },
   {
@@ -693,6 +767,10 @@
     "talks": [
       "Intro (Andrei Pfeiffer)",
       "A Vue over React - introducing Vue.js in comparison to React (Andrei Pfeiffer)"
+    ],
+    "slides": [
+      null,
+      "https://speakerdeck.com/andreipfeiffer/a-vue-over-react"
     ]
   },
   {
@@ -722,6 +800,10 @@
     "talks": [
       "Clean Code (Ioana Verebi)",
       "TypeScript: The Good Cop (Cassian Lup)"
+    ],
+    "slids":[
+      null,
+      "https://docs.google.com/presentation/d/1Sr8CxMFyrxSc5WKdawsXVRogahnAxQ8TfWxPLomTmVE/present?slide=id.p"
     ]
   },
   {
@@ -794,6 +876,14 @@
       "ExtJS in 2k17 (Samuel Alexandroni)",
       "Typed UIs (Horia Radu)",
       "To ASI or not to ASI (Andrei Pfeiffer)"
+    ],
+    "slides": [
+      null,
+      "https://www.slideshare.net/slideshow/my-journey-from-php-to-nodejs/78291522",
+      "https://docs.google.com/presentation/d/1IFGMP333WTv-m2RcYyyypw9a4c-QmT4tShOjV2qktbs/edit?usp=sharing",
+      null,
+      "http://slides.com/horiaradu/typed-uis",
+      null
     ]
   },
   {
@@ -848,6 +938,10 @@
     "talks": [
       "A gentle introduction to Reactive Programming using RxJs (Adrian Fâciu)",
       "How full is your stack? (Andrei Pfeiffer)"
+    ],
+    "slides": [
+      null,
+      "https://speakerdeck.com/andreipfeiffer/how-full-is-your-stack"
     ]
   },
   {
@@ -911,6 +1005,10 @@
     "talks": [
       "Realtime 3D in the Browser (Radu Milici)",
       "Chrome Extensions (Bogdan Dînga)"
+    ],
+    "slides": [
+      null,
+      "https://docs.google.com/presentation/d/1kNJyuIwaorNloHLhwwRnWsxvw5YRruuucSPKKJtJokI/edit?slide=id.p#slide=id.p"
     ]
   },
   {
@@ -928,6 +1026,10 @@
     "talks": [
       "ngrx: tips & tricks (Adrian Fâciu)",
       "Transducers in JS (Bogdan Bugarschi)"
+    ],
+    "slides":[
+      "https://slides.com/adrianfaciu/ngrx-tips",
+      "https://docs.google.com/presentation/d/19Ccrf3F62LyF7W83Ihna3nLF912Yciq_XTFBUz05eEE/edit?usp=sharing"
     ]
   },
   {
@@ -965,6 +1067,13 @@
       "Ionic build tools in Docker (Petru Isfan)",
       "Barrel files (Adi Faciu)",
       "Tips & Tricks (Andrei Pfeiffer)"
+    ],
+    "slides":[
+      null,
+      null,
+      "https://slides.com/petruisfan/docker-ionic#/",
+      "https://slides.com/adrianfaciu/barrel-files",
+      null
     ]
   },
   {
@@ -994,6 +1103,10 @@
     "talks": [
       "Parsers for fun and profit (Bogdan Bugarschi)",
       "Self-hosted Web Deployments in an Oneliner (Cassi Lup)"
+    ],
+    "slides": [
+      null,
+      "https://docs.google.com/presentation/d/1ftW-VRLPpQUQM7_KFzj_rms_7-5hd47ysXOiXthEs2o"
     ]
   },
   {
@@ -1060,6 +1173,10 @@
     "talks": [
       "Introduction to Kubernetes (Alina Ionescu)",
       "Cloud Testing Solutions Battle Royale (Padineanu Cosmin)"
+    ],
+    "slides": [
+      null,
+      "https://docs.google.com/presentation/d/17TeHuHWga26BnwxGDMFBspr48VhgHSMH2KZf1xOrYKw/edit?usp=sharing"
     ]
   },
   {
@@ -1081,6 +1198,10 @@
     "talks": [
       "Taking Angular Offline (Adrian Fâciu)",
       "Isolated Components Driven Development (Andrei Pfeiffer)"
+    ],
+    "slides": [
+      "https://slides.com/adrianfaciu/offlineangular",
+      null
     ]
   },
   {
@@ -1224,6 +1345,10 @@
     "talks": [
       "My point of Vue (Alex Grozav)",
       "The Trichotomy of UI Development (Andrei Pfeiffer)"
+    ],
+    "slides":[
+      null,
+      "https://speakerdeck.com/andreipfeiffer/the-tricothomy-of-ui-development"
     ]
   },
   {
@@ -1249,6 +1374,10 @@
     "talks": [
       "Web components with LitElement (Adrian Fâciu)",
       "Memoization in React (Andrei Pfeiffer)"
+    ],
+    "slides":[
+      "https://slides.com/adrianfaciu/litelement",
+      null
     ]
   },
   {
@@ -1266,6 +1395,10 @@
     "talks": [
       "A boomers intro to Svelte (Răzvan Plăcintar)",
       "Controlling Hardware with JavaScript (Anca Spătariu)"
+    ],
+    "slides": [
+      "https://slides.com/razvanp/a-boomers-intro-to-svelte#/",
+      null
     ]
   },
   {
@@ -1299,6 +1432,9 @@
     "talks": [
       "Sharing code at runtime using module federation (Adrian Fâciu)",
       "Simple vs. Easy (Andrei Pfeiffer)"
+    ],
+    "slides": [
+      "https://slides.com/adrianfaciu/sharing-code-at-runtime-041619"
     ]
   },
   {
@@ -1332,6 +1468,10 @@
     "talks": [
       "re-frame architecture (Boogie Bugarschi)",
       "i18n & l10n - Internationalization & Localization (Andrei Pfeiffer)"
+    ],
+    "slides": [
+      "https://docs.google.com/presentation/d/1yoJVTcVmZdKNNulS6ycZn4KBOtNoe1ME-xHvAsRJjw8",
+      "https://andreipfeiffer.dev/slides/i18n-and-l10n.pdf"
     ]
   },
   {
@@ -1391,6 +1531,10 @@
     "talks": [
       "SPA, SSR, SSG: How Remix gets the best of all worlds (Adrian Fâciu)",
       "The Evolution of Scalable CSS (Andrei Pfeiffer)"
+    ],
+    "slides": [
+      "https://slides.com/adrianfaciu/remix",
+      null
     ]
   },
   {
@@ -1547,6 +1691,9 @@
     },
     "talks": [
       "SolidJS for React Developers (Victor Ionescu)"
+    ],
+    "slides": [
+      "https://drive.google.com/file/d/1ZXB1rpiL1vs995ZHQ55S08ZsncowI3wv/view"
     ]
   },
   {
@@ -1596,6 +1743,12 @@
       "Using Typescript for your Serverless Infrastructure (Arpad Gabor)",
       "FE testing in Storybook (Robert Todea)",
       "Boosting Development Efficiency with oclif (Calin Marian)"
+    ],
+    "slides": [
+      null,
+      null,
+      null,
+      "https://slides.com/adrianfaciu/timjs10-senior-developer"
     ]
   },
   {
@@ -1712,6 +1865,10 @@
     "talks": [
       "Building enterprise-level apps with NestJS (Razvan Tamsa)",
       "WebXR: A Hands-on Introduction to VR Development (Robert Todea)"
+    ],
+    "slides": [
+      "https://drive.google.com/file/d/1LuHBPHavFBOsaDx-dB4stNLf3VIgyDQw/view?usp=drive_link",
+      "https://docs.google.com/presentation/d/1zMP-j9KlDnHo9HYBkpr8RSJb_bKkzdMY3m8pkoF0Rlw/edit?usp=sharing"
     ]
   },
   {
@@ -1754,6 +1911,10 @@
     "talks": [
       "Uniting Frontend and Backend: Sharing Code with NPM Packages (Narcis Gherasim)",
       "Technical leadership for individual contributors (Adrian Fâciu)"
+    ],
+    "slides": [
+      "https://www.canva.com/design/DAF_j1k_N6w/2UeeSNLPJ36hu6IGk9fE1A/view?utm_content=DAF_j1k_N6w&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+      "https://slides.com/adrianfaciu/technical-leadership-timjs"
     ]
   },
   {
@@ -1774,6 +1935,9 @@
     },
     "talks": [
       "Getting started with SolidStart (Victor Ionescu)"
+    ],
+    "slides": [
+      "https://drive.google.com/file/d/1u4t_KKzLZTCFFgRDNuwBwB1xA43qrfv-/view?usp=sharing"
     ]
   },
   {
@@ -2031,6 +2195,10 @@
     "talks": [
       "Micro Frontends - with Module Federation (Paul Comanici)",
       "Developer Friendly Code: Practical Tips for Readability (Adrian Faciu)"
+    ],
+    "slides": [
+      null,
+      "https://slides.com/adrianfaciu/developer-friendly-code-timjs"
     ]
   },
   {
@@ -2048,6 +2216,10 @@
     "talks": [
       "Dependency Management in Modern Web Projects (Adrian Faciu)",
       "The code etymologist (Andrei Pfeiffer)"
+    ],
+    "slides": [
+      "https://slides.com/adrianfaciu/dependency-management",
+      null
     ]
   },
   {
@@ -2069,6 +2241,10 @@
     "talks": [
       "Structuring Frontend Code with the help of DDD (Marius Cristea)",
       "Git gud: Secrets for Confident Version Control (Anca Spatariu)"
+    ],
+    "slides": [
+      null,
+      "https://slides.com/ancaspatariu/git-good"
     ]
   },
   {
@@ -2104,6 +2280,12 @@
       "Web Components: are we there yet? (Martin Hochel)",
       "Colocation is king (Alex Moldovan)",
       "Confessions of a Software Detective: why software understanding is the new super-power (Radu Marinescu)"
+    ],
+    "slides":[
+      "https://slides.com/gagyibenedek/bento/fullscreen",
+      null,
+      null,
+      "https://drive.google.com/uc?export=download&id=1X5Zp_QeF29luiLcf3VYsMnlm89ZSBnrk"
     ]
   }
 ]
