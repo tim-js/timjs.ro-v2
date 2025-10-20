@@ -30,8 +30,11 @@ const meetup =
     : getPastEvents().find((e) => e.id === event);
 
 const videos = await getYouTubeVideos();
-const relatedVideos = videos.filter((video) =>
-  video.title.includes(getFormattedMeetupName(meetup.title))
+const getMeetupNameFromVideo = (videoTitle: string) =>
+  videoTitle.substring(0, videoTitle.indexOf(":"));
+const relatedVideos = videos.filter(
+  (video) =>
+    getMeetupNameFromVideo(video.title) === getFormattedMeetupName(meetup.title)
 );
 
 const photos: EventPhoto[] = await getCollection(
