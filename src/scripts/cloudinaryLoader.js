@@ -117,8 +117,31 @@ export async function fetchAllGalleries() {
     }
 
   } catch (error) {
-    console.error(`Failed: ${error.message}`);
-    throw error;
+    console.warn(`⚠️  Failed to fetch from Cloudinary: ${error.message}`);
+    console.warn('Images will not be available. Build will continue.\n');
+
+    // Check if we have an existing cache to use
+    if (fs.existsSync(cachePath)) {
+      console.log('Using existing cache from previous build.\n');
+      return;
+    }
+
+    // Create empty cache so build doesn't fail
+    if (!fs.existsSync(cacheDir)) {
+      fs.mkdirSync(cacheDir, { recursive: true });
+    }
+
+    fs.writeFileSync(
+      cachePath,
+      JSON.stringify({
+        lastUpdated: new Date().toISOString(),
+        eventCount: 0,
+        galleries: {}
+      }, null, 2)
+    );
+
+    console.log('Created empty cache. Build will continue without images.\n');
+    return;
   }
 
   // Save cache

@@ -23,9 +23,12 @@ const meetup =
     ? await getEvent(event)
     : getPastEvents().find((e) => e.id === event);
 
-const photos: EventPhoto[] = await getCollection(
-  getFormattedMeetupName(meetup.title)
-);
+let photos: EventPhoto[] = [];
+try {
+  photos = await getCollection(getFormattedMeetupName(meetup.title));
+} catch (error) {
+  console.warn(`Failed to fetch photos: ${error.message}`);
+}
 
 const backUrl = `/meetups/${type}/${event}`;
 ---

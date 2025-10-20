@@ -10,8 +10,8 @@ import { fetchAllGalleries } from "../scripts/cloudinaryLoader.js";
 try {
   await fetchAllGalleries();
 } catch (error) {
-  console.error("Fatal error:", error);
-  process.exit(1);
+  console.warn("⚠️  Failed to fetch Cloudinary galleries:", error.message);
+  console.warn("Build will continue without images.\n");
 }
 
 // Load cloudinary cache if it exists
