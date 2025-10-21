@@ -7,6 +7,9 @@ import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import ReserveSpotButton from "@components/ReserveSpotButton.astro";
 import { Icon } from "astro-icon/components";
+import EventGallery, { type EventPhoto } from "@components/EventGallery.astro";
+import { getCollection } from "astro:content";
+import { getFormattedMeetupName } from "@utils/all";
 
 export async function getStaticPaths() {
   const upcomingEvents = await getUpcomingEvents();
@@ -27,8 +30,15 @@ const meetup =
     : getPastEvents().find((e) => e.id === event);
 
 const videos = await getYouTubeVideos();
-const relatedVideos = videos.filter((video) =>
-  video.title.includes(meetup.title.replace("#", ""))
+const getMeetupNameFromVideo = (videoTitle: string) =>
+  videoTitle.substring(0, videoTitle.indexOf(":"));
+const relatedVideos = videos.filter(
+  (video) =>
+    getMeetupNameFromVideo(video.title) === getFormattedMeetupName(meetup.title)
+);
+
+const photos: EventPhoto[] = await getCollection(
+  getFormattedMeetupName(meetup.title)
 );
 ---
 
@@ -101,6 +111,12 @@ const relatedVideos = videos.filter((video) =>
             )}
           </ul>
         </section>
+      )
+    }
+
+    {
+      photos && photos.length > 0 && (
+        <EventGallery photos={photos} meetupId={meetup.id} meetupType={type} />
       )
     }
   </Container>

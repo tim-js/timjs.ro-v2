@@ -1,0 +1,65 @@
+---
+import { CldImage } from "astro-cloudinary";
+
+export type EventPhoto = {
+  data: {
+    data: {
+      public_id: string;
+      width: number;
+      height: number;
+    };
+  };
+};
+
+interface Props {
+  photos: EventPhoto[];
+  meetupType: string;
+  meetupId: string;
+}
+
+const { photos, meetupType, meetupId } = Astro.props;
+const MAX_VISIBLE_PHOTOS = 6;
+const displayedPhotos = photos.slice(0, MAX_VISIBLE_PHOTOS);
+const hasMorePhotos = photos.length > MAX_VISIBLE_PHOTOS;
+const photosPageUrl = `/meetups/${meetupType}/${meetupId}/photos`;
+---
+
+<section class="flex flex-col gap-6 mx-auto max-w-4xl mt-24">
+  <div class="flex justify-between items-center">
+    <h2 class="font-bold text-5xl text-gray-800">
+      Photos <span class="text-3xl text-gray-500 font-normal"
+        >{photos.length}</span
+      >
+    </h2>
+    {
+      hasMorePhotos && (
+        <a
+          href={photosPageUrl}
+          class="text-lg font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200">
+          See all
+        </a>
+      )
+    }
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    {
+      displayedPhotos.map((photo) => (
+        <a
+          href={photosPageUrl}
+          class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 aspect-video">
+          <CldImage
+            src={photo.data.data.public_id}
+            width={400}
+            height={300}
+            alt="Event photo"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            crop="fill"
+            gravity="auto"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        </a>
+      ))
+    }
+  </div>
+</section>
