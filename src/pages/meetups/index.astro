@@ -10,7 +10,7 @@ import default_poster from "@assets/Poster.png";
 // Import all images from the meetups directory
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/meetups/*.{jpeg,jpg,png,gif}",
-  { eager: true }
+  { eager: true },
 );
 
 const events = getPastEvents()
@@ -26,6 +26,8 @@ const events = getPastEvents()
       imageUrl: imageModule?.default || null,
     };
   });
+
+const dateFormatter = new Intl.DateTimeFormat("ro-RO");
 ---
 
 <Layout title="Meetups">
@@ -45,7 +47,7 @@ const events = getPastEvents()
                   {event.title}
                 </h2>
                 <p class="text-sm text-gray-500">
-                  {new Date(event.dateTime).toLocaleDateString()}
+                  {dateFormatter.format(new Date(event.dateTime))}
                 </p>
                 <Picture
                   src={event.imageUrl || default_poster}
