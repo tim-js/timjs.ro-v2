@@ -11,7 +11,7 @@ export default defineConfig({
   redirects: {
     "/meetup-feedback/": {
       status: 302,
-      destination: "https://tally.so/r/mOqlE8",
+      destination: "https://tally.so/r/aQO5ob",
     },
     "/discord/": {
       status: 302,
