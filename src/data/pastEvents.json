@@ -2287,5 +2287,45 @@
       null,
       "https://drive.google.com/uc?export=download&id=1X5Zp_QeF29luiLcf3VYsMnlm89ZSBnrk"
     ]
+  },
+   {
+    "id": "311532677",
+    "title": "tim.js meetup #101",
+    "dateTime": "2025-10-29T18:30:00+02:00",
+    "eventUrl": "https://www.meetup.com/tim-js/events/311532677/",
+    "description": "Hello JavaScripters, ready for a new edition? This time we are meeting up at OPSWAT.\n\nHere's the agenda:\n\n\\*\\*\\*\n\n**1\\. Package Management: Quality Over Quantity**\n\\-\\- Bogdan Trinc\\, Software Engineer @ OPSWAT\n\nA practical guide to evaluating npm packages through real-world examples, focusing on long-term project health. Covering community metrics, security considerations, documentation quality, and the decision framework for when external dependencies are truly necessary versus when to build custom solutions for optimal project sustainability.\n\n**2\\. From Code Generation to Orchestration: Claude at Scale**\n\\-\\- Paul Comanici\\, Principal Software Engineer @ 8x8\n\nDiscover how to move beyond simple AI code generation to building multi-agent workflows that handle complete development cycles—from requirements to pull requests—in production.\n\n\\*\\*\\*\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK?typeform-source=www.meetup.com) to speak at one of our future meetups.*\n*We're also on Discord. [Join our community.](https://discord.com/invite/fTYxvBeBHr)*",
+    "photoAlbum": null,
+    "featuredEventPhoto": {
+      "thumbUrl": "Youtube_101.png",
+      "standardUrl": "Youtube_101.png",
+      "highResUrl": "Youtube_101.png"
+    },
+    "talks": [
+      "Package Management: Quality Over Quantity (Bogdan Trinc)",
+      "From Code Generation to Orchestration: Claude at Scale (Paul Comanici)"
+    ],
+    "slides": [
+      null,
+      "https://gamma.app/docs/From-Code-Generation-to-Orchestration-Claude-at-Scale-65dr8qa2piwwkjr"
+    ]
+  },
+   {
+    "id": "312061929",
+    "title": "tim.js meetup #102",
+    "dateTime": "2025-11-26T18:30:00+02:00",
+    "eventUrl": "https://www.meetup.com/tim-js/events/312061929/",
+    "description": "Hello JavaScripters, ready for the last presentation this year? This time we are meeting up at Haufe.\n\nHere's the agenda:\n\n\\*\\*\\*\n**Beyond Copy-Paste: Understanding LLMs and Making Them Work for You**\n\\-\\- Adrian Faciu\\, Principal Engineer @ WeVideo\n\nLike most developers, I have copied code from ChatGPT or debugged with Claude. But there's a big difference between copy-pasting answers and understanding how to really work with LLMs. The difference? Understanding what's actually happening under the hood.\n\nIn this two-part talk, we'll go through the main steps of building a large language model. We'll explore what pre-training means, why tokens matter, what the context window actually is, and how LLMs \"think\" and use tools like web search or code execution. Knowing why a model hallucinates helps us understand how to treat it. Knowing how it's trained helps us know when to trust the results. This isn't academic curiosity—understanding the internals directly impacts how effectively we can use these tools.\n\nIn part two, we will look at practical development practices. When \"vibe coding\" actually works, how to manage context, when to use specialized agents, how to leverage MCPs, and the patterns that separate copy-paste developers from those who truly augment their development process with AI.\n\nWe'll focus on the high-level concepts that matter for daily development work. This isn't about building your own LLM or diving into transformer architecture—it's about practical understanding for everyday developers.\n\n\\*\\*\\*\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK?typeform-source=www.meetup.com) to speak at one of our future meetups.*\n*We're also on Discord. [Join our community.](https://discord.com/invite/fTYxvBeBHr)*",
+    "photoAlbum": null,
+    "featuredEventPhoto": {
+      "thumbUrl": "Youtube_102.png",
+      "standardUrl": "Youtube_102.png",
+      "highResUrl": "Youtube_102.png"
+    },
+    "talks": [
+      "Beyond Copy-Paste: Understanding LLMs and Making Them Work for You (Adrian Faciu)"
+    ],
+    "slides": [
+      null
+    ]
   }
 ]
