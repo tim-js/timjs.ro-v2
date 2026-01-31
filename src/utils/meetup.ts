@@ -1,4 +1,9 @@
-import pastEventsData from "../data/pastEvents.json";
+import eventsData from "../data/allEvents.json";
+
+export const posterImages = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/meetups/*.{jpeg,jpg,png,gif}",
+  { eager: true },
+);
 
 type EventType = {
   id: string;
@@ -7,115 +12,27 @@ type EventType = {
   eventUrl: string;
   description: string;
   talks: string[];
-  slides: string[];
-  imageUrl: string;
+  slides?: (string | null)[];
+  imageUrl: any;
 };
-
-const MEETUP_ENDPOINT = "https://api.meetup.com/gql-ext";
-const COMMUNITY_URLNAME = "tim-js";
-
-const upcomingEventsQuery = `
-query ($urlname: String!) {
-  groupByUrlname(urlname: $urlname) {
-    id
-    name
-    urlname
-    events(status: ACTIVE, sort: DESC, first: 2) {
-         edges {
-          node {
-            id
-            title
-            dateTime
-            eventUrl
-            description
-            featuredEventPhoto {
-              thumbUrl
-              standardUrl
-              highResUrl
-            }
-          }
-        }
-    }
-  }
-}
-`;
-
-const eventQuery = `
-  query($id: ID!) {
-    event(id: $id) {
-      title
-      description
-      dateTime
-      eventUrl
-    }
-  }
-`;
 
 const isMeetupEvent = (event) => event.title.toLowerCase().includes("meetup");
 
-export async function getEvents(query: string) {
-  const response = await fetch(MEETUP_ENDPOINT, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      query,
-      variables: { urlname: COMMUNITY_URLNAME },
-    }),
-  });
-  if (!response.ok) {
-    console.error(response.statusText);
-    return null;
-  }
-  try {
-    const result = await response.json();
-    return result.data;
-  } catch (e) {
-    console.error(e);
-    return null;
-  }
-}
-
-export async function getUpcomingEvents() {
-  const data = await getEvents(upcomingEventsQuery);
-
-  if (!data) {
-    return [];
-  }
-
-  const upcomingEvents: EventType[] =
-    data.groupByUrlname.events.edges.map((edge) => ({
-      ...edge.node,
-      imageUrl: edge.node.featuredEventPhoto?.highResUrl,
-    }));
-
-  return upcomingEvents.filter(isMeetupEvent);
-}
-
-export function getPastEvents() {
-  const pastEvents: EventType[] = pastEventsData.map(
+export function getEvents() {
+  const allEvents: EventType[] = eventsData.map(
     (event) => ({
       ...event,
-      imageUrl: event.featuredEventPhoto?.standardUrl || "",
+      imageUrl: posterImages[`/src/assets/meetups/${event.featuredEventPhoto?.standardUrl}`]?.default || "",
     })
   );
 
-  return pastEvents.filter(isMeetupEvent);
+  return allEvents.filter(isMeetupEvent)
 }
 
-export async function getEvent(id: string) {
-  const response = await fetch(MEETUP_ENDPOINT, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      query: eventQuery,
-      variables: { id },
-    }),
-  });
+export function getPastEvents() {
+  return getEvents().filter((event) => new Date(event.dateTime) < new Date());
+}
 
-  const { data } = await response.json();
-  return data.event;
+export function getUpcomingEvents() {
+  return getEvents().filter((event) => new Date(event.dateTime) >= new Date());
 }

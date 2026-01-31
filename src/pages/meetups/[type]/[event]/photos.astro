@@ -1,5 +1,5 @@
 ---
-import { getEvent, getPastEvents, getUpcomingEvents } from "@utils/meetup";
+import { getPastEvents } from "@utils/meetup";
 import { getCollection } from "astro:content";
 import { getFormattedMeetupName } from "@utils/all";
 import Layout from "../../../../layouts/Layout.astro";
@@ -18,10 +18,11 @@ export async function getStaticPaths() {
 }
 
 const { event, type } = Astro.params;
-const meetup =
-  type === "upcoming"
-    ? await getEvent(event)
-    : getPastEvents().find((e) => e.id === event);
+const meetup = getPastEvents().find((e) => e.id === event);
+
+if (!meetup) {
+  return Astro.redirect("/");
+}
 
 let photos: EventPhoto[] = [];
 try {

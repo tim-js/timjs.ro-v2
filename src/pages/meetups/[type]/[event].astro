@@ -1,5 +1,5 @@
 ---
-import { getEvent, getPastEvents, getUpcomingEvents } from "@utils/meetup";
+import { getEvents, getPastEvents, getUpcomingEvents } from "@utils/meetup";
 import { getYouTubeVideos } from "@utils/youtube";
 import { marked } from "marked";
 import Layout from "../../../layouts/Layout.astro";
@@ -12,33 +12,33 @@ import { getCollection } from "astro:content";
 import { getFormattedMeetupName } from "@utils/all";
 
 export async function getStaticPaths() {
-  const upcomingEvents = await getUpcomingEvents();
-  const pastEvents = getPastEvents();
-  const pastPaths = pastEvents.map((event) => ({
-    params: { type: "past", event: event.id },
+  const allEvents = getEvents();
+  return allEvents.map((event) => ({
+    params: {
+      type: new Date(event.dateTime) >= new Date() ? "upcoming" : "past",
+      event: event.id,
+    },
   }));
-  const upcomingPaths = upcomingEvents.map((event) => ({
-    params: { type: "upcoming", event: event.id },
-  }));
-  return [...pastPaths, ...upcomingPaths];
 }
 
 const { event, type } = Astro.params;
-const meetup =
-  type === "upcoming"
-    ? await getEvent(event)
-    : getPastEvents().find((e) => e.id === event);
+const meetup = getEvents().find((e) => e.id === event);
+
+if (!meetup) {
+  return Astro.redirect("/");
+}
 
 const videos = await getYouTubeVideos();
 const getMeetupNameFromVideo = (videoTitle: string) =>
   videoTitle.substring(0, videoTitle.indexOf(":"));
 const relatedVideos = videos.filter(
   (video) =>
-    getMeetupNameFromVideo(video.title) === getFormattedMeetupName(meetup.title)
+    getMeetupNameFromVideo(video.title) ===
+    getFormattedMeetupName(meetup.title),
 );
 
 const photos: EventPhoto[] = await getCollection(
-  getFormattedMeetupName(meetup.title)
+  getFormattedMeetupName(meetup.title),
 );
 ---
 
@@ -107,7 +107,7 @@ const photos: EventPhoto[] = await getCollection(
                       {meetup.talks[index]}
                     </a>
                   </li>
-                )
+                ),
             )}
           </ul>
         </section>

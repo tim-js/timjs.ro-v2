@@ -1,6 +1,8 @@
 ---
 import { getUpcomingEvents } from "@utils/meetup";
-const events = await getUpcomingEvents()
+import { Picture } from "astro:assets";
+import default_poster from "@assets/Poster.png";
+const events = await getUpcomingEvents();
 ---
 
 {
@@ -12,8 +14,8 @@ const events = await getUpcomingEvents()
       <li class="flex flex-col gap-8">
         {events.map((event) => (
           <a href={`/meetups/upcoming/${event.id}/`}>
-            <img
-              src={event.imageUrl}
+            <Picture
+              src={event.imageUrl || default_poster}
               alt={event.title}
               class="rounded-lg shadow-none hover:shadow-xl  duration-300  transition"
             />
