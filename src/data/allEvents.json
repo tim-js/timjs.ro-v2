@@ -2327,5 +2327,26 @@
     "slides": [
       null
     ]
+  },
+  {
+    "id": "0bef467f-8975-477e-9b59-cd7fb59dbfad",
+    "title": "tim.js meetup #103",
+    "dateTime": "2026-01-28T18:30:00+02:00",
+    "eventUrl": "https://luma.com/vjl1gvlt",
+    "description": "Happy 2026, JavaScripters! Are you ready to kick of the new year with two awesome presentations? Can't wait to see you at Doctari.\n\nHere's the agenda:\n\n***\n\n**A Brand New `try`**\n-- Victor Ionescu\n\nThere is a new proposal for error handling in JS. Is it in very early stages? Yes. Can we use it now? Can we learn something fun about this? Will this help us actually deal with all of those errors that our apps might run into? That's what this talk is about.\n\n**Practical CSS Iconography**\n-- Andrei Pfeiffer\n\nIn an industry brimming with pre-made icon packs and icon fonts, is there any room left for \"handmade\" CSS icons? Absolutely! This talk is all about getting your hands dirty to create your own custom CSS icons, learning the very basics and all the way up to advanced techniques. By the end, you'll be equipped with practical skills you can apply to your personal projects and your day-to-day work as well.\n\n***\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK?typeform-source=www.meetup.com) to speak at one of our future meetups.*\n*We're also on Discord. [Join our community.](https://discord.com/invite/fTYxvBeBHr)*",
+    "photoAlbum": null,
+    "featuredEventPhoto": {
+      "thumbUrl": "timjs-meetup-103.png",
+      "standardUrl": "timjs-meetup-103.png",
+      "highResUrl": "timjs-meetup-103.png"
+    },
+    "talks": [
+      "A Brand New `try` (Victor Ionescu)",
+      "Practical CSS Iconography (Andrei Pfeiffer)"
+    ],
+    "slides": [
+      null,
+      null
+    ]
   }
 ]
