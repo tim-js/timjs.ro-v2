@@ -1,6 +1,6 @@
 
 import { cldAssetsLoader } from 'astro-cloudinary/loaders';
-import pastEventsData from '../data/pastEvents.json' assert { type: 'json' };
+import pastEventsData from '../data/allEvents.json' assert { type: 'json' };
 import { getFormattedMeetupName } from '../utils/all.js';
 import fs from 'fs';
 

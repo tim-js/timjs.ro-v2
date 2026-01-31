@@ -1,6 +1,6 @@
 // 1. Import utilities from `astro:content`
 import { z, defineCollection } from "astro:content";
-import pastEventsData from "../data/pastEvents.json";
+import allEvents from "../data/allEvents.json";
 import { getFormattedMeetupName } from "@utils/all";
 import fs from "fs";
 import path from "path";
@@ -24,7 +24,7 @@ if (fs.existsSync(cachePath)) {
 
 // Load image galleries from cache instead of making API calls
 const imageGalleries = {};
-for (const event of pastEventsData) {
+for (const event of allEvents) {
   const galleryName = getFormattedMeetupName(event.title);
   imageGalleries[galleryName] = defineCollection({
     loader: () => {
