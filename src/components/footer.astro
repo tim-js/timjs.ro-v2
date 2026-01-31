@@ -4,8 +4,9 @@ import Container from "./container.astro";
 
 const socials = [
   {
-    name: "meetup",
-    href: "https://www.meetup.com/tim-js/",
+    name: "luma",
+    href: "https://lu.ma/timjs",
+    icon: "local:luma",
   },
   {
     name: "linkedin",
@@ -32,7 +33,7 @@ const socials = [
           <div class="p-2 bg-gray-800 rounded-full">
             <Icon
               class="w-6 h-6 md:w-7 md:h-7 text-white"
-              name={`simple-icons:${social.name}`}
+              name={social.icon ?? `simple-icons:${social.name}`}
             />
           </div>
         </a>
