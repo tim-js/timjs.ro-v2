@@ -2348,5 +2348,26 @@
       null,
       null
     ]
+  },
+  {
+    "id": "5ef0c042-6eb7-4c89-b4c3-260eb85a7937",
+    "title": "tim.js meetup #104",
+    "dateTime": "2026-02-25T18:30:00+02:00",
+    "eventUrl": "https://luma.com/k8tsj1vu",
+    "description": "Hello JavaScripters, ready for a new tim.js edition? This time we are meeting at Victory Square Partners.\n\nHere's the agenda:\n\n***\n\n**Demistifying MCPs, your Coding Agent toolkit enhancements**\n-- Teolin Codreanu\n\nThe Oracle of Delfi once said there are 2 kinds of people in the world: those who think MCPs are some sort of AI black magic, and those who install official MCPs and watch them eat their tokens like chicken nuggets. Then there's you. The chosen one, who realized both options are less than good, and chosen to find the simple secrets behind MCPs and make your own. Hopefully.\n\n**The complete map of project anatomies**\n-- Andrei Pfeiffer\n\nAfter two decades of organising software projects, I've learned a simple truth: the way you structure your code should change as your project grows. Popular approaches, such as grouping by type or by domain, aren't about preference or ideology. They're about scale. Each approach solves a different kind of problem at a different stage of growth. To make this easier to grasp, we'll compare software structure to how hospitals are distributed across settlements, from villages to entire countries.\n\n***\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK) to speak at one of our future meetups.*\n*We're also on Discord. [Join our community.](https://discord.com/invite/fTYxvBeBHr)*",
+    "photoAlbum": null,
+    "featuredEventPhoto": {
+      "thumbUrl": "timjs-meetup-104.png",
+      "standardUrl": "timjs-meetup-104.png",
+      "highResUrl": "timjs-meetup-104.png"
+    },
+    "talks": [
+      "Demistifying MCPs, your Coding Agent toolkit enhancements (Teolin Codreanu)",
+      "The complete map of project anatomies (Andrei Pfeiffer)"
+    ],
+    "slides": [
+      null,
+      null
+    ]
   }
 ]
