@@ -2369,5 +2369,26 @@
       null,
       null
     ]
+  },
+  {
+    "id": "a3d7e1f4-9b2c-4e8a-bf56-7c1d3e9a0f42",
+    "title": "tim.js meetup #105",
+    "dateTime": "2026-03-25T18:30:00+02:00",
+    "eventUrl": "https://luma.com/byhdpqry",
+    "description": "Hello JavaScripters, ready for a new tim.js edition? This time we are meeting at HAUFE Group.\n\nHere is the agenda:\n\n***\n\n**Signals - Fine-Grained Reactivity in JavaScript & Angular**\n-- Marius Cristea\n\nSignals are reshaping how modern frontend frameworks handle reactivity. Angular, Vue, Solid, and Preact are all embracing signal-based models to enable fine-grained updates and more predictable state management.\n\nBut what exactly are signals? And why are so many frameworks converging on this idea?\n\nLet's explore what signals are, why they matter, and why they're quickly becoming a central concept in modern frontend development.\n\n**Terminally Curious: I've put Ghostty into Bun**\n-- Ovidiu Ispas\n\nIf you're into terminals, ANSI escape sequences, Bun, and leveraging Agentic Engineering for learning instead of slopification, come check it out!\n\n***\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK?typeform-source=www.meetup.com) to speak at one of our future meetups.*\n*We're also on Discord. [Join our community.](https://discord.com/invite/fTYxvBeBHr)*",
+    "photoAlbum": null,
+    "featuredEventPhoto": {
+      "thumbUrl": "timjs-meetup-105.png",
+      "standardUrl": "timjs-meetup-105.png",
+      "highResUrl": "timjs-meetup-105.png"
+    },
+    "talks": [
+      "Signals - Fine-Grained Reactivity in JavaScript & Angular (Marius Cristea)",
+      "Terminally Curious: I've put Ghostty into Bun (Ovidiu Ispas)"
+    ],
+    "slides": [
+      null,
+      null
+    ]
   }
 ]
