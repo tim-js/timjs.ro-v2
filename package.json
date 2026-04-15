@@ -29,7 +29,6 @@
     "tailwindcss": "^3.3.5"
   },
   "devDependencies": {
-    "@types/photoswipe": "^5.2.5",
     "prettier": "3.5.3",
     "prettier-plugin-astro": "0.14.1"
   },
@@ -38,5 +37,8 @@
     "@rollup/rollup-linux-x64-gnu": "^4.52.5",
     "@img/sharp-linux-x64": "^0.34.4",
     "@img/sharp-libvips-linux-x64": "^1.2.3"
+  },
+  "engines": {
+    "node": ">=22.11.0"
   }
 }
