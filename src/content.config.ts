@@ -1,12 +1,13 @@
 // 1. Import utilities from `astro:content`
 import { z, defineCollection } from "astro:content";
-import allEvents from "../data/allEvents.json";
+import { glob } from "astro/loaders";
+import allEvents from "./data/allEvents.json";
 import { getFormattedMeetupName } from "@utils/all";
 import fs from "fs";
 import path from "path";
 
 // Handle loading Cloudinary data
-import { fetchAllGalleries } from "../scripts/cloudinaryLoader.js";
+import { fetchAllGalleries } from "./scripts/cloudinaryLoader.js";
 try {
   await fetchAllGalleries();
 } catch (error) {
@@ -36,6 +37,7 @@ for (const event of allEvents) {
 
 // 2. Define your collection(s)
 const blogCollection = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/blog" }),
   schema: z.object({
     draft: z.boolean(),
     title: z.string(),
@@ -52,6 +54,7 @@ const blogCollection = defineCollection({
 });
 
 const teamCollection = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/team" }),
   schema: ({ image }) =>
     z.object({
       name: z.string(),
@@ -66,6 +69,7 @@ const teamCollection = defineCollection({
 });
 
 const speakersCollection = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/speakers" }),
   schema: ({ image }) =>
     z.object({
       name: z.string(),
