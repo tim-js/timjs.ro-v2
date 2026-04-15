@@ -2390,5 +2390,26 @@
       null,
       null
     ]
+  },
+  {
+    "id": "345966f9-4e41-4977-a109-32f5c25a12e0",
+    "title": "tim.js meetup #106",
+    "dateTime": "2026-04-29T18:30:00+03:00",
+    "eventUrl": "https://luma.com/9zkqx4el",
+    "description": "Hello JavaScripters, ready for a new tim.js edition? See you on Apr 29th for two awesome presentations.\n\nHere is the agenda:\n\n***\n\n**Migrating to Native TypeScript Execution**\n-- Horia Radu, Product Engineer @ Smilecloud\n\nA practical walkthrough of running TypeScript directly with Node — no build step, no ts-node, no emitted JS. We'll tackle the runtime errors you'll encounter along the way and see what it took to ship this on a real ~700-file production codebase.\n\n**Moving Pictures, Fixed Standards: The Evolution of the `<video>` Tag**\n-- Robert Todea, Software Engineer @ Mobile Insight\n\nOften dismissed as just a moving <img> tag, the <video> element is the unsung hero of the modern web. We're going to unpack the architecture of continuous playback and get our hands dirty with the raw mechanics under the hood: frames, bitrates, codecs, and manifest files. We'll see how these raw building blocks play together by creating our own YouTube clone from scratch.\n\n***\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK?typeform-source=www.meetup.com) to speak at one of our future meetups.*\n*We're also on Discord. [Join our community.](https://discord.com/invite/fTYxvBeBHr)*",
+    "photoAlbum": null,
+    "featuredEventPhoto": {
+      "thumbUrl": "timjs-meetup-106.png",
+      "standardUrl": "timjs-meetup-106.png",
+      "highResUrl": "timjs-meetup-106.png"
+    },
+    "talks": [
+      "Migrating to Native TypeScript Execution (Horia Radu)",
+      "Moving Pictures, Fixed Standards: The Evolution of the `<video>` Tag (Robert Todea)"
+    ],
+    "slides": [
+      null,
+      null
+    ]
   }
 ]
