@@ -17,7 +17,7 @@
     "@fontsource-variable/inter": "^5.2.8",
     "@iconify-json/simple-icons": "^1.2.54",
     "@tailwindcss/typography": "^0.5.19",
-    "astro": "^5.14.6",
+    "astro": "^6.1.6",
     "@iconify-json/mdi": "^1.2.3",
     "astro-cloudinary": "^1.3.5",
     "astro-icon": "^1.1.5",
