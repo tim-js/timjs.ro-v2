@@ -31,7 +31,7 @@
       "About SpainJS conference (Andrei Pfeiffer)",
       "Javascript Debugging with Chrome DevTools - Part 1 (Cassian Lup)"
     ],
-    "slides":[
+    "slides": [
       null,
       "https://speakerdeck.com/cassilup/javascript-debugging-with-chrome-devtools-part-1"
     ]
@@ -160,10 +160,7 @@
       "JavaScript, going Vanilla part 3 (Andrei Pfeiffer)",
       "IonicFramework - hybrid mobile apps with JavaScript & HTML5 (Radu Cugut)"
     ],
-    "slides": [
-      null,
-      "http://bit.ly/timjs10ionic"
-    ]
+    "slides": [null, "http://bit.ly/timjs10ionic"]
   },
   {
     "id": "202497142",
@@ -327,10 +324,7 @@
       "JavaScript Books (Andrei Pfeiffer)",
       "Isomorphic JavaScript with React.js (Ovidiu Ispas)"
     ],
-    "slides": [
-      "https://slides.com/pfeifferandrei/javascript-books",
-      null
-    ]
+    "slides": ["https://slides.com/pfeifferandrei/javascript-books", null]
   },
   {
     "id": "222346007",
@@ -382,11 +376,8 @@
       "title": "tim.js meetup 20"
     },
     "featuredEventPhoto": null,
-    "talks": [
-      "Looping Events (Andrei Pfeiffer)",
-      "Memory Leaks (Ilie Ciotir)"
-    ],
-    "slides":[
+    "talks": ["Looping Events (Andrei Pfeiffer)", "Memory Leaks (Ilie Ciotir)"],
+    "slides": [
       "https://slides.com/pfeifferandrei/javascript-vanilla-event-loop",
       "http://slides.com/ilievasilicaciotir/memoryleaks/"
     ]
@@ -472,7 +463,7 @@
       "ES6 under the microscope (Andrei Pfeiffer)",
       "Introduction to TypeScript (Ilie Ciotir)"
     ],
-    "slides":[
+    "slides": [
       null,
       "http://slides.com/pfeifferandrei/es6-under-the-microscope",
       "https://github.com/Toskv/talk.timjs.typescript"
@@ -494,10 +485,7 @@
       "Introduction to React (Ovidiu Ispas and Cassian Lup)",
       "Flux and Redux (Vlad Zelinschi)"
     ],
-    "slides": [
-      "http://bit.ly/1TrZlES",
-      null
-    ]
+    "slides": ["http://bit.ly/1TrZlES", null]
   },
   {
     "id": "229250602",
@@ -515,9 +503,7 @@
       "Switching to JS (Horia Radu)",
       "ClojureScript & React (Dan Bunea)"
     ],
-    "slides": [
-      "https://slides.com/horiaradu/a-n00b-s-journey-to-js"
-    ]
+    "slides": ["https://slides.com/horiaradu/a-n00b-s-journey-to-js"]
   },
   {
     "id": "229835890",
@@ -531,9 +517,7 @@
       "title": "tim.js meetup 27"
     },
     "featuredEventPhoto": null,
-    "talks": [
-      "Promises: past, present & future (Andrei Pfeiffer)"
-    ]
+    "talks": ["Promises: past, present & future (Andrei Pfeiffer)"]
   },
   {
     "id": "229574146",
@@ -572,11 +556,7 @@
       "ES6 Modules (Ilie Ciotir)",
       "Using Redux in React apps (Ovidiu Ispas)"
     ],
-    "slides": [
-      null,
-      "http://slides.com/ilievasilicaciotir/es6modules",
-      null
-    ]
+    "slides": [null, "http://slides.com/ilievasilicaciotir/es6modules", null]
   },
   {
     "id": "230179755",
@@ -614,7 +594,7 @@
       "Overview of London NodeConf 2016 (Cassian Lup)",
       "Progressive Web Apps (Victor Ionescu)"
     ],
-    "slides":[
+    "slides": [
       "https://docs.google.com/presentation/d/1eRAcvubxLbEWvvuHM7yKVJsI5qY-Fk31TB6JnmSjQck/present"
     ]
   },
@@ -686,9 +666,7 @@
       "AngularConnect Overview (Lucian Pacurar)",
       "Router 2.0 (Marius Cristea)"
     ],
-    "slides": [
-      "http://bit.ly/aconnect16"
-    ]
+    "slides": ["http://bit.ly/aconnect16"]
   },
   {
     "id": "233420244",
@@ -768,10 +746,7 @@
       "Intro (Andrei Pfeiffer)",
       "A Vue over React - introducing Vue.js in comparison to React (Andrei Pfeiffer)"
     ],
-    "slides": [
-      null,
-      "https://speakerdeck.com/andreipfeiffer/a-vue-over-react"
-    ]
+    "slides": [null, "https://speakerdeck.com/andreipfeiffer/a-vue-over-react"]
   },
   {
     "id": "237547271",
@@ -801,7 +776,7 @@
       "Clean Code (Ioana Verebi)",
       "TypeScript: The Good Cop (Cassian Lup)"
     ],
-    "slids":[
+    "slids": [
       null,
       "https://docs.google.com/presentation/d/1Sr8CxMFyrxSc5WKdawsXVRogahnAxQ8TfWxPLomTmVE/present?slide=id.p"
     ]
@@ -923,9 +898,7 @@
       "title": "tim.js meetup 43"
     },
     "featuredEventPhoto": null,
-    "talks": [
-      "Being a JS Dev in 2017 - open discussion with CodeCamp speakers"
-    ]
+    "talks": ["Being a JS Dev in 2017 - open discussion with CodeCamp speakers"]
   },
   {
     "id": "245059281",
@@ -977,9 +950,7 @@
     "description": "The following equation is valid for our next meetup:\n#46 = #2 / 2018\n\n• Event sourcing: the good, the bad and the ugly\nMihai Agape, Front-End Architect at Intelligent Software Systems\n\nWe will have only 1 presentation this meetup, split into 2 parts.\n\nNOTE: We are always looking for speakers, so please send us your proposals.",
     "photoAlbum": null,
     "featuredEventPhoto": null,
-    "talks": [
-      "Event sourcing: the good, the bad and the ugly (Mihai Agape)"
-    ]
+    "talks": ["Event sourcing: the good, the bad and the ugly (Mihai Agape)"]
   },
   {
     "id": "248497512",
@@ -1027,7 +998,7 @@
       "ngrx: tips & tricks (Adrian Fâciu)",
       "Transducers in JS (Bogdan Bugarschi)"
     ],
-    "slides":[
+    "slides": [
       "https://slides.com/adrianfaciu/ngrx-tips",
       "https://docs.google.com/presentation/d/19Ccrf3F62LyF7W83Ihna3nLF912Yciq_XTFBUz05eEE/edit?usp=sharing"
     ]
@@ -1068,7 +1039,7 @@
       "Barrel files (Adi Faciu)",
       "Tips & Tricks (Andrei Pfeiffer)"
     ],
-    "slides":[
+    "slides": [
       null,
       null,
       "https://slides.com/petruisfan/docker-ionic#/",
@@ -1121,9 +1092,7 @@
       "standardUrl": "600_475667673.jpeg",
       "highResUrl": "highres_475667673.jpeg"
     },
-    "talks": [
-      "JavaSwift: Bridging Swift and React Native (Andrei Pfeiffer)"
-    ]
+    "talks": ["JavaSwift: Bridging Swift and React Native (Andrei Pfeiffer)"]
   },
   {
     "id": "256493591",
@@ -1154,9 +1123,7 @@
     "description": "... tralalalalaaaaaa la laaaaa la laaaaaaaaaaaaaaa\n\nNo presentations this December meetup.\nOnly Christmas spirit, drinks, old friends, new friends and chit-chat.\n\nLet's meet at CoWork Timisoara's new location.\nFree drinks until 19:30, so don't be late.\n\nSee you all on Wednesday!",
     "photoAlbum": null,
     "featuredEventPhoto": null,
-    "talks": [
-      "Christmas spirit, drinks and networking at CoWork Timisoara"
-    ]
+    "talks": ["Christmas spirit, drinks and networking at CoWork Timisoara"]
   },
   {
     "id": "257956171",
@@ -1199,10 +1166,7 @@
       "Taking Angular Offline (Adrian Fâciu)",
       "Isolated Components Driven Development (Andrei Pfeiffer)"
     ],
-    "slides": [
-      "https://slides.com/adrianfaciu/offlineangular",
-      null
-    ]
+    "slides": ["https://slides.com/adrianfaciu/offlineangular", null]
   },
   {
     "id": "259669357",
@@ -1252,9 +1216,7 @@
       "standardUrl": "600_481262269.jpeg",
       "highResUrl": "highres_481262269.jpeg"
     },
-    "talks": [
-      "Recording in the browser (Cristian Diaconescu)"
-    ]
+    "talks": ["Recording in the browser (Cristian Diaconescu)"]
   },
   {
     "id": "262199969",
@@ -1346,7 +1308,7 @@
       "My point of Vue (Alex Grozav)",
       "The Trichotomy of UI Development (Andrei Pfeiffer)"
     ],
-    "slides":[
+    "slides": [
       null,
       "https://speakerdeck.com/andreipfeiffer/the-tricothomy-of-ui-development"
     ]
@@ -1375,10 +1337,7 @@
       "Web components with LitElement (Adrian Fâciu)",
       "Memoization in React (Andrei Pfeiffer)"
     ],
-    "slides":[
-      "https://slides.com/adrianfaciu/litelement",
-      null
-    ]
+    "slides": ["https://slides.com/adrianfaciu/litelement", null]
   },
   {
     "id": "268682004",
@@ -1396,10 +1355,7 @@
       "A boomers intro to Svelte (Răzvan Plăcintar)",
       "Controlling Hardware with JavaScript (Anca Spătariu)"
     ],
-    "slides": [
-      "https://slides.com/razvanp/a-boomers-intro-to-svelte#/",
-      null
-    ]
+    "slides": ["https://slides.com/razvanp/a-boomers-intro-to-svelte#/", null]
   },
   {
     "id": "278376410",
@@ -1433,9 +1389,7 @@
       "Sharing code at runtime using module federation (Adrian Fâciu)",
       "Simple vs. Easy (Andrei Pfeiffer)"
     ],
-    "slides": [
-      "https://slides.com/adrianfaciu/sharing-code-at-runtime-041619"
-    ]
+    "slides": ["https://slides.com/adrianfaciu/sharing-code-at-runtime-041619"]
   },
   {
     "id": "279925502",
@@ -1532,10 +1486,7 @@
       "SPA, SSR, SSG: How Remix gets the best of all worlds (Adrian Fâciu)",
       "The Evolution of Scalable CSS (Andrei Pfeiffer)"
     ],
-    "slides": [
-      "https://slides.com/adrianfaciu/remix",
-      null
-    ]
+    "slides": ["https://slides.com/adrianfaciu/remix", null]
   },
   {
     "id": "287879859",
@@ -1565,9 +1516,7 @@
       "standardUrl": "600_507038354.jpeg",
       "highResUrl": "highres_507038354.jpeg"
     },
-    "talks": [
-      "AB Testing Single Page Apps (Robert Todea)"
-    ]
+    "talks": ["AB Testing Single Page Apps (Robert Todea)"]
   },
   {
     "id": "289001050",
@@ -1627,9 +1576,7 @@
       "standardUrl": "600_483387304.jpeg",
       "highResUrl": "highres_483387304.jpeg"
     },
-    "talks": [
-      "End-of-year gathering to chat, share thoughts and wrap up 2022"
-    ]
+    "talks": ["End-of-year gathering to chat, share thoughts and wrap up 2022"]
   },
   {
     "id": "291000339",
@@ -1689,9 +1636,7 @@
       "standardUrl": "600_511038154.jpeg",
       "highResUrl": "highres_511038154.jpeg"
     },
-    "talks": [
-      "SolidJS for React Developers (Victor Ionescu)"
-    ],
+    "talks": ["SolidJS for React Developers (Victor Ionescu)"],
     "slides": [
       "https://drive.google.com/file/d/1ZXB1rpiL1vs995ZHQ55S08ZsncowI3wv/view"
     ]
@@ -1712,9 +1657,7 @@
       "standardUrl": "600_512592644.jpeg",
       "highResUrl": "highres_512592644.jpeg"
     },
-    "talks": [
-      "Understanding Content Security Policy (Lucian Pacurar)"
-    ]
+    "talks": ["Understanding Content Security Policy (Lucian Pacurar)"]
   },
   {
     "id": "293904319",
@@ -1933,9 +1876,7 @@
       "standardUrl": "600_520265338.jpeg",
       "highResUrl": "highres_520265338.jpeg"
     },
-    "talks": [
-      "Getting started with SolidStart (Victor Ionescu)"
-    ],
+    "talks": ["Getting started with SolidStart (Victor Ionescu)"],
     "slides": [
       "https://drive.google.com/file/d/1u4t_KKzLZTCFFgRDNuwBwB1xA43qrfv-/view?usp=sharing"
     ]
@@ -2011,9 +1952,7 @@
       "standardUrl": "600_522879723.jpeg",
       "highResUrl": "highres_522879723.jpeg"
     },
-    "talks": [
-      "Summer gathering for networking without talks"
-    ]
+    "talks": ["Summer gathering for networking without talks"]
   },
   {
     "id": "303468570",
@@ -2051,9 +1990,7 @@
       "standardUrl": "600_524069835.jpeg",
       "highResUrl": "highres_524069835.jpeg"
     },
-    "talks": [
-      "Flying drones with JavaScript (Anca Spatariu)"
-    ]
+    "talks": ["Flying drones with JavaScript (Anca Spatariu)"]
   },
   {
     "id": "304397662",
@@ -2088,9 +2025,7 @@
       "standardUrl": "600_525030672.jpeg",
       "highResUrl": "highres_525030672.jpeg"
     },
-    "talks": [
-      "End-of-year gathering with Banat IT at Reciproc Café"
-    ]
+    "talks": ["End-of-year gathering with Banat IT at Reciproc Café"]
   },
   {
     "id": "305625277",
@@ -2108,9 +2043,7 @@
       "standardUrl": "600_525750956.jpeg",
       "highResUrl": "highres_525750956.jpeg"
     },
-    "talks": [
-      "Dependencies, Inversions, and more (Andrei Pfeiffer)"
-    ]
+    "talks": ["Dependencies, Inversions, and more (Andrei Pfeiffer)"]
   },
   {
     "id": "306150876",
@@ -2217,10 +2150,7 @@
       "Dependency Management in Modern Web Projects (Adrian Faciu)",
       "The code etymologist (Andrei Pfeiffer)"
     ],
-    "slides": [
-      "https://slides.com/adrianfaciu/dependency-management",
-      null
-    ]
+    "slides": ["https://slides.com/adrianfaciu/dependency-management", null]
   },
   {
     "id": "308747726",
@@ -2242,10 +2172,7 @@
       "Structuring Frontend Code with the help of DDD (Marius Cristea)",
       "Git gud: Secrets for Confident Version Control (Anca Spatariu)"
     ],
-    "slides": [
-      null,
-      "https://slides.com/ancaspatariu/git-good"
-    ]
+    "slides": [null, "https://slides.com/ancaspatariu/git-good"]
   },
   {
     "id": "310370612",
@@ -2259,9 +2186,7 @@
       "standardUrl": "600_529473415.jpeg",
       "highResUrl": "highres_529473415.jpeg"
     },
-    "talks": [
-      "Summer social - casual meetup without talks"
-    ]
+    "talks": ["Summer social - casual meetup without talks"]
   },
   {
     "id": "100",
@@ -2281,14 +2206,14 @@
       "Colocation is king (Alex Moldovan)",
       "Confessions of a Software Detective: why software understanding is the new super-power (Radu Marinescu)"
     ],
-    "slides":[
+    "slides": [
       "https://slides.com/gagyibenedek/bento/fullscreen",
       null,
       null,
       "https://drive.google.com/uc?export=download&id=1X5Zp_QeF29luiLcf3VYsMnlm89ZSBnrk"
     ]
   },
-   {
+  {
     "id": "311532677",
     "title": "tim.js meetup #101",
     "dateTime": "2025-10-29T18:30:00+02:00",
@@ -2309,7 +2234,7 @@
       "https://gamma.app/docs/From-Code-Generation-to-Orchestration-Claude-at-Scale-65dr8qa2piwwkjr"
     ]
   },
-   {
+  {
     "id": "312061929",
     "title": "tim.js meetup #102",
     "dateTime": "2025-11-26T18:30:00+02:00",
@@ -2324,9 +2249,7 @@
     "talks": [
       "Beyond Copy-Paste: Understanding LLMs and Making Them Work for You (Adrian Faciu)"
     ],
-    "slides": [
-      null
-    ]
+    "slides": [null]
   },
   {
     "id": "0bef467f-8975-477e-9b59-cd7fb59dbfad",
@@ -2344,10 +2267,7 @@
       "A Brand New `try` (Victor Ionescu)",
       "Practical CSS Iconography (Andrei Pfeiffer)"
     ],
-    "slides": [
-      null,
-      null
-    ]
+    "slides": [null, null]
   },
   {
     "id": "5ef0c042-6eb7-4c89-b4c3-260eb85a7937",
@@ -2365,10 +2285,7 @@
       "Demistifying MCPs, your Coding Agent toolkit enhancements (Teolin Codreanu)",
       "The complete map of project anatomies (Andrei Pfeiffer)"
     ],
-    "slides": [
-      null,
-      null
-    ]
+    "slides": [null, null]
   },
   {
     "id": "a3d7e1f4-9b2c-4e8a-bf56-7c1d3e9a0f42",
@@ -2386,10 +2303,7 @@
       "Signals - Fine-Grained Reactivity in JavaScript & Angular (Marius Cristea)",
       "Terminally Curious: I've put Ghostty into Bun (Ovidiu Ispas)"
     ],
-    "slides": [
-      null,
-      null
-    ]
+    "slides": [null, null]
   },
   {
     "id": "345966f9-4e41-4977-a109-32f5c25a12e0",
@@ -2408,8 +2322,8 @@
       "Moving Pictures, Fixed Standards: The Evolution of the `<video>` Tag (Robert Todea)"
     ],
     "slides": [
-      null,
-      null
+      "https://horiaradu.github.io/ts-migration-demo-slides/",
+      "https://github.com/rtodea/streaming-101/blob/master/slides/streaming-101.pdf"
     ]
   }
 ]
