@@ -2325,5 +2325,23 @@
       "https://horiaradu.github.io/ts-migration-demo-slides/",
       "https://github.com/rtodea/streaming-101/blob/master/slides/streaming-101.pdf"
     ]
+  },
+  {
+    "id": "7a4fa653-0336-410e-aa9b-f5a1f5d5d424",
+    "title": "tim.js meetup #107",
+    "dateTime": "2026-05-27T18:30:00+03:00",
+    "eventUrl": "https://luma.com/p9e0pv9o",
+    "description": "Hello JavaScripters, ready for a new tim.js edition? This time we are meeting at HAUFE Group.\n\nHere is the agenda:\n\n***\n\n**Beyond the UI: Web Applications in the Age of Agents**\n-- Adrian Fâciu, Principal Engineer @ WeVideo\n\nWe've all added some AI to our applications. A summarize button here, a transcribe button there — pockets of functionality, glued onto the existing UI. But the next step is different. What if our entire application became a set of tools that an agent can use, on behalf of the user? In this talk, we'll see how to transform an existing web application so agents can use it. We'll look at what makes a good tool, how to expose them, and how to use them inside or outside the application.\n\n**AI made me better. Faster. Exhausted.**\n-- Anca Spătariu, Core Engineer @ WeVideo\n\nAI can write code, explain errors, generate tests, and confidently suggest the wrong abstraction in seconds. Amazing. Exhausting.\n\nThis talk is a funny, honest look at development in the AI era: prompt spirals, heavier code reviews, tool fatigue, disappearing mentorship, relevance anxiety, and the strange feeling that everything moves faster while the human still feels overloaded. Expect jokes, mild existential dread, and practical ways to use AI without becoming an exhausted AI supervisor.\n\n***\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK?typeform-source=www.meetup.com) to speak at one of our future meetups.*\n*We're also on Discord. [Join our community.](https://discord.com/invite/fTYxvBeBHr)*",
+    "photoAlbum": null,
+    "featuredEventPhoto": {
+      "thumbUrl": "timjs-meetup-107.png",
+      "standardUrl": "timjs-meetup-107.png",
+      "highResUrl": "timjs-meetup-107.png"
+    },
+    "talks": [
+      "Beyond the UI: Web Applications in the Age of Agents (Adrian Fâciu)",
+      "AI made me better. Faster. Exhausted. (Anca Spătariu)"
+    ],
+    "slides": [null, null]
   }
 ]
