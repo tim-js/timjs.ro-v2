@@ -2342,6 +2342,9 @@
       "Beyond the UI: Web Applications in the Age of Agents (Adrian Fâciu)",
       "AI made me better. Faster. Exhausted. (Anca Spătariu)"
     ],
-    "slides": [null, null]
+    "slides": [
+      "https://slides.com/adrianfaciu/beyond-the-ui",
+      "https://slides.com/ancaspatariu/faster-better-exhausted"
+    ]
   }
 ]
