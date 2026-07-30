@@ -2346,5 +2346,40 @@
       "https://slides.com/adrianfaciu/beyond-the-ui",
       "https://slides.com/ancaspatariu/faster-better-exhausted"
     ]
+  },
+  {
+    "id": "e25c29f6-a542-4f25-bb88-6f64d73eb8ba",
+    "title": "tim.js meetup #108",
+    "dateTime": "2026-06-24T18:30:00+03:00",
+    "eventUrl": "https://luma.com/5bcw963a",
+    "description": "Hello, JavaScripters! 👋\n\nWe're getting together again, this time at a venue perfect for kicking off the summer. ☀️\n\nOn the agenda\n\n***\n\n**Retired Dependencies**\n-- Andrei Pfeiffer, Code Designer @ Smilecloud\n\nFor years, building Node.js applications meant relying on countless third-party packages to fill gaps in the standard library. But modern versions of Node.js now include powerful built-in features that can replace many of those dependencies.\n\nIn this talk, Andrei will explore what Node.js can do out of the box today and which packages we might finally be able to remove from our `package.json`.\n\n***\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK) to speak at one of our future meetups.*\n*We're also on Discord. [Join our community.](https://discord.com/invite/fTYxvBeBHr)*",
+    "photoAlbum": null,
+    "featuredEventPhoto": {
+      "thumbUrl": "timjs-meetup-108.png",
+      "standardUrl": "timjs-meetup-108.png",
+      "highResUrl": "timjs-meetup-108.png"
+    },
+    "talks": [
+      "Retired Dependencies (Andrei Pfeiffer)"
+    ],
+    "slides": [null]
+  },
+  {
+    "id": "29325722-489b-4fe1-881e-f5ed5c0998ad",
+    "title": "tim.js meetup #109",
+    "dateTime": "2026-07-22T18:30:00+03:00",
+    "eventUrl": "https://luma.com/ky8pvott",
+    "description": "Hello JavaScripters,\n\nWe're getting ready for our last session before the summer social and we have two awsome presentations lined up for you.\n\n***\n\n**Contracts or Consequences**\n-- Valentin Harapu, Fullstack Developer @ Endava\n\nAn analysis of the contract-first approach and how it can help an application evolve without breaking.\n\n**Escape the permanent-underclass by improving your AI workflow**\n-- Ovidiu Ispas, Senior Software Engineer @ Quantios\n\nBuild a personal AI development workflow with coding agents orchestration, herdr, worktrees, and terminal-first tools.\n\n***\n*We're always looking for new speakers. [Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK) to speak at one of our future meetups.*\n*We're also on Discord. [Join our community.](https://discord.com/invite/fTYxvBeBHr)*",
+    "photoAlbum": null,
+    "featuredEventPhoto": {
+      "thumbUrl": "timjs-meetup-109.png",
+      "standardUrl": "timjs-meetup-109.png",
+      "highResUrl": "timjs-meetup-109.png"
+    },
+    "talks": [
+      "Contracts or Consequences (Valentin Harapu)",
+      "Escape the permanent-underclass by improving your AI workflow (Ovidiu Ispas)"
+    ],
+    "slides": [null, null]
   }
 ]
