@@ -1,0 +1,25 @@
+---
+import { getUpcomingLumaEvents } from "@utils/luma";
+
+const events = await getUpcomingLumaEvents();
+// Fail open: if the Luma API call fails (events === null), show the embed anyway
+// so a transient build-time issue never hides real upcoming events.
+const show = events === null ? true : events.length > 0;
+---
+
+{
+  show && (
+    <section class="flex flex-col mx-auto max-w-4xl mt-24 gap-4 text-center items-center w-full">
+      <h2 class="text-4xl md:text-5xl mb-4 font-bold text-gray-800">
+        Upcoming Events
+      </h2>
+      <iframe
+        src="https://luma.com/embed/calendar/cal-GoD8QYxAkeWv3zb/events"
+        style="border: 1px solid #bfcbda88; border-radius: 4px; width: 100%; max-width: 600px; height: 450px;"
+        allowfullscreen
+        loading="lazy"
+        title="tim.js upcoming events on Luma"
+      />
+    </section>
+  )
+}
