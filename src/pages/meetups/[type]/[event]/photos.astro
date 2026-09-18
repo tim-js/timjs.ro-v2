@@ -24,10 +24,9 @@ if (!meetup) {
   return Astro.redirect("/");
 }
 
-const photos: EventPhoto[] = await getCollection(
-  "eventPhotos",
-  ({ data }) => data.eventId === meetup.id,
-);
+const photos: EventPhoto[] = (
+  await getCollection("eventPhotos", ({ data }) => data.eventId === meetup.id)
+).sort((a, b) => a.data.order - b.data.order);
 
 const backUrl = `/meetups/${type}/${event}`;
 ---
@@ -44,9 +43,10 @@ const backUrl = `/meetups/${type}/${event}`;
     <section class="flex flex-col gap-6 mx-auto max-w-6xl mt-24">
       <div class="flex justify-between items-center">
         <h2 class="font-bold text-5xl text-gray-800">
-          All Photos <span class="text-3xl text-gray-500 font-normal"
-            >{photos.length}</span
-          >
+          All Photos{" "}
+          <span class="text-3xl text-gray-500 font-normal">
+            {photos.length}
+          </span>
         </h2>
         <a
           href={backUrl}
@@ -55,40 +55,38 @@ const backUrl = `/meetups/${type}/${event}`;
         </a>
       </div>
 
-      {
-        photos && photos.length > 0 ? (
-          <div
-            id="gallery"
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {photos.map((photo, index) => (
-              <a
-                href={cloudinaryImageUrl(
-                  import.meta.env.PUBLIC_CLOUDINARY_CLOUD_NAME,
-                  photo.data,
-                )}
-                data-pswp-width={photo.data.width}
-                data-pswp-height={photo.data.height}
-                target="_blank"
-                rel="noreferrer"
-                class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 aspect-video block">
-                <CloudinaryImage
-                  photo={photo.data}
-                  sizes="(min-width: 1280px) 288px, (min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                  alt={`Event photo ${index + 1}`}
-                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 cursor-pointer"
-                />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </a>
-            ))}
-          </div>
-        ) : (
-          <div class="text-center py-12">
-            <p class="text-xl text-gray-500">
-              No photos available for this event yet
-            </p>
-          </div>
-        )
-      }
+      {photos && photos.length > 0 ? (
+        <div
+          id="gallery"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          {photos.map((photo, index) => (
+            <a
+              href={cloudinaryImageUrl(
+                import.meta.env.PUBLIC_CLOUDINARY_CLOUD_NAME,
+                photo.data,
+              )}
+              data-pswp-width={photo.data.width}
+              data-pswp-height={photo.data.height}
+              target="_blank"
+              rel="noreferrer"
+              class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 aspect-video block">
+              <CloudinaryImage
+                photo={photo.data}
+                sizes="(min-width: 1280px) 288px, (min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                alt={`Event photo ${index + 1}`}
+                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 cursor-pointer"
+              />
+              <div class="absolute inset-0 bg-linear-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </a>
+          ))}
+        </div>
+      ) : (
+        <div class="text-center py-12">
+          <p class="text-xl text-gray-500">
+            No photos available for this event yet
+          </p>
+        </div>
+      )}
     </section>
   </Container>
 </Layout>

@@ -17,24 +17,28 @@ import speaker2 from "../assets/events/highres_513791308.jpeg";
   <Container>
     <Sectionhead>
       <Fragment slot="title">Events</Fragment>
-      <Fragment slot="desc"
-        ><a href="#meetups" class="underline text-blue-500">Meetups</a> | <a
-          href="#conference"
-          class="underline text-blue-500">Conference</a
-        ></Fragment
-      >
+      <Fragment slot="desc">
+        <a href="#meetups" class="underline text-blue-500">
+          Meetups
+        </a>{" "}
+        |{" "}
+        <a href="#conference" class="underline text-blue-500">
+          Conference
+        </a>
+      </Fragment>
     </Sectionhead>
     <section class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
       <div>
-        <h2 class="font-bold text-5xl text-gray-800" id="meetups">Meetups</h2>
+        <h2 class="font-bold text-5xl text-gray-800" id="meetups">
+          Meetups
+        </h2>
         <br />
         <p class="text-xl leading-relaxed text-slate-500">
           We're organizing monthly meetups since 2013, free for everyone to
           attend. They usually take place on Wednesdays at 18:30.
         </p>
         <br />
-        <div
-          class="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+        <div class="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
           <Meetuplink />
           <Submittalk />
         </div>
@@ -74,13 +78,13 @@ import speaker2 from "../assets/events/highres_513791308.jpeg";
         <Picture
           src={attending1}
           alt="People attending tim.js meetup"
-          class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+          class="w-full rounded-md rounded-sm transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
           width={400}
         />
         <Picture
           src={attending2}
           alt="People attending tim.js meetup"
-          class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+          class="w-full rounded-md rounded-sm transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
           width={400}
         />
       </div>
@@ -117,7 +121,9 @@ import speaker2 from "../assets/events/highres_513791308.jpeg";
         <ul class="list-disc px-8 text-lg leading-relaxed text-slate-500">
           <li>video recording of your talk</li>
           <li>get help from experienced speakers</li>
-          <li>special tim.js speaker t-shirt <i>(on your second talk)</i></li>
+          <li>
+            special tim.js speaker t-shirt <i>(on your second talk)</i>
+          </li>
           <li>tim.js stickers</li>
         </ul>
       </div>
@@ -127,13 +133,13 @@ import speaker2 from "../assets/events/highres_513791308.jpeg";
           src={speaker1}
           alt="Image of a speaker giving a talk at tim.js meetup"
           width={400}
-          class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+          class="w-full rounded-md rounded-sm transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
         />
         <Picture
           src={speaker2}
           alt="Image of a speaker giving a talk at tim.js meetup"
           width={400}
-          class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
+          class="w-full rounded-md rounded-sm transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center"
         />
       </div>
 
@@ -179,10 +185,11 @@ import speaker2 from "../assets/events/highres_513791308.jpeg";
         <li>engaging After Party</li>
       </ul>
       <p class="text-lg leading-relaxed text-slate-500">
-        Checkout the dedicated <a
-          href="https://revojs.ro"
-          class="underline text-blue-500">revo.js website</a
-        > and follow us on your preferred platform or subscribe to the newsletter
+        Checkout the dedicated{" "}
+        <a href="https://revojs.ro" class="underline text-blue-500">
+          revo.js website
+        </a>{" "}
+        and follow us on your preferred platform or subscribe to the newsletter
         to stay up-to-date with all the official revo.js announcements.
       </p>
     </section>

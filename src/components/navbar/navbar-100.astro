@@ -30,8 +30,7 @@ const { pathname } = Astro.url;
 ---
 
 <Container class="absolute w-full left-1/2 -translate-x-1/2 top-0 z-10">
-  <header
-    class="flex flex-col items-center justify-between mb-5 pt-5 lg:flex-row">
+  <header class="flex flex-col items-center justify-between mb-5 pt-5 lg:flex-row">
     <Astronav>
       <div class="flex items-center justify-between w-full lg:w-auto px-5">
         <a href="/">
@@ -41,23 +40,20 @@ const { pathname } = Astro.url;
           <MenuIcon class="w-4 h-4 text-gray-800" />
         </div>
       </div>
-      <MenuItems
-        class="hidden w-full h-screen md:h-auto bottom-0 mt-3 px-6 py-3 lg:w-auto lg:flex lg:mt-0 bg-white sm:bg-transparent">
+      <MenuItems class="hidden w-full h-screen md:h-auto bottom-0 mt-3 px-6 py-3 lg:w-auto lg:flex lg:mt-0 bg-white sm:bg-transparent">
         <ul class="flex flex-col gap-4 lg:flex-row">
-          {
-            menuItems.map((item) => (
-              <li>
-                <a
-                  href={item.path}
-                  class:list={[
-                    "block relative w-fit lg:mx-3 text-gray-600 after:block after:absolute after:h-[3px] after:bg-brand after:w-full after:scale-x-0 after:hover:scale-x-100 after:duration-300 after:origin-left",
-                    pathname === item.path && "after:scale-x-100 font-bold",
-                  ]}>
-                  <span>{item.title}</span>
-                </a>
-              </li>
-            ))
-          }
+          {menuItems.map((item) => (
+            <li>
+              <a
+                href={item.path}
+                class:list={[
+                  "block relative w-fit lg:mx-3 text-gray-600 after:block after:absolute after:h-[3px] after:bg-brand after:w-full after:scale-x-0 hover:after:scale-x-100 after:duration-300 after:origin-left",
+                  pathname === item.path && "after:scale-x-100 font-bold",
+                ]}>
+                <span>{item.title}</span>
+              </a>
+            </li>
+          ))}
         </ul>
       </MenuItems>
     </Astronav>

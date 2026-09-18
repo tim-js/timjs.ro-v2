@@ -12,34 +12,28 @@
     "test:cloudinary": "node --test tests/cloudinary.test.js"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.7",
-    "@astrojs/sitemap": "^3.6.0",
-    "@astrojs/tailwind": "^6.0.2",
+    "@astrojs/mdx": "^8.0.1",
+    "@astrojs/sitemap": "^3.7.4",
     "@cloudinary/url-gen": "^1.22.0",
-    "@fontsource-variable/inter": "^5.2.8",
+    "@fontsource-variable/inter": "^5.3.0",
     "@iconify-json/mdi": "^1.2.3",
-    "@iconify-json/simple-icons": "^1.2.54",
-    "@tailwindcss/typography": "^0.5.19",
-    "astro": "^5.14.6",
-    "astro-icon": "^1.1.5",
+    "@iconify-json/simple-icons": "^1.2.96",
+    "@tailwindcss/typography": "^0.5.20",
+    "astro": "^7.3.3",
+    "astro-icon": "^1.2.0",
     "astro-navbar": "^2.4.0",
-    "astro-seo": "^0.8.4",
-    "marked": "^16.4.1",
+    "astro-seo": "^1.2.0",
+    "marked": "^18.0.13",
     "photoswipe": "^5.4.4",
-    "sharp": "^0.34.4",
-    "tailwindcss": "^3.3.5"
+    "sharp": "^0.35.4",
+    "tailwindcss": "^4.3.3",
+    "@tailwindcss/vite": "^4.3.3"
   },
   "devDependencies": {
-    "prettier": "3.5.3",
-    "prettier-plugin-astro": "0.14.1"
-  },
-  "optionalDependencies": {
-    "@esbuild/linux-x64": "^0.25.11",
-    "@img/sharp-libvips-linux-x64": "^1.2.3",
-    "@img/sharp-linux-x64": "^0.34.4",
-    "@rollup/rollup-linux-x64-gnu": "^4.52.5"
+    "prettier": "3.9.8",
+    "prettier-plugin-astro": "1.0.1"
   },
   "engines": {
-    "node": ">=22.11.0"
+    "node": ">=22.12.0"
   }
 }

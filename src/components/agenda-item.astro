@@ -16,34 +16,30 @@ const { time, name, title, description, last, bio } = Astro.props;
     "sm:flex sm:flex-row mb-6",
     last ? "" : "border-b-brand border-b-2 pb-6",
   ]}>
-  {
-    time && (
-      <p class="mb-2 sm:mb-0 sm:flex-shrink-0 sm:whitespace-nowrap sm:mr-4 w-40 text-gray-800 text-xl font-mono">
-        {time}
-      </p>
-    )
-  }
+  {time && (
+    <p class="mb-2 sm:mb-0 sm:shrink-0 sm:whitespace-nowrap sm:mr-4 w-40 text-gray-800 text-xl font-mono">
+      {time}
+    </p>
+  )}
   <div>
     {title && <h4 class="text-xl text-gray-800 font-semibold">{title}</h4>}
-    {
-      name && (
-        <details>
-          <summary class="block">
-            <h5
-              class:list={[
-                bio ? "text-brand-blue cursor-pointer" : "text-gray-800",
-                "mt-2",
-              ]}>
-              {name}
-            </h5>
-          </summary>
-          <div
-            class="ml-6 mt-2 mb-2 border-l-2 border-brand pl-4 italic"
-            set:html={bio}
-          />
-        </details>
-      )
-    }
+    {name && (
+      <details>
+        <summary class="block">
+          <h5
+            class:list={[
+              bio ? "text-brand-blue cursor-pointer" : "text-gray-800",
+              "mt-2",
+            ]}>
+            {name}
+          </h5>
+        </summary>
+        <div
+          class="ml-6 mt-2 mb-2 border-l-2 border-brand pl-4 italic"
+          set:html={bio}
+        />
+      </details>
+    )}
     {description && <div class="mt-3" set:html={description} />}
   </div>
 </li>

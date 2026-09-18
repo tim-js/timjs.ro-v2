@@ -1,8 +1,6 @@
 ---
+sort: 2
 name: "Martin Hochel"
 title: "Principal Engineer at Microsoft"
-avatar: {
-    src: "@assets/100/martin-bw.jpeg",
-    alt: "Martin Hochel"
-}
+avatar: { src: "@assets/100/martin-bw.jpeg", alt: "Martin Hochel" }
 ---

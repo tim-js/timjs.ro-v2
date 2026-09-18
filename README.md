@@ -18,8 +18,11 @@ git clone https://github.com/tim-js/timjs.ro-v2
 
 ### 2. Install Dependencies
 
+Use the Node version in `.nvmrc` (22.22.3). Astro requires Node 22.12.0 or
+newer, and `.npmrc` enforces package engine requirements.
+
 ```bash
-npm install
+npm ci
 ```
 
 ### 3. Start development Server
@@ -59,7 +62,9 @@ Any static assets, like images, can be placed in the `public/` directory.
 
 ## TailwindCSS
 
-TailwindCSS is already configured in this repo, so you can start using it without any installation.
+Tailwind CSS 4 runs through its Vite plugin. Theme colors, fonts, typography,
+and compatibility styles live in `src/styles/global.css`, imported by both
+layouts. It targets Safari 16.4+, Chrome 111+, and Firefox 128+.
 
 ## Env variables
 

@@ -1,10 +1,11 @@
 import { defineCollection } from "astro:content";
+import { glob } from "astro/loaders";
 import { z } from "astro/zod";
-import allEvents from "../data/allEvents.json";
+import allEvents from "./data/allEvents.json";
 import {
   loadCloudinaryPhotos,
   mapPhotosToEvents,
-} from "../lib/cloudinary-assets.js";
+} from "./lib/cloudinary-assets.js";
 import { resolve } from "node:path";
 
 const eventPhotos = defineCollection({
@@ -22,6 +23,7 @@ const eventPhotos = defineCollection({
   },
   schema: z.object({
     eventId: z.string(),
+    order: z.number().int().nonnegative(),
     publicId: z.string(),
     folder: z.string(),
     width: z.number().int().positive(),
@@ -31,8 +33,8 @@ const eventPhotos = defineCollection({
   }),
 });
 
-// 2. Define your collection(s)
 const blogCollection = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/blog" }),
   schema: z.object({
     draft: z.boolean(),
     title: z.string(),
@@ -49,6 +51,7 @@ const blogCollection = defineCollection({
 });
 
 const teamCollection = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/team" }),
   schema: ({ image }) =>
     z.object({
       name: z.string(),
@@ -63,9 +66,11 @@ const teamCollection = defineCollection({
 });
 
 const speakersCollection = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/speakers" }),
   schema: ({ image }) =>
     z.object({
       name: z.string(),
+      sort: z.number().int(),
       title: z.string(),
       avatar: z.object({
         src: image(),
@@ -74,8 +79,6 @@ const speakersCollection = defineCollection({
     }),
 });
 
-// 3. Export a single `collections` object to register your collection(s)
-//    This key should match your collection directory name in "src/content"
 export const collections = {
   blog: blogCollection,
   team: teamCollection,

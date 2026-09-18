@@ -66,6 +66,22 @@ test("supports fixed folders and maps exact folder names to stable event IDs", a
   assert.equal(entries[0].id, "event-109:asset-1");
 });
 
+test("records source photo ordering independently of collection entry IDs", () => {
+  const entries = mapPhotosToEvents(
+    [
+      { id: "z-last-alphabetically", folder: "tim.js meetup 109" },
+      { id: "a-first-alphabetically", folder: "tim.js meetup 109" },
+    ],
+    [{ id: "event-109", title: "tim.js meetup #109" }],
+  );
+  const collectionOrder = [...entries].sort((a, b) => a.id.localeCompare(b.id));
+  assert.notDeepEqual(collectionOrder, entries);
+  assert.deepEqual(
+    collectionOrder.sort((a, b) => a.order - b.order),
+    entries,
+  );
+});
+
 test("keeps a valid cache byte-for-byte after a later pagination request fails", async (t) => {
   const options = await cacheOptions(t);
   const initial = await loadCloudinaryPhotos({

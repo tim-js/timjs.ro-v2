@@ -172,11 +172,13 @@ export function mapPhotosToEvents(photos, events) {
     eventIds.push(String(event.id));
     eventsByFolder.set(folder, eventIds);
   }
-  return photos.flatMap((photo) =>
+  return photos.flatMap((photo, order) =>
     (eventsByFolder.get(photo.folder) ?? []).map((eventId) => ({
       ...photo,
       id: `${eventId}:${photo.id}`,
       eventId,
+      // Collection iteration order can change across Astro versions.
+      order,
     })),
   );
 }
