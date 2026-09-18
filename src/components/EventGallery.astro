@@ -1,15 +1,8 @@
 ---
-import { CldImage } from "astro-cloudinary";
+import type { CollectionEntry } from "astro:content";
+import CloudinaryImage from "./CloudinaryImage.astro";
 
-export type EventPhoto = {
-  data: {
-    data: {
-      public_id: string;
-      width: number;
-      height: number;
-    };
-  };
-};
+export type EventPhoto = CollectionEntry<"eventPhotos">;
 
 interface Props {
   photos: EventPhoto[];
@@ -48,14 +41,11 @@ const photosPageUrl = `/meetups/${meetupType}/${meetupId}/photos`;
         <a
           href={photosPageUrl}
           class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 aspect-video">
-          <CldImage
-            src={photo.data.data.public_id}
-            width={400}
-            height={300}
+          <CloudinaryImage
+            photo={photo.data}
+            sizes="(min-width: 1024px) 288px, (min-width: 768px) 50vw, 100vw"
             alt="Event photo"
             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-            crop="fill"
-            gravity="auto"
           />
           <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         </a>

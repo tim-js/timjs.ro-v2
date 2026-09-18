@@ -1,38 +1,35 @@
-// 1. Import utilities from `astro:content`
-import { z, defineCollection } from "astro:content";
+import { defineCollection } from "astro:content";
+import { z } from "astro/zod";
 import allEvents from "../data/allEvents.json";
-import { getFormattedMeetupName } from "@utils/all";
-import fs from "fs";
-import path from "path";
+import {
+  loadCloudinaryPhotos,
+  mapPhotosToEvents,
+} from "../lib/cloudinary-assets.js";
+import { resolve } from "node:path";
 
-// Handle loading Cloudinary data
-import { fetchAllGalleries } from "../scripts/cloudinaryLoader.js";
-try {
-  await fetchAllGalleries();
-} catch (error) {
-  console.warn("⚠️  Failed to fetch Cloudinary galleries:", error.message);
-  console.warn("Build will continue without images.\n");
-}
-
-// Load cloudinary cache if it exists
-const cachePath = path.join(process.cwd(), "node_modules/.cache/cloudinary-cache.json");
-let cloudinaryCache = { galleries: {} };
-
-if (fs.existsSync(cachePath)) {
-  cloudinaryCache = JSON.parse(fs.readFileSync(cachePath, "utf-8"));
-}
-
-// Load image galleries from cache instead of making API calls
-const imageGalleries = {};
-for (const event of allEvents) {
-  const galleryName = getFormattedMeetupName(event.title);
-  imageGalleries[galleryName] = defineCollection({
-    loader: () => {
-      // Return cached data for this gallery
-      return cloudinaryCache.galleries[galleryName] || [];
-    }
-  });
-}
+const eventPhotos = defineCollection({
+  loader: async () => {
+    const photos = await loadCloudinaryPhotos({
+      cloudName: import.meta.env.PUBLIC_CLOUDINARY_CLOUD_NAME,
+      apiKey:
+        import.meta.env.CLOUDINARY_API_KEY ||
+        import.meta.env.PUBLIC_CLOUDINARY_API_KEY,
+      apiSecret: import.meta.env.CLOUDINARY_API_SECRET,
+      cachePath: resolve("node_modules/.cache/cloudinary-photos-v1.json"),
+      development: import.meta.env.DEV,
+    });
+    return mapPhotosToEvents(photos, allEvents);
+  },
+  schema: z.object({
+    eventId: z.string(),
+    publicId: z.string(),
+    folder: z.string(),
+    width: z.number().int().positive(),
+    height: z.number().int().positive(),
+    version: z.number().int().positive(),
+    format: z.string(),
+  }),
+});
 
 // 2. Define your collection(s)
 const blogCollection = defineCollection({
@@ -83,5 +80,5 @@ export const collections = {
   blog: blogCollection,
   team: teamCollection,
   speakers: speakersCollection,
-  ...imageGalleries,
+  eventPhotos,
 };

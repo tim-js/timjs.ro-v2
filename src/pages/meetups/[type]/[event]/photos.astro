@@ -1,11 +1,11 @@
 ---
 import { getPastEvents } from "@utils/meetup";
 import { getCollection } from "astro:content";
-import { getFormattedMeetupName } from "@utils/all";
 import Layout from "../../../../layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
-import { CldImage } from "astro-cloudinary";
+import CloudinaryImage from "@components/CloudinaryImage.astro";
+import { cloudinaryImageUrl } from "@lib/cloudinary-images.js";
 import type { EventPhoto } from "@components/EventGallery.astro";
 import "photoswipe/style.css";
 
@@ -24,12 +24,10 @@ if (!meetup) {
   return Astro.redirect("/");
 }
 
-let photos: EventPhoto[] = [];
-try {
-  photos = await getCollection(getFormattedMeetupName(meetup.title));
-} catch (error) {
-  console.warn(`Failed to fetch photos: ${error.message}`);
-}
+const photos: EventPhoto[] = await getCollection(
+  "eventPhotos",
+  ({ data }) => data.eventId === meetup.id,
+);
 
 const backUrl = `/meetups/${type}/${event}`;
 ---
@@ -64,20 +62,20 @@ const backUrl = `/meetups/${type}/${event}`;
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {photos.map((photo, index) => (
               <a
-                href={`https://res.cloudinary.com/${import.meta.env.PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/${photo.data.data.public_id}`}
-                data-pswp-width={photo.data.data.width}
-                data-pswp-height={photo.data.data.height}
+                href={cloudinaryImageUrl(
+                  import.meta.env.PUBLIC_CLOUDINARY_CLOUD_NAME,
+                  photo.data,
+                )}
+                data-pswp-width={photo.data.width}
+                data-pswp-height={photo.data.height}
                 target="_blank"
                 rel="noreferrer"
                 class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 aspect-video block">
-                <CldImage
-                  src={photo.data.data.public_id}
-                  width={400}
-                  height={300}
+                <CloudinaryImage
+                  photo={photo.data}
+                  sizes="(min-width: 1280px) 288px, (min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                   alt={`Event photo ${index + 1}`}
                   class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 cursor-pointer"
-                  crop="fill"
-                  gravity="auto"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </a>

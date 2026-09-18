@@ -1,0 +1,29 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { cloudinaryImageUrl } from "@lib/cloudinary-images.js";
+
+interface Props {
+  photo: CollectionEntry<"eventPhotos">["data"];
+  alt: string;
+  sizes: string;
+  class?: string;
+}
+
+const { photo, alt, sizes, class: className } = Astro.props;
+const cloudName = import.meta.env.PUBLIC_CLOUDINARY_CLOUD_NAME;
+const widths = [320, 400, 640, 800, 1200];
+---
+
+<img
+  src={cloudinaryImageUrl(cloudName, photo, 400)}
+  srcset={widths
+    .map((width) => `${cloudinaryImageUrl(cloudName, photo, width)} ${width}w`)
+    .join(", ")}
+  sizes={sizes}
+  width={400}
+  height={300}
+  alt={alt}
+  class={className}
+  loading="lazy"
+  decoding="async"
+/>

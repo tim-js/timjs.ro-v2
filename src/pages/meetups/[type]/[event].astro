@@ -38,7 +38,8 @@ const relatedVideos = videos.filter(
 );
 
 const photos: EventPhoto[] = await getCollection(
-  getFormattedMeetupName(meetup.title),
+  "eventPhotos",
+  ({ data }) => data.eventId === meetup.id,
 );
 ---
 
