@@ -5,6 +5,8 @@ const events = await getUpcomingLumaEvents();
 // Fail open: if the Luma API call fails (events === null), show the embed anyway
 // so a transient build-time issue never hides real upcoming events.
 const show = events === null ? true : events.length > 0;
+// Luma controls the card layout; a single event only needs a compact viewport.
+const embedHeight = events?.length === 1 ? 260 : 450;
 ---
 
 {
@@ -15,7 +17,7 @@ const show = events === null ? true : events.length > 0;
       </h2>
       <iframe
         src="https://luma.com/embed/calendar/cal-GoD8QYxAkeWv3zb/events"
-        style="border: 1px solid #bfcbda88; border-radius: 4px; width: 100%; max-width: 600px; height: 450px;"
+        style={`border: 1px solid #bfcbda88; border-radius: 4px; width: 100%; max-width: 600px; height: ${embedHeight}px;`}
         allowfullscreen
         loading="lazy"
         title="tim.js upcoming events on Luma"
