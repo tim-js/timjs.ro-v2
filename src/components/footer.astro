@@ -5,17 +5,28 @@ import Container from "./container.astro";
 const socials = [
   {
     name: "luma",
+    label: "tim.js events on Luma",
     href: "https://lu.ma/timjs",
     icon: "local:luma",
   },
   {
     name: "linkedin",
+    label: "tim.js on LinkedIn",
     href: "https://www.linkedin.com/company/tim-js",
   },
-  { name: "discord", href: "https://discord.com/invite/fTYxvBeBHr" },
-  { name: "bluesky", href: "https://bsky.app/profile/timjs.ro" },
+  {
+    name: "discord",
+    label: "Join the tim.js Discord community",
+    href: "https://discord.com/invite/fTYxvBeBHr",
+  },
+  {
+    name: "bluesky",
+    label: "tim.js on Bluesky",
+    href: "https://bsky.app/profile/timjs.ro",
+  },
   {
     name: "youtube",
+    label: "Watch tim.js talks on YouTube",
     href: "https://www.youtube.com/c/timjs/videos",
   },
 ];
@@ -23,21 +34,19 @@ const socials = [
 
 <footer class="mt-20 mb-8">
   <Container class="flex flex-row items-center justify-center gap-4">
-    {
-      socials.map((social) => (
-        <a
-          href={social.href}
-          class="rounded-full transition translate-y-0 hover:-translate-y-1"
-          rel="noopener noreferrer"
-          target="_blank">
-          <div class="p-2 bg-gray-800 rounded-full">
-            <Icon
-              class="w-6 h-6 md:w-7 md:h-7 text-white"
-              name={social.icon ?? `simple-icons:${social.name}`}
-            />
-          </div>
-        </a>
-      ))
-    }
+    {socials.map((social) => <a
+      href={social.href}
+      aria-label={social.label}
+      class="rounded-full transition translate-y-0 hover:-translate-y-1"
+      rel="noopener noreferrer"
+      target="_blank">
+      <div class="p-2 bg-gray-800 rounded-full">
+        <Icon
+          aria-hidden="true"
+          class="w-6 h-6 md:w-7 md:h-7 text-white"
+          name={social.icon ?? `simple-icons:${social.name}`}
+        />
+      </div>
+    </a>)}
   </Container>
 </footer>
