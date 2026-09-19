@@ -13,13 +13,18 @@ import Skeleton from "./skeleton.astro";
     <Picture
       src={heroImage}
       alt="tim.js meetup"
+      widths={[400, 640, 800, 1200, 1600, 2048]}
+      sizes="(min-width: 1280px) 1240px, calc(100vw - 40px)"
+      loading="eager"
+      fetchpriority="high"
       class="w-full h-full object-cover rounded-lg md:grayscale-50 md:brightness-50 relative"
     />
   </Skeleton>
 
   <div class="relative flex flex-col items-center gap-2 md:absolute md:gap-4">
     <TimJsLogo className="hidden md:block w-3/5" variant="light" />
-    <h1 class="mt-8 text-4xl font-bold text-center text-gray-800 md:mt-0 md:text-white lg:text-5xl">
+    <h1
+      class="mt-8 text-4xl font-bold text-center text-gray-800 md:mt-0 md:text-white lg:text-5xl">
       Timișoara JavaScript Community
     </h1>
     <div class="relative flex flex-col gap-4 mt-4 md:mt-16 sm:flex-row">

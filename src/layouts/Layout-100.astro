@@ -3,6 +3,8 @@ import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar-100.astro";
 import "@fontsource-variable/inter/index.css";
+import "@fontsource-variable/reddit-sans/index.css";
+import "@fontsource-variable/reddit-sans/wght-italic.css";
 import "../styles/global.css";
 
 export interface Props {
@@ -31,10 +33,6 @@ const makeTitle = title
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
     <meta name="generator" content={Astro.generator} />
 
     <SEO
