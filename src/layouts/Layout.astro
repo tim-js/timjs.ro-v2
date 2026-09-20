@@ -2,7 +2,11 @@
 import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
-import "@fontsource-variable/inter/index.css";
+import "@fontsource-variable/reddit-sans/index.css";
+import "@fontsource-variable/reddit-sans/wght-italic.css";
+import "../styles/global.css";
+import redditSansLatin from "@fontsource-variable/reddit-sans/files/reddit-sans-latin-wght-normal.woff2?url";
+import redditSansLatinExtended from "@fontsource-variable/reddit-sans/files/reddit-sans-latin-ext-wght-normal.woff2?url";
 
 export interface Props {
   title: string;
@@ -12,7 +16,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
 const resolvedImageWithDomain = new URL(
   "/opengraph.jpg",
-  Astro.site
+  Astro.site,
 ).toString();
 
 const { title } = Astro.props;
@@ -28,12 +32,18 @@ const makeTitle = title
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" , initial-scale="1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
+    {pathname === "/" &&
+      [redditSansLatin, redditSansLatinExtended].map((href) => (
+        <link
+          rel="preload"
+          href={href}
+          as="font"
+          type="font/woff2"
+          crossorigin="anonymous"
+        />
+      ))}
     <meta name="generator" content={Astro.generator} />
 
     <SEO

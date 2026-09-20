@@ -1,8 +1,6 @@
 ---
+sort: 1
 name: "Alex Moldovan"
 title: "Product Engineer @ together.ai"
-avatar: {
-    src: "@assets/100/alex-bw.jpeg",
-    alt: "Alex Moldovan"
-}
+avatar: { src: "@assets/100/alex-bw.jpeg", alt: "Alex Moldovan" }
 ---

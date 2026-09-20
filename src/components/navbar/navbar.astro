@@ -34,67 +34,65 @@ const isHomePage = pathname === "/";
 ---
 
 <Container class="relative z-10">
-  {
-    isHomePage ? (
-      <header class="flex flex-row items-center justify-center my-16">
-        <Astronav>
-          <MenuItems class="flex justify-center w-full">
-            <ul class="flex flex-row gap-2">
-              {homeMenuItems.map((item) => (
-                <li class="flex flex-row items-center">
-                  {item.isSpecial ? (
-                    <a href={item.path}>
-                      <Button size="sm" class="bg-brand hover:bg-yellow-400">
-                        <span class="text-gray-800 text-md sm:text-lg">
-                          {item.title}
-                        </span>
-                      </Button>
-                    </a>
-                  ) : (
-                    <a
-                      href={item.path}
-                      class:list={[
-                        "block relative w-fit mx-3 md:mx-6 text-gray-800 text-md sm:text-lg after:block after:absolute after:h-[3px] after:bg-brand after:w-full after:scale-x-0 after:hover:scale-x-100 after:duration-300 after:origin-left",
-                        pathname === item.path && "after:scale-x-100 font-bold",
-                      ]}>
-                      <span>{item.title}</span>
-                    </a>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </MenuItems>
-        </Astronav>
-      </header>
-    ) : (
-      <header class="flex flex-col items-center justify-between my-5 lg:flex-row">
-        <Astronav>
-          <div class="flex items-center justify-between w-full lg:w-auto">
-            <a href="/">
-              <TimJsLogo width={90} />
-            </a>
-            <div class="block lg:hidden">
-              <MenuIcon class="w-4 h-4 text-gray-800" />
-            </div>
-          </div>
-          <MenuItems class="hidden w-full mt-3 lg:w-auto lg:flex lg:mt-0">
-            <ul class="flex flex-col gap-3 lg:flex-row">
-              {menuItems.map((item) => (
-                <li>
+  {isHomePage ? (
+    <header class="flex flex-row items-center justify-center my-16">
+      <Astronav>
+        <MenuItems class="flex justify-center w-full">
+          <ul class="flex flex-row gap-2">
+            {homeMenuItems.map((item) => (
+              <li class="flex flex-row items-center">
+                {item.isSpecial ? (
+                  <a href={item.path}>
+                    <Button size="sm" class="bg-brand hover:bg-yellow-400">
+                      <span class="text-gray-800 text-md sm:text-lg">
+                        {item.title}
+                      </span>
+                    </Button>
+                  </a>
+                ) : (
                   <a
                     href={item.path}
                     class:list={[
-                      "block relative w-fit lg:mx-3 text-gray-600 after:block after:absolute after:h-[3px] after:bg-brand after:w-full after:scale-x-0 after:hover:scale-x-100 after:duration-300 after:origin-left",
+                      "block relative w-fit mx-3 md:mx-6 text-gray-800 text-md sm:text-lg after:block after:absolute after:h-[3px] after:bg-brand after:w-full after:scale-x-0 hover:after:scale-x-100 after:duration-300 after:origin-left",
                       pathname === item.path && "after:scale-x-100 font-bold",
                     ]}>
                     <span>{item.title}</span>
                   </a>
-                </li>
-              ))}
-            </ul>
-          </MenuItems>
-        </Astronav>
-      </header>
-    )
-  }
+                )}
+              </li>
+            ))}
+          </ul>
+        </MenuItems>
+      </Astronav>
+    </header>
+  ) : (
+    <header class="flex flex-col items-center justify-between my-5 lg:flex-row">
+      <Astronav>
+        <div class="flex items-center justify-between w-full lg:w-auto">
+          <a href="/">
+            <TimJsLogo width={90} />
+          </a>
+          <div class="block lg:hidden">
+            <MenuIcon class="w-4 h-4 text-gray-800" />
+          </div>
+        </div>
+        <MenuItems class="hidden w-full mt-3 lg:w-auto lg:flex lg:mt-0">
+          <ul class="flex flex-col gap-3 lg:flex-row">
+            {menuItems.map((item) => (
+              <li>
+                <a
+                  href={item.path}
+                  class:list={[
+                    "block relative w-fit lg:mx-3 text-gray-600 after:block after:absolute after:h-[3px] after:bg-brand after:w-full after:scale-x-0 hover:after:scale-x-100 after:duration-300 after:origin-left",
+                    pathname === item.path && "after:scale-x-100 font-bold",
+                  ]}>
+                  <span>{item.title}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </MenuItems>
+      </Astronav>
+    </header>
+  )}
 </Container>

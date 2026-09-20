@@ -10,7 +10,9 @@ import banner1 from "@assets/100/banner-1.svg";
 import coworkLogo from "@assets/100/cowork.svg";
 import AgendaItem from "@components/agenda-item.astro";
 import { Image } from "astro:assets";
-const speakers = await getCollection("speakers");
+const speakers = (await getCollection("speakers")).sort(
+  (a, b) => a.data.sort - b.data.sort,
+);
 ---
 
 <Layout title="Edition 100">
@@ -30,8 +32,9 @@ const speakers = await getCollection("speakers");
                   href="https://maps.app.goo.gl/SWpW4PHdL5dofNGw7"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="text-brand-blue">Cowork Timișoara - The Office</a
-                >
+                  class="text-brand-blue">
+                  Cowork Timișoara - The Office
+                </a>
               </div>
             </div>
           </Fragment>
@@ -46,32 +49,36 @@ const speakers = await getCollection("speakers");
       <nav class="mx-auto max-w-4xl flex flex-row mb-8 mt-8 sm:mt-0">
         <a
           href="#speakers"
-          class="text-sm sm:text-lg font-medium m-3 text-brand-blue">Speakers</a
-        >
+          class="text-sm sm:text-lg font-medium m-3 text-brand-blue">
+          Speakers
+        </a>
         <a
           href="#agenda"
-          class="text-sm sm:text-lg font-medium m-3 text-brand-blue">Agenda</a
-        >
+          class="text-sm sm:text-lg font-medium m-3 text-brand-blue">
+          Agenda
+        </a>
         <a
           href="#tickets"
-          class="text-sm sm:text-lg font-medium m-3 text-brand-blue">Tickets</a
-        >
+          class="text-sm sm:text-lg font-medium m-3 text-brand-blue">
+          Tickets
+        </a>
         <!-- hidden sm:block -->
         <a
           href="#organizers"
-          class="text-sm sm:text-lg font-medium m-3 text-brand-blue"
-          >Organizers</a
-        >
+          class="text-sm sm:text-lg font-medium m-3 text-brand-blue">
+          Organizers
+        </a>
       </nav>
     </Container>
   </div>
   <Container>
     <section class="mx-auto max-w-4xl mt-16">
       <p class="text-gray-800 mb-4">
-        <strong
-          >This September we're celebrating our 100th meetup with a truly
-          special event!</strong
-        > We'll have 4 speakers that will analyze how web development has evolved
+        <strong>
+          This September we're celebrating our 100th meetup with a truly special
+          event!
+        </strong>{" "}
+        We'll have 4 speakers that will analyze how web development has evolved
         over the years, while also looking forward at what lies ahead.
       </p>
       <p class="text-gray-800">
@@ -82,17 +89,14 @@ const speakers = await getCollection("speakers");
     </section>
     <section id="speakers" class="flex flex-col gap-4 mx-auto max-w-4xl mt-16">
       <h2 class="font-bold text-4xl text-gray-800 mb-4">Speakers</h2>
-      <div
-        class="grid grid-cols-1 grid-rows-1 sm:grid-cols-2 sm:grid-rows-2 gap-6">
-        {
-          speakers.map((speaker) => (
-            <Speaker
-              img={speaker.data.avatar.src}
-              name={speaker.data.name}
-              title={speaker.data.title}
-            />
-          ))
-        }
+      <div class="grid grid-cols-1 grid-rows-1 sm:grid-cols-2 sm:grid-rows-2 gap-6">
+        {speakers.map((speaker) => (
+          <Speaker
+            img={speaker.data.avatar.src}
+            name={speaker.data.name}
+            title={speaker.data.title}
+          />
+        ))}
       </div>
     </section>
     <section id="agenda" class="flex flex-col gap-4 mx-auto max-w-4xl mt-24">
@@ -137,32 +141,32 @@ const speakers = await getCollection("speakers");
       <p>There are two ticket categories:</p>
       <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
         <li>
-          <span class="line-through font-medium text-gray-400"
-            ><strong>Standard</strong><span class="font-medium">
-              - Available until the event
-            </span></span
-          >
+          <span class="line-through font-medium text-gray-400">
+            <strong>Standard</strong>
+            <span class="font-medium">- Available until the event</span>
+          </span>
         </li>
         <li>
-          <span class="line-through text-gray-400"
-            ><strong>Standard</strong> - includes a t-shirt</span
-          >
-          <span id="standard-countdown" class="text-green-600 font-medium"
-          ></span>
+          <span class="line-through text-gray-400">
+            <strong>Standard</strong> - includes a t-shirt
+          </span>
+          <span
+            id="standard-countdown"
+            class="text-green-600 font-medium"></span>
         </li>
         <li>
-          <span class="line-through text-gray-400"
-            ><strong>Premium</strong> - includes a t-shirt and hoodie</span
-          >
+          <span class="line-through text-gray-400">
+            <strong>Premium</strong> - includes a t-shirt and hoodie
+          </span>
           <span class="text-red-600 font-semibold">- SOLD OUT</span>
         </li>
       </ul>
       <p>All tickets include snacks and drinks.</p>
       <p>
-        *Tickets that include swag must be purchased <strong
-          >before August 27, 2025</strong
-        >. Tickets purchased after this date will not include the t-shirt or the
-        hoodie, and will only provide access to the event.
+        *Tickets that include swag must be purchased{" "}
+        <strong>before August 27, 2025</strong>. Tickets purchased after this
+        date will not include the t-shirt or the hoodie, and will only provide
+        access to the event.
       </p>
       <p class="text-center mt-2">
         <Button size="sm" class="bg-gray-400 opacity-60" disabled>
@@ -174,24 +178,27 @@ const speakers = await getCollection("speakers");
       <h2 class="font-bold text-4xl text-gray-800 mb-8">Organizers</h2>
       <div class="flex flex-col md:flex-row">
         <p class="mb-6 md:mb-0">
-          <TimJsLogo width={80} className="inline-block mr-2" /> in partnership with
+          <TimJsLogo width={80} className="inline-block mr-2" /> in partnership
+          with
           <a
             href="https://banatit.ro/"
             target="_blank"
-            rel="noopener noreferrer"><BitLogo className="inline-block" /></a
-          >
+            rel="noopener noreferrer">
+            <BitLogo className="inline-block" />
+          </a>
         </p>
         <p class="md:text-right flex-1">
-          Hosted by <a
+          Hosted by{" "}
+          <a
             href="https://coworktimisoara.com/ro/"
             target="_blank"
-            rel="noopener noreferrer"
-            ><Image
+            rel="noopener noreferrer">
+            <Image
               class="inline-block ml-2"
               src={coworkLogo}
               alt="Co - work Logo"
-            /></a
-          >
+            />
+          </a>
         </p>
       </div>
     </section>

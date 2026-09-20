@@ -9,19 +9,53 @@ const show = events === null ? true : events.length > 0;
 const embedHeight = events?.length === 1 ? 260 : 450;
 ---
 
-{
-  show && (
-    <section class="flex flex-col mx-auto max-w-4xl mt-24 gap-4 text-center items-center w-full">
-      <h2 class="text-4xl md:text-5xl mb-4 font-bold text-gray-800">
-        Upcoming Events
-      </h2>
-      <iframe
-        src="https://luma.com/embed/calendar/cal-GoD8QYxAkeWv3zb/events"
-        style={`border: 1px solid #bfcbda88; border-radius: 4px; width: 100%; max-width: 600px; height: ${embedHeight}px;`}
-        allowfullscreen
-        loading="lazy"
-        title="tim.js upcoming events on Luma"
-      />
-    </section>
-  )
-}
+{show && <section
+  class="flex flex-col mx-auto max-w-4xl mt-24 gap-4 text-center items-center w-full">
+  <h2 class="text-4xl md:text-5xl mb-4 font-bold text-gray-800">
+    Upcoming Events
+  </h2>
+  <luma-calendar class="block w-full max-w-[600px]">
+    <iframe
+      data-src="https://luma.com/embed/calendar/cal-GoD8QYxAkeWv3zb/events"
+      style={`border: 1px solid #bfcbda88; border-radius: 4px; width: 100%; height: ${embedHeight}px;`}
+      allowfullscreen
+      title="tim.js upcoming events on Luma"></iframe>
+  </luma-calendar>
+</section>}
+
+<script>
+  class LumaCalendar extends HTMLElement {
+    private observer?: IntersectionObserver;
+
+    connectedCallback() {
+      const iframe = this.querySelector("iframe");
+      if (!iframe || iframe.hasAttribute("src")) return;
+
+      const loadCalendar = () => {
+        const source = iframe.dataset.src;
+        if (source) iframe.src = source;
+        this.observer?.disconnect();
+      };
+
+      if (!("IntersectionObserver" in window)) {
+        loadCalendar();
+        return;
+      }
+
+      // Native lazy loading can start too early; wait until the calendar is near view.
+      this.observer = new IntersectionObserver(
+        (entries) => {
+          if (entries.some((entry) => entry.isIntersecting)) loadCalendar();
+        },
+        { rootMargin: "200px 0px" },
+      );
+      this.observer.observe(this);
+    }
+
+    disconnectedCallback() {
+      this.observer?.disconnect();
+    }
+  }
+
+  customElements.define("luma-calendar", LumaCalendar);
+</script>
