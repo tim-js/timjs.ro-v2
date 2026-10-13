@@ -2381,5 +2381,23 @@
       "Escape the permanent-underclass by improving your AI workflow (Ovidiu Ispas)"
     ],
     "slides": [null, null]
+  },
+  {
+    "id": "58981587-5dea-477e-b844-bc99d4c14470",
+    "title": "tim.js meetup #110",
+    "dateTime": "2026-09-30T18:30:00+03:00",
+    "eventUrl": "https://luma.com/5ul6tote",
+    "description": "Hello, Javascripters! 👋\n\nWe’re back with tim.js meetup #110 and two talks exploring where technology has been and where it might be heading next.\n\n***\n\n🎤 Personalized UX, made simple\n\n**by Cristi Stiegelbauer, high school student**\n\nUnderstand the future of UX and Generative UI, and explore when—or if—we’ll need to create personalized experiences for AI agents.\n\n***\n\n🎤 A vague history of JavaScript\n\n**by Szabo Zoltan, Development Consultant at Endava**\n\nExploring the birth and evolution of the world’s most (allegedly) beloved-to-hate programming language.\n\n***\n\n**Interested in speaking at a future tim.js meetup?**\n\n*We're always looking for new speakers. **[Apply here](https://yzunr6agkag.typeform.com/to/ehGtISsK?typeform-source=www.meetup.com&utm_source=luma)** to speak at one of our future meetups.*\n\n💬 **Join us on Discord**\n\nContinue the conversation, meet other JavaScripters, and stay connected. *[Join our community.](https://discord.com/invite/fTYxvBeBHr?utm_source=luma)*",
+    "photoAlbum": null,
+    "featuredEventPhoto": {
+      "thumbUrl": "timjs-meetup-110.png",
+      "standardUrl": "timjs-meetup-110.png",
+      "highResUrl": "timjs-meetup-110.png"
+    },
+    "talks": [
+      "Personalized UX, made simple (Cristi Stiegelbauer)",
+      "A vague history of JavaScript (Szabo Zoltan)"
+    ],
+    "slides": [null, null]
   }
 ]
